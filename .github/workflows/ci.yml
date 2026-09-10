@@ -1,0 +1,78 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  validate-data:
+    name: Validar Dados Canônicos (XML & JSON)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do Repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar Dependências de Validação
+        run: |
+          pip install jsonschema lxml
+
+      - name: Validar Estatuto Social (Akoma Ntoso 3.0 XML)
+        run: |
+          python scripts/validate_xml.py
+
+      - name: Validar Agenda de Cultos (JSON Schema)
+        run: |
+          python scripts/validate_agenda.py
+
+  validate-php:
+    name: Validar PHP & Composer
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do Repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          extensions: mbstring, xml, ctype, json, zip
+
+      - name: Validar Composer Config
+        run: |
+          composer validate --strict
+
+      - name: Lint PHP Files
+        run: |
+          find public -name "*.php" -exec php -l {} \;
+          if [ -d "src" ]; then find src -name "*.php" -exec php -l {} \;; fi
+
+  validate-assets:
+    name: Compilar e Validar Tailwind CSS
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do Repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Instalar Dependências Node
+        run: |
+          npm install
+
+      - name: Compilar Tailwind CSS
+        run: |
+          npm run build:css
+
+      - name: Verificar se app.css foi gerado
+        run: |
+          test -s public/assets/css/app.css

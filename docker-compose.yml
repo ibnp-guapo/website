@@ -1,0 +1,34 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ibnp_guapo_app
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/var/www/html
+    environment:
+      - APP_ENV=local
+      - APP_DEBUG=true
+    restart: unless-stopped
+
+  composer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ibnp_guapo_composer
+    volumes:
+      - .:/var/www/html
+    working_dir: /var/www/html
+    entrypoint: ["composer"]
+
+  tests:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ibnp_guapo_tests
+    volumes:
+      - .:/var/www/html
+    working_dir: /var/www/html
+    entrypoint: ["./vendor/bin/phpunit"]

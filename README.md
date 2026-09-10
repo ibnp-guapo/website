@@ -61,7 +61,7 @@ O desenvolvimento deste portal segue a metodologia **Spec-Driven Development (SD
 - [x] [SPEC-WDLC-F3: Transcrição do Estatuto Social em Akoma Ntoso 3.0 XML](docs/specs/03-estatuto-social-akoma-ntoso.md) (Issue #3)
 - [ ] WDLC-F3: Transcrição Regimento Akoma Ntoso 3.0 (Issue #4)
 - [x] [SPEC-WDLC-F3: Modelagem JSON Schema da Agenda](docs/specs/05-modelagem-agenda-json-schema.md) (Issue #5)
-- [ ] WDLC-F4: Setup PHP 8.x, Tailwind e Docker (Issue #6)
+- [x] [SPEC-WDLC-F4: Setup PHP 8.x, Tailwind e Docker](docs/specs/06-setup-aplicacao-php-tailwind.md) (Issue #6)
 - [ ] WDLC-F4: Parser Akoma Ntoso em PHP (Issue #7)
 - [ ] WDLC-F4: Gerador de Calendário .ics (Issue #8)
 - [ ] WDLC-F4: Views Blade da Home, Sobre e Contato (Issue #9)

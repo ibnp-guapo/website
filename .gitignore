@@ -10,6 +10,7 @@
 # Logs e Cache
 /storage/cache/
 /storage/logs/
+.phpunit.cache/
 *.log
 
 # Arquivos temporários de extração

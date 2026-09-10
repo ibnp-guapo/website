@@ -57,7 +57,7 @@ Portal oficial da **Igreja Batista Nacional da Paz de Guapó** (IBNP Guapó), fu
 O desenvolvimento deste portal segue a metodologia **Spec-Driven Development (SDD)**:
 
 - [x] [SPEC-WDLC-F1: Arquitetura de Informação, Mapa do Site e Requisitos](docs/specs/01-arquitetura-informacao-requisitos.md) (Issue #1)
-- [ ] WDLC-F2: Prototipagem e Mockups no Stitch (Issue #2)
+- [x] [SPEC-WDLC-F2: Design System, Prototipagem no Stitch e Acessibilidade](docs/specs/02-design-system-prototipagem.md) (Issue #2)
 - [ ] WDLC-F3: Transcrição Estatuto Akoma Ntoso 3.0 (Issue #3)
 - [ ] WDLC-F3: Transcrição Regimento Akoma Ntoso 3.0 (Issue #4)
 - [ ] WDLC-F3: Modelagem JSON Schema da Agenda (Issue #5)

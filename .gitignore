@@ -1,0 +1,16 @@
+# Ambientes e Segredos
+.env
+.env.*
+!.env.example
+
+# Dependências
+/vendor/
+/node_modules/
+
+# Logs e Cache
+/storage/cache/
+/storage/logs/
+*.log
+
+# Arquivos temporários de extração
+data/legal/estatuto_extraido.txt

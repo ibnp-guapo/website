@@ -113,29 +113,27 @@ $router->get('/programacao/ical', function (): void {
     exit;
 });
 
-// Rota 4: Estatuto
-$router->get('/estatuto', function (): void {
-    header('Content-Type: text/html; charset=utf-8');
-    echo renderPage(
-        title: 'Estatuto Social - IBN da Paz de Guapó',
-        heading: 'Estatuto Social da IBN da Paz de Guapó',
-        subtitle: 'Estrutura institucional padronizada em OASIS Akoma Ntoso 3.0',
-        body: '<p class="text-slate-600 mb-4">O Estatuto Social rege as normas e princípios fundamentais da Igreja Batista Nacional da Paz de Guapó (CNPJ 02.930.019/0001-62), averbado no 2º Serviço Notarial e Registral de Guapó - GO.</p>
-               <div class="p-4 bg-amber-50 border border-amber-200 rounded-lg text-sm text-amber-900 mb-6">
-                 Documento canônico disponível em XML Akoma Ntoso 3.0 no repositório (<code class="bg-amber-100 px-1 py-0.5 rounded">data/legal/estatuto-social.akn.xml</code>).
-               </div>'
-    );
+// Controller de Documentos Legais (Akoma Ntoso 3.0)
+$legalController = new \App\Controllers\LegalDocController();
+
+// Rota 4: Estatuto Social (Visualizador Akoma Ntoso 3.0)
+$router->get('/estatuto', function () use ($legalController): void {
+    $legalController->estatuto();
 });
 
-// Rota 5: Regimento
-$router->get('/regimento', function (): void {
-    header('Content-Type: text/html; charset=utf-8');
-    echo renderPage(
-        title: 'Regimento Interno - IBN da Paz de Guapó',
-        heading: 'Regimento Interno',
-        subtitle: 'Regulamentação prática das atividades ministeriais e operacionais',
-        body: '<p class="text-slate-600 mb-4">O Regimento Interno complementa o Estatuto Social, disciplinando o funcionamento diário dos ministérios, departamentos e comissões da igreja.</p>'
-    );
+// Rota 4.1: Download do XML original do Estatuto Social
+$router->get('/estatuto/xml', function () use ($legalController): void {
+    $legalController->downloadEstatutoXml();
+});
+
+// Rota 5: Regimento Interno (Visualizador ou Aviso de Transcrição)
+$router->get('/regimento', function () use ($legalController): void {
+    $legalController->regimento();
+});
+
+// Rota 5.1: Download do XML do Regimento Interno
+$router->get('/regimento/xml', function () use ($legalController): void {
+    $legalController->downloadRegimentoXml();
 });
 
 // Rota 6: Sobre

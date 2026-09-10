@@ -63,7 +63,7 @@ O desenvolvimento deste portal segue a metodologia **Spec-Driven Development (SD
 - [x] [SPEC-WDLC-F3: Modelagem JSON Schema da Agenda](docs/specs/05-modelagem-agenda-json-schema.md) (Issue #5)
 - [x] [SPEC-WDLC-F4: Setup PHP 8.x, Tailwind e Docker](docs/specs/06-setup-aplicacao-php-tailwind.md) (Issue #6)
 - [x] [SPEC-WDLC-F4: Parser e Visualizador Akoma Ntoso em PHP](docs/specs/07-parser-visualizador-akoma-ntoso.md) (Issue #7)
-- [ ] WDLC-F4: Gerador de Calendário .ics (Issue #8)
+- [x] [SPEC-WDLC-F4: Gerador de Calendário .ics](docs/specs/08-programacao-gerador-ical.md) (Issue #8)
 - [ ] WDLC-F4: Views Blade da Home, Sobre e Contato (Issue #9)
 - [ ] WDLC-F5: Suíte PHPUnit e Validação XSD (Issue #10)
 - [ ] WDLC-F6/F7: CI/CD GitHub Actions e Governança Git (Issue #11)

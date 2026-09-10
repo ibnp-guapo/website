@@ -33,84 +33,17 @@ $router->get('/', function (): void {
     );
 });
 
-// Rota 2: Programação
-$router->get('/programacao', function (): void {
-    header('Content-Type: text/html; charset=utf-8');
-    $agendaFile = __DIR__ . '/../data/programacao/agenda.json';
-    $agenda = file_exists($agendaFile) ? json_decode(file_get_contents($agendaFile), true) : null;
-    $cultosHtml = '';
-    
-    if ($agenda && isset($agenda['cultosRegulares'])) {
-        foreach ($agenda['cultosRegulares'] as $evento) {
-            $dia = htmlspecialchars(ucfirst((string) $evento['diaSemana']));
-            $hora = htmlspecialchars((string) $evento['horario']);
-            $titulo = htmlspecialchars((string) $evento['nome']);
-            $desc = htmlspecialchars((string) $evento['descricao']);
-            $cultosHtml .= "
-                <li class=\"border-l-4 border-ibnp-primary pl-4 py-2 bg-slate-50 rounded-r-lg mb-3\">
-                    <div class=\"flex items-center gap-2\">
-                        <span class=\"font-bold text-ibnp-dark\">{$dia} às {$hora}</span>
-                        <span class=\"text-xs font-semibold px-2 py-0.5 rounded bg-orange-100 text-ibnp-secondary\">Regular</span>
-                    </div>
-                    <h4 class=\"text-base font-semibold text-slate-800 mt-1\">{$titulo}</h4>
-                    <p class=\"text-sm text-slate-600\">{$desc}</p>
-                </li>";
-        }
-    }
+// Controller de Programação de Cultos e Calendário iCal
+$programacaoController = new \App\Controllers\ProgramacaoController();
 
-    echo renderPage(
-        title: 'Programação & Cultos - IBN da Paz de Guapó',
-        heading: 'Programação de Cultos e Encontros',
-        subtitle: 'Participe conosco das nossas reuniões semanais de celebração e edificação',
-        body: "<ul class=\"space-y-4 mb-6\">{$cultosHtml}</ul>
-               <div class=\"mt-4\">
-                 <a href=\"/programacao/ical\" class=\"inline-flex items-center gap-2 px-4 py-2 bg-ibnp-primary text-white text-sm font-semibold rounded-lg hover:bg-orange-700 transition shadow-sm\">
-                   📥 Baixar Calendário (.ics)
-                 </a>
-               </div>"
-    );
+// Rota 2: Programação & Cultos
+$router->get('/programacao', function () use ($programacaoController): void {
+    $programacaoController->index();
 });
 
-// Rota 3: iCal
-$router->get('/programacao/ical', function (): void {
-    header('Content-Type: text/calendar; charset=utf-8');
-    header('Content-Disposition: attachment; filename="cultos-ibnp-guapo.ics"');
-    
-    $ical = "BEGIN:VCALENDAR\r\n";
-    $ical .= "VERSION:2.0\r\n";
-    $ical .= "PRODID:-//IBN da Paz de Guapo//Website//PT-BR\r\n";
-    $ical .= "CALSCALE:GREGORIAN\r\n";
-    $ical .= "METHOD:PUBLISH\r\n";
-    $ical .= "X-WR-CALNAME:IBN da Paz de Guapó - Cultos\r\n";
-    $ical .= "X-WR-TIMEZONE:America/Sao_Paulo\r\n";
-    
-    // Culto Quarta
-    $ical .= "BEGIN:VEVENT\r\n";
-    $ical .= "UID:culto-quarta@ibnpguapo.org.br\r\n";
-    $ical .= "DTSTAMP:20260101T000000Z\r\n";
-    $ical .= "RRULE:FREQ=WEEKLY;BYDAY=WE\r\n";
-    $ical .= "DTSTART;TZID=America/Sao_Paulo:20260107T193000\r\n";
-    $ical .= "DTEND;TZID=America/Sao_Paulo:20260107T210000\r\n";
-    $ical .= "SUMMARY:Culto de Oração e Estudo Bíblico\r\n";
-    $ical .= "DESCRIPTION:Reunião semanal para intercessão comunitária e aprofundamento das Escrituras Sagradas.\r\n";
-    $ical .= "LOCATION:Rua Presidente Kennedy, Qd. 21, Lt. 13 - Centro, Guapó - GO\r\n";
-    $ical .= "END:VEVENT\r\n";
-    
-    // Culto Domingo
-    $ical .= "BEGIN:VEVENT\r\n";
-    $ical .= "UID:culto-domingo@ibnpguapo.org.br\r\n";
-    $ical .= "DTSTAMP:20260101T000000Z\r\n";
-    $ical .= "RRULE:FREQ=WEEKLY;BYDAY=SU\r\n";
-    $ical .= "DTSTART;TZID=America/Sao_Paulo:20260104T193000\r\n";
-    $ical .= "DTEND;TZID=America/Sao_Paulo:20260104T213000\r\n";
-    $ical .= "SUMMARY:Celebração da Família\r\n";
-    $ical .= "DESCRIPTION:Culto solene dominical com louvor congregacional, proclamação da Palavra e comunhão familiar.\r\n";
-    $ical .= "LOCATION:Rua Presidente Kennedy, Qd. 21, Lt. 13 - Centro, Guapó - GO\r\n";
-    $ical .= "END:VEVENT\r\n";
-    
-    $ical .= "END:VCALENDAR\r\n";
-    echo $ical;
-    exit;
+// Rota 3: Download de Calendário (.ics / RFC 5545)
+$router->get('/programacao/ical', function () use ($programacaoController): void {
+    $programacaoController->ical();
 });
 
 // Controller de Documentos Legais (Akoma Ntoso 3.0)

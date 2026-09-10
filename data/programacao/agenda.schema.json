@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ibnpguapo.com.br/schemas/agenda.schema.json",
+  "title": "Agenda e Programacao IBN da Paz de Guapo",
+  "description": "Schema de validacao para a programacao de cultos regulares e eventos da IBN da Paz de Guapo",
+  "type": "object",
+  "required": ["organizacao", "cultosRegulares", "eventosEspeciais"],
+  "properties": {
+    "organizacao": {
+      "type": "object",
+      "required": ["nome", "sigla", "cnpj", "timezone", "endereco", "canais"],
+      "properties": {
+        "nome": { "type": "string" },
+        "sigla": { "type": "string" },
+        "cnpj": {
+          "type": "string",
+          "pattern": "^\\d{2}\\.\\d{3}\\.\\d{3}/\\d{4}-\\d{2}$"
+        },
+        "timezone": {
+          "type": "string",
+          "default": "America/Sao_Paulo"
+        },
+        "endereco": {
+          "type": "object",
+          "required": ["logradouro", "bairro", "cidade", "uf", "cep", "latitude", "longitude"],
+          "properties": {
+            "logradouro": { "type": "string" },
+            "bairro": { "type": "string" },
+            "cidade": { "type": "string" },
+            "uf": { "type": "string" },
+            "cep": { "type": "string" },
+            "latitude": { "type": "number" },
+            "longitude": { "type": "number" }
+          }
+        },
+        "canais": {
+          "type": "object",
+          "required": ["telefone", "whatsapp", "instagram"],
+          "properties": {
+            "telefone": { "type": "string" },
+            "whatsapp": { "type": "string", "format": "uri" },
+            "instagram": { "type": "string", "format": "uri" },
+            "youtube": { "type": "string", "format": "uri" }
+          }
+        }
+      }
+    },
+    "cultosRegulares": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "diaSemana",
+          "horario",
+          "duracaoMinutos",
+          "nome",
+          "categoria",
+          "local",
+          "descricao",
+          "transmissaoAoVivo",
+          "rrule"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "diaSemana": {
+            "type": "string",
+            "enum": ["domingo", "quarta-feira"]
+          },
+          "horario": {
+            "type": "string",
+            "pattern": "^([01]\\d|2[0-3]):[0-5]\\d$"
+          },
+          "duracaoMinutos": {
+            "type": "integer",
+            "minimum": 30,
+            "maximum": 240
+          },
+          "nome": { "type": "string" },
+          "categoria": { "type": "string" },
+          "local": { "type": "string" },
+          "descricao": { "type": "string" },
+          "transmissaoAoVivo": { "type": "boolean" },
+          "canalTransmissao": {
+            "type": "string",
+            "format": "uri"
+          },
+          "rrule": {
+            "type": "string",
+            "description": "Especificacao RFC 5545 RRULE para geracao de iCalendar"
+          }
+        }
+      }
+    },
+    "eventosEspeciais": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "nome", "dataInicio", "horarioInicio", "local", "descricao"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "nome": { "type": "string" },
+          "dataInicio": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "dataFim": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "horarioInicio": {
+            "type": "string",
+            "pattern": "^([01]\\d|2[0-3]):[0-5]\\d$"
+          },
+          "horarioFim": {
+            "type": "string",
+            "pattern": "^([01]\\d|2[0-3]):[0-5]\\d$"
+          },
+          "local": { "type": "string" },
+          "ministerioResponsavel": { "type": "string" },
+          "descricao": { "type": "string" }
+        }
+      }
+    }
+  }
+}

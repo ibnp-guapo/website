@@ -1,0 +1,52 @@
+{
+  "$schema": "./agenda.schema.json",
+  "organizacao": {
+    "nome": "Igreja Batista Nacional da Paz de Guapó",
+    "sigla": "IBN da Paz de Guapó",
+    "cnpj": "02.930.019/0001-62",
+    "timezone": "America/Sao_Paulo",
+    "endereco": {
+      "logradouro": "Rua Presidente Kennedy, Qd. 21, Lt. 13",
+      "bairro": "Centro",
+      "cidade": "Guapó",
+      "uf": "GO",
+      "cep": "75350-000",
+      "latitude": -16.8315,
+      "longitude": -49.5317
+    },
+    "canais": {
+      "telefone": "(62) 9870-0089",
+      "whatsapp": "https://wa.me/556298700089",
+      "instagram": "https://instagram.com/ibnp_guapo",
+      "youtube": "https://youtube.com/@ibnpguapo"
+    }
+  },
+  "cultosRegulares": [
+    {
+      "id": "culto-quarta-oracao-ensino",
+      "diaSemana": "quarta-feira",
+      "horario": "19:30",
+      "duracaoMinutos": 90,
+      "nome": "Culto de Oração e Estudo Bíblico",
+      "categoria": "Intercessão e Ensino",
+      "local": "Templo Sede - Rua Presidente Kennedy, Qd. 21, Lt. 13, Centro, Guapó - GO",
+      "descricao": "Momento dedicado à oração congregacional e ao estudo expositivo sistemático das Sagradas Escrituras.",
+      "transmissaoAoVivo": false,
+      "rrule": "FREQ=WEEKLY;BYDAY=WE"
+    },
+    {
+      "id": "culto-domingo-celebracao-familia",
+      "diaSemana": "domingo",
+      "horario": "19:30",
+      "duracaoMinutos": 120,
+      "nome": "Culto de Celebração da Família",
+      "categoria": "Celebração e Louvor",
+      "local": "Templo Sede - Rua Presidente Kennedy, Qd. 21, Lt. 13, Centro, Guapó - GO",
+      "descricao": "Culto congregacional com louvor, adoração, comunhão fraterna e ministração da Palavra de Deus para toda a família.",
+      "transmissaoAoVivo": true,
+      "canalTransmissao": "https://youtube.com/@ibnpguapo",
+      "rrule": "FREQ=WEEKLY;BYDAY=SU"
+    }
+  ],
+  "eventosEspeciais": []
+}

@@ -33,8 +33,19 @@ final class ProgramacaoRoutesTest extends TestCase
         $this->assertStringContainsString('calendar.google.com/calendar/render', $output);
         $this->assertStringContainsString('/programacao/ical', $output);
 
-        // Não deve conter menção a transmissão ao vivo
+        // Deve estender layouts.app com tokens Stitch e elementos canônicos
+        $this->assertStringContainsString('IBN da Paz de Guapó', $output);
+        $this->assertStringContainsString('Plus Jakarta Sans', $output);
+        $this->assertStringContainsString('material-symbols-outlined', $output);
+        $this->assertStringContainsString('church', $output);
+        $this->assertStringContainsString('02.930.019/0001-62', $output);
+        $this->assertStringContainsString('elevation-warm-1', $output);
+
+        // Não deve conter menção a transmissão ao vivo nem artefatos de heredoc legados
         $this->assertStringNotContainsString('Transmissão ao Vivo', $output);
+        $this->assertStringNotContainsString('>P</span>', $output);
+        $this->assertStringNotContainsString('family=Inter', $output);
+        $this->assertStringNotContainsString('bg-slate-900', $output);
     }
 
     public function testLoadAgendaReturnsValidData(): void

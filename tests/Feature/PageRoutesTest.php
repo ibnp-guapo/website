@@ -41,7 +41,8 @@ final class PageRoutesTest extends TestCase
         $this->assertStringContainsString('Contraturno Escolar', $output);
         $this->assertStringContainsString('Centro Comunitário', $output);
         $this->assertStringContainsString('child_care', $output);
-        $this->assertStringContainsString('volunteer_activism', $output);
+        $this->assertStringContainsString('construction', $output);
+        $this->assertStringContainsString('Construção', $output);
         $this->assertStringContainsString('target="_blank"', $output);
         $this->assertStringContainsString('rel="noopener noreferrer"', $output);
     }
@@ -70,8 +71,8 @@ final class PageRoutesTest extends TestCase
         // Validações institucionais da mantenedora da Escola Social (Issue #14)
         $this->assertStringContainsString('Mantenedora da Escola Social de Guapó', $output);
         $this->assertStringContainsString('https://escolasocialguapo.org.br', $output);
-        $this->assertStringContainsString('volunteer_activism', $output);
-        $this->assertStringContainsString('school', $output);
+        $this->assertStringContainsString('construction', $output);
+        $this->assertStringContainsString('construção e estruturação', $output);
 
         // Garante ausência de classes e emojis legados
         $this->assertStringNotContainsString('bg-slate-900', $output);

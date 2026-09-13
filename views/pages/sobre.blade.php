@@ -45,6 +45,35 @@
                     </div>
                 </section>
 
+                <!-- Responsabilidade Social & Mantenedora -->
+                <section>
+                    <span class="text-xs font-bold uppercase tracking-widest text-primary">Ação Comunitária</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-on-surface tracking-tight mt-1 mb-6">Mantenedora da Escola Social de Guapó</h2>
+                    <div class="prose prose-slate max-w-none text-text-muted leading-relaxed space-y-4">
+                        <p>
+                            Entendemos que a fé cristã genuína se expressa no amor prático e no serviço à comunidade. Como parte integral de sua vocação institucional e cidadã no município de Guapó, a IBN da Paz é a entidade mantenedora legal da <strong class="text-on-surface font-bold">Escola Social de Guapó</strong>.
+                        </p>
+                        <p>
+                            A iniciativa acolhe crianças e famílias da comunidade, oferecendo educação infantil de qualidade, reforço pedagógico no contraturno escolar, oficinas culturais e de iniciação artística, além de um centro comunitário com auditório multiuso aberto a projetos de integração humana e cidadania.
+                        </p>
+                    </div>
+                    <div class="mt-6 p-6 rounded-2xl bg-surface-pure border border-outline-variant/30 elevation-warm-1 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-surface-cream-warm/50 text-secondary flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-[24px]">school</span>
+                            </div>
+                            <div>
+                                <h3 class="text-base font-bold text-on-surface">Escola Social de Guapó</h3>
+                                <p class="text-xs text-text-muted">Educação infantil, contraturno escolar e centro comunitário</p>
+                            </div>
+                        </div>
+                        <a href="https://escolasocialguapo.org.br" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-secondary text-on-secondary text-xs font-bold shadow-sm hover:bg-secondary/90 transition-all active:scale-95 whitespace-nowrap" title="Acessar portal da Escola Social de Guapó (abre em nova aba)">
+                            <span>Conhecer o Projeto Social</span>
+                            <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                        </a>
+                    </div>
+                </section>
+
                 <!-- Confissão de Fé e Pilares -->
                 <section>
                     <span class="text-xs font-bold uppercase tracking-widest text-secondary">Doutrina &amp; Teologia</span>
@@ -109,6 +138,20 @@
                             <span>ORMIBAN - Seção de Goiás</span>
                         </div>
                     </div>
+                </div>
+
+                <!-- Card Escola Social Mantida -->
+                <div class="bg-surface-pure rounded-3xl border border-outline-variant/30 p-8 elevation-warm-1">
+                    <span class="text-xs font-bold uppercase tracking-widest text-secondary block mb-3">Impacto Social</span>
+                    <h3 class="text-xl font-extrabold text-on-surface mb-3">Escola Social de Guapó</h3>
+                    <p class="text-xs text-text-muted leading-relaxed mb-6 font-normal">
+                        Conheça o projeto comunitário mantido pela igreja, focado em educação infantil e contraturno escolar para crianças e famílias do município.
+                    </p>
+                    <a href="https://escolasocialguapo.org.br" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-primary text-on-primary text-xs font-bold shadow-sm hover:bg-secondary-container transition-all active:scale-95">
+                        <span class="material-symbols-outlined text-[18px]">volunteer_activism</span>
+                        <span>Visitar Escola Social</span>
+                        <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                    </a>
                 </div>
 
                 <!-- Card Governança Aberta -->

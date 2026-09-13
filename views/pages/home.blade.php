@@ -101,7 +101,10 @@
         </div>
         <div class="flex items-center gap-6 text-xs font-bold text-secondary">
             <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">menu_book</span> EBD aos Domingos 09:00</span>
-            <span class="hidden sm:flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">volunteer_activism</span> Ação Social e Oração</span>
+            <a href="#escola-social" class="hidden sm:flex items-center gap-1.5 hover:underline transition-all">
+                <span class="material-symbols-outlined text-[16px]">volunteer_activism</span>
+                <span>Escola Social de Guapó</span>
+            </a>
         </div>
     </div>
 </div>
@@ -221,6 +224,107 @@
                     </a>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- COMMUNITY & SOCIAL INITIATIVE SECTION ("Escola Social de Guapó") -->
+<section class="py-16 md:py-24 bg-surface-cream-warm/25 border-y border-outline-variant/30" id="escola-social">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-surface-cream-light border border-outline-variant/50 text-secondary text-xs font-bold mb-3">
+                <span class="material-symbols-outlined text-[16px]">volunteer_activism</span>
+                <span>Iniciativa Social e Cidadã</span>
+            </div>
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-on-surface">
+                Escola Social de Guapó
+            </h2>
+            <p class="text-sm sm:text-base text-text-muted mt-2 leading-relaxed">
+                A IBN da Paz de Guapó é a mantenedora legal da Escola Social de Guapó. Uma instituição vocacionada ao acolhimento integral, formação de valores cristãos e transformação do futuro das famílias de Guapó-GO.
+            </p>
+        </div>
+
+        <!-- 3 Pillars Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+            <!-- Pillar 1: Educação Infantil -->
+            <div class="p-6 rounded-2xl bg-surface-pure border border-outline-variant/30 elevation-warm-1 flex flex-col justify-between hover:border-secondary transition-all duration-300">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-surface-cream-warm/50 text-secondary flex items-center justify-center mb-4">
+                        <span class="material-symbols-outlined text-[28px]">child_care</span>
+                    </div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-secondary block mb-1">Primeira Infância</span>
+                    <h3 class="text-xl font-bold text-on-surface mb-2">Educação Infantil</h3>
+                    <p class="text-sm text-text-muted leading-relaxed mb-4">
+                        Ambiente acolhedor, seguro e lúdico para os primeiros passos da jornada educacional, cultivando valores humanos, criatividade e amor ao aprendizado.
+                    </p>
+                </div>
+                <div class="pt-3 border-t border-outline-variant/20 flex items-center gap-2 text-xs font-semibold text-on-surface">
+                    <span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+                    <span>Acolhimento afetivo e pedagógico</span>
+                </div>
+            </div>
+
+            <!-- Pillar 2: Contraturno Escolar -->
+            <div class="p-6 rounded-2xl bg-surface-pure border border-outline-variant/30 elevation-warm-1 flex flex-col justify-between hover:border-primary transition-all duration-300">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-surface-cream-warm/50 text-primary flex items-center justify-center mb-4">
+                        <span class="material-symbols-outlined text-[28px]">school</span>
+                    </div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-primary block mb-1">Apoio Educacional</span>
+                    <h3 class="text-xl font-bold text-on-surface mb-2">Contraturno Escolar</h3>
+                    <p class="text-sm text-text-muted leading-relaxed mb-4">
+                        Reforço pedagógico, alfabetização, oficinas culturais, artes e iniciação esportiva, protegendo crianças e adolescentes contra a vulnerabilidade social.
+                    </p>
+                </div>
+                <div class="pt-3 border-t border-outline-variant/20 flex items-center gap-2 text-xs font-semibold text-on-surface">
+                    <span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+                    <span>Reforço escolar e oficinas práticas</span>
+                </div>
+            </div>
+
+            <!-- Pillar 3: Centro Comunitário & Auditório -->
+            <div class="p-6 rounded-2xl bg-surface-pure border border-outline-variant/30 elevation-warm-1 flex flex-col justify-between hover:border-secondary transition-all duration-300">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-surface-cream-warm/50 text-secondary flex items-center justify-center mb-4">
+                        <span class="material-symbols-outlined text-[28px]">diversity_3</span>
+                    </div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-secondary block mb-1">Integração & Comunidade</span>
+                    <h3 class="text-xl font-bold text-on-surface mb-2">Centro Comunitário &amp; Auditório</h3>
+                    <p class="text-sm text-text-muted leading-relaxed mb-4">
+                        Espaço multiuso com auditório estruturado para palestras, encontros familiares, cursos de capacitação profissional e reuniões comunitárias.
+                    </p>
+                </div>
+                <div class="pt-3 border-t border-outline-variant/20 flex items-center gap-2 text-xs font-semibold text-on-surface">
+                    <span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+                    <span>Auditório multiuso para toda Guapó</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Callout Banner with External Link -->
+        <div class="bg-surface-pure rounded-3xl p-6 sm:p-8 md:p-10 border border-outline-variant/40 elevation-warm-1 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-4">
+                <div class="w-14 h-14 rounded-2xl bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-sm">
+                    <span class="material-symbols-outlined text-[32px]">handshake</span>
+                </div>
+                <div>
+                    <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-cream-light text-secondary text-[11px] font-bold mb-1">
+                        <span class="material-symbols-outlined text-[14px]">verified</span>
+                        <span>Mantenedora Oficial: IBN da Paz de Guapó (CNPJ 02.930.019/0001-62)</span>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-on-surface">
+                        Conheça os projetos, matricule ou apoie a Escola Social
+                    </h3>
+                    <p class="text-xs sm:text-sm text-text-muted mt-1 leading-relaxed">
+                        Acesse a plataforma oficial para conferir fotos das instalações, corpo docente, notícias e canais diretos de contato da escola.
+                    </p>
+                </div>
+            </div>
+            <a href="https://escolasocialguapo.org.br" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-primary text-on-primary text-sm font-bold px-7 py-3.5 rounded-xl shadow-md hover:bg-secondary-container transition-all duration-200 active:scale-95 whitespace-nowrap shrink-0" title="Acessar portal da Escola Social de Guapó (abre em nova aba)">
+                <span>Conhecer a Escola Social</span>
+                <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+            </a>
         </div>
     </div>
 </section>

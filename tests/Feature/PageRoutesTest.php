@@ -33,6 +33,17 @@ final class PageRoutesTest extends TestCase
         $this->assertStringContainsString('Regimento Interno', $output);
         $this->assertStringContainsString('Akoma Ntoso', $output);
         $this->assertStringContainsString('wa.me/556298700089', $output);
+
+        // Validações da seção e links da Escola Social de Guapó (Issue #14)
+        $this->assertStringContainsString('Escola Social de Guapó', $output);
+        $this->assertStringContainsString('https://escolasocialguapo.org.br', $output);
+        $this->assertStringContainsString('Educação Infantil', $output);
+        $this->assertStringContainsString('Contraturno Escolar', $output);
+        $this->assertStringContainsString('Centro Comunitário', $output);
+        $this->assertStringContainsString('child_care', $output);
+        $this->assertStringContainsString('volunteer_activism', $output);
+        $this->assertStringContainsString('target="_blank"', $output);
+        $this->assertStringContainsString('rel="noopener noreferrer"', $output);
     }
 
     public function testSobreRendersHistoryAndCbnAffiliation(): void
@@ -55,6 +66,12 @@ final class PageRoutesTest extends TestCase
         $this->assertStringContainsString('account_balance', $output);
         $this->assertStringContainsString('assignment', $output);
         $this->assertStringContainsString('elevation-warm-1', $output);
+
+        // Validações institucionais da mantenedora da Escola Social (Issue #14)
+        $this->assertStringContainsString('Mantenedora da Escola Social de Guapó', $output);
+        $this->assertStringContainsString('https://escolasocialguapo.org.br', $output);
+        $this->assertStringContainsString('volunteer_activism', $output);
+        $this->assertStringContainsString('school', $output);
 
         // Garante ausência de classes e emojis legados
         $this->assertStringNotContainsString('bg-slate-900', $output);

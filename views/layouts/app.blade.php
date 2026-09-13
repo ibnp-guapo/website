@@ -42,6 +42,10 @@
                 <a href="/estatuto" class="pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/estatuto' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Estatuto Social</a>
                 <a href="/regimento" class="pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/regimento' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Regimento Interno</a>
                 <a href="/sobre" class="pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/sobre' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Sobre Nós</a>
+                <a href="https://escolasocialguapo.org.br" target="_blank" rel="noopener noreferrer" class="pb-1 transition-all duration-200 text-on-surface hover:text-primary inline-flex items-center gap-1" title="Escola Social de Guapó (abre em nova aba)">
+                    <span>Ação Social</span>
+                    <span class="material-symbols-outlined text-[14px] text-text-muted">open_in_new</span>
+                </a>
                 <a href="/contato" class="pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/contato' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Contato</a>
             </nav>
 
@@ -66,6 +70,13 @@
             <a href="/estatuto" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/estatuto' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Estatuto Social</a>
             <a href="/regimento" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/regimento' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Regimento Interno</a>
             <a href="/sobre" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/sobre' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Sobre Nós</a>
+            <a href="https://escolasocialguapo.org.br" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between py-2 text-sm font-semibold text-on-surface hover:text-primary" title="Escola Social de Guapó (abre em nova aba)">
+                <span class="flex items-center gap-1.5">
+                    <span class="material-symbols-outlined text-[18px] text-secondary">volunteer_activism</span>
+                    <span>Ação Social (Escola Social)</span>
+                </span>
+                <span class="material-symbols-outlined text-[16px] text-text-muted">open_in_new</span>
+            </a>
             <a href="/contato" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/contato' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Contato</a>
             <div class="pt-2 border-t border-outline-variant/30">
                 <a href="/contato" class="flex items-center justify-center gap-1.5 w-full bg-primary text-on-primary py-2.5 rounded-xl text-xs font-bold shadow-sm">
@@ -95,7 +106,7 @@
                         <span class="text-base font-bold text-on-surface">IBN da Paz de Guapó</span>
                     </div>
                     <p class="text-xs text-text-muted leading-relaxed">
-                        Igreja Batista Nacional da Paz de Guapó. Uma comunidade de fé, acolhimento e compromisso com o Evangelho da Graça, filiada à Convenção Batista Nacional (CBN) e à ORMIBAN Goiás.
+                        Igreja Batista Nacional da Paz de Guapó. Uma comunidade de fé, acolhimento e compromisso com o Evangelho da Graça, mantenedora legal da Escola Social de Guapó, filiada à Convenção Batista Nacional (CBN) e à ORMIBAN Goiás.
                     </p>
                     <div class="text-[11px] font-bold text-secondary">
                         CNPJ: 02.930.019/0001-62 • Fundação em 1999 • Guapó-GO
@@ -111,6 +122,10 @@
                         <a class="text-text-muted hover:text-primary transition-colors duration-200" href="/estatuto">Estatuto Social</a>
                         <a class="text-text-muted hover:text-primary transition-colors duration-200" href="/regimento">Regimento Interno</a>
                         <a class="text-text-muted hover:text-primary transition-colors duration-200" href="/sobre">Sobre Nós</a>
+                        <a class="text-text-muted hover:text-primary transition-colors duration-200 inline-flex items-center gap-1" href="https://escolasocialguapo.org.br" target="_blank" rel="noopener noreferrer" title="Escola Social de Guapó (abre em nova aba)">
+                            <span>Escola Social</span>
+                            <span class="material-symbols-outlined text-[12px]">open_in_new</span>
+                        </a>
                         <a class="text-text-muted hover:text-primary transition-colors duration-200" href="/contato">Contato</a>
                         <a class="text-text-muted hover:text-primary transition-colors duration-200" href="/programacao.ics">Baixar Calendário (.ics)</a>
                         <a class="text-text-muted hover:text-primary transition-colors duration-200" href="/estatuto/xml">Estatuto XML</a>
@@ -140,6 +155,11 @@
                     <a class="hover:text-primary transition-colors" href="/estatuto">Estatuto Social</a>
                     <span>•</span>
                     <a class="hover:text-primary transition-colors" href="/regimento">Regimento Interno</a>
+                    <span>•</span>
+                    <a class="hover:text-primary transition-colors inline-flex items-center gap-0.5" href="https://escolasocialguapo.org.br" target="_blank" rel="noopener noreferrer">
+                        <span>Escola Social</span>
+                        <span class="material-symbols-outlined text-[12px]">open_in_new</span>
+                    </a>
                     <span>•</span>
                     <a class="hover:text-primary transition-colors" href="/contato">Localização</a>
                 </div>

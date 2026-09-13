@@ -47,6 +47,26 @@ final class PageRoutesTest extends TestCase
         $this->assertStringContainsString('Convenção Batista Nacional (CBN)', $output);
         $this->assertStringContainsString('ORMIBAN', $output);
         $this->assertStringContainsString('02.930.019/0001-62', $output);
+        $this->assertStringContainsString('material-symbols-outlined', $output);
+        $this->assertStringContainsString('menu_book', $output);
+        $this->assertStringContainsString('auto_awesome', $output);
+        $this->assertStringContainsString('cross', $output);
+        $this->assertStringContainsString('diversity_1', $output);
+        $this->assertStringContainsString('account_balance', $output);
+        $this->assertStringContainsString('assignment', $output);
+        $this->assertStringContainsString('elevation-warm-1', $output);
+
+        // Garante ausência de classes e emojis legados
+        $this->assertStringNotContainsString('bg-slate-900', $output);
+        $this->assertStringNotContainsString('bg-ibnp-primary', $output);
+        $this->assertStringNotContainsString('text-ibnp-primary', $output);
+        $this->assertStringNotContainsString('border-slate-200', $output);
+        $this->assertStringNotContainsString('📖', $output);
+        $this->assertStringNotContainsString('🕊️', $output);
+        $this->assertStringNotContainsString('✝️', $output);
+        $this->assertStringNotContainsString('🤝', $output);
+        $this->assertStringNotContainsString('🏛️', $output);
+        $this->assertStringNotContainsString('📋', $output);
     }
 
     public function testContatoRendersLocationAndChannels(): void
@@ -62,5 +82,48 @@ final class PageRoutesTest extends TestCase
         $this->assertStringContainsString('@ibnp_guapo', $output);
         $this->assertStringContainsString('@ibnpguapo', $output);
         $this->assertStringContainsString('google.com/maps/embed', $output);
+        $this->assertStringContainsString('material-symbols-outlined', $output);
+        $this->assertStringContainsString('church', $output);
+        $this->assertStringContainsString('chat', $output);
+        $this->assertStringContainsString('call', $output);
+        $this->assertStringContainsString('directions', $output);
+        $this->assertStringContainsString('photo_camera', $output);
+        $this->assertStringContainsString('play_circle', $output);
+        $this->assertStringContainsString('elevation-warm-1', $output);
+
+        // Garante ausência de classes e emojis legados
+        $this->assertStringNotContainsString('bg-slate-900', $output);
+        $this->assertStringNotContainsString('bg-ibnp-primary', $output);
+        $this->assertStringNotContainsString('border-slate-200', $output);
+        $this->assertStringNotContainsString('📍', $output);
+        $this->assertStringNotContainsString('🏛️', $output);
+        $this->assertStringNotContainsString('💬', $output);
+        $this->assertStringNotContainsString('📞', $output);
+        $this->assertStringNotContainsString('📸', $output);
+        $this->assertStringNotContainsString('▶️', $output);
+    }
+
+    public function testNotFoundRendersStitchViewWithoutLegacyArtifacts(): void
+    {
+        ob_start();
+        $this->controller->notFound();
+        $output = (string) ob_get_clean();
+
+        $this->assertNotEmpty($output);
+        $this->assertStringContainsString('Página Não Encontrada', $output);
+        $this->assertStringContainsString('Erro 404', $output);
+        $this->assertStringContainsString('Voltar para o Início', $output);
+        $this->assertStringContainsString('Ver Programação', $output);
+        $this->assertStringContainsString('material-symbols-outlined', $output);
+        $this->assertStringContainsString('travel_explore', $output);
+        $this->assertStringContainsString('home', $output);
+        $this->assertStringContainsString('calendar_month', $output);
+        $this->assertStringContainsString('elevation-warm-1', $output);
+
+        // Garante ausência de classes e emojis legados
+        $this->assertStringNotContainsString('🕊️', $output);
+        $this->assertStringNotContainsString('bg-slate-100', $output);
+        $this->assertStringNotContainsString('bg-ibnp-primary', $output);
+        $this->assertStringNotContainsString('border-slate-200', $output);
     }
 }

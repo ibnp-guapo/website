@@ -4,75 +4,82 @@
 @section('meta_description', 'Endereço, WhatsApp, redes sociais e mapa de localização da Igreja Batista Nacional da Paz no Centro de Guapó-GO.')
 
 @section('content')
-    <!-- Header Hero Contato -->
-    <section class="bg-slate-900 text-white py-16">
+    <!-- Header Hero Contato (Stitch Warm Fellowship) -->
+    <section class="relative overflow-hidden py-12 md:py-16 bg-gradient-to-b from-surface-cream-light via-[#FFFDF9] to-surface-cream-light border-b border-outline-variant/30">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl">
-                <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-orange-600/30 text-orange-300 border border-orange-500/30 mb-4">
-                    📍 Canais Oficiais & Localização
-                </span>
-                <h1 class="text-3xl sm:text-5xl font-black text-white tracking-tight mb-4">
+            <div class="max-w-3xl flex flex-col items-start gap-4">
+                <div class="inline-flex items-center gap-2 bg-surface-cream-warm/40 border border-outline-variant/60 px-3.5 py-1.5 rounded-full text-on-surface">
+                    <span class="material-symbols-outlined text-secondary text-[16px]">location_on</span>
+                    <span class="text-xs font-bold uppercase tracking-wider text-secondary">Canais Oficiais &amp; Localização</span>
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-extrabold text-on-surface leading-[1.15] tracking-tight">
                     Entre em Contato Conosco
                 </h1>
-                <p class="text-slate-300 text-base sm:text-lg leading-relaxed font-light">
+                <p class="text-base sm:text-lg text-text-muted leading-relaxed">
                     Estamos à disposição para receber você e sua família, tirar dúvidas e orar pelas suas necessidades. Venha nos fazer uma visita em Guapó-GO!
                 </p>
             </div>
         </div>
     </section>
 
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
             
             <!-- Coluna de Informações e Contatos -->
             <div class="lg:col-span-5 space-y-8">
                 <!-- Card Endereço -->
-                <div class="p-8 rounded-3xl bg-white border border-slate-200 shadow-xs">
-                    <span class="text-2xl mb-3 block">🏛️</span>
-                    <h3 class="text-xl font-black text-slate-900 mb-2">Templo Sede</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                <div class="p-8 rounded-3xl bg-surface-pure border border-outline-variant/30 elevation-warm-1">
+                    <div class="w-10 h-10 rounded-xl bg-surface-cream-warm/50 text-secondary flex items-center justify-center mb-4">
+                        <span class="material-symbols-outlined text-[24px]">church</span>
+                    </div>
+                    <h3 class="text-xl font-extrabold text-on-surface mb-2">Templo Sede</h3>
+                    <p class="text-sm text-text-muted leading-relaxed mb-4">
                         Rua Presidente Kennedy, Qd. 21, Lt. 13<br>
                         Centro, Guapó – GO<br>
                         CEP: 75350-000
                     </p>
-                    <a href="https://maps.google.com/?q=Rua+Presidente+Kennedy+Qd+21+Lt+13+Centro+Guapó+GO" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-ibnp-primary hover:underline">
+                    <a href="https://maps.google.com/?q=Rua+Presidente+Kennedy+Qd+21+Lt+13+Centro+Guapó+GO" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-secondary hover:text-primary transition-colors">
+                        <span class="material-symbols-outlined text-[16px]">directions</span>
                         <span>Abrir rota no Google Maps</span>
-                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                     </a>
                 </div>
 
                 <!-- Card WhatsApp -->
-                <div class="p-8 rounded-3xl bg-white border border-slate-200 shadow-xs">
-                    <span class="text-2xl mb-3 block">💬</span>
-                    <h3 class="text-xl font-black text-slate-900 mb-2">WhatsApp & Telefone</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                <div class="p-8 rounded-3xl bg-surface-pure border border-outline-variant/30 elevation-warm-1">
+                    <div class="w-10 h-10 rounded-xl bg-surface-cream-warm/50 text-secondary flex items-center justify-center mb-4">
+                        <span class="material-symbols-outlined text-[24px]">chat</span>
+                    </div>
+                    <h3 class="text-xl font-extrabold text-on-surface mb-2">WhatsApp &amp; Telefone</h3>
+                    <p class="text-sm text-text-muted leading-relaxed mb-6">
                         Converse diretamente com nossa equipe pastoral para pedidos de oração, aconselhamento ou informações sobre as reuniões.
                     </p>
-                    <div class="text-base font-bold text-slate-900 mb-4">
-                        📞 (62) 9870-0089
+                    <div class="flex items-center gap-2 text-base font-bold text-on-surface mb-6">
+                        <span class="material-symbols-outlined text-secondary text-[20px]">call</span>
+                        <span>(62) 9870-0089</span>
                     </div>
-                    <a href="https://wa.me/556298700089?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20IBN%20da%20Paz%20de%20Guap%C3%B3." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-ibnp-primary text-white text-xs font-bold hover:bg-orange-700 transition shadow-sm">
+                    <a href="https://wa.me/556298700089?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20IBN%20da%20Paz%20de%20Guap%C3%B3." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-primary text-on-primary text-xs sm:text-sm font-bold shadow-md hover:bg-secondary-container transition-all active:scale-95 w-full sm:w-auto">
+                        <span class="material-symbols-outlined text-[18px]">chat</span>
                         <span>Enviar Mensagem no WhatsApp</span>
                     </a>
                 </div>
 
                 <!-- Redes Sociais -->
-                <div class="p-8 rounded-3xl bg-slate-900 text-white shadow-xs">
-                    <h3 class="text-lg font-black text-white mb-4">Redes Sociais Oficiais</h3>
-                    <div class="space-y-4 text-xs font-semibold">
-                        <a href="https://instagram.com/ibnp_guapo" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-3 rounded-xl bg-slate-800 hover:bg-slate-700 transition">
-                            <span class="flex items-center gap-2">
-                                <span>📸 Instagram:</span>
-                                <span class="text-orange-300">@ibnp_guapo</span>
+                <div class="p-8 rounded-3xl bg-surface-pure border border-outline-variant/30 elevation-warm-1">
+                    <h3 class="text-lg font-extrabold text-on-surface mb-4">Redes Sociais Oficiais</h3>
+                    <div class="space-y-3">
+                        <a href="https://instagram.com/ibnp_guapo" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-3.5 rounded-xl bg-surface-cream-light border border-outline-variant/30 hover:border-secondary transition-all text-on-surface group">
+                            <span class="flex items-center gap-2.5">
+                                <span class="material-symbols-outlined text-secondary text-[20px]">photo_camera</span>
+                                <span class="text-xs font-semibold">Instagram: <strong class="text-secondary font-bold">@ibnp_guapo</strong></span>
                             </span>
-                            <span class="text-slate-400">&rarr;</span>
+                            <span class="material-symbols-outlined text-text-muted group-hover:text-primary text-[18px] transition-colors">arrow_forward</span>
                         </a>
-                        <a href="https://youtube.com/@ibnpguapo" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-3 rounded-xl bg-slate-800 hover:bg-slate-700 transition">
-                            <span class="flex items-center gap-2">
-                                <span>▶️ YouTube:</span>
-                                <span class="text-orange-300">@ibnpguapo</span>
+                        <a href="https://youtube.com/@ibnpguapo" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-3.5 rounded-xl bg-surface-cream-light border border-outline-variant/30 hover:border-secondary transition-all text-on-surface group">
+                            <span class="flex items-center gap-2.5">
+                                <span class="material-symbols-outlined text-primary text-[20px]">play_circle</span>
+                                <span class="text-xs font-semibold">YouTube: <strong class="text-secondary font-bold">@ibnpguapo</strong></span>
                             </span>
-                            <span class="text-slate-400">&rarr;</span>
+                            <span class="material-symbols-outlined text-text-muted group-hover:text-primary text-[18px] transition-colors">arrow_forward</span>
                         </a>
                     </div>
                 </div>
@@ -80,12 +87,12 @@
 
             <!-- Coluna de Mapa e Orientações -->
             <div class="lg:col-span-7 space-y-8">
-                <div class="bg-white rounded-3xl border border-slate-200 p-8 shadow-xs">
-                    <h3 class="text-2xl font-black text-slate-900 mb-2">Localização no Mapa</h3>
-                    <p class="text-sm text-slate-600 mb-6">
+                <div class="bg-surface-pure rounded-3xl border border-outline-variant/30 p-8 elevation-warm-1">
+                    <h3 class="text-2xl font-extrabold text-on-surface mb-2">Localização no Mapa</h3>
+                    <p class="text-sm text-text-muted mb-6">
                         Estamos localizados no Centro de Guapó-GO, com fácil acesso pela Avenida Principal da cidade e estacionamento no entorno.
                     </p>
-                    <div class="rounded-2xl overflow-hidden border border-slate-200 aspect-[4/3] bg-slate-100">
+                    <div class="rounded-2xl overflow-hidden border border-outline-variant/30 aspect-[4/3] bg-surface-cream-light">
                         <iframe 
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3820.5!2d-49.5317!3d-16.8315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDQ5JzUzLjQiUyA0OcKwMzEnNTQuMSJX!5e0!3m2!1spt-BR!2sbr!4v1700000000000" 
                             width="100%" 
@@ -100,17 +107,23 @@
                 </div>
 
                 <!-- Resumo de Cultos para Visitantes -->
-                <div class="p-8 rounded-3xl bg-orange-50/60 border border-orange-200/80">
-                    <span class="text-xs font-bold uppercase tracking-widest text-ibnp-primary">Horários das Reuniões</span>
-                    <h4 class="text-xl font-black text-slate-900 mt-1 mb-4">Esperamos por Você!</h4>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-semibold text-slate-700">
-                        <div class="p-3 bg-white rounded-xl border border-orange-200/50">
-                            <span class="block text-ibnp-primary font-black uppercase mb-1">Quartas-feiras</span>
-                            <span>19:30 às 21:00 • Oração e Estudo</span>
+                <div class="p-8 rounded-3xl bg-surface-cream-warm/30 border border-outline-variant/40 elevation-warm-1">
+                    <span class="text-xs font-bold uppercase tracking-widest text-primary">Horários das Reuniões</span>
+                    <h4 class="text-xl font-extrabold text-on-surface mt-1 mb-4">Esperamos por Você!</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-4 bg-surface-pure rounded-xl border border-outline-variant/30">
+                            <span class="text-primary font-bold uppercase text-xs mb-1 flex items-center gap-1.5">
+                                <span class="material-symbols-outlined text-[16px]">alarm</span>
+                                Quartas-feiras
+                            </span>
+                            <span class="text-xs font-semibold text-on-surface">19:30 às 21:00 • Oração e Estudo</span>
                         </div>
-                        <div class="p-3 bg-white rounded-xl border border-orange-200/50">
-                            <span class="block text-ibnp-primary font-black uppercase mb-1">Domingos</span>
-                            <span>19:30 às 21:00 • Celebração da Família</span>
+                        <div class="p-4 bg-surface-pure rounded-xl border border-outline-variant/30">
+                            <span class="text-primary font-bold uppercase text-xs mb-1 flex items-center gap-1.5">
+                                <span class="material-symbols-outlined text-[16px]">alarm</span>
+                                Domingos
+                            </span>
+                            <span class="text-xs font-semibold text-on-surface">19:30 às 21:00 • Celebração da Família</span>
                         </div>
                     </div>
                 </div>

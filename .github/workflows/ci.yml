@@ -42,16 +42,24 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.3'
-          extensions: mbstring, xml, ctype, json, zip
+          extensions: mbstring, xml, dom, ctype, json, zip
 
       - name: Validar Composer Config
         run: |
           composer validate --strict
 
+      - name: Instalar Dependências Composer
+        run: |
+          composer install --prefer-dist --no-progress --no-interaction
+
       - name: Lint PHP Files
         run: |
           find public -name "*.php" -exec php -l {} \;
           if [ -d "src" ]; then find src -name "*.php" -exec php -l {} \;; fi
+
+      - name: Executar Testes PHPUnit
+        run: |
+          composer test
 
   validate-assets:
     name: Compilar e Validar Tailwind CSS

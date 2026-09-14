@@ -5,7 +5,9 @@
   "description": "Website institucional da Igreja Batista Nacional da Paz de Guapó",
   "scripts": {
     "dev:css": "tailwindcss -i ./public/assets/css/input.css -o ./public/assets/css/app.css --watch",
-    "build:css": "tailwindcss -i ./public/assets/css/input.css -o ./public/assets/css/app.css --minify"
+    "build:css": "tailwindcss -i ./public/assets/css/input.css -o ./public/assets/css/app.css --minify",
+    "audit:a11y": "node scripts/audit_accessibility.js",
+    "test": "npm run audit:a11y"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",

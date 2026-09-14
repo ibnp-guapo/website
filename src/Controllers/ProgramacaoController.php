@@ -101,7 +101,7 @@ final class ProgramacaoController
         header('Content-Disposition: attachment; filename="cultos-ibnp-guapo.ics"');
         header('Cache-Control: no-cache, no-store, max-age=0, must-revalidate');
         echo $icalContent;
-        exit;
+        return;
     }
 
     /**

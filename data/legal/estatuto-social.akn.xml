@@ -57,9 +57,9 @@
         </article>
         <article eId="art_2">
           <num>Art. 2º</num>
-          <content>
+          <intro>
             <p>A Igreja Batista Nacional da Paz de Guapó, doravante neste estatuto designada simplesmente igreja, reconhece a Jesus Cristo como seu único Senhor, tendo a Bíblia Sagrada como única regra de fé, prática e disciplina, e por uma genuína renovação espiritual, crê no batismo com o Espírito Santo e nos dons espirituais, como realidade para a igreja de Cristo no mundo.</p>
-          </content>
+          </intro>
           <paragraph eId="art_2_par_1">
             <num>§ 1º</num>
             <content>
@@ -98,9 +98,9 @@
         <heading>Dos Membros da Igreja, Seus Direitos e Deveres</heading>
         <article eId="art_3">
           <num>Art. 3º</num>
-          <content>
+          <intro>
             <p>A igreja compõe-se de pessoas físicas, no gozo de suas faculdades e no exercício de seus direitos e obrigações, que aceitarão livre e conscientemente o seu corpo de doutrina e sua disciplina, sem distinção de qualquer por ela admitidos na forma deste estatuto.</p>
-          </content>
+          </intro>
           <paragraph eId="art_3_par_1">
             <num>§ 1º</num>
             <content>
@@ -122,9 +122,9 @@
         </article>
         <article eId="art_4">
           <num>Art. 4º</num>
-          <content>
+          <intro>
             <p>A exclusão do rol de membros por qualquer motivo determinará a perda dos direitos e prerrogativas asseguradas ao membro; bem como a não restituição de suas contribuições com dízimos e ofertas à igreja.</p>
-          </content>
+          </intro>
           <paragraph eId="art_4_par_1">
             <num>§ 1º</num>
             <intro>
@@ -205,9 +205,9 @@
         </article>
         <article eId="art_6">
           <num>Art. 6º</num>
-          <content>
+          <intro>
             <p>A assembleia geral é o órgão máximo da administração superior da igreja, sempre presidida pelo Pastor Presidente, sendo competente para tratar de forma soberana sobre qualquer assunto de interesse geral, podendo ser ordinária ou extraordinária, convocada previamente com prazo mínimo de 30 (trinta) dias.</p>
-          </content>
+          </intro>
           <paragraph eId="art_6_par_1">
             <num>§ 1º</num>
             <content>

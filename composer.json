@@ -25,6 +25,7 @@
   },
   "scripts": {
     "test": "phpunit",
+    "test:a11y": "node scripts/audit_accessibility.js",
     "serve": "php -S 0.0.0.0:8000 -t public"
   }
 }

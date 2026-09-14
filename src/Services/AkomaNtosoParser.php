@@ -138,8 +138,8 @@ final class AkomaNtosoParser
                 $artNumNode = $xpath->query('akn:num', $articleElement)->item(0);
                 $artNum = $artNumNode ? trim($artNumNode->textContent) : '';
 
-                // Caput content
-                $contentNode = $xpath->query('akn:content/akn:p | akn:content', $articleElement)->item(0);
+                // Caput content (suporta intro e content conforme Akoma Ntoso 3.0)
+                $contentNode = $xpath->query('akn:intro/akn:p | akn:intro | akn:content/akn:p | akn:content', $articleElement)->item(0);
                 $artContent = $contentNode ? trim($contentNode->textContent) : '';
 
                 // Sub-cláusulas (parágrafos, incisos, alíneas)

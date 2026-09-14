@@ -72,7 +72,7 @@ final class LegalDocController
         header('Content-Type: application/xml; charset=utf-8');
         header('Content-Disposition: attachment; filename="estatuto-social.akn.xml"');
         readfile($filePath);
-        exit;
+        return;
     }
 
     /**
@@ -125,6 +125,6 @@ final class LegalDocController
         header('Content-Type: application/xml; charset=utf-8');
         header('Content-Disposition: attachment; filename="regimento-interno.akn.xml"');
         readfile($filePath);
-        exit;
+        return;
     }
 }

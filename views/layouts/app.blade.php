@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Design System CSS -->
-    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="stylesheet" href="/assets/css/app.css?v=1.0.1">
     <link rel="icon" type="image/png" href="/assets/images/logo-ibnp.png">
 
     @yield('head')
@@ -27,8 +27,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
             <!-- Brand Logo & Identity -->
             <a href="/" class="flex items-center gap-3 group">
-                <div class="w-11 h-11 rounded-xl bg-white p-1 flex items-center justify-center shadow-xs border border-outline-variant/40 group-hover:scale-105 transition-transform duration-200 overflow-hidden">
-                    <img src="/assets/images/logo-ibnp.png" alt="Logo IBN da Paz de Guapó" class="w-full h-full object-contain">
+                <div class="w-11 h-11 shrink-0 rounded-xl bg-white p-1 flex items-center justify-center shadow-xs border border-outline-variant/40 group-hover:scale-105 transition-transform duration-200 overflow-hidden" style="width: 44px; height: 44px; min-width: 44px; min-height: 44px; max-width: 44px; max-height: 44px;">
+                    <img src="/assets/images/logo-ibnp.png" alt="Logo IBN da Paz de Guapó" width="44" height="44" class="w-full h-full object-contain" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                 </div>
                 <div class="flex flex-col">
                     <span class="text-base sm:text-lg font-bold text-on-surface tracking-tight leading-tight">IBN da Paz de Guapó</span>
@@ -101,8 +101,8 @@
                 <!-- Church Identity Column -->
                 <div class="md:col-span-5 space-y-3">
                     <div class="flex items-center gap-2.5">
-                        <div class="w-9 h-9 rounded-xl bg-white p-1 flex items-center justify-center shadow-xs border border-outline-variant/30">
-                            <img src="/assets/images/logo-ibnp.png" alt="Logo IBN da Paz" class="w-full h-full object-contain">
+                        <div class="w-9 h-9 shrink-0 rounded-xl bg-white p-1 flex items-center justify-center shadow-xs border border-outline-variant/30 overflow-hidden" style="width: 36px; height: 36px; min-width: 36px; min-height: 36px; max-width: 36px; max-height: 36px;">
+                            <img src="/assets/images/logo-ibnp.png" alt="Logo IBN da Paz" width="36" height="36" class="w-full h-full object-contain" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                         </div>
                         <span class="text-base font-bold text-on-surface">IBN da Paz de Guapó</span>
                     </div>

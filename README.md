@@ -43,7 +43,7 @@ Portal oficial da **Igreja Batista Nacional da Paz de Guapó** (IBNP Guapó), fu
 - **Razão Social:** Igreja Batista Nacional da Paz de Guapó (CNPJ: `02.930.019/0001-62`)
 - **Endereço:** Rua Presidente Kennedy, Qd. 21, Lt. 13 – Centro, Guapó – GO, CEP 75350-000
 - **Cultos Regulares:**
-  - **Quarta-feira às 19:30:** Culto de Oração e Estudo Bíblico
+  - **Quarta-feira às 19:30:** Culto de Ensino
   - **Domingo às 19:30:** Culto de Celebração da Família
 - **Canais:**
   - **Telefone / WhatsApp:** (62) 9870-0089 (`+55 62 9870-0089`)

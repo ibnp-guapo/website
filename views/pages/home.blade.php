@@ -145,17 +145,17 @@
 
                     <!-- Content -->
                     <h3 class="text-xl sm:text-2xl font-bold text-on-surface mb-2">
-                        Culto de Oração e Estudo Bíblico
+                        Culto de Ensino
                     </h3>
                     <p class="text-sm text-text-muted mb-6 leading-relaxed">
-                        Intercessão congregacional e ministração profunda da Palavra de Deus. Um momento precioso dedicado ao clamor pelas famílias, cura de enfermos e aprofundamento doutrinário versículo por versículo.
+                        Estudo bíblico expositivo e sistemático das Sagradas Escrituras. Um momento dedicado ao aprofundamento doutrinário, maturidade na fé cristã e edificação espiritual para toda a igreja.
                     </p>
 
                     <!-- Points highlight -->
                     <div class="space-y-2 border-t border-outline-variant/20 pt-4 mb-6">
                         <div class="flex items-center gap-2 text-xs sm:text-sm text-on-surface">
                             <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
-                            <span>Momento de clamor comunitário e intercessão nominal</span>
+                            <span>Estudo sistemático e doutrinário para toda a família</span>
                         </div>
                         <div class="flex items-center gap-2 text-xs sm:text-sm text-on-surface">
                             <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
@@ -166,8 +166,8 @@
 
                 <!-- Action -->
                 <div class="pt-2 flex items-center justify-between border-t border-outline-variant/20">
-                    <a class="inline-flex items-center gap-2 text-secondary font-bold text-xs hover:gap-3 transition-all" href="https://wa.me/556298700089?text=Ol%C3%A1!%20Gostaria%20de%20enviar%20um%20pedido%20de%20ora%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer">
-                        <span>Enviar pedido de oração</span>
+                    <a class="inline-flex items-center gap-2 text-secondary font-bold text-xs hover:gap-3 transition-all" href="/programacao">
+                        <span>Ver grade completa</span>
                         <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
                     </a>
                     <a class="text-xs text-text-muted hover:text-primary transition" href="/programacao.ics" title="Adicionar ao calendário">
@@ -321,7 +321,7 @@
                     </p>
                 </div>
             </div>
-            <a href="https://escolasocialguapo.org.br" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-primary text-on-primary text-sm font-bold px-7 py-3.5 rounded-xl shadow-md hover:bg-secondary-container transition-all duration-200 active:scale-95 whitespace-nowrap shrink-0" title="Acompanhar obras e projeto da Escola Social de Guapó (abre em nova aba)">
+            <a href="https://social.ibnpguapo.org.br/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-primary text-on-primary text-sm font-bold px-7 py-3.5 rounded-xl shadow-md hover:bg-secondary-container transition-all duration-200 active:scale-95 whitespace-nowrap shrink-0" title="Acompanhar obras e projeto da Escola Social de Guapó (abre em nova aba)">
                 <span>Acompanhar Obras &amp; Projeto</span>
                 <span class="material-symbols-outlined text-[18px]">open_in_new</span>
             </a>

@@ -16,6 +16,7 @@
 
     <!-- Design System CSS -->
     <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="icon" type="image/png" href="/assets/images/logo-ibnp.png">
 
     @yield('head')
 </head>
@@ -26,8 +27,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
             <!-- Brand Logo & Identity -->
             <a href="/" class="flex items-center gap-3 group">
-                <div class="w-10 h-10 rounded-xl bg-primary-container text-on-primary-container flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform duration-200">
-                    <span class="material-symbols-outlined text-[24px]">church</span>
+                <div class="w-11 h-11 rounded-xl bg-white p-1 flex items-center justify-center shadow-xs border border-outline-variant/40 group-hover:scale-105 transition-transform duration-200 overflow-hidden">
+                    <img src="/assets/images/logo-ibnp.png" alt="Logo IBN da Paz de Guapó" class="w-full h-full object-contain">
                 </div>
                 <div class="flex flex-col">
                     <span class="text-base sm:text-lg font-bold text-on-surface tracking-tight leading-tight">IBN da Paz de Guapó</span>
@@ -42,7 +43,7 @@
                 <a href="/estatuto" class="pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/estatuto' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Estatuto Social</a>
                 <a href="/regimento" class="pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/regimento' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Regimento Interno</a>
                 <a href="/sobre" class="pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/sobre' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Sobre Nós</a>
-                <a href="https://escolasocialguapo.org.br" target="_blank" rel="noopener noreferrer" class="pb-1 transition-all duration-200 text-on-surface hover:text-primary inline-flex items-center gap-1" title="Escola Social de Guapó (abre em nova aba)">
+                <a href="https://social.ibnpguapo.org.br/" target="_blank" rel="noopener noreferrer" class="pb-1 transition-all duration-200 text-on-surface hover:text-primary inline-flex items-center gap-1" title="Ação Social - Escola Social de Guapó (abre em nova aba)">
                     <span>Ação Social</span>
                     <span class="material-symbols-outlined text-[14px] text-text-muted">open_in_new</span>
                 </a>
@@ -70,7 +71,7 @@
             <a href="/estatuto" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/estatuto' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Estatuto Social</a>
             <a href="/regimento" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/regimento' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Regimento Interno</a>
             <a href="/sobre" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/sobre' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Sobre Nós</a>
-            <a href="https://escolasocialguapo.org.br" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between py-2 text-sm font-semibold text-on-surface hover:text-primary" title="Escola Social de Guapó (abre em nova aba)">
+            <a href="https://social.ibnpguapo.org.br/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between py-2 text-sm font-semibold text-on-surface hover:text-primary" title="Ação Social - Escola Social de Guapó (abre em nova aba)">
                 <span class="flex items-center gap-1.5">
                     <span class="material-symbols-outlined text-[18px] text-secondary">volunteer_activism</span>
                     <span>Ação Social (Escola Social)</span>
@@ -100,8 +101,8 @@
                 <!-- Church Identity Column -->
                 <div class="md:col-span-5 space-y-3">
                     <div class="flex items-center gap-2.5">
-                        <div class="w-9 h-9 rounded-xl bg-primary text-on-primary flex items-center justify-center shadow-sm">
-                            <span class="material-symbols-outlined text-[20px]">church</span>
+                        <div class="w-9 h-9 rounded-xl bg-white p-1 flex items-center justify-center shadow-xs border border-outline-variant/30">
+                            <img src="/assets/images/logo-ibnp.png" alt="Logo IBN da Paz" class="w-full h-full object-contain">
                         </div>
                         <span class="text-base font-bold text-on-surface">IBN da Paz de Guapó</span>
                     </div>
@@ -122,7 +123,7 @@
                         <a class="text-text-muted hover:text-primary transition-colors duration-200" href="/estatuto">Estatuto Social</a>
                         <a class="text-text-muted hover:text-primary transition-colors duration-200" href="/regimento">Regimento Interno</a>
                         <a class="text-text-muted hover:text-primary transition-colors duration-200" href="/sobre">Sobre Nós</a>
-                        <a class="text-text-muted hover:text-primary transition-colors duration-200 inline-flex items-center gap-1" href="https://escolasocialguapo.org.br" target="_blank" rel="noopener noreferrer" title="Escola Social de Guapó (abre em nova aba)">
+                        <a class="text-text-muted hover:text-primary transition-colors duration-200 inline-flex items-center gap-1" href="https://social.ibnpguapo.org.br/" target="_blank" rel="noopener noreferrer" title="Ação Social - Escola Social de Guapó (abre em nova aba)">
                             <span>Escola Social</span>
                             <span class="material-symbols-outlined text-[12px]">open_in_new</span>
                         </a>
@@ -137,7 +138,7 @@
                     <span class="text-xs font-bold text-on-surface uppercase tracking-wider block">Cultos Oficiais</span>
                     <p class="text-xs text-text-muted">
                         <strong class="text-on-surface block">Quarta-feira: 19:30 às 21:00</strong>
-                        Culto de Oração & Estudo Bíblico (90 min)
+                        Culto de Ensino (90 min)
                     </p>
                     <p class="text-xs text-text-muted pt-1">
                         <strong class="text-on-surface block">Domingo: 19:30 às 21:00</strong>
@@ -156,7 +157,7 @@
                     <span>•</span>
                     <a class="hover:text-primary transition-colors" href="/regimento">Regimento Interno</a>
                     <span>•</span>
-                    <a class="hover:text-primary transition-colors inline-flex items-center gap-0.5" href="https://escolasocialguapo.org.br" target="_blank" rel="noopener noreferrer">
+                    <a class="hover:text-primary transition-colors inline-flex items-center gap-0.5" href="https://social.ibnpguapo.org.br/" target="_blank" rel="noopener noreferrer">
                         <span>Escola Social</span>
                         <span class="material-symbols-outlined text-[12px]">open_in_new</span>
                     </a>

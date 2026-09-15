@@ -33,9 +33,9 @@ final class LegalDocRoutesTest extends TestCase
 
         // Deve estender layouts.app com tokens Stitch e navegação canônica
         $this->assertStringContainsString('IBN da Paz de Guapó', $output);
+        $this->assertStringContainsString('/assets/images/logo-ibnp.png', $output);
         $this->assertStringContainsString('Plus Jakarta Sans', $output);
         $this->assertStringContainsString('material-symbols-outlined', $output);
-        $this->assertStringContainsString('church', $output);
         $this->assertStringContainsString('02.930.019/0001-62', $output);
         $this->assertStringContainsString('elevation-warm-1', $output);
 
@@ -58,9 +58,9 @@ final class LegalDocRoutesTest extends TestCase
 
         // Deve estender layouts.app com tokens Stitch
         $this->assertStringContainsString('IBN da Paz de Guapó', $output);
+        $this->assertStringContainsString('/assets/images/logo-ibnp.png', $output);
         $this->assertStringContainsString('Plus Jakarta Sans', $output);
         $this->assertStringContainsString('material-symbols-outlined', $output);
-        $this->assertStringContainsString('church', $output);
         $this->assertStringContainsString('02.930.019/0001-62', $output);
         $this->assertStringContainsString('elevation-warm-1', $output);
 

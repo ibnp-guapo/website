@@ -24,7 +24,7 @@ final class ProgramacaoRoutesTest extends TestCase
 
         $this->assertNotEmpty($output);
         $this->assertStringContainsString('Cultos & Encontros de Fé', $output);
-        $this->assertStringContainsString('Culto de Oração e Estudo Bíblico', $output);
+        $this->assertStringContainsString('Culto de Ensino', $output);
         $this->assertStringContainsString('Culto de Celebração da Família', $output);
         $this->assertStringContainsString('19:30 às 21:00', $output);
         $this->assertStringContainsString('90 min', $output);
@@ -35,9 +35,9 @@ final class ProgramacaoRoutesTest extends TestCase
 
         // Deve estender layouts.app com tokens Stitch e elementos canônicos
         $this->assertStringContainsString('IBN da Paz de Guapó', $output);
+        $this->assertStringContainsString('/assets/images/logo-ibnp.png', $output);
         $this->assertStringContainsString('Plus Jakarta Sans', $output);
         $this->assertStringContainsString('material-symbols-outlined', $output);
-        $this->assertStringContainsString('church', $output);
         $this->assertStringContainsString('02.930.019/0001-62', $output);
         $this->assertStringContainsString('elevation-warm-1', $output);
 

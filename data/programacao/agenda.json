@@ -23,14 +23,14 @@
   },
   "cultosRegulares": [
     {
-      "id": "culto-quarta-oracao-ensino",
+      "id": "culto-quarta-ensino",
       "diaSemana": "quarta-feira",
       "horario": "19:30",
       "duracaoMinutos": 90,
-      "nome": "Culto de Oração e Estudo Bíblico",
-      "categoria": "Intercessão e Ensino",
+      "nome": "Culto de Ensino",
+      "categoria": "Ensino Bíblico",
       "local": "Templo Sede - Rua Presidente Kennedy, Qd. 21, Lt. 13, Centro, Guapó - GO",
-      "descricao": "Momento dedicado à oração congregacional e ao estudo expositivo sistemático das Sagradas Escrituras.",
+      "descricao": "Momento dedicado ao estudo sistemático da Palavra de Deus, exposição bíblica e edificação espiritual para toda a igreja.",
       "transmissaoAoVivo": false,
       "rrule": "FREQ=WEEKLY;BYDAY=WE"
     },

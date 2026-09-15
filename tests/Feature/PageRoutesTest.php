@@ -26,17 +26,18 @@ final class PageRoutesTest extends TestCase
         $this->assertStringContainsString('IBN da Paz', $output);
         $this->assertStringContainsString('Guapó', $output);
         $this->assertStringContainsString('Cultos da Semana', $output);
-        $this->assertStringContainsString('Culto de Oração e Estudo Bíblico', $output);
+        $this->assertStringContainsString('Culto de Ensino', $output);
         $this->assertStringContainsString('Celebração da Família', $output);
         $this->assertStringContainsString('19:30 às 21:00', $output);
         $this->assertStringContainsString('Estatuto Social', $output);
         $this->assertStringContainsString('Regimento Interno', $output);
         $this->assertStringContainsString('Akoma Ntoso', $output);
         $this->assertStringContainsString('wa.me/556298700089', $output);
+        $this->assertStringContainsString('/assets/images/logo-ibnp.png', $output);
 
-        // Validações da seção e links da Escola Social de Guapó (Issue #14)
+        // Validações da seção e links da Ação Social (Issue #14 / Spec 12)
         $this->assertStringContainsString('Escola Social de Guapó', $output);
-        $this->assertStringContainsString('https://escolasocialguapo.org.br', $output);
+        $this->assertStringContainsString('https://social.ibnpguapo.org.br/', $output);
         $this->assertStringContainsString('Educação Infantil', $output);
         $this->assertStringContainsString('Contraturno Escolar', $output);
         $this->assertStringContainsString('Centro Comunitário', $output);
@@ -59,6 +60,7 @@ final class PageRoutesTest extends TestCase
         $this->assertStringContainsString('Convenção Batista Nacional (CBN)', $output);
         $this->assertStringContainsString('ORMIBAN', $output);
         $this->assertStringContainsString('02.930.019/0001-62', $output);
+        $this->assertStringContainsString('/assets/images/logo-ibnp.png', $output);
         $this->assertStringContainsString('material-symbols-outlined', $output);
         $this->assertStringContainsString('menu_book', $output);
         $this->assertStringContainsString('auto_awesome', $output);
@@ -68,9 +70,9 @@ final class PageRoutesTest extends TestCase
         $this->assertStringContainsString('assignment', $output);
         $this->assertStringContainsString('elevation-warm-1', $output);
 
-        // Validações institucionais da mantenedora da Escola Social (Issue #14)
+        // Validações institucionais da mantenedora da Escola Social (Issue #14 / Spec 12)
         $this->assertStringContainsString('Mantenedora da Escola Social de Guapó', $output);
-        $this->assertStringContainsString('https://escolasocialguapo.org.br', $output);
+        $this->assertStringContainsString('https://social.ibnpguapo.org.br/', $output);
         $this->assertStringContainsString('construction', $output);
         $this->assertStringContainsString('construção e estruturação', $output);
 

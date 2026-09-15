@@ -70,7 +70,7 @@
                                 <p class="text-xs text-text-muted">Estrutura em obras • Educação infantil, contraturno e centro comunitário</p>
                             </div>
                         </div>
-                        <a href="https://escolasocialguapo.org.br" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-secondary text-on-secondary text-xs font-bold shadow-sm hover:bg-secondary/90 transition-all active:scale-95 whitespace-nowrap" title="Acompanhar obras e projeto da Escola Social de Guapó (abre em nova aba)">
+                        <a href="https://social.ibnpguapo.org.br/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-secondary text-on-secondary text-xs font-bold shadow-sm hover:bg-secondary/90 transition-all active:scale-95 whitespace-nowrap" title="Acompanhar obras e projeto da Escola Social de Guapó (abre em nova aba)">
                             <span>Acompanhar Obras &amp; Projeto</span>
                             <span class="material-symbols-outlined text-[16px]">open_in_new</span>
                         </a>
@@ -150,7 +150,7 @@
                     <p class="text-xs text-text-muted leading-relaxed mb-6 font-normal">
                         Acompanhe o projeto e as etapas da construção da escola social mantida pela igreja para a infância e comunidade guapoense.
                     </p>
-                    <a href="https://escolasocialguapo.org.br" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-primary text-on-primary text-xs font-bold shadow-sm hover:bg-secondary-container transition-all active:scale-95">
+                    <a href="https://social.ibnpguapo.org.br/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-primary text-on-primary text-xs font-bold shadow-sm hover:bg-secondary-container transition-all active:scale-95">
                         <span class="material-symbols-outlined text-[18px]">construction</span>
                         <span>Acompanhar Obras</span>
                         <span class="material-symbols-outlined text-[16px]">open_in_new</span>

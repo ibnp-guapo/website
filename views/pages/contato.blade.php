@@ -123,7 +123,7 @@
                                 <span class="material-symbols-outlined text-[16px]">alarm</span>
                                 Domingos
                             </span>
-                            <span class="text-xs font-semibold text-on-surface">19:30 às 21:00 • Celebração da Família</span>
+                            <span class="text-xs font-semibold text-on-surface">19:30 às 21:00 • Culto de Celebração</span>
                         </div>
                     </div>
                 </div>

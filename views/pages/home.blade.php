@@ -194,10 +194,10 @@
 
                     <!-- Content -->
                     <h3 class="text-xl sm:text-2xl font-bold text-on-surface mb-2">
-                        Culto de Celebração da Família
+                        Culto de Celebração
                     </h3>
                     <p class="text-sm text-text-muted mb-6 leading-relaxed">
-                        Louvor congregacional, comunhão e mensagem para edificação de toda a família. Celebramos a graça salvadora de Cristo Jesus com ministério infantil e recepção acolhedora para novos visitantes.
+                        Culto congregacional com louvor, adoração, comunhão fraterna e ministração da Palavra de Deus. Celebramos a graça salvadora de Cristo Jesus com recepção acolhedora para novos visitantes.
                     </p>
 
                     <!-- Points highlight -->
@@ -208,7 +208,7 @@
                         </div>
                         <div class="flex items-center gap-2 text-xs sm:text-sm text-on-surface">
                             <span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
-                            <span>Ministério Infantil preparado durante toda a ministração</span>
+                            <span>Ministração da Palavra de Deus para edificação espiritual</span>
                         </div>
                     </div>
                 </div>

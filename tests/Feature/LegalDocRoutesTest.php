@@ -39,6 +39,13 @@ final class LegalDocRoutesTest extends TestCase
         $this->assertStringContainsString('02.930.019/0001-62', $output);
         $this->assertStringContainsString('elevation-warm-1', $output);
 
+        // Responsividade mobile do sumário: sticky somente no desktop e TOC colapsável
+        $this->assertStringContainsString('lg:sticky', $output);
+        $this->assertStringContainsString('lg:top-24', $output);
+        $this->assertStringContainsString('id="toc-mobile-toggle"', $output);
+        $this->assertStringContainsString('id="toc-container"', $output);
+        $this->assertStringNotContainsString('sticky top-24', $output);
+
         // Não deve conter artefatos de heredoc legados
         $this->assertStringNotContainsString('>P</span>', $output);
         $this->assertStringNotContainsString('family=Inter', $output);

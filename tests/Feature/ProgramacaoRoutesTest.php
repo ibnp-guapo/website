@@ -25,7 +25,8 @@ final class ProgramacaoRoutesTest extends TestCase
         $this->assertNotEmpty($output);
         $this->assertStringContainsString('Cultos & Encontros de Fé', $output);
         $this->assertStringContainsString('Culto de Ensino', $output);
-        $this->assertStringContainsString('Culto de Celebração da Família', $output);
+        $this->assertStringContainsString('Culto de Celebração', $output);
+        $this->assertStringNotContainsString('Celebração da Família', $output);
         $this->assertStringContainsString('19:30 às 21:00', $output);
         $this->assertStringContainsString('90 min', $output);
         $this->assertStringContainsString('application/ld+json', $output);

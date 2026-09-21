@@ -13,5 +13,7 @@
 .phpunit.cache/
 *.log
 
-# Arquivos temporários de extração
+# Arquivos temporários de extração e MCP
 data/legal/estatuto_extraido.txt
+.playwright-mcp/
+

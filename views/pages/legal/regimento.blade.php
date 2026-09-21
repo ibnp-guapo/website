@@ -102,7 +102,7 @@
 
         <div class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                <aside class="lg:col-span-4 bg-surface-pure rounded-3xl border border-outline-variant/30 p-6 elevation-warm-1 sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto">
+                <aside class="lg:col-span-4 bg-surface-pure rounded-3xl border border-outline-variant/30 p-6 elevation-warm-1 lg:sticky lg:top-24 lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto">
                     <div class="mb-5">
                         <label for="search-input" class="block text-xs font-bold text-on-surface uppercase tracking-wider mb-2 flex items-center gap-1.5">
                             <span class="material-symbols-outlined text-secondary text-[16px]">search</span>
@@ -114,7 +114,15 @@
                         </div>
                     </div>
 
-                    <div class="border-t border-outline-variant/30 pt-4">
+                    <button type="button" id="toc-mobile-toggle" class="w-full lg:hidden inline-flex items-center justify-between gap-2 px-4 py-3 rounded-xl bg-surface-cream-light border border-outline-variant/40 text-on-surface text-xs font-bold mb-4 transition-colors hover:border-secondary" aria-expanded="false" aria-controls="toc-container">
+                        <span class="flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-secondary text-[16px]">menu_book</span>
+                            <span>Sumário Geral</span>
+                        </span>
+                        <span id="toc-toggle-icon" class="material-symbols-outlined text-[20px] transition-transform duration-300">expand_more</span>
+                    </button>
+
+                    <div id="toc-container" class="hidden lg:block border-t border-outline-variant/30 pt-4">
                         <h2 class="text-xs font-bold uppercase tracking-widest text-text-muted mb-3">Sumário Geral</h2>
                         <nav id="toc-nav" class="space-y-3">
                             @foreach ($doc->toc as $item)
@@ -232,6 +240,16 @@
             const searchCount = document.getElementById('search-count');
             const articles = document.querySelectorAll('.article-card');
             const noResults = document.getElementById('no-search-results');
+
+            const tocToggle = document.getElementById('toc-mobile-toggle');
+            const tocContainer = document.getElementById('toc-container');
+            const tocToggleIcon = document.getElementById('toc-toggle-icon');
+
+            tocToggle.addEventListener('click', () => {
+                const isHidden = tocContainer.classList.toggle('hidden');
+                tocToggle.setAttribute('aria-expanded', String(!isHidden));
+                tocToggleIcon.classList.toggle('rotate-180', !isHidden);
+            });
 
             searchInput.addEventListener('input', (e) => {
                 const query = e.target.value.trim().toLowerCase();

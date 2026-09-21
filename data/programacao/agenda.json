@@ -35,14 +35,14 @@
       "rrule": "FREQ=WEEKLY;BYDAY=WE"
     },
     {
-      "id": "culto-domingo-celebracao-familia",
+      "id": "culto-domingo-celebracao",
       "diaSemana": "domingo",
       "horario": "19:30",
       "duracaoMinutos": 90,
-      "nome": "Culto de Celebração da Família",
+      "nome": "Culto de Celebração",
       "categoria": "Celebração e Louvor",
       "local": "Templo Sede - Rua Presidente Kennedy, Qd. 21, Lt. 13, Centro, Guapó - GO",
-      "descricao": "Culto congregacional com louvor, adoração, comunhão fraterna e ministração da Palavra de Deus para toda a família.",
+      "descricao": "Culto congregacional com louvor, adoração, comunhão fraterna e ministração da Palavra de Deus.",
       "transmissaoAoVivo": false,
       "rrule": "FREQ=WEEKLY;BYDAY=SU"
     }

@@ -142,7 +142,7 @@
                     </p>
                     <p class="text-xs text-text-muted pt-1">
                         <strong class="text-on-surface block">Domingo: 19:30 às 21:00</strong>
-                        Culto de Celebração da Família (90 min)
+                        Culto de Celebração (90 min)
                     </p>
                 </div>
             </div>

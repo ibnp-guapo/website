@@ -49,9 +49,10 @@ final class ICalGeneratorTest extends TestCase
         $this->assertStringContainsString('Culto de Ensino', $ical);
 
         // Validar Culto de Domingo (19:30 às 21:00)
-        $this->assertStringContainsString('UID:culto-domingo-celebracao-familia@ibnpguapo.org.br', $ical);
+        $this->assertStringContainsString('UID:culto-domingo-celebracao@ibnpguapo.org.br', $ical);
         $this->assertStringContainsString('RRULE:FREQ=WEEKLY;BYDAY=SU', $ical);
-        $this->assertStringContainsString('Culto de Celebração da Família', $ical);
+        $this->assertStringContainsString('Culto de Celebração', $ical);
+        $this->assertStringNotContainsString('Culto de Celebração da Família', $ical);
 
         // Confirmar ausência de sábados
         $this->assertStringNotContainsString('BYDAY=SA', $ical);

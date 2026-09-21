@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Design System CSS -->
-    <link rel="stylesheet" href="/assets/css/app.css?v=1.0.1">
+    <link rel="stylesheet" href="/assets/css/app.css?v=1.0.2">
     <link rel="icon" type="image/png" href="/assets/images/logo-ibnp.png">
 
     @yield('head')
@@ -26,46 +26,46 @@
     <header class="sticky top-0 z-50 bg-surface-cream-light/95 backdrop-blur-md shadow-sm border-b border-outline-variant/30 transition-all">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
             <!-- Brand Logo & Identity -->
-            <a href="/" class="flex items-center gap-3 group">
+            <a href="/" class="flex items-center gap-3 group shrink-0 mr-4 lg:mr-8">
                 <div class="w-11 h-11 shrink-0 rounded-xl bg-white p-1 flex items-center justify-center shadow-xs border border-outline-variant/40 group-hover:scale-105 transition-transform duration-200 overflow-hidden" style="width: 44px; height: 44px; min-width: 44px; min-height: 44px; max-width: 44px; max-height: 44px;">
                     <img src="/assets/images/logo-ibnp.png" alt="Logo IBN da Paz de Guapó" width="44" height="44" class="w-full h-full object-contain" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                 </div>
                 <div class="flex flex-col">
-                    <span class="text-base sm:text-lg font-bold text-on-surface tracking-tight leading-tight">IBN da Paz de Guapó</span>
-                    <span class="text-[0.6875rem] text-text-muted font-medium tracking-wide">Comunhão • Fé • Edificação</span>
+                    <span class="text-base sm:text-lg font-bold text-on-surface tracking-tight leading-tight whitespace-nowrap">IBN da Paz de Guapó</span>
+                    <span class="text-[0.6875rem] text-text-muted font-medium tracking-wide whitespace-nowrap">Comunhão • Fé • Edificação</span>
                 </div>
             </a>
 
             <!-- Web Desktop Navigation Links -->
-            <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-sm font-semibold">
-                <a href="/" class="pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Início</a>
-                <a href="/programacao" class="pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/programacao' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Programação</a>
-                <a href="/estatuto" class="pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/estatuto' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Estatuto Social</a>
-                <a href="/regimento" class="pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/regimento' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Regimento Interno</a>
-                <a href="/sobre" class="pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/sobre' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Sobre Nós</a>
-                <a href="https://social.ibnpguapo.org.br/" target="_blank" rel="noopener noreferrer" class="pb-1 transition-all duration-200 text-on-surface hover:text-primary inline-flex items-center gap-1" title="Ação Social - Escola Social de Guapó (abre em nova aba)">
+            <nav class="hidden lg:flex items-center justify-center gap-5 xl:gap-7 text-xs xl:text-sm font-semibold flex-1 px-4">
+                <a href="/" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Início</a>
+                <a href="/programacao" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/programacao' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Programação</a>
+                <a href="/estatuto" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/estatuto' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Estatuto Social</a>
+                <a href="/regimento" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/regimento' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Regimento Interno</a>
+                <a href="/sobre" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/sobre' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Sobre Nós</a>
+                <a href="https://social.ibnpguapo.org.br/" target="_blank" rel="noopener noreferrer" class="whitespace-nowrap pb-1 transition-all duration-200 text-on-surface hover:text-primary inline-flex items-center gap-1" title="Ação Social - Escola Social de Guapó (abre em nova aba)">
                     <span>Ação Social</span>
                     <span class="material-symbols-outlined text-[14px] text-text-muted">open_in_new</span>
                 </a>
-                <a href="/contato" class="pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/contato' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Contato</a>
+                <a href="/contato" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/contato' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Contato</a>
             </nav>
 
             <!-- Trailing Action: Como Chegar / Horários with location_on -->
-            <div class="flex items-center gap-3">
-                <a href="/contato" class="hidden sm:inline-flex items-center gap-1.5 bg-primary text-on-primary text-xs font-bold px-4 py-2.5 rounded-xl hover:bg-secondary-container transition-all duration-200 shadow-sm active:scale-95">
+            <div class="flex items-center gap-3 shrink-0 lg:ml-6 xl:ml-8 lg:pl-6 xl:pl-8 lg:border-l lg:border-outline-variant/30">
+                <a href="/contato" class="hidden sm:inline-flex items-center gap-1.5 bg-primary text-on-primary text-xs font-bold px-4 py-2.5 rounded-xl hover:bg-secondary-container transition-all duration-200 shadow-sm active:scale-95 whitespace-nowrap">
                     <span class="material-symbols-outlined text-[18px]">location_on</span>
                     <span>Como Chegar / Horários</span>
                 </a>
 
                 <!-- Mobile Menu Toggle Button -->
-                <button type="button" aria-label="Abrir menu de navegação" class="md:hidden p-2 rounded-lg text-on-surface hover:bg-surface-cream-warm transition-colors" onclick="toggleMobileMenu()">
+                <button type="button" aria-label="Abrir menu de navegação" class="lg:hidden p-2 rounded-lg text-on-surface hover:bg-surface-cream-warm transition-colors" onclick="toggleMobileMenu()">
                     <span class="material-symbols-outlined text-[26px]">menu</span>
                 </button>
             </div>
         </div>
 
         <!-- Mobile Navigation Drawer Collapse -->
-        <div id="mobile-menu-drawer" class="hidden md:hidden border-t border-outline-variant/30 bg-surface-cream-light px-4 py-4 space-y-2">
+        <div id="mobile-menu-drawer" class="hidden lg:hidden border-t border-outline-variant/30 bg-surface-cream-light px-4 py-4 space-y-2">
             <a href="/" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Início</a>
             <a href="/programacao" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/programacao' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Programação</a>
             <a href="/estatuto" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/estatuto' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Estatuto Social</a>

@@ -56,17 +56,17 @@
                     <div class="relative overflow-hidden rounded-xl h-80 sm:h-96 w-full">
                         <img 
                             class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700 ease-out" 
-                            alt="Santuário acolhedor da IBN da Paz de Guapó banhado em luz suave e atmosfera de comunhão" 
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ-kEZaY82YlD0713ItsC-z_t06Wg2mXUMp8HzqiqJf0DeEeXWt472brW0SCAANKNL1GNjDUwSRE9V00wXlSJCiaQ4KCl47BFpMbQuQ_rpZs2R_8if8V8jebDj5bRwoRmlrk-Mk9O31JXdULpit2S9DWB8n7pKgcIUDT4exGDbgYtb5jq0xAUKS0inS4HF9uz7p9i5PRTimzPU_2fWkGCAhbF7NvRIj1Za2B15FaxCnibkab2QHBGIIKFLGHfk3uLy1iWFkqrNP1M"
+                            alt="Educadora contando histórias e ensinando crianças com livros em ambiente acolhedor, simbolizando a transformação de vidas pela educação infantil" 
+                            src="/assets/images/hero-transformacao-infantil.jpg"
                         />
                         <div class="absolute inset-0 bg-gradient-to-t from-on-surface/85 via-on-surface/25 to-transparent"></div>
                         <div class="absolute bottom-4 left-4 right-4 text-surface-pure">
                             <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-live-badge text-on-primary text-xs font-bold mb-2 shadow-sm">
-                                <span class="material-symbols-outlined text-[14px]">groups</span>
-                                <span>Comunidade Acolhedora</span>
+                                <span class="material-symbols-outlined text-[14px]">volunteer_activism</span>
+                                <span>Transformação de Vidas</span>
                             </div>
-                            <h2 class="text-xl font-bold text-surface-pure drop-shadow-sm">Portas abertas para você e sua família</h2>
-                            <p class="text-xs text-surface-pure/90 line-clamp-2 mt-0.5">Venha compartilhar momentos de louvor, estudo das Escrituras Sagradas e edificação mútua.</p>
+                            <h2 class="text-xl font-bold text-surface-pure drop-shadow-sm">Educação, fé e acolhimento para a infância</h2>
+                            <p class="text-xs text-surface-pure/90 line-clamp-2 mt-0.5">Construindo um futuro digno e alicerçado em valores cristãos para as crianças e famílias de Guapó.</p>
                         </div>
                     </div>
 

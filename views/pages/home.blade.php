@@ -100,8 +100,7 @@
             <span class="text-xs sm:text-sm font-semibold text-on-surface">Avisos da Semana: Inscrições abertas para novos membros e discipulado bíblico.</span>
         </div>
         <div class="flex items-center gap-6 text-xs font-bold text-secondary">
-            <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">menu_book</span> EBD aos Domingos 09:00</span>
-            <a href="#escola-social" class="hidden sm:flex items-center gap-1.5 hover:underline transition-all">
+            <a href="#escola-social" class="flex items-center gap-1.5 hover:underline transition-all">
                 <span class="material-symbols-outlined text-[16px]">volunteer_activism</span>
                 <span>Escola Social de Guapó</span>
             </a>

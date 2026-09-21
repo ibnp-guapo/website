@@ -120,6 +120,47 @@
                         </div>
                     </div>
                 </section>
+
+                <!-- Ficha Cadastral e Transparência Jurídica (Spec 14 - Google for Nonprofits) -->
+                <section class="mt-12 pt-8 border-t border-outline-variant/30">
+                    <span class="text-xs font-bold uppercase tracking-widest text-secondary">Transparência &amp; Identificação Oficial</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-on-surface tracking-tight mt-1 mb-6">Ficha Cadastral e Transparência Jurídica</h2>
+                    
+                    <div class="bg-surface-pure rounded-3xl border border-outline-variant/30 p-6 sm:p-8 elevation-warm-1">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs sm:text-sm">
+                            <div class="p-4 rounded-xl bg-surface-cream-light border border-outline-variant/30">
+                                <span class="text-text-muted block text-[11px] uppercase font-bold tracking-wider">Razão Social Oficial</span>
+                                <strong class="text-on-surface font-bold text-sm block mt-0.5">Igreja Batista Nacional da Paz de Guapó</strong>
+                            </div>
+                            <div class="p-4 rounded-xl bg-surface-cream-light border border-outline-variant/30">
+                                <span class="text-text-muted block text-[11px] uppercase font-bold tracking-wider">Cadastro Nacional de Pessoa Jurídica (CNPJ)</span>
+                                <strong class="text-secondary font-bold text-sm block mt-0.5">02.930.019/0001-62</strong>
+                            </div>
+                            <div class="p-4 rounded-xl bg-surface-cream-light border border-outline-variant/30">
+                                <span class="text-text-muted block text-[11px] uppercase font-bold tracking-wider">Data de Fundação</span>
+                                <strong class="text-on-surface font-bold text-sm block mt-0.5">14 de janeiro de 1999</strong>
+                            </div>
+                            <div class="p-4 rounded-xl bg-surface-cream-light border border-outline-variant/30">
+                                <span class="text-text-muted block text-[11px] uppercase font-bold tracking-wider">Natureza Jurídica</span>
+                                <strong class="text-on-surface font-bold text-sm block mt-0.5">322-0 - Organização Religiosa Sem Fins Lucrativos</strong>
+                            </div>
+                            <div class="p-4 rounded-xl bg-surface-cream-light border border-outline-variant/30 sm:col-span-2">
+                                <span class="text-text-muted block text-[11px] uppercase font-bold tracking-wider">Sede e Endereço Físico</span>
+                                <strong class="text-on-surface font-bold text-sm block mt-0.5">Rua Presidente Kennedy, Qd. 21, Lt. 13, Centro, Guapó – GO, CEP 75350-000</strong>
+                            </div>
+                            <div class="p-4 rounded-xl bg-surface-cream-warm/30 border border-outline-variant/40 sm:col-span-2">
+                                <span class="text-secondary block text-[11px] uppercase font-bold tracking-wider">Titularidade e Operação do Domínio Oficial</span>
+                                <p class="text-xs text-on-surface leading-relaxed mt-1">
+                                    O domínio <strong class="font-bold">ibnpguapo.org.br</strong> é o endereço web oficial de titularidade, registro e operação exclusiva da <strong class="font-bold">Igreja Batista Nacional da Paz de Guapó</strong>. Qualquer comunicação oficial ou canal digital associado a este domínio responde perante esta pessoa jurídica registrada.
+                                </p>
+                                <div class="mt-3 pt-2 border-t border-outline-variant/30 flex items-center gap-2 text-xs font-semibold text-secondary">
+                                    <span class="material-symbols-outlined text-[16px]">mail</span>
+                                    <span>Canal Oficial de E-mail: <a href="mailto:contato@ibnpguapo.org.br" class="text-primary hover:underline font-bold">contato@ibnpguapo.org.br</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
 
             <!-- Coluna Lateral de Filiação e Governança -->

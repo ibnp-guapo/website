@@ -40,7 +40,8 @@
             "telefone": { "type": "string" },
             "whatsapp": { "type": "string", "format": "uri" },
             "instagram": { "type": "string", "format": "uri" },
-            "youtube": { "type": "string", "format": "uri" }
+            "youtube": { "type": "string", "format": "uri" },
+            "email": { "type": "string", "format": "email" }
           }
         }
       }

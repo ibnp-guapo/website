@@ -27,26 +27,98 @@
 
 @section('content')
     @if (!$doc)
-        <!-- Estado de Transcrição Semântica em Processo (Issue #4) -->
-        <main class="flex-1 max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 flex items-center justify-center">
-            <div class="bg-surface-pure rounded-3xl p-8 sm:p-12 border border-outline-variant/30 elevation-warm-1 text-center w-full">
-                <div class="w-16 h-16 rounded-2xl bg-surface-cream-warm/50 text-secondary flex items-center justify-center mx-auto mb-6">
-                    <span class="material-symbols-outlined text-[36px]">history_edu</span>
+        <!-- Apresentação Institucional e Diretrizes Regimentais (Spec 14) -->
+        <main class="flex-1 max-w-5xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+            <div class="bg-surface-pure rounded-3xl p-6 sm:p-10 md:p-12 border border-outline-variant/30 elevation-warm-1">
+                <!-- Cabeçalho -->
+                <div class="flex items-center gap-2 mb-4 flex-wrap">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-cream-warm/50 text-secondary border border-outline-variant/50 text-xs font-bold">
+                        <span class="material-symbols-outlined text-[14px]">verified</span>
+                        <span>Documento Oficial Complementar</span>
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-cream-light text-on-surface border border-outline-variant/40 text-xs font-medium">
+                        <span class="material-symbols-outlined text-[14px] text-secondary">gavel</span>
+                        <span>Vinculado ao Estatuto Social</span>
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-cream-light text-on-surface border border-outline-variant/40 text-xs font-medium">
+                        <span class="material-symbols-outlined text-[14px] text-primary">apartment</span>
+                        <span>Guapó - GO</span>
+                    </span>
                 </div>
-                <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-surface-cream-warm/40 border border-outline-variant/60 text-secondary text-xs font-bold uppercase tracking-wider">
-                    <span class="material-symbols-outlined text-[14px]">pending</span>
-                    <span>Documento em Transcrição Semântica</span>
-                </span>
-                <h1 class="text-3xl sm:text-4xl font-extrabold text-on-surface mt-4 mb-4 tracking-tight">
-                    Regimento Interno
+
+                <h1 class="text-3xl sm:text-4xl font-extrabold text-on-surface tracking-tight mb-4">
+                    Regimento Interno e Diretrizes Regimentais
                 </h1>
-                <p class="text-text-muted text-sm sm:text-base max-w-xl mx-auto mb-8 leading-relaxed">
-                    O texto integral do Regimento Interno da Igreja Batista Nacional da Paz de Guapó está atualmente sendo digitalizado para disponibilização online na íntegra.
+
+                <p class="text-text-muted text-sm sm:text-base leading-relaxed mb-8">
+                    O Regimento Interno da <strong class="text-on-surface font-semibold">Igreja Batista Nacional da Paz de Guapó</strong> (CNPJ 02.930.019/0001-62) é a norma disciplinar interna que complementa e regulamenta os preceitos fundamentais estabelecidos em seu Estatuto Social registrado, norteando a ordem dos cultos, as atribuições ministeriais e o funcionamento dos órgãos diretivos.
                 </p>
-                <div class="flex items-center justify-center gap-4 flex-wrap">
+
+                <!-- Estrutura Regimental em Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 text-xs sm:text-sm">
+                    <div class="p-5 rounded-2xl bg-surface-cream-light border border-outline-variant/30">
+                        <div class="flex items-center gap-2 mb-2 text-secondary font-bold">
+                            <span class="material-symbols-outlined text-[20px]">groups</span>
+                            <span class="text-xs uppercase tracking-wider">1. Assembleia Geral Soberana</span>
+                        </div>
+                        <p class="text-xs text-text-muted leading-relaxed">
+                            Instância máxima deliberativa composta pelos membros em comunhão regular, responsável por aprovar contas, alterações estatutárias e decisões fundamentais da comunidade.
+                        </p>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-surface-cream-light border border-outline-variant/30">
+                        <div class="flex items-center gap-2 mb-2 text-primary font-bold">
+                            <span class="material-symbols-outlined text-[20px]">shield_person</span>
+                            <span class="text-xs uppercase tracking-wider">2. Diretoria Executiva</span>
+                        </div>
+                        <p class="text-xs text-text-muted leading-relaxed">
+                            Órgão representativo eleito para zelar pela integridade jurídica, administrativa e patrimonial da igreja, cumprindo as deliberações assembleares e preceitos estatutários.
+                        </p>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-surface-cream-light border border-outline-variant/30">
+                        <div class="flex items-center gap-2 mb-2 text-secondary font-bold">
+                            <span class="material-symbols-outlined text-[20px]">menu_book</span>
+                            <span class="text-xs uppercase tracking-wider">3. Ministério Pastoral &amp; Liturgia</span>
+                        </div>
+                        <p class="text-xs text-text-muted leading-relaxed">
+                            Responsável pelo ensino das Escrituras, administração dos atos de culto (quarta-feira e domingo), santa ceia, batismo por imersão e aconselhamento dos fiéis.
+                        </p>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-surface-cream-light border border-outline-variant/30">
+                        <div class="flex items-center gap-2 mb-2 text-primary font-bold">
+                            <span class="material-symbols-outlined text-[20px]">balance</span>
+                            <span class="text-xs uppercase tracking-wider">4. Conselho Fiscal &amp; Transparência</span>
+                        </div>
+                        <p class="text-xs text-text-muted leading-relaxed">
+                            Comissão autônoma eleita para auditoria e fiscalização periódica das receitas, despesas e relatórios contábeis, garantindo lisura e prestação de contas aos membros.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Nota Institucional de Acesso e Contato -->
+                <div class="p-5 rounded-2xl bg-surface-cream-warm/30 border border-outline-variant/40 mb-8">
+                    <div class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-secondary text-[22px] mt-0.5">info</span>
+                        <div>
+                            <strong class="text-xs font-bold text-on-surface block">Acesso e Consulta Formal</strong>
+                            <p class="text-xs text-text-muted leading-relaxed mt-1">
+                                O texto integral e os livros de atas regimentais estão sob custódia da secretaria geral em nosso templo sede. Para esclarecimentos regulamentares ou solicitação de certidões regimentais, contate a secretaria através do e-mail oficial <a href="mailto:contato@ibnpguapo.org.br" class="text-primary hover:underline font-bold">contato@ibnpguapo.org.br</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botões de Ação -->
+                <div class="flex items-center gap-4 flex-wrap">
                     <a href="/estatuto" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-primary text-on-primary text-xs sm:text-sm font-bold shadow-md hover:bg-secondary-container transition-all active:scale-95">
                         <span class="material-symbols-outlined text-[18px]">description</span>
-                        <span>Consultar Estatuto Social</span>
+                        <span>Consultar Estatuto Social Oficial</span>
+                    </a>
+                    <a href="/contato" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-surface-pure border border-outline-variant/50 text-on-surface text-xs sm:text-sm font-bold hover:border-secondary hover:text-secondary transition-all active:scale-95">
+                        <span class="material-symbols-outlined text-[18px]">mail</span>
+                        <span>Falar com a Secretaria</span>
                     </a>
                     <a href="/" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-surface-pure border border-secondary text-secondary text-xs sm:text-sm font-bold hover:bg-secondary-container/10 transition-all active:scale-95">
                         <span class="material-symbols-outlined text-[18px]">home</span>

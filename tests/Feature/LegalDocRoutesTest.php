@@ -53,7 +53,7 @@ final class LegalDocRoutesTest extends TestCase
         $this->assertStringNotContainsString('bg-slate-900', $output);
     }
 
-    public function testRegimentoRendersTranscriptionNoticeWhenXmlDoesNotExist(): void
+    public function testRegimentoRendersInstitutionalRegulamentationWhenXmlDoesNotExist(): void
     {
         ob_start();
         $this->controller->regimento();
@@ -61,9 +61,12 @@ final class LegalDocRoutesTest extends TestCase
 
         $this->assertNotEmpty($output);
         $this->assertStringContainsString('Regimento Interno', $output);
-        $this->assertStringContainsString('Documento em Transcrição Semântica', $output);
-        $this->assertStringContainsString('Issue #4', $output);
+        $this->assertStringContainsString('Diretrizes Regimentais', $output);
+        $this->assertStringNotContainsString('Issue #4', $output);
+        $this->assertStringNotContainsString('Transcrição Semântica', $output);
         $this->assertStringNotContainsString('Akoma Ntoso', $output);
+        $this->assertStringContainsString('ibnpguapo.org.br', $output);
+        $this->assertStringContainsString('contato@ibnpguapo.org.br', $output);
 
         // Deve estender layouts.app com tokens Stitch
         $this->assertStringContainsString('IBN da Paz de Guapó', $output);

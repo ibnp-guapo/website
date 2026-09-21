@@ -109,8 +109,10 @@
                     <p class="text-xs text-text-muted leading-relaxed">
                         Igreja Batista Nacional da Paz de Guapó. Uma comunidade de fé, acolhimento e compromisso com o Evangelho da Graça, mantenedora legal da Escola Social de Guapó, filiada à Convenção Batista Nacional (CBN) e à ORMIBAN Goiás.
                     </p>
-                    <div class="text-[11px] font-bold text-secondary">
-                        CNPJ: 02.930.019/0001-62 • Fundação em 1999 • Guapó-GO
+                    <div class="text-[11px] font-semibold text-text-muted leading-relaxed space-y-0.5">
+                        <span class="block text-secondary font-bold">CNPJ: 02.930.019/0001-62 • Fundação em 14/01/1999</span>
+                        <span class="block">Rua Presidente Kennedy, Qd. 21, Lt. 13, Centro, Guapó – GO, CEP 75350-000</span>
+                        <span class="block pt-0.5">E-mail: <a href="mailto:contato@ibnpguapo.org.br" class="text-primary hover:underline font-medium">contato@ibnpguapo.org.br</a></span>
                     </div>
                 </div>
 
@@ -147,12 +149,17 @@
                 </div>
             </div>
 
-            <!-- Legal Copyright Row -->
+            <!-- Legal Copyright Row & Domain Ownership Confirmation -->
             <div class="pt-6 border-t border-outline-variant/30 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left text-xs text-text-muted">
-                <p>
-                    &copy; 2026 Igreja Batista Nacional da Paz de Guapó - CNPJ 02.930.019/0001-62. Filiada à CBN. Todos os direitos reservados.
-                </p>
-                <div class="flex items-center gap-4 text-xs">
+                <div class="space-y-1">
+                    <p>
+                        &copy; 2026 Igreja Batista Nacional da Paz de Guapó - CNPJ 02.930.019/0001-62. Filiada à CBN. Todos os direitos reservados.
+                    </p>
+                    <p class="text-[11px] text-text-muted/90">
+                        O domínio <strong class="text-on-surface font-semibold">ibnpguapo.org.br</strong> e este portal oficial são de propriedade, mantidos e operados oficialmente pela Igreja Batista Nacional da Paz de Guapó, organização religiosa sem fins lucrativos.
+                    </p>
+                </div>
+                <div class="flex items-center gap-4 text-xs shrink-0">
                     <a class="hover:text-primary transition-colors" href="/estatuto">Estatuto Social</a>
                     <span>•</span>
                     <a class="hover:text-primary transition-colors" href="/regimento">Regimento Interno</a>

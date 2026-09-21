@@ -63,6 +63,25 @@
                     </a>
                 </div>
 
+                <!-- Card E-mail Institucional (Spec 14 - Google for Nonprofits) -->
+                <div class="p-8 rounded-3xl bg-surface-pure border border-outline-variant/30 elevation-warm-1">
+                    <div class="w-10 h-10 rounded-xl bg-surface-cream-warm/50 text-primary flex items-center justify-center mb-4">
+                        <span class="material-symbols-outlined text-[24px]">mail</span>
+                    </div>
+                    <h3 class="text-xl font-extrabold text-on-surface mb-2">E-mail Institucional</h3>
+                    <p class="text-sm text-text-muted leading-relaxed mb-4">
+                        Canal oficial para correspondências institucionais, parcerias, solicitações de certidões e contato administrativo com a diretoria da igreja.
+                    </p>
+                    <div class="flex items-center gap-2 text-base font-bold text-on-surface mb-6">
+                        <span class="material-symbols-outlined text-primary text-[20px]">alternate_email</span>
+                        <a href="mailto:contato@ibnpguapo.org.br" class="hover:text-primary transition-colors text-on-surface hover:underline">contato@ibnpguapo.org.br</a>
+                    </div>
+                    <a href="mailto:contato@ibnpguapo.org.br" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-surface-pure border border-primary text-primary text-xs sm:text-sm font-bold shadow-xs hover:bg-primary hover:text-on-primary transition-all active:scale-95 w-full sm:w-auto">
+                        <span class="material-symbols-outlined text-[18px]">send</span>
+                        <span>Escrever para contato@ibnpguapo.org.br</span>
+                    </a>
+                </div>
+
                 <!-- Redes Sociais -->
                 <div class="p-8 rounded-3xl bg-surface-pure border border-outline-variant/30 elevation-warm-1">
                     <h3 class="text-lg font-extrabold text-on-surface mb-4">Redes Sociais Oficiais</h3>
@@ -81,6 +100,19 @@
                             </span>
                             <span class="material-symbols-outlined text-text-muted group-hover:text-primary text-[18px] transition-colors">arrow_forward</span>
                         </a>
+                    </div>
+                </div>
+
+                <!-- Card Titularidade do Domínio -->
+                <div class="p-6 rounded-2xl bg-surface-cream-warm/30 border border-outline-variant/40">
+                    <div class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-secondary text-[22px] mt-0.5">verified</span>
+                        <div>
+                            <strong class="text-xs font-bold text-on-surface block">Domínio Oficial Verificado</strong>
+                            <p class="text-xs text-text-muted leading-relaxed mt-1">
+                                O domínio <strong class="text-on-surface font-semibold">ibnpguapo.org.br</strong> e este portal são de propriedade e operação exclusiva da <strong class="text-on-surface font-semibold">Igreja Batista Nacional da Paz de Guapó</strong> (CNPJ 02.930.019/0001-62).
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

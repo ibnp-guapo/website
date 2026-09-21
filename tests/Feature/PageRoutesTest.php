@@ -48,6 +48,11 @@ final class PageRoutesTest extends TestCase
         $this->assertStringContainsString('Construção', $output);
         $this->assertStringContainsString('target="_blank"', $output);
         $this->assertStringContainsString('rel="noopener noreferrer"', $output);
+
+        // Validações de titularidade de domínio e canais institucionais (Spec 14 - Google for Nonprofits)
+        $this->assertStringContainsString('ibnpguapo.org.br', $output);
+        $this->assertStringContainsString('contato@ibnpguapo.org.br', $output);
+        $this->assertStringContainsString('operados oficialmente pela Igreja Batista Nacional da Paz de Guapó', $output);
     }
 
     public function testSobreRendersHistoryAndCbnAffiliation(): void
@@ -78,6 +83,13 @@ final class PageRoutesTest extends TestCase
         $this->assertStringContainsString('construction', $output);
         $this->assertStringContainsString('construção e estruturação', $output);
 
+        // Ficha Cadastral e Jurídica (Spec 14 - Google for Nonprofits)
+        $this->assertStringContainsString('Ficha Cadastral e Transparência Jurídica', $output);
+        $this->assertStringContainsString('Razão Social Oficial', $output);
+        $this->assertStringContainsString('322-0 - Organização Religiosa', $output);
+        $this->assertStringContainsString('contato@ibnpguapo.org.br', $output);
+        $this->assertStringContainsString('ibnpguapo.org.br', $output);
+
         // Garante ausência de classes e emojis legados
         $this->assertStringNotContainsString('bg-slate-900', $output);
         $this->assertStringNotContainsString('bg-ibnp-primary', $output);
@@ -101,6 +113,9 @@ final class PageRoutesTest extends TestCase
         $this->assertStringContainsString('Entre em Contato Conosco', $output);
         $this->assertStringContainsString('Rua Presidente Kennedy, Qd. 21, Lt. 13', $output);
         $this->assertStringContainsString('(62) 9870-0089', $output);
+        $this->assertStringContainsString('contato@ibnpguapo.org.br', $output);
+        $this->assertStringContainsString('mailto:contato@ibnpguapo.org.br', $output);
+        $this->assertStringContainsString('ibnpguapo.org.br', $output);
         $this->assertStringContainsString('@ibnp_guapo', $output);
         $this->assertStringContainsString('@ibnpguapo', $output);
         $this->assertStringContainsString('google.com/maps/embed', $output);

@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Design System CSS -->
-    <link rel="stylesheet" href="/assets/css/app.css?v=1.0.3">
+    <link rel="stylesheet" href="/assets/css/app.css?v=1.0.4">
     <link rel="icon" type="image/png" href="/assets/images/logo-ibnp.png">
 
     @yield('head')
@@ -23,10 +23,10 @@
 <body class="bg-surface-cream-light text-on-surface font-sans antialiased min-h-screen flex flex-col selection:bg-secondary-container selection:text-on-secondary-container overflow-x-hidden">
 
     <!-- TOP APP BAR (Stitch Design Component) -->
-    <header class="sticky top-0 z-50 bg-surface-cream-light/95 backdrop-blur-md shadow-sm border-b border-outline-variant/30 transition-all overflow-x-clip">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+    <header class="sticky top-0 z-50 bg-surface-cream-light/95 backdrop-blur-md shadow-sm border-b border-outline-variant/30 transition-all w-full max-w-full overflow-hidden">
+        <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
             <!-- Brand Logo & Identity -->
-            <a href="/" class="flex items-center gap-3 group shrink-0 mr-3 lg:mr-4 xl:mr-8">
+            <a href="/" class="flex items-center gap-3 group shrink-0 mr-4 xl:mr-6">
                 <div class="w-11 h-11 shrink-0 rounded-xl bg-white p-1 flex items-center justify-center shadow-xs border border-outline-variant/40 group-hover:scale-105 transition-transform duration-200 overflow-hidden" style="width: 44px; height: 44px; min-width: 44px; min-height: 44px; max-width: 44px; max-height: 44px;">
                     <img src="/assets/images/logo-ibnp.png" alt="Logo IBN da Paz de Guapó" width="44" height="44" class="w-full h-full object-contain" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                 </div>
@@ -36,8 +36,8 @@
                 </div>
             </a>
 
-            <!-- Web Desktop Navigation Links -->
-            <nav class="hidden lg:flex items-center justify-center gap-3 xl:gap-6 text-xs xl:text-sm font-semibold flex-1 px-2 xl:px-4">
+            <!-- Web Desktop Navigation Links (Exibido em telas a partir de 1280px com espacamento confortável e harmonioso) -->
+            <nav class="hidden xl:flex items-center justify-center gap-4 2xl:gap-6 text-xs xl:text-sm font-semibold flex-1 px-4">
                 <a href="/" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Início</a>
                 <a href="/programacao" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/programacao' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Programação</a>
                 <a href="/estatuto" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/estatuto' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Estatuto Social</a>
@@ -50,23 +50,22 @@
                 <a href="/contato" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/contato' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Contato</a>
             </nav>
 
-            <!-- Trailing Action: Como Chegar / Horários with location_on -->
-            <div class="flex items-center gap-3 shrink-0 lg:ml-3 xl:ml-6 lg:pl-3 xl:pl-6 lg:border-l lg:border-outline-variant/30">
-                <a href="/contato" class="hidden sm:inline-flex items-center gap-1.5 bg-primary text-on-primary text-xs font-bold px-3 xl:px-4 py-2.5 rounded-xl hover:bg-secondary-container transition-all duration-200 shadow-sm active:scale-95 whitespace-nowrap">
+            <!-- Trailing Action: Como Chegar com divisória limpa -->
+            <div class="flex items-center gap-3 shrink-0 xl:ml-6 xl:pl-6 xl:border-l xl:border-outline-variant/30">
+                <a href="/contato" class="hidden sm:inline-flex items-center gap-1.5 bg-primary text-on-primary text-xs font-bold px-3.5 py-2.5 rounded-xl hover:bg-secondary-container transition-all duration-200 shadow-sm active:scale-95 whitespace-nowrap">
                     <span class="material-symbols-outlined text-[18px]">location_on</span>
-                    <span class="hidden xl:inline">Como Chegar / Horários</span>
-                    <span class="xl:hidden">Como Chegar</span>
+                    <span>Como Chegar</span>
                 </a>
 
-                <!-- Mobile Menu Toggle Button -->
-                <button type="button" aria-label="Abrir menu de navegação" class="lg:hidden p-2 rounded-lg text-on-surface hover:bg-surface-cream-warm transition-colors" onclick="toggleMobileMenu()">
+                <!-- Mobile & Tablet Menu Toggle Button (visível abaixo de 1280px) -->
+                <button type="button" aria-label="Abrir menu de navegação" class="xl:hidden p-2 rounded-lg text-on-surface hover:bg-surface-cream-warm transition-colors" onclick="toggleMobileMenu()">
                     <span class="material-symbols-outlined text-[26px]">menu</span>
                 </button>
             </div>
         </div>
 
-        <!-- Mobile Navigation Drawer Collapse -->
-        <div id="mobile-menu-drawer" class="hidden lg:hidden border-t border-outline-variant/30 bg-surface-cream-light px-4 py-4 space-y-2">
+        <!-- Mobile & Tablet Navigation Drawer Collapse -->
+        <div id="mobile-menu-drawer" class="hidden xl:hidden border-t border-outline-variant/30 bg-surface-cream-light px-4 py-4 space-y-2">
             <a href="/" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Início</a>
             <a href="/programacao" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/programacao' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Programação</a>
             <a href="/estatuto" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/estatuto' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Estatuto Social</a>
@@ -90,7 +89,7 @@
     </header>
 
     <!-- MAIN CANVAS -->
-    <main class="flex-grow">
+    <main class="flex-grow w-full max-w-full overflow-hidden">
         @yield('content')
     </main>
 

@@ -170,17 +170,23 @@
                     <span class="text-xs font-bold uppercase tracking-widest text-text-muted block mb-3">Vínculo Eclesiástico</span>
                     <h3 class="text-xl font-extrabold text-on-surface mb-4">Filiação Denominacional</h3>
                     <p class="text-sm text-text-muted leading-relaxed mb-6">
-                        A IBN da Paz de Guapó é filiada à <strong class="text-on-surface font-bold">Convenção Batista Nacional (CBN)</strong> e à <strong class="text-on-surface font-bold">ORMIBAN Goiás</strong> (Ordem dos Ministros Batistas Nacionais), adotando a Declaração de Fé oficial da denominação.
+                        A IBN da Paz de Guapó é filiada à <a href="https://cbn.org.br/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-bold" title="Acessar portal oficial da Convenção Batista Nacional (abre em nova aba)">Convenção Batista Nacional (CBN)</a> e à <a href="https://ormiban.org.br/site/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-bold" title="Acessar portal oficial da ORMIBAN (abre em nova aba)">ORMIBAN Goiás</a> (Ordem dos Ministros Batistas Nacionais), adotando a Declaração de Fé oficial da denominação.
                     </p>
                     <div class="pt-4 border-t border-outline-variant/30 flex flex-col gap-3 text-xs font-semibold text-on-surface">
-                        <div class="flex items-center gap-2.5">
-                            <span class="material-symbols-outlined text-secondary text-[20px]">account_balance</span>
-                            <span>Convenção Batista Nacional (CBN)</span>
-                        </div>
-                        <div class="flex items-center gap-2.5">
-                            <span class="material-symbols-outlined text-secondary text-[20px]">assignment</span>
-                            <span>ORMIBAN - Seção de Goiás</span>
-                        </div>
+                        <a href="https://cbn.org.br/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-3 rounded-xl bg-surface-cream-light hover:bg-surface-cream-warm border border-outline-variant/30 text-on-surface hover:text-primary transition-all group" title="Visitar portal oficial da CBN (abre em nova aba)">
+                            <span class="flex items-center gap-2.5">
+                                <span class="material-symbols-outlined text-secondary text-[20px]">account_balance</span>
+                                <span>Convenção Batista Nacional (CBN)</span>
+                            </span>
+                            <span class="material-symbols-outlined text-[16px] text-text-muted group-hover:text-primary group-hover:translate-x-0.5 transition-all">open_in_new</span>
+                        </a>
+                        <a href="https://ormiban.org.br/site/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-3 rounded-xl bg-surface-cream-light hover:bg-surface-cream-warm border border-outline-variant/30 text-on-surface hover:text-primary transition-all group" title="Visitar portal oficial da ORMIBAN (abre em nova aba)">
+                            <span class="flex items-center gap-2.5">
+                                <span class="material-symbols-outlined text-secondary text-[20px]">assignment</span>
+                                <span>ORMIBAN (Ordem dos Ministros)</span>
+                            </span>
+                            <span class="material-symbols-outlined text-[16px] text-text-muted group-hover:text-primary group-hover:translate-x-0.5 transition-all">open_in_new</span>
+                        </a>
                     </div>
                 </div>
 

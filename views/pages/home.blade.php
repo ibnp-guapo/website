@@ -11,10 +11,11 @@
             <!-- Text Content -->
             <div class="lg:col-span-7 flex flex-col items-start gap-4">
                 <!-- City & Affiliation Pill -->
-                <div class="inline-flex items-center gap-2 bg-surface-cream-warm/40 border border-outline-variant/60 px-3.5 py-1.5 rounded-full text-on-surface">
+                <a href="https://cbn.org.br/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-surface-cream-warm/40 hover:bg-surface-cream-warm border border-outline-variant/60 px-3.5 py-1.5 rounded-full text-on-surface transition-all group" title="Filiada à Convenção Batista Nacional (abre em nova aba)">
                     <span class="w-2 h-2 rounded-full bg-secondary"></span>
                     <span class="text-xs font-bold uppercase tracking-wider text-secondary">Guapó – Goiás • Filiada à CBN</span>
-                </div>
+                    <span class="material-symbols-outlined text-[14px] text-secondary group-hover:translate-x-0.5 transition-transform">open_in_new</span>
+                </a>
 
                 <!-- Main Headline -->
                 <h1 class="text-3xl sm:text-5xl lg:text-[3.25rem] font-extrabold text-on-surface leading-[1.15] tracking-tight">
@@ -356,7 +357,7 @@
                     </h2>
 
                     <p class="text-sm sm:text-base text-text-muted leading-relaxed">
-                        Em respeito a Deus, à congregação e à comunidade de Guapó-GO, a Igreja Batista Nacional da Paz disponibiliza seus documentos normativos e atos constitutivos para consulta pública. Nossos estatutos regem com integridade as diretrizes doutrinárias, patrimoniais e assembleares, alinhados à Convenção Batista Nacional (CBN).
+                        Em respeito a Deus, à congregação e à comunidade de Guapó-GO, a Igreja Batista Nacional da Paz disponibiliza seus documentos normativos e atos constitutivos para consulta pública. Nossos estatutos regem com integridade as diretrizes doutrinárias, patrimoniais e assembleares, alinhados à <a href="https://cbn.org.br/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-semibold" title="Convenção Batista Nacional (abre em nova aba)">Convenção Batista Nacional (CBN)</a>.
                     </p>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">

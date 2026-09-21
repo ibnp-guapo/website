@@ -162,7 +162,7 @@
                     <span class="text-xs font-bold uppercase tracking-widest text-secondary block mb-3">Transparência</span>
                     <h3 class="text-xl font-extrabold text-on-surface mb-3">Documentos Constitutivos</h3>
                     <p class="text-xs text-text-muted leading-relaxed mb-6 font-normal">
-                        Consulte nosso Estatuto Social averbado em cartório em formato digital semântico Akoma Ntoso 3.0.
+                        Consulte nosso Estatuto Social averbado em cartório em formato digital e interativo.
                     </p>
                     <a href="/estatuto" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-primary text-on-primary text-xs font-bold shadow-sm hover:bg-secondary-container transition-all active:scale-95">
                         <span class="material-symbols-outlined text-[18px]">description</span>

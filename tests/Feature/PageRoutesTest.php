@@ -33,7 +33,7 @@ final class PageRoutesTest extends TestCase
         $this->assertStringContainsString('19:30 às 21:00', $output);
         $this->assertStringContainsString('Estatuto Social', $output);
         $this->assertStringContainsString('Regimento Interno', $output);
-        $this->assertStringContainsString('Akoma Ntoso', $output);
+        $this->assertStringNotContainsString('Akoma Ntoso', $output);
         $this->assertStringContainsString('wa.me/556298700089', $output);
         $this->assertStringContainsString('/assets/images/logo-ibnp.png', $output);
 

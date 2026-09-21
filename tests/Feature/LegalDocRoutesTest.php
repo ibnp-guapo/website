@@ -29,7 +29,8 @@ final class LegalDocRoutesTest extends TestCase
         $this->assertStringContainsString('id="cap_1"', $output);
         $this->assertStringContainsString('copyPermalink', $output);
         $this->assertStringContainsString('search-input', $output);
-        $this->assertStringContainsString('OASIS Akoma Ntoso 3.0', $output);
+        $this->assertStringContainsString('Documento Oficial', $output);
+        $this->assertStringNotContainsString('Akoma Ntoso', $output);
 
         // Deve estender layouts.app com tokens Stitch e navegação canônica
         $this->assertStringContainsString('IBN da Paz de Guapó', $output);
@@ -62,6 +63,7 @@ final class LegalDocRoutesTest extends TestCase
         $this->assertStringContainsString('Regimento Interno', $output);
         $this->assertStringContainsString('Documento em Transcrição Semântica', $output);
         $this->assertStringContainsString('Issue #4', $output);
+        $this->assertStringNotContainsString('Akoma Ntoso', $output);
 
         // Deve estender layouts.app com tokens Stitch
         $this->assertStringContainsString('IBN da Paz de Guapó', $output);

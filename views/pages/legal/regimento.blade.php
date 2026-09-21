@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', ($doc ? $doc->title : 'Regimento Interno') . ' - IBN da Paz de Guapó')
-@section('meta_description', $doc ? ('Visualizador interativo do ' . $doc->title . ' da Igreja Batista Nacional da Paz de Guapó no padrão OASIS LegalDocML Akoma Ntoso 3.0.') : 'O texto integral do Regimento Interno da Igreja Batista Nacional da Paz de Guapó está em processo de transcrição semântica para o padrão OASIS LegalDocML Akoma Ntoso 3.0.')
+@section('meta_description', $doc ? ('Visualizador interativo do ' . $doc->title . ' da Igreja Batista Nacional da Paz de Guapó, com busca e texto integral.') : 'O texto integral do Regimento Interno da Igreja Batista Nacional da Paz de Guapó para consulta pública e transparência institucional.')
 
 @if ($doc)
     @section('head')
@@ -41,7 +41,7 @@
                     Regimento Interno
                 </h1>
                 <p class="text-text-muted text-sm sm:text-base max-w-xl mx-auto mb-8 leading-relaxed">
-                    O texto integral do Regimento Interno da Igreja Batista Nacional da Paz de Guapó está atualmente sendo transcrito para o padrão semântico internacional <strong class="text-on-surface font-bold">OASIS LegalDocML Akoma Ntoso 3.0</strong> (Issue #4).
+                    O texto integral do Regimento Interno da Igreja Batista Nacional da Paz de Guapó está atualmente sendo digitalizado para disponibilização online na íntegra.
                 </p>
                 <div class="flex items-center justify-center gap-4 flex-wrap">
                     <a href="/estatuto" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-primary text-on-primary text-xs sm:text-sm font-bold shadow-md hover:bg-secondary-container transition-all active:scale-95">
@@ -63,8 +63,8 @@
                     <div>
                         <div class="flex items-center gap-2 mb-3 flex-wrap">
                             <span class="inline-flex items-center gap-1.5 bg-surface-cream-warm/50 text-secondary border border-outline-variant/50 text-xs font-bold px-3 py-1 rounded-full">
-                                <span class="material-symbols-outlined text-[14px]">code_blocks</span>
-                                <span>OASIS Akoma Ntoso 3.0</span>
+                                <span class="material-symbols-outlined text-[14px]">verified</span>
+                                <span>Documento Oficial</span>
                             </span>
                             <span class="inline-flex items-center gap-1.5 bg-surface-cream-light text-on-surface border border-outline-variant/40 text-xs font-medium px-3 py-1 rounded-full">
                                 <span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
@@ -89,7 +89,7 @@
                     <div class="flex items-center gap-3 flex-wrap">
                         <a href="{{ $xmlDownloadUrl }}" download class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-surface-pure text-on-surface text-xs font-bold border border-outline-variant/40 shadow-sm hover:border-secondary hover:text-secondary transition-all active:scale-95">
                             <span class="material-symbols-outlined text-[18px] text-secondary">data_object</span>
-                            <span>Baixar XML Akoma Ntoso</span>
+                            <span>Baixar XML</span>
                         </a>
                         <button type="button" onclick="window.print()" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-primary text-on-primary text-xs font-bold shadow-md hover:bg-secondary-container transition-all active:scale-95">
                             <span class="material-symbols-outlined text-[18px]">print</span>

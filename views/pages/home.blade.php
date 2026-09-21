@@ -342,8 +342,8 @@
                             Transparência e Governança Institucional
                         </span>
                         <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-cream-warm/60 border border-outline-variant/50 text-secondary text-xs font-bold">
-                            <span class="material-symbols-outlined text-[14px]">verified_user</span>
-                            Padrão Internacional Akoma Ntoso 3.0
+                            <span class="material-symbols-outlined text-[14px]">verified</span>
+                            Documentos Oficiais Registrados
                         </span>
                         <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-cream-light border border-outline text-on-surface-variant text-xs font-medium">
                             <span class="material-symbols-outlined text-[14px]">public</span>

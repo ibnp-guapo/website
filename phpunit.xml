@@ -15,6 +15,9 @@
             <directory suffix="Test.php">./tests/Feature</directory>
         </testsuite>
     </testsuites>
+    <php>
+        <env name="GOOGLE_MAPS_API_KEY" value="AIzaSyDbEVEEZhm1QcIJqm5nZvBfeG7uprFRppY" force="true"/>
+    </php>
     <source>
         <include>
             <directory suffix=".php">./src</directory>

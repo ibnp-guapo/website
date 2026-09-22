@@ -647,19 +647,11 @@
             <div class="lg:col-span-7">
                 <div class="rounded-2xl overflow-hidden border border-outline-variant/40 elevation-warm-2 bg-surface-pure flex flex-col h-full min-h-[420px]">
                     <!-- Map Canvas Frame -->
-                    <div class="relative w-full flex-grow h-72 sm:h-96 bg-surface-container-high overflow-hidden">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3820.5!2d-49.5317!3d-16.8315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDQ5JzUzLjQiUyA0OcKwMzEnNTQuMSJX!5e0!3m2!1spt-BR!2sbr!4v1700000000000" 
-                            width="100%" 
-                            height="100%" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade"
-                            title="Mapa da Sede da IBN da Paz de Guapó"
-                            class="w-full h-full">
-                        </iframe>
-                    </div>
+                    @include('components.google-map', [
+                        'mapId' => 'home-map',
+                        'heightClass' => 'flex-grow h-72 sm:h-96 w-full',
+                        'title' => 'Templo Sede - IBN da Paz de Guapó'
+                    ])
 
                     <!-- Map Footer Bar with Direct Action -->
                     <div class="p-4 bg-surface-cream-light border-t border-outline-variant/30 flex flex-wrap items-center justify-between gap-3">

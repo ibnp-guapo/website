@@ -124,18 +124,11 @@
                     <p class="text-sm text-text-muted mb-6">
                         Estamos localizados no Centro de Guapó-GO, com fácil acesso pela Avenida Principal da cidade e estacionamento no entorno.
                     </p>
-                    <div class="rounded-2xl overflow-hidden border border-outline-variant/30 aspect-[4/3] bg-surface-cream-light">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3820.5!2d-49.5317!3d-16.8315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDQ5JzUzLjQiUyA0OcKwMzEnNTQuMSJX!5e0!3m2!1spt-BR!2sbr!4v1700000000000" 
-                            width="100%" 
-                            height="100%" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade"
-                            title="Mapa da Sede da IBN da Paz de Guapó">
-                        </iframe>
-                    </div>
+                    @include('components.google-map', [
+                        'mapId' => 'contato-map',
+                        'heightClass' => 'aspect-[4/3] w-full',
+                        'title' => 'Templo Sede - IBN da Paz de Guapó'
+                    ])
                 </div>
 
                 <!-- Resumo de Cultos para Visitantes -->

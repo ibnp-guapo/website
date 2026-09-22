@@ -27,15 +27,20 @@
                     Seja muito bem-vindo à nossa congregação. Conheça nossos cultos semanais e faça parte da nossa família de fé. Venha viver momentos transformadores na presença do Senhor.
                 </p>
 
-                <!-- Action Buttons -->
-                <div class="flex flex-wrap items-center gap-4 pt-2 w-full sm:w-auto">
-                    <!-- Primary CTA -->
-                    <a class="inline-flex items-center justify-center gap-2 bg-primary text-on-primary text-sm font-bold px-7 py-3.5 rounded-xl shadow-md hover:bg-secondary-container transition-all duration-200 active:scale-95" href="#programacao">
+                <!-- Action Buttons (Ad Grants High-Visibility CTAs) -->
+                <div class="flex flex-wrap items-center gap-3 pt-2 w-full sm:w-auto">
+                    <!-- Primary CTA: Planeje sua Visita -->
+                    <a class="inline-flex items-center justify-center gap-2 bg-primary text-on-primary text-sm font-bold px-6 py-3.5 rounded-xl shadow-md hover:bg-secondary-container transition-all duration-200 active:scale-95" href="#programacao">
                         <span class="material-symbols-outlined text-[20px]">calendar_month</span>
-                        <span>Cultos da Semana</span>
+                        <span>Planeje sua Visita</span>
                     </a>
-                    <!-- Secondary CTA -->
-                    <a class="inline-flex items-center justify-center gap-2 bg-surface-pure border border-secondary text-secondary text-sm font-bold px-7 py-3.5 rounded-xl hover:bg-secondary-container/10 transition-all duration-200 active:scale-95" href="#localizacao">
+                    <!-- WhatsApp Pastoral CTA -->
+                    <a class="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white text-sm font-bold px-5 py-3.5 rounded-xl shadow-sm hover:bg-[#1ebd59] transition-all duration-200 active:scale-95" href="https://wa.me/556298700089?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20e%20atendimento%20pastoral%20na%20IBN%20da%20Paz%20de%20Guap%C3%B3." target="_blank" rel="noopener noreferrer">
+                        <span class="material-symbols-outlined text-[20px]">chat</span>
+                        <span>Atendimento Pastoral</span>
+                    </a>
+                    <!-- Como Chegar CTA -->
+                    <a class="inline-flex items-center justify-center gap-2 bg-surface-pure border border-secondary text-secondary text-sm font-bold px-5 py-3.5 rounded-xl hover:bg-secondary-container/10 transition-all duration-200 active:scale-95" href="#localizacao">
                         <span class="material-symbols-outlined text-[20px]">directions</span>
                         <span>Como Chegar</span>
                     </a>
@@ -50,7 +55,7 @@
                 </div>
             </div>
 
-            <!-- Hero Visual Feature Card -->
+            <!-- Hero Visual Feature Card (Optimized LCP Element) -->
             <div class="lg:col-span-5">
                 <div class="relative rounded-2xl p-3 bg-surface-pure border border-outline-variant/30 elevation-warm-2">
                     <div class="relative overflow-hidden rounded-xl h-80 sm:h-96 w-full">
@@ -58,6 +63,10 @@
                             class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700 ease-out" 
                             alt="Educadora contando histórias e ensinando crianças com livros em ambiente acolhedor, simbolizando a transformação de vidas pela educação infantil" 
                             src="/assets/images/hero-transformacao-infantil.jpg"
+                            width="640"
+                            height="427"
+                            loading="eager"
+                            fetchpriority="high"
                         />
                         <div class="absolute inset-0 bg-gradient-to-t from-on-surface/85 via-on-surface/25 to-transparent"></div>
                         <div class="absolute bottom-4 left-4 right-4 text-surface-pure">
@@ -228,20 +237,141 @@
     </div>
 </section>
 
+<!-- MINISTRIES & CHURCH COMMUNITY SECTION ("Ministérios da Igreja") -->
+<section class="py-16 md:py-24 bg-surface-pure border-t border-outline-variant/30" id="ministerios">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-surface-cream-warm/50 border border-outline-variant/50 text-secondary text-xs font-bold mb-3">
+                <span class="material-symbols-outlined text-[16px]">groups</span>
+                <span>Vida em Comunidade &amp; Edificação</span>
+            </div>
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-on-surface">
+                Ministérios da Igreja
+            </h2>
+            <p class="text-sm sm:text-base text-text-muted mt-2 leading-relaxed">
+                Nossos ministérios atuam para acolher, ensinar, servir e discipular pessoas em todas as fases da vida, fortalecendo a fé e a comunhão em Guapó-GO.
+            </p>
+        </div>
+
+        <!-- 4 Grid Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <!-- Card 1: Paz Kids -->
+            <div class="p-6 rounded-2xl bg-surface-cream-light border border-outline-variant/30 elevation-warm-1 flex flex-col justify-between hover:border-secondary transition-all duration-300">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-surface-cream-warm/60 text-secondary flex items-center justify-center mb-4">
+                        <span class="material-symbols-outlined text-[28px]">child_care</span>
+                    </div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-secondary block mb-1">Crianças de 0 a 11 anos</span>
+                    <h3 class="text-xl font-bold text-on-surface mb-2">Paz Kids (Ministério Infantil)</h3>
+                    <p class="text-xs text-text-muted leading-relaxed mb-4">
+                        Acolhimento amoroso e aprendizado bíblico dedicado durante os cultos de domingo, com lições lúdicas, professores capacitados e ambiente seguro.
+                    </p>
+                </div>
+                <div class="pt-3 border-t border-outline-variant/20 flex items-center gap-2 text-xs font-semibold text-on-surface">
+                    <span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+                    <span>Espaço dedicado durante os cultos</span>
+                </div>
+            </div>
+
+            <!-- Card 2: Louvor & Adoração -->
+            <div class="p-6 rounded-2xl bg-surface-cream-light border border-outline-variant/30 elevation-warm-1 flex flex-col justify-between hover:border-primary transition-all duration-300">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-surface-cream-warm/60 text-primary flex items-center justify-center mb-4">
+                        <span class="material-symbols-outlined text-[28px]">music_note</span>
+                    </div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-primary block mb-1">Música &amp; Celebração</span>
+                    <h3 class="text-xl font-bold text-on-surface mb-2">Louvor e Adoração</h3>
+                    <p class="text-xs text-text-muted leading-relaxed mb-4">
+                        Ministração musical congregacional com hinos bíblicos e cânticos de adoração a Deus, conduzindo os corações em reverência e gratidão a Jesus.
+                    </p>
+                </div>
+                <div class="pt-3 border-t border-outline-variant/20 flex items-center gap-2 text-xs font-semibold text-on-surface">
+                    <span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+                    <span>Cultos regulares às quartas e domingos</span>
+                </div>
+            </div>
+
+            <!-- Card 3: Discipulado & Famílias -->
+            <div class="p-6 rounded-2xl bg-surface-cream-light border border-outline-variant/30 elevation-warm-1 flex flex-col justify-between hover:border-secondary transition-all duration-300">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-surface-cream-warm/60 text-secondary flex items-center justify-center mb-4">
+                        <span class="material-symbols-outlined text-[28px]">diversity_1</span>
+                    </div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-secondary block mb-1">Maturidade Cristã</span>
+                    <h3 class="text-xl font-bold text-on-surface mb-2">Discipulado e Famílias</h3>
+                    <p class="text-xs text-text-muted leading-relaxed mb-4">
+                        Estudos bíblicos sistemáticos, integração fraterna e apoio pastoral para fortalecer os lares e conduzir cada cristão à maturidade da fé.
+                    </p>
+                </div>
+                <div class="pt-3 border-t border-outline-variant/20 flex items-center gap-2 text-xs font-semibold text-on-surface">
+                    <span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+                    <span>Estudos e aconselhamento pastoral</span>
+                </div>
+            </div>
+
+            <!-- Card 4: Ação Social Comunitária -->
+            <div class="p-6 rounded-2xl bg-surface-cream-light border border-outline-variant/30 elevation-warm-1 flex flex-col justify-between hover:border-primary transition-all duration-300">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-surface-cream-warm/60 text-primary flex items-center justify-center mb-4">
+                        <span class="material-symbols-outlined text-[28px]">volunteer_activism</span>
+                    </div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-primary block mb-1">Amor em Ação</span>
+                    <h3 class="text-xl font-bold text-on-surface mb-2">Ação Social Comunitária</h3>
+                    <p class="text-xs text-text-muted leading-relaxed mb-4">
+                        Solidariedade contínua com arrecadação de alimentos, apoio a lares em vulnerabilidade e iniciativas sociais em parceria com a comunidade.
+                    </p>
+                </div>
+                <div class="pt-3 border-t border-outline-variant/20 flex items-center gap-2 text-xs font-semibold text-on-surface">
+                    <span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+                    <span>Apoio solidário contínuo em Guapó</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interactive Pastoral Callout & Prayer Request Banner -->
+        <div class="p-6 sm:p-8 rounded-3xl bg-surface-cream-warm/30 border border-outline-variant/40 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-2xl bg-secondary text-on-secondary flex items-center justify-center shrink-0 shadow-sm">
+                    <span class="material-symbols-outlined text-[28px]">support_agent</span>
+                </div>
+                <div>
+                    <h3 class="text-base sm:text-lg font-bold text-on-surface">
+                        Precisa de oração, aconselhamento ou deseja participar?
+                    </h3>
+                    <p class="text-xs sm:text-sm text-text-muted mt-0.5">
+                        Nossa equipe pastoral está à disposição para orar pela sua vida, tirar dúvidas e acolher sua família.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-wrap items-center gap-3 shrink-0">
+                <a href="https://wa.me/556298700089?text=Ol%C3%A1!%20Gostaria%20de%20enviar%20um%20pedido%20de%20ora%C3%A7%C3%A3o%20para%20a%20IBN%20da%20Paz." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-primary text-on-primary text-xs sm:text-sm font-bold shadow-sm hover:bg-secondary-container transition-all active:scale-95">
+                    <span class="material-symbols-outlined text-[18px]">favorite</span>
+                    <span>Enviar Pedido de Oração</span>
+                </a>
+                <a href="#programacao" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-surface-pure border border-secondary text-secondary text-xs sm:text-sm font-bold hover:bg-secondary-container/10 transition-all active:scale-95">
+                    <span class="material-symbols-outlined text-[18px]">calendar_month</span>
+                    <span>Planeje sua Visita</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- COMMUNITY & SOCIAL INITIATIVE SECTION ("Escola Social de Guapó") -->
 <section class="py-16 md:py-24 bg-surface-cream-warm/25 border-y border-outline-variant/30" id="escola-social">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Section Header -->
         <div class="text-center max-w-3xl mx-auto mb-12">
             <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-surface-cream-light border border-outline-variant/50 text-secondary text-xs font-bold mb-3">
-                <span class="material-symbols-outlined text-[16px]">construction</span>
-                <span>Projeto em Construção &amp; Implantação</span>
+                <span class="material-symbols-outlined text-[16px]">volunteer_activism</span>
+                <span>Iniciativa de Impacto Social Comunitário</span>
             </div>
             <h2 class="text-2xl sm:text-4xl font-extrabold text-on-surface">
                 Escola Social de Guapó
             </h2>
             <p class="text-sm sm:text-base text-text-muted mt-2 leading-relaxed">
-                A IBN da Paz de Guapó é a mantenedora legal da Escola Social de Guapó, projeto atualmente em fase de obras e estruturação para atender a comunidade local com educação infantil, contraturno escolar e centro comunitário.
+                A IBN da Paz de Guapó é a entidade mantenedora legal da Escola Social de Guapó, iniciativa de acolhimento e suporte continuado para atender as famílias e a infância em Guapó com atividades socioeducativas, contraturno escolar e centro de convivência comunitária.
             </p>
         </div>
 
@@ -253,15 +383,15 @@
                     <div class="w-12 h-12 rounded-xl bg-surface-cream-warm/50 text-secondary flex items-center justify-center mb-4">
                         <span class="material-symbols-outlined text-[28px]">child_care</span>
                     </div>
-                    <span class="text-xs font-bold uppercase tracking-wider text-secondary block mb-1">Estrutura em Obras</span>
+                    <span class="text-xs font-bold uppercase tracking-wider text-secondary block mb-1">Primeira Infância</span>
                     <h3 class="text-xl font-bold text-on-surface mb-2">Educação Infantil</h3>
                     <p class="text-sm text-text-muted leading-relaxed mb-4">
-                        Instalações planejadas para oferecer ambiente seguro, acolhedor e lúdico para os primeiros passos da infância, cultivando valores cristãos e amor ao aprendizado.
+                        Ambiente acolhedor, seguro e lúdico para o desenvolvimento cognitivo e emocional das crianças, fundamentado em valores de amor ao próximo e cidadania.
                     </p>
                 </div>
                 <div class="pt-3 border-t border-outline-variant/20 flex items-center gap-2 text-xs font-semibold text-on-surface">
                     <span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
-                    <span>Estrutura planejada para a primeira infância</span>
+                    <span>Atendimento e formação integral para a infância</span>
                 </div>
             </div>
 
@@ -271,15 +401,15 @@
                     <div class="w-12 h-12 rounded-xl bg-surface-cream-warm/50 text-primary flex items-center justify-center mb-4">
                         <span class="material-symbols-outlined text-[28px]">school</span>
                     </div>
-                    <span class="text-xs font-bold uppercase tracking-wider text-primary block mb-1">Projeto Formativo</span>
+                    <span class="text-xs font-bold uppercase tracking-wider text-primary block mb-1">Apoio Pedagógico e Oficinas</span>
                     <h3 class="text-xl font-bold text-on-surface mb-2">Contraturno Escolar</h3>
                     <p class="text-sm text-text-muted leading-relaxed mb-4">
-                        Espaço planejado para reforço pedagógico, alfabetização, oficinas culturais, artes e iniciação esportiva, protegendo crianças contra a vulnerabilidade social.
+                        Oficinas formativas, reforço de aprendizagem, alfabetização, arte e incentivo à leitura, oferecendo alternativas enriquecedoras no período complementar.
                     </p>
                 </div>
                 <div class="pt-3 border-t border-outline-variant/20 flex items-center gap-2 text-xs font-semibold text-on-surface">
                     <span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
-                    <span>Oficinas e apoio pedagógico no contraturno</span>
+                    <span>Oficinas e suporte pedagógico no contraturno</span>
                 </div>
             </div>
 
@@ -289,15 +419,15 @@
                     <div class="w-12 h-12 rounded-xl bg-surface-cream-warm/50 text-secondary flex items-center justify-center mb-4">
                         <span class="material-symbols-outlined text-[28px]">diversity_3</span>
                     </div>
-                    <span class="text-xs font-bold uppercase tracking-wider text-secondary block mb-1">Edificação Multiuso</span>
+                    <span class="text-xs font-bold uppercase tracking-wider text-secondary block mb-1">Integração Comunitária</span>
                     <h3 class="text-xl font-bold text-on-surface mb-2">Centro Comunitário &amp; Auditório</h3>
                     <p class="text-sm text-text-muted leading-relaxed mb-4">
-                        Edificação de um centro multiuso com auditório estruturado para palestras, encontros familiares, capacitação profissional e reuniões comunitárias.
+                        Espaço estruturado para encontros familiares, palestras socioeducativas, capacitação de pais e integração comunitária para o bem-estar de Guapó.
                     </p>
                 </div>
                 <div class="pt-3 border-t border-outline-variant/20 flex items-center gap-2 text-xs font-semibold text-on-surface">
                     <span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
-                    <span>Auditório multiuso em construção</span>
+                    <span>Espaço de convivência familiar e cidadania</span>
                 </div>
             </div>
         </div>
@@ -311,18 +441,18 @@
                 <div>
                     <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-cream-light text-secondary text-[11px] font-bold mb-1">
                         <span class="material-symbols-outlined text-[14px]">verified</span>
-                        <span>Projeto em Construção • Mantenedora: IBN da Paz (CNPJ 02.930.019/0001-62)</span>
+                        <span>Iniciativa Comunitária • Mantenedora: IBN da Paz (CNPJ 02.930.019/0001-62)</span>
                     </div>
                     <h3 class="text-lg sm:text-xl font-bold text-on-surface">
-                        Acompanhe o andamento das obras e apoie a construção
+                        Conheça o projeto e participe das ações sociais da nossa comunidade
                     </h3>
                     <p class="text-xs sm:text-sm text-text-muted mt-1 leading-relaxed">
-                        Acesse a plataforma oficial para conferir fotos do canteiro de obras, projeto arquitetônico e formas de contribuir com esta iniciativa.
+                        Acesse a plataforma oficial da Escola Social de Guapó para conferir o programa socioeducativo, parcerias e formas de apoiar esta causa.
                     </p>
                 </div>
             </div>
-            <a href="https://social.ibnpguapo.org.br/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-primary text-on-primary text-sm font-bold px-7 py-3.5 rounded-xl shadow-md hover:bg-secondary-container transition-all duration-200 active:scale-95 whitespace-nowrap shrink-0" title="Acompanhar obras e projeto da Escola Social de Guapó (abre em nova aba)">
-                <span>Acompanhar Obras &amp; Projeto</span>
+            <a href="https://social.ibnpguapo.org.br/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-primary text-on-primary text-sm font-bold px-7 py-3.5 rounded-xl shadow-md hover:bg-secondary-container transition-all duration-200 active:scale-95 whitespace-nowrap shrink-0" title="Conhecer o projeto da Escola Social de Guapó (abre em nova aba)">
+                <span>Conhecer a Escola Social</span>
                 <span class="material-symbols-outlined text-[18px]">open_in_new</span>
             </a>
         </div>
@@ -518,28 +648,17 @@
                 <div class="rounded-2xl overflow-hidden border border-outline-variant/40 elevation-warm-2 bg-surface-pure flex flex-col h-full min-h-[420px]">
                     <!-- Map Canvas Frame -->
                     <div class="relative w-full flex-grow h-72 sm:h-96 bg-surface-container-high overflow-hidden">
-                        <img 
-                            class="w-full h-full object-cover" 
-                            alt="Mapa cartográfico do centro de Guapó indicando a IBN da Paz de Guapó" 
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1kLrlo6C46MtcaBz5b0edXvkmoECWjXOJNVWfDISLj5ZhNhprAXv7nSGQCUHvSUvnD0xxDOJoK0qbtK8TJ6pRIU-P8mtJDYWlPB7EBsSJvxNoWePpB-gaQ580TM0NM1Fgp4HJ-gAizbHajdofBz5_gYKPqOGplt3c5WcXJX-yblz5v-Tq4BA_dVHx4K8UjOEx0HVQgAzUQBvKVdDjkaxTLkP5OgK5scnXYEfSvAunI6pblPpBqYuZ2Z3o2O8y9ecP0kKb4JsWUJA"
-                        />
-                        <!-- Map Overlay Gradient -->
-                        <div class="absolute inset-0 bg-gradient-to-t from-on-surface/50 via-transparent to-transparent pointer-events-none"></div>
-
-                        <!-- Custom Church Marker Badge -->
-                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none drop-shadow-xl animate-bounce">
-                            <div class="px-3.5 py-1.5 rounded-full bg-primary text-on-primary text-xs font-bold shadow-lg flex items-center gap-1.5">
-                                <span class="material-symbols-outlined text-[16px]">church</span>
-                                <span>IBN da Paz de Guapó</span>
-                            </div>
-                            <div class="w-3.5 h-3.5 bg-primary rotate-45 -mt-1.5"></div>
-                        </div>
-
-                        <!-- Live Map Chip -->
-                        <div class="absolute top-4 left-4 bg-surface-pure/95 backdrop-blur-sm px-3 py-1.5 rounded-xl border border-outline-variant/30 text-on-surface flex items-center gap-2 text-xs font-semibold shadow-sm">
-                            <span class="material-symbols-outlined text-secondary text-[18px]">near_me</span>
-                            <span>Guapó - GO (Centro)</span>
-                        </div>
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3820.5!2d-49.5317!3d-16.8315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDQ5JzUzLjQiUyA0OcKwMzEnNTQuMSJX!5e0!3m2!1spt-BR!2sbr!4v1700000000000" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Mapa da Sede da IBN da Paz de Guapó"
+                            class="w-full h-full">
+                        </iframe>
                     </div>
 
                     <!-- Map Footer Bar with Direct Action -->

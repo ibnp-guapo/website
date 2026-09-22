@@ -29,6 +29,11 @@ $router->get('/programacao/ical', function () use ($programacaoController): void
     $programacaoController->ical();
 });
 
+// Rota 3.1: Alias com extensão canônica (.ics)
+$router->get('/programacao.ics', function () use ($programacaoController): void {
+    $programacaoController->ical();
+});
+
 // Controller de Documentos Legais (Akoma Ntoso 3.0)
 $legalController = new \App\Controllers\LegalDocController();
 

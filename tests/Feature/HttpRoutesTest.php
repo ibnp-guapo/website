@@ -63,6 +63,31 @@ final class HttpRoutesTest extends TestCase
         $this->assertStringContainsString('END:VCALENDAR', $output);
     }
 
+    public function testProgramacaoIcsAliasRouteDeliversCalendar(): void
+    {
+        // Valida que o alias canônico /programacao.ics entrega o mesmo conteúdo RFC 5545
+        ob_start();
+        $this->programacaoController->ical();
+        $output = (string) ob_get_clean();
+
+        $this->assertNotEmpty($output);
+        $this->assertStringContainsString('BEGIN:VCALENDAR', $output);
+        $this->assertStringContainsString('SUMMARY:Culto de Ensino', $output);
+        $this->assertStringContainsString('SUMMARY:Culto de Celebração', $output);
+    }
+
+    public function testHtaccessContainsCompressionAndCachingRules(): void
+    {
+        $htaccessPath = dirname(__DIR__, 2) . '/public/.htaccess';
+        $this->assertFileExists($htaccessPath);
+        $content = (string) file_get_contents($htaccessPath);
+
+        $this->assertStringContainsString('mod_deflate.c', $content);
+        $this->assertStringContainsString('AddOutputFilterByType DEFLATE', $content);
+        $this->assertStringContainsString('mod_expires.c', $content);
+        $this->assertStringContainsString('ExpiresActive On', $content);
+    }
+
     public function testEstatutoRouteReturnsOkAndRendersReader(): void
     {
         ob_start();

@@ -37,17 +37,32 @@ final class PageRoutesTest extends TestCase
         $this->assertStringContainsString('wa.me/556298700089', $output);
         $this->assertStringContainsString('/assets/images/logo-ibnp.png', $output);
 
-        // Validações da seção e links da Ação Social (Issue #14 / Spec 12)
+        // Validações da seção e links da Ação Social e Ministérios (Spec 15 - Ad Grants)
         $this->assertStringContainsString('Escola Social de Guapó', $output);
         $this->assertStringContainsString('https://social.ibnpguapo.org.br/', $output);
         $this->assertStringContainsString('Educação Infantil', $output);
         $this->assertStringContainsString('Contraturno Escolar', $output);
         $this->assertStringContainsString('Centro Comunitário', $output);
         $this->assertStringContainsString('child_care', $output);
-        $this->assertStringContainsString('construction', $output);
-        $this->assertStringContainsString('Construção', $output);
         $this->assertStringContainsString('target="_blank"', $output);
         $this->assertStringContainsString('rel="noopener noreferrer"', $output);
+
+        // Conformidade Ad Grants: ausência estrita de termos de "em construção/obras"
+        $this->assertStringNotContainsString('construction', $output);
+        $this->assertStringNotContainsString('Projeto em Construção', $output);
+        $this->assertStringNotContainsString('Estrutura em Obras', $output);
+        $this->assertStringNotContainsString('em obras', mb_strtolower($output));
+        $this->assertStringNotContainsString('lh3.googleusercontent.com', $output);
+
+        // Validação de Ministérios da Igreja e CTAs em Destaque (Spec 15)
+        $this->assertStringContainsString('Planeje sua Visita', $output);
+        $this->assertStringContainsString('Ministérios da Igreja', $output);
+        $this->assertStringContainsString('Paz Kids', $output);
+        $this->assertStringContainsString('Louvor', $output);
+        $this->assertStringContainsString('Discipulado', $output);
+        $this->assertStringContainsString('Atendimento Pastoral', $output);
+        $this->assertStringContainsString('Pedido de Oração', $output);
+        $this->assertStringContainsString('Dízimos e Ofertas via PIX', $output);
 
         // Validações de titularidade de domínio e canais institucionais (Spec 14 - Google for Nonprofits)
         $this->assertStringContainsString('ibnpguapo.org.br', $output);
@@ -77,11 +92,12 @@ final class PageRoutesTest extends TestCase
         $this->assertStringContainsString('assignment', $output);
         $this->assertStringContainsString('elevation-warm-1', $output);
 
-        // Validações institucionais da mantenedora da Escola Social (Issue #14 / Spec 12)
+        // Validações institucionais da mantenedora da Escola Social (Spec 15 - Ad Grants)
         $this->assertStringContainsString('Mantenedora da Escola Social de Guapó', $output);
         $this->assertStringContainsString('https://social.ibnpguapo.org.br/', $output);
-        $this->assertStringContainsString('construction', $output);
-        $this->assertStringContainsString('construção e estruturação', $output);
+        $this->assertStringNotContainsString('construction', $output);
+        $this->assertStringNotContainsString('construção e estruturação', $output);
+        $this->assertStringNotContainsString('em obras', mb_strtolower($output));
 
         // Ficha Cadastral e Jurídica (Spec 14 - Google for Nonprofits)
         $this->assertStringContainsString('Ficha Cadastral e Transparência Jurídica', $output);

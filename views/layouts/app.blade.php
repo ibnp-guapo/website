@@ -6,16 +6,16 @@
     <title>@yield('title', 'IBN da Paz de Guapó - Um Lugar de Paz, Comunhão e Adoração')</title>
     <meta name="description" content="@yield('meta_description', 'Portal oficial da Igreja Batista Nacional da Paz de Guapó-GO. Cultos semanais às quartas e domingos às 19:30. Conheça nossa igreja e venha nos visitar!')">
 
-    <!-- Material Symbols Outlined -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" />
-
-    <!-- Plus Jakarta Sans font family -->
+    <!-- Google Fonts Preconnect & Display Swap (Ad Grants Performance) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="/assets/css/app.css?v=1.0.5" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" />
+    <!-- Plus Jakarta Sans font family -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Design System CSS -->
-    <link rel="stylesheet" href="/assets/css/app.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/app.css?v=1.0.5">
     <link rel="icon" type="image/png" href="/assets/images/logo-ibnp.png">
 
     @yield('head')
@@ -37,9 +37,10 @@
             </a>
 
             <!-- Web Desktop Navigation Links (Exibido em telas a partir de 1280px com espacamento confortável e harmonioso) -->
-            <nav class="hidden xl:flex items-center justify-center gap-4 2xl:gap-6 text-xs xl:text-sm font-semibold flex-1 px-4">
+            <nav class="hidden xl:flex items-center justify-center gap-3 2xl:gap-5 text-xs xl:text-sm font-semibold flex-1 px-3">
                 <a href="/" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Início</a>
                 <a href="/programacao" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/programacao' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Programação</a>
+                <a href="/#ministerios" class="whitespace-nowrap pb-1 transition-all duration-200 text-on-surface hover:text-primary">Ministérios</a>
                 <a href="/estatuto" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/estatuto' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Estatuto Social</a>
                 <a href="/regimento" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/regimento' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Regimento Interno</a>
                 <a href="/sobre" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/sobre' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Sobre Nós</a>
@@ -50,11 +51,11 @@
                 <a href="/contato" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/contato' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Contato</a>
             </nav>
 
-            <!-- Trailing Action: Como Chegar com divisória limpa -->
+            <!-- Trailing Action: Planeje sua Visita & Como Chegar (Ad Grants High Priority CTA) -->
             <div class="flex items-center gap-3 shrink-0 xl:ml-6 xl:pl-6 xl:border-l xl:border-outline-variant/30">
-                <a href="/contato" class="hidden sm:inline-flex items-center gap-1.5 bg-primary text-on-primary text-xs font-bold px-3.5 py-2.5 rounded-xl hover:bg-secondary-container transition-all duration-200 shadow-sm active:scale-95 whitespace-nowrap">
-                    <span class="material-symbols-outlined text-[18px]">location_on</span>
-                    <span>Como Chegar</span>
+                <a href="/programacao" class="hidden sm:inline-flex items-center gap-1.5 bg-primary text-on-primary text-xs font-bold px-4 py-2.5 rounded-xl hover:bg-secondary-container transition-all duration-200 shadow-sm active:scale-95 whitespace-nowrap">
+                    <span class="material-symbols-outlined text-[18px]">calendar_month</span>
+                    <span>Planeje sua Visita</span>
                 </a>
 
                 <!-- Mobile & Tablet Menu Toggle Button (visível abaixo de 1280px) -->
@@ -68,6 +69,7 @@
         <div id="mobile-menu-drawer" class="hidden xl:hidden border-t border-outline-variant/30 bg-surface-cream-light px-4 py-4 space-y-2">
             <a href="/" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Início</a>
             <a href="/programacao" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/programacao' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Programação</a>
+            <a href="/#ministerios" class="block py-2 text-sm font-semibold text-on-surface hover:text-primary">Ministérios da Igreja</a>
             <a href="/estatuto" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/estatuto' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Estatuto Social</a>
             <a href="/regimento" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/regimento' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Regimento Interno</a>
             <a href="/sobre" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/sobre' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Sobre Nós</a>
@@ -79,10 +81,14 @@
                 <span class="material-symbols-outlined text-[16px] text-text-muted">open_in_new</span>
             </a>
             <a href="/contato" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/contato' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Contato</a>
-            <div class="pt-2 border-t border-outline-variant/30">
-                <a href="/contato" class="flex items-center justify-center gap-1.5 w-full bg-primary text-on-primary py-2.5 rounded-xl text-xs font-bold shadow-sm">
-                    <span class="material-symbols-outlined text-[18px]">location_on</span>
-                    <span>Como Chegar / Horários</span>
+            <div class="pt-3 border-t border-outline-variant/30 flex flex-col gap-2">
+                <a href="/programacao" class="flex items-center justify-center gap-1.5 w-full bg-primary text-on-primary py-3 rounded-xl text-xs font-bold shadow-sm">
+                    <span class="material-symbols-outlined text-[18px]">calendar_month</span>
+                    <span>Planeje sua Visita (Cultos)</span>
+                </a>
+                <a href="https://wa.me/556298700089?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20e%20atendimento%20pastoral%20na%20IBN%20da%20Paz%20de%20Guap%C3%B3." target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 w-full bg-[#25D366] text-white py-3 rounded-xl text-xs font-bold shadow-sm">
+                    <span class="material-symbols-outlined text-[18px]">chat</span>
+                    <span>Atendimento Pastoral via WhatsApp</span>
                 </a>
             </div>
         </div>

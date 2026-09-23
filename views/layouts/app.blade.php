@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'IBN da Paz de Guapó - Um Lugar de Paz, Comunhão e Adoração')</title>
-    <meta name="description" content="@yield('meta_description', 'Portal oficial da IBN da Paz de Guapó-GO. Comunidade, educação infantil e impacto social. Encontros abertos às quartas e domingos às 19:30.')">
+    <title>@yield('title', 'IBNP - Um Lugar de Paz, Comunhão e Adoração')</title>
+    <meta name="description" content="@yield('meta_description', 'Portal oficial da IBNP em Guapó-GO. Comunidade, educação infantil e impacto social. Encontros abertos às quartas e domingos às 19:30.')">
 
     <!-- Google Fonts Preconnect & Display Swap (Ad Grants Performance) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,34 +26,34 @@
     <header class="sticky top-0 z-50 bg-surface-cream-light/95 backdrop-blur-md shadow-sm border-b border-outline-variant/30 transition-all w-full max-w-full overflow-hidden">
         <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
             <!-- Brand Logo & Identity -->
-            <a href="/" class="flex items-center gap-3 group shrink-0 mr-4 xl:mr-6">
-                <div class="w-11 h-11 shrink-0 rounded-xl bg-white p-1 flex items-center justify-center shadow-xs border border-outline-variant/40 group-hover:scale-105 transition-transform duration-200 overflow-hidden" style="width: 44px; height: 44px; min-width: 44px; min-height: 44px; max-width: 44px; max-height: 44px;">
-                    <img src="/assets/images/logo-ibnp.png" alt="Logo IBN da Paz de Guapó" width="44" height="44" class="w-full h-full object-contain" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+            <a href="/" class="flex items-center gap-2.5 sm:gap-3 group shrink-0 mr-2 xl:mr-4">
+                <div class="w-10 h-10 sm:w-11 sm:h-11 shrink-0 rounded-xl bg-white p-1 flex items-center justify-center shadow-xs border border-outline-variant/40 group-hover:scale-105 transition-transform duration-200 overflow-hidden" style="width: 44px; height: 44px; min-width: 44px; min-height: 44px; max-width: 44px; max-height: 44px;">
+                    <img src="/assets/images/logo-ibnp.png" alt="Logo IBNP" width="44" height="44" class="w-full h-full object-contain" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                 </div>
                 <div class="flex flex-col">
-                    <span class="text-base sm:text-lg font-bold text-on-surface tracking-tight leading-tight whitespace-nowrap">IBN da Paz de Guapó</span>
-                    <span class="text-[0.6875rem] text-text-muted font-medium tracking-wide hidden 2xl:block whitespace-nowrap">Comunidade • Educação • Impacto Social</span>
+                    <span class="text-lg sm:text-xl font-black text-on-surface tracking-tight leading-none whitespace-nowrap">IBNP</span>
+                    <span class="text-[0.625rem] text-text-muted font-medium tracking-wide hidden 2xl:block whitespace-nowrap">Comunidade • Educação • Impacto Social</span>
                 </div>
             </a>
 
-            <!-- Web Desktop Navigation Links (Exibido em telas a partir de 1280px com espacamento confortável e harmonioso) -->
-            <nav class="hidden xl:flex items-center justify-center gap-3 2xl:gap-5 text-xs xl:text-sm font-semibold flex-1 px-3">
+            <!-- Web Desktop Navigation Links (Compacto e responsivo, mantendo CTA sempre visível) -->
+            <nav class="hidden xl:flex items-center justify-center gap-2 xl:gap-3 2xl:gap-5 text-xs 2xl:text-sm font-semibold flex-1 px-2">
                 <a href="/" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Início</a>
                 <a href="/programacao" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/programacao' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Programação</a>
-                <a href="/#iniciativas" class="whitespace-nowrap pb-1 transition-all duration-200 text-on-surface hover:text-primary">Iniciativas &amp; Projetos</a>
-                <a href="/estatuto" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/estatuto' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Estatuto Social</a>
-                <a href="/regimento" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/regimento' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Regimento Interno</a>
+                <a href="/#iniciativas" class="whitespace-nowrap pb-1 transition-all duration-200 text-on-surface hover:text-primary">Iniciativas</a>
+                <a href="/estatuto" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/estatuto' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Estatuto</a>
+                <a href="/regimento" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/regimento' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Regimento</a>
                 <a href="/sobre" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/sobre' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Sobre Nós</a>
                 <a href="https://social.ibnpguapo.org.br/" target="_blank" rel="noopener noreferrer" class="whitespace-nowrap pb-1 transition-all duration-200 text-on-surface hover:text-primary inline-flex items-center gap-1" title="Ação Social - Escola Social de Guapó (abre em nova aba)">
                     <span>Ação Social</span>
-                    <span class="material-symbols-outlined text-[14px] text-text-muted">open_in_new</span>
+                    <span class="material-symbols-outlined text-[13px] text-text-muted">open_in_new</span>
                 </a>
                 <a href="/contato" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/contato' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Contato</a>
             </nav>
 
-            <!-- Trailing Action: Planeje sua Visita & Como Chegar (Ad Grants High Priority CTA) -->
-            <div class="flex items-center gap-3 shrink-0 xl:ml-6 xl:pl-6 xl:border-l xl:border-outline-variant/30">
-                <a href="/programacao" class="hidden sm:inline-flex items-center gap-1.5 bg-primary text-on-primary text-xs font-bold px-4 py-2.5 rounded-xl hover:bg-secondary-container transition-all duration-200 shadow-sm active:scale-95 whitespace-nowrap">
+            <!-- Trailing Action: Planeje sua Visita & Como Chegar (Ad Grants High Priority CTA com shrink-0) -->
+            <div class="flex items-center gap-3 shrink-0 ml-auto xl:ml-3 2xl:ml-6 xl:pl-3 2xl:pl-6 xl:border-l xl:border-outline-variant/30">
+                <a href="/programacao" class="hidden sm:inline-flex items-center gap-1.5 bg-primary text-on-primary text-xs font-bold px-3.5 py-2.5 rounded-xl hover:bg-secondary-container transition-all duration-200 shadow-sm active:scale-95 whitespace-nowrap shrink-0">
                     <span class="material-symbols-outlined text-[18px]">calendar_month</span>
                     <span>Planeje sua Visita</span>
                 </a>
@@ -69,7 +69,7 @@
         <div id="mobile-menu-drawer" class="hidden xl:hidden border-t border-outline-variant/30 bg-surface-cream-light px-4 py-4 space-y-2">
             <a href="/" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Início</a>
             <a href="/programacao" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/programacao' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Programação</a>
-            <a href="/#iniciativas" class="block py-2 text-sm font-semibold text-on-surface hover:text-primary">Iniciativas Comunitárias</a>
+            <a href="/#iniciativas" class="block py-2 text-sm font-semibold text-on-surface hover:text-primary">Iniciativas</a>
             <a href="/estatuto" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/estatuto' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Estatuto Social</a>
             <a href="/regimento" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/regimento' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Regimento Interno</a>
             <a href="/sobre" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/sobre' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Sobre Nós</a>
@@ -86,7 +86,7 @@
                     <span class="material-symbols-outlined text-[18px]">calendar_month</span>
                     <span>Planeje sua Visita (Encontros)</span>
                 </a>
-                <a href="https://wa.me/556298700089?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20e%20atendimento%20pastoral%20na%20IBN%20da%20Paz%20de%20Guap%C3%B3." target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 w-full bg-[#25D366] text-white py-3 rounded-xl text-xs font-bold shadow-sm">
+                <a href="https://wa.me/556298700089?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20e%20atendimento%20pastoral%20na%20IBNP." target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 w-full bg-[#25D366] text-white py-3 rounded-xl text-xs font-bold shadow-sm">
                     <span class="material-symbols-outlined text-[18px]">chat</span>
                     <span>Atendimento Pastoral via WhatsApp</span>
                 </a>
@@ -108,12 +108,12 @@
                 <div class="md:col-span-5 space-y-3">
                     <div class="flex items-center gap-2.5">
                         <div class="w-9 h-9 shrink-0 rounded-xl bg-white p-1 flex items-center justify-center shadow-xs border border-outline-variant/30 overflow-hidden" style="width: 36px; height: 36px; min-width: 36px; min-height: 36px; max-width: 36px; max-height: 36px;">
-                            <img src="/assets/images/logo-ibnp.png" alt="Logo IBN da Paz" width="36" height="36" class="w-full h-full object-contain" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                            <img src="/assets/images/logo-ibnp.png" alt="Logo IBNP" width="36" height="36" class="w-full h-full object-contain" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                         </div>
-                        <span class="text-base font-bold text-on-surface">IBN da Paz de Guapó</span>
+                        <span class="text-base font-bold text-on-surface">IBNP</span>
                     </div>
                     <p class="text-xs text-text-muted leading-relaxed">
-                        Igreja Batista Nacional da Paz de Guapó. Uma comunidade de fé, acolhimento e compromisso com o Evangelho da Graça, mantenedora legal da Escola Social de Guapó, filiada à <a href="https://cbn.org.br/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium" title="Convenção Batista Nacional (abre em nova aba)">Convenção Batista Nacional (CBN)</a> e à <a href="https://ormiban.org.br/site/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium" title="Ordem dos Ministros Batistas Nacionais (abre em nova aba)">ORMIBAN Goiás</a>.
+                        <strong class="text-on-surface font-semibold">IBNP</strong> (Igreja Batista Nacional da Paz de Guapó). Uma comunidade de fé, acolhimento e compromisso com o Evangelho da Graça, mantenedora legal da Escola Social de Guapó, filiada à <a href="https://cbn.org.br/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium" title="Convenção Batista Nacional (abre em nova aba)">Convenção Batista Nacional (CBN)</a> e à <a href="https://ormiban.org.br/site/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium" title="Ordem dos Ministros Batistas Nacionais (abre em nova aba)">ORMIBAN Goiás</a>.
                     </p>
                     <div class="text-[11px] font-semibold text-text-muted leading-relaxed space-y-0.5">
                         <span class="block text-secondary font-bold">CNPJ: 02.930.019/0001-62 • Fundação em 14/01/1999</span>

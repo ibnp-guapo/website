@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', ($doc ? $doc->title : 'Regimento Interno') . ' - IBN da Paz de Guapó')
+@section('title', ($doc ? $doc->title : 'Regimento Interno') . ' - IBNP')
 @section('meta_description', $doc ? ('Visualizador interativo do ' . $doc->title . ' da Igreja Batista Nacional da Paz de Guapó, com busca e texto integral.') : 'O texto integral do Regimento Interno da Igreja Batista Nacional da Paz de Guapó para consulta pública e transparência institucional.')
 
 @if ($doc)
@@ -104,7 +104,7 @@
                         <div>
                             <strong class="text-xs font-bold text-on-surface block">Acesso e Consulta Formal</strong>
                             <p class="text-xs text-text-muted leading-relaxed mt-1">
-                                O texto integral e os livros de atas regimentais estão sob custódia da secretaria geral em nosso templo sede. Para esclarecimentos regulamentares ou solicitação de certidões regimentais, contate a secretaria através do e-mail oficial <a href="mailto:contato@ibnpguapo.org.br" class="text-primary hover:underline font-bold">contato@ibnpguapo.org.br</a>.
+                                O texto integral e os livros de atas regimentais estão sob custódia da secretaria geral em nossa sede. Para esclarecimentos regulamentares ou solicitação de certidões regimentais, contate a secretaria através do e-mail oficial <a href="mailto:contato@ibnpguapo.org.br" class="text-primary hover:underline font-bold">contato@ibnpguapo.org.br</a>.
                             </p>
                         </div>
                     </div>

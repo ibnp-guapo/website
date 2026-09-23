@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Contato e Localização - IBN da Paz de Guapó')
-@section('meta_description', 'Endereço, WhatsApp, redes sociais e mapa de localização da Igreja Batista Nacional da Paz no Centro de Guapó-GO.')
+@section('title', 'Contato e Localização - IBNP')
+@section('meta_description', 'Endereço, WhatsApp, redes sociais e mapa de localização da IBNP no Centro de Guapó-GO.')
 
 @section('content')
     <!-- Header Hero Contato (Stitch Warm Fellowship) -->
@@ -32,7 +32,7 @@
                     <div class="w-10 h-10 rounded-xl bg-surface-cream-warm/50 text-secondary flex items-center justify-center mb-4">
                         <span class="material-symbols-outlined text-[24px]">church</span>
                     </div>
-                    <h3 class="text-xl font-extrabold text-on-surface mb-2">Templo Sede</h3>
+                    <h3 class="text-xl font-extrabold text-on-surface mb-2">Sede</h3>
                     <p class="text-sm text-text-muted leading-relaxed mb-4">
                         Rua Presidente Kennedy, Qd. 21, Lt. 13<br>
                         Centro, Guapó – GO<br>
@@ -57,7 +57,7 @@
                         <span class="material-symbols-outlined text-secondary text-[20px]">call</span>
                         <span>(62) 9870-0089</span>
                     </div>
-                    <a href="https://wa.me/556298700089?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20IBN%20da%20Paz%20de%20Guap%C3%B3." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-primary text-on-primary text-xs sm:text-sm font-bold shadow-md hover:bg-secondary-container transition-all active:scale-95 w-full sm:w-auto">
+                    <a href="https://wa.me/556298700089?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20IBNP." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-primary text-on-primary text-xs sm:text-sm font-bold shadow-md hover:bg-secondary-container transition-all active:scale-95 w-full sm:w-auto">
                         <span class="material-symbols-outlined text-[18px]">chat</span>
                         <span>Enviar Mensagem no WhatsApp</span>
                     </a>
@@ -127,7 +127,7 @@
                     @include('components.google-map', [
                         'mapId' => 'contato-map',
                         'heightClass' => 'aspect-[4/3] w-full',
-                        'title' => 'Sede Institucional - IBN da Paz de Guapó'
+                        'title' => 'Sede - IBNP'
                     ])
                 </div>
 

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', $doc->title . ' - IBN da Paz de Guapó')
+@section('title', $doc->title . ' - IBNP')
 @section('meta_description', 'Visualizador interativo do ' . $doc->title . ' da Igreja Batista Nacional da Paz de Guapó, com índice temático, busca e texto integral.')
 
 @section('head')

@@ -81,6 +81,16 @@ Conforme registrado na **Issue #15** (`https://github.com/ibnp-guapo/website/iss
 }
 ```
 
+### 2.3 Ajustes Adicionais de Marca e Layout (Feedback de Refinamento)
+
+1. **Unificação da Marca Pública para "IBNP":**
+   - Substituição de "IBN da Paz de Guapó" e "IBN da Paz" na navegação, cabeçalhos, títulos de páginas (`title`), `alt` de logos e componentes pela sigla oficial unificada **"IBNP"**.
+   - Preservação da razão social e dados formais (`Igreja Batista Nacional da Paz de Guapó - CNPJ 02.930.019/0001-62`) nas notas legais de rodapé e transparência jurídica.
+2. **Simplificação da Localização para "Sede":**
+   - Eliminação dos termos "Templo Sede" e "Sede Institucional", adotando estritamente **"Sede"** nos títulos de cards, agenda e componentes de mapa.
+3. **Resolução de Overflow da Navbar Desktop:**
+   - Encurtamento dos textos de links do menu (`Iniciativas`, `Estatuto`, `Regimento`) e aplicação de classes de responsividade com `shrink-0` e `ml-auto` no container do CTA "Planeje sua Visita", impedindo o deslocamento ou corte do botão para fora da tela.
+
 ---
 
 ## 3. Casos de Borda & Falhas (Edge Cases)
@@ -95,6 +105,10 @@ Conforme registrado na **Issue #15** (`https://github.com/ibnp-guapo/website/iss
 
 ### Critérios de Aceitação
 - [ ] Guia de De-Para aplicado em todas as páginas públicas (Home, Programação, Sobre, Contato e Rodapés).
+- [ ] Marca visual pública padronizada como "IBNP" (mantendo dados formais no rodapé).
+- [ ] Local de encontros unificado como "Sede" (eliminando "Templo Sede" e "Sede Institucional").
+- [ ] Botão CTA "Planeje sua Visita" perfeitamente visível e contido na viewport sem quebras ou overflow na navbar.
 - [ ] Eliminação de termos confessionais obsoletos nas áreas comuns de navegação.
 - [ ] Validação do JSON Schema em `agenda.json`.
 - [ ] 100% de aprovação na suíte de testes do PHPUnit (`./vendor/bin/phpunit`).
+

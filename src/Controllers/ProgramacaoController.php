@@ -57,7 +57,7 @@ final class ProgramacaoController
                 'eventStatus' => 'https://schema.org/EventScheduled',
                 'location' => [
                     '@type' => 'Place',
-                    'name' => 'IBN da Paz de Guapó - Templo Sede',
+                    'name' => 'IBNP - Sede',
                     'address' => [
                         '@type' => 'PostalAddress',
                         'streetAddress' => 'Rua Presidente Kennedy, Qd. 21, Lt. 13',

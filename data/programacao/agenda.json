@@ -30,7 +30,7 @@
       "duracaoMinutos": 90,
       "nome": "Encontro de Ensino & Formação de Valores",
       "categoria": "Formação & Desenvolvimento Comunitário",
-      "local": "Sede Institucional - Rua Presidente Kennedy, Qd. 21, Lt. 13, Centro, Guapó - GO",
+      "local": "Sede - Rua Presidente Kennedy, Qd. 21, Lt. 13, Centro, Guapó - GO",
       "descricao": "Momento aberto de aprendizado, desenvolvimento moral, reflexão ética e edificação humana para jovens, adultos e famílias.",
       "transmissaoAoVivo": false,
       "rrule": "FREQ=WEEKLY;BYDAY=WE"
@@ -42,7 +42,7 @@
       "duracaoMinutos": 90,
       "nome": "Encontro Comunitário de Celebração & Acolhimento",
       "categoria": "Cultura, Música & Integração Social",
-      "local": "Sede Institucional - Rua Presidente Kennedy, Qd. 21, Lt. 13, Centro, Guapó - GO",
+      "local": "Sede - Rua Presidente Kennedy, Qd. 21, Lt. 13, Centro, Guapó - GO",
       "descricao": "Reunião comunitária com apresentações artísticas e musicais, acolhimento fraterno e fortalecimento de laços familiares e comunitários.",
       "transmissaoAoVivo": false,
       "rrule": "FREQ=WEEKLY;BYDAY=SU"

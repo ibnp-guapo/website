@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'IBN da Paz de Guapó - Acolhimento, Família e Desenvolvimento Social')
-@section('meta_description', 'Portal oficial da IBN da Paz de Guapó-GO. Comunidade, educação infantil e acolhimento familiar. Encontros comunitários semanais e iniciativas socioeducativas.')
+@section('title', 'IBNP - Acolhimento, Família e Desenvolvimento Social')
+@section('meta_description', 'Portal oficial da IBNP em Guapó-GO. Comunidade, educação infantil e acolhimento familiar. Encontros comunitários semanais e iniciativas socioeducativas.')
 
 @section('content')
 <!-- HERO SECTION (Stitch Mockup Exact Layout) -->
@@ -372,7 +372,7 @@
                 Escola Social de Guapó
             </h2>
             <p class="text-sm sm:text-base text-text-muted mt-2 leading-relaxed">
-                A IBN da Paz de Guapó é a entidade mantenedora legal da Escola Social de Guapó, iniciativa de acolhimento e suporte continuado para atender as famílias e a infância em Guapó com atividades socioeducativas, contraturno escolar e centro de convivência comunitária.
+                A IBNP é a entidade mantenedora legal da Escola Social de Guapó, iniciativa de acolhimento e suporte continuado para atender as famílias e a infância em Guapó com atividades socioeducativas, contraturno escolar e centro de convivência comunitária.
             </p>
         </div>
 
@@ -442,7 +442,7 @@
                 <div>
                     <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-cream-light text-secondary text-[11px] font-bold mb-1">
                         <span class="material-symbols-outlined text-[14px]">verified</span>
-                        <span>Iniciativa Comunitária • Mantenedora: IBN da Paz (CNPJ 02.930.019/0001-62)</span>
+                        <span>Iniciativa Comunitária • Mantenedora: IBNP (CNPJ 02.930.019/0001-62)</span>
                     </div>
                     <h3 class="text-lg sm:text-xl font-bold text-on-surface">
                         Conheça o projeto e participe das ações sociais da nossa comunidade
@@ -591,7 +591,7 @@
                         </div>
                         <div>
                             <span class="text-xs font-bold text-secondary uppercase tracking-wider block">Endereço da Igreja</span>
-                            <h3 class="text-lg font-bold text-on-surface mt-1">IBN da Paz de Guapó</h3>
+                            <h3 class="text-lg font-bold text-on-surface mt-1">IBNP</h3>
                             <p class="text-sm text-on-surface mt-1 font-medium leading-relaxed">
                                 Rua Presidente Kennedy, Qd. 21, Lt. 13 – Centro<br/>
                                 Guapó – GO, CEP 75350-000
@@ -604,7 +604,7 @@
                 <!-- Direct Channel Actions -->
                 <div class="space-y-3" id="contato">
                     <!-- WhatsApp CTA -->
-                    <a class="w-full flex items-center justify-between p-4 rounded-xl bg-[#25D366] text-surface-pure hover:bg-[#1ebd59] transition-all duration-200 shadow-sm group" href="https://wa.me/556298700089?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20IBN%20da%20Paz." rel="noopener noreferrer" target="_blank">
+                    <a class="w-full flex items-center justify-between p-4 rounded-xl bg-[#25D366] text-surface-pure hover:bg-[#1ebd59] transition-all duration-200 shadow-sm group" href="https://wa.me/556298700089?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20IBNP." rel="noopener noreferrer" target="_blank">
                         <div class="flex items-center gap-3">
                             <span class="material-symbols-outlined text-[28px]">chat</span>
                             <div class="text-left">
@@ -651,7 +651,7 @@
                     @include('components.google-map', [
                         'mapId' => 'home-map',
                         'heightClass' => 'flex-grow h-72 sm:h-96 w-full',
-                        'title' => 'Sede Institucional - IBN da Paz de Guapó'
+                        'title' => 'Sede - IBNP'
                     ])
 
                     <!-- Map Footer Bar with Direct Action -->

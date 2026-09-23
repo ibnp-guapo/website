@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Programação e Encontros Comunitários - IBN da Paz de Guapó')
-@section('meta_description', 'Horários dos encontros comunitários regulares e atividades formativas da IBN da Paz de Guapó-GO. Quartas e Domingos às 19:30.')
+@section('title', 'Programação e Encontros Comunitários - IBNP')
+@section('meta_description', 'Horários dos encontros comunitários regulares e atividades formativas da IBNP em Guapó-GO. Quartas e Domingos às 19:30.')
 
 @section('head')
     @if (!empty($schemaJson))
@@ -24,7 +24,7 @@
                     Encontros Comunitários & Programação Aberta
                 </h1>
                 <p class="text-base sm:text-lg text-text-muted leading-relaxed">
-                    Nossos encontros comunitários presenciais acontecem semanalmente às quartas e domingos na Sede Institucional em Guapó-GO. Você e sua família são nossos convidados de honra!
+                    Nossos encontros comunitários presenciais acontecem semanalmente às quartas e domingos na Sede em Guapó-GO. Você e sua família são nossos convidados de honra!
                 </p>
             </div>
         </div>
@@ -102,7 +102,7 @@
                 </div>
                 <div>
                     <h3 class="text-sm font-bold text-on-surface">Encontros 100% Presenciais</h3>
-                    <p class="text-xs text-text-muted">Todos os encontros são realizados presencialmente na Sede Institucional. Não realizamos transmissões simultâneas.</p>
+                    <p class="text-xs text-text-muted">Todos os encontros são realizados presencialmente na Sede. Não realizamos transmissões simultâneas.</p>
                 </div>
             </div>
             <a href="/contato" class="inline-flex items-center gap-1.5 text-xs font-bold text-secondary hover:text-primary transition-colors flex-shrink-0">

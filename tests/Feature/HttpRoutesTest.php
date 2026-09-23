@@ -35,7 +35,7 @@ final class HttpRoutesTest extends TestCase
 
         $this->assertNotEmpty($output);
         $this->assertStringContainsString('<!DOCTYPE html>', $output);
-        $this->assertStringContainsString('IBN da Paz', $output);
+        $this->assertStringContainsString('IBNP', $output);
         $this->assertStringContainsString('Encontros da Semana', $output);
     }
 
@@ -132,7 +132,7 @@ final class HttpRoutesTest extends TestCase
 
         $this->assertNotEmpty($output);
         $this->assertStringContainsString('<!DOCTYPE html>', $output);
-        $this->assertStringContainsString('Sobre a IBN da Paz de Guapó', $output);
+        $this->assertStringContainsString('Sobre a IBNP', $output);
         $this->assertStringContainsString('Convenção Batista Nacional (CBN)', $output);
     }
 

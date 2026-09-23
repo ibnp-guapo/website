@@ -37,7 +37,7 @@ final class ProgramacaoRoutesTest extends TestCase
         $this->assertStringContainsString('/programacao/ical', $output);
 
         // Deve estender layouts.app com tokens Stitch e elementos canônicos
-        $this->assertStringContainsString('IBN da Paz de Guapó', $output);
+        $this->assertStringContainsString('IBNP', $output);
         $this->assertStringContainsString('/assets/images/logo-ibnp.png', $output);
         $this->assertStringContainsString('Plus Jakarta Sans', $output);
         $this->assertStringContainsString('material-symbols-outlined', $output);

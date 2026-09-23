@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Página Não Encontrada (404) - IBN da Paz de Guapó')
+@section('title', 'Página Não Encontrada (404) - IBNP')
 
 @section('content')
     <main class="flex-1 max-w-3xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 flex items-center justify-center">

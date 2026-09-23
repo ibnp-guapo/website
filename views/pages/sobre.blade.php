@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Sobre Nós - IBN da Paz de Guapó')
+@section('title', 'Sobre Nós - IBNP')
 @section('meta_description', 'Conheça a história, identidade institucional e vocação socioeducativa da Igreja Batista Nacional da Paz de Guapó-GO, fundada em 14/01/1999.')
 
 @section('content')
@@ -13,7 +13,7 @@
                     <span class="text-xs font-bold uppercase tracking-wider text-secondary">História &amp; Identidade</span>
                 </div>
                 <h1 class="text-3xl sm:text-5xl font-extrabold text-on-surface leading-[1.15] tracking-tight">
-                    Sobre a IBN da Paz de Guapó
+                    Sobre a IBNP
                 </h1>
                 <p class="text-base sm:text-lg text-text-muted leading-relaxed">
                     Conheça nossa trajetória de serviço, acolhimento comunitário e desenvolvimento social no município de Guapó-GO desde 1999.
@@ -54,7 +54,7 @@
                     <h2 class="text-2xl sm:text-3xl font-extrabold text-on-surface tracking-tight mt-1 mb-6">Mantenedora da Escola Social de Guapó</h2>
                     <div class="prose prose-slate max-w-none text-text-muted leading-relaxed space-y-4">
                         <p>
-                            Entendemos que a fé cristã genuína se expressa no amor prático e no serviço à comunidade. Como parte integral de sua vocação institucional e cidadã no município de Guapó, a IBN da Paz é a entidade mantenedora legal da <strong class="text-on-surface font-bold">Escola Social de Guapó</strong>.
+                            Entendemos que a fé cristã genuína se expressa no amor prático e no serviço à comunidade. Como parte integral de sua vocação institucional e cidadã no município de Guapó, a IBNP é a entidade mantenedora legal da <strong class="text-on-surface font-bold">Escola Social de Guapó</strong>.
                         </p>
                         <p>
                             A instituição atua no acolhimento e suporte continuado a crianças e famílias de Guapó, promovendo educação infantil de qualidade, reforço pedagógico no contraturno escolar, oficinas culturais e artísticas, além de um centro comunitário com auditório multiuso aberto a projetos de integração humana, cidadania e convivência social.
@@ -170,7 +170,7 @@
                     <span class="text-xs font-bold uppercase tracking-widest text-text-muted block mb-3">Vínculo Eclesiástico</span>
                     <h3 class="text-xl font-extrabold text-on-surface mb-4">Filiação Denominacional</h3>
                     <p class="text-sm text-text-muted leading-relaxed mb-6">
-                        A IBN da Paz de Guapó é filiada à <a href="https://cbn.org.br/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-bold" title="Acessar portal oficial da Convenção Batista Nacional (abre em nova aba)">Convenção Batista Nacional (CBN)</a> e à <a href="https://ormiban.org.br/site/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-bold" title="Acessar portal oficial da ORMIBAN (abre em nova aba)">ORMIBAN Goiás</a> (Ordem dos Ministros Batistas Nacionais), adotando a Declaração de Fé oficial da denominação.
+                        A IBNP é filiada à <a href="https://cbn.org.br/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-bold" title="Acessar portal oficial da Convenção Batista Nacional (abre em nova aba)">Convenção Batista Nacional (CBN)</a> e à <a href="https://ormiban.org.br/site/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-bold" title="Acessar portal oficial da ORMIBAN (abre em nova aba)">ORMIBAN Goiás</a> (Ordem dos Ministros Batistas Nacionais), adotando a Declaração de Fé oficial da denominação.
                     </p>
                     <div class="pt-4 border-t border-outline-variant/30 flex flex-col gap-3 text-xs font-semibold text-on-surface">
                         <a href="https://cbn.org.br/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-3 rounded-xl bg-surface-cream-light hover:bg-surface-cream-warm border border-outline-variant/30 text-on-surface hover:text-primary transition-all group" title="Visitar portal oficial da CBN (abre em nova aba)">

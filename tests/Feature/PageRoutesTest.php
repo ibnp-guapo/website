@@ -23,7 +23,7 @@ final class PageRoutesTest extends TestCase
         $output = (string) ob_get_clean();
 
         $this->assertNotEmpty($output);
-        $this->assertStringContainsString('IBN da Paz', $output);
+        $this->assertStringContainsString('IBNP', $output);
         $this->assertStringContainsString('Guapó', $output);
         $this->assertStringContainsString('Encontros da Semana', $output);
         $this->assertStringNotContainsString('Cultos da Semana', $output);
@@ -81,7 +81,7 @@ final class PageRoutesTest extends TestCase
         $output = (string) ob_get_clean();
 
         $this->assertNotEmpty($output);
-        $this->assertStringContainsString('Sobre a IBN da Paz de Guapó', $output);
+        $this->assertStringContainsString('Sobre a IBNP', $output);
         $this->assertStringContainsString('14 de janeiro de 1999', $output);
         $this->assertStringContainsString('Convenção Batista Nacional (CBN)', $output);
         $this->assertStringContainsString('ORMIBAN', $output);

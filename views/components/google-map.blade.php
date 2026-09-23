@@ -24,7 +24,7 @@
                 allowfullscreen="" 
                 loading="lazy" 
                 referrerpolicy="no-referrer-when-downgrade"
-                title="Mapa da Sede da IBN da Paz de Guapó"
+                title="Mapa da Sede da IBNP"
                 class="w-full h-full">
             </iframe>
         @endif
@@ -39,7 +39,7 @@
             allowfullscreen="" 
             loading="lazy" 
             referrerpolicy="no-referrer-when-downgrade"
-            title="Mapa da Sede da IBN da Paz de Guapó"
+            title="Mapa da Sede da IBNP"
             class="w-full h-full">
         </iframe>
     </noscript>
@@ -69,7 +69,7 @@
                 console.warn('Falha ao carregar Google Maps API. Ativando fallback.');
                 var instances = document.querySelectorAll('.ibnp-map-instance');
                 instances.forEach(function(el) {
-                    el.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3820.5!2d-49.5317!3d-16.8315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDQ5JzUzLjQiUyA0OcKwMzEnNTQuMSJX!5e0!3m2!1spt-BR!2sbr!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa da Sede da IBN da Paz de Guapó" class="w-full h-full"></iframe>';
+                    el.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3820.5!2d-49.5317!3d-16.8315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDQ5JzUzLjQiUyA0OcKwMzEnNTQuMSJX!5e0!3m2!1spt-BR!2sbr!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa da Sede da IBNP" class="w-full h-full"></iframe>';
                 });
             };
             document.head.appendChild(script);
@@ -111,7 +111,7 @@
             });
 
             var infoContent = '<div style="max-width:280px; font-family:sans-serif; padding:6px 4px; color:#2A2521;">' +
-                '<h4 style="margin:0 0 6px 0; font-size:14px; font-weight:800; color:#8C3D15;">IBN da Paz de Guapó</h4>' +
+                '<h4 style="margin:0 0 6px 0; font-size:14px; font-weight:800; color:#8C3D15;">IBNP</h4>' +
                 '<p style="margin:0 0 8px 0; font-size:12px; line-height:1.4; color:#5D4037;">Rua Pres. Kennedy, Qd. 21, Lt. 13, Centro, Guapó - GO</p>' +
                 '<div style="background:#FFF9F2; border:1px solid #EADBC8; border-radius:8px; padding:6px 8px; margin-bottom:10px; font-size:11px;">' +
                 '<strong style="display:block; color:#8C3D15; margin-bottom:2px;">Encontros Semanais:</strong>' +

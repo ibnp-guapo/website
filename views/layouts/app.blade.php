@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'IBN da Paz de Guapó - Um Lugar de Paz, Comunhão e Adoração')</title>
-    <meta name="description" content="@yield('meta_description', 'Portal oficial da Igreja Batista Nacional da Paz de Guapó-GO. Cultos semanais às quartas e domingos às 19:30. Conheça nossa igreja e venha nos visitar!')">
+    <meta name="description" content="@yield('meta_description', 'Portal oficial da IBN da Paz de Guapó-GO. Comunidade, educação infantil e impacto social. Encontros abertos às quartas e domingos às 19:30.')">
 
     <!-- Google Fonts Preconnect & Display Swap (Ad Grants Performance) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,7 +32,7 @@
                 </div>
                 <div class="flex flex-col">
                     <span class="text-base sm:text-lg font-bold text-on-surface tracking-tight leading-tight whitespace-nowrap">IBN da Paz de Guapó</span>
-                    <span class="text-[0.6875rem] text-text-muted font-medium tracking-wide hidden 2xl:block whitespace-nowrap">Comunhão • Fé • Edificação</span>
+                    <span class="text-[0.6875rem] text-text-muted font-medium tracking-wide hidden 2xl:block whitespace-nowrap">Comunidade • Educação • Impacto Social</span>
                 </div>
             </a>
 
@@ -40,7 +40,7 @@
             <nav class="hidden xl:flex items-center justify-center gap-3 2xl:gap-5 text-xs xl:text-sm font-semibold flex-1 px-3">
                 <a href="/" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Início</a>
                 <a href="/programacao" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/programacao' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Programação</a>
-                <a href="/#ministerios" class="whitespace-nowrap pb-1 transition-all duration-200 text-on-surface hover:text-primary">Ministérios</a>
+                <a href="/#iniciativas" class="whitespace-nowrap pb-1 transition-all duration-200 text-on-surface hover:text-primary">Iniciativas &amp; Projetos</a>
                 <a href="/estatuto" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/estatuto' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Estatuto Social</a>
                 <a href="/regimento" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/regimento' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Regimento Interno</a>
                 <a href="/sobre" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/sobre' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Sobre Nós</a>
@@ -69,7 +69,7 @@
         <div id="mobile-menu-drawer" class="hidden xl:hidden border-t border-outline-variant/30 bg-surface-cream-light px-4 py-4 space-y-2">
             <a href="/" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Início</a>
             <a href="/programacao" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/programacao' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Programação</a>
-            <a href="/#ministerios" class="block py-2 text-sm font-semibold text-on-surface hover:text-primary">Ministérios da Igreja</a>
+            <a href="/#iniciativas" class="block py-2 text-sm font-semibold text-on-surface hover:text-primary">Iniciativas Comunitárias</a>
             <a href="/estatuto" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/estatuto' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Estatuto Social</a>
             <a href="/regimento" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/regimento' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Regimento Interno</a>
             <a href="/sobre" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/sobre' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Sobre Nós</a>
@@ -84,7 +84,7 @@
             <div class="pt-3 border-t border-outline-variant/30 flex flex-col gap-2">
                 <a href="/programacao" class="flex items-center justify-center gap-1.5 w-full bg-primary text-on-primary py-3 rounded-xl text-xs font-bold shadow-sm">
                     <span class="material-symbols-outlined text-[18px]">calendar_month</span>
-                    <span>Planeje sua Visita (Cultos)</span>
+                    <span>Planeje sua Visita (Encontros)</span>
                 </a>
                 <a href="https://wa.me/556298700089?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20e%20atendimento%20pastoral%20na%20IBN%20da%20Paz%20de%20Guap%C3%B3." target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 w-full bg-[#25D366] text-white py-3 rounded-xl text-xs font-bold shadow-sm">
                     <span class="material-symbols-outlined text-[18px]">chat</span>
@@ -143,14 +143,14 @@
 
                 <!-- Meeting Times Column -->
                 <div class="md:col-span-3 space-y-2">
-                    <span class="text-xs font-bold text-on-surface uppercase tracking-wider block">Cultos Oficiais</span>
+                    <span class="text-xs font-bold text-on-surface uppercase tracking-wider block">Encontros Regulares</span>
                     <p class="text-xs text-text-muted">
                         <strong class="text-on-surface block">Quarta-feira: 19:30 às 21:00</strong>
-                        Culto de Ensino (90 min)
+                        Encontro de Ensino &amp; Valores (90 min)
                     </p>
                     <p class="text-xs text-text-muted pt-1">
                         <strong class="text-on-surface block">Domingo: 19:30 às 21:00</strong>
-                        Culto de Celebração (90 min)
+                        Encontro Comunitário &amp; Acolhimento (90 min)
                     </p>
                 </div>
             </div>

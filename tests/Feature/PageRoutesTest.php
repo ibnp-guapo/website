@@ -25,11 +25,13 @@ final class PageRoutesTest extends TestCase
         $this->assertNotEmpty($output);
         $this->assertStringContainsString('IBN da Paz', $output);
         $this->assertStringContainsString('Guapó', $output);
-        $this->assertStringContainsString('Cultos da Semana', $output);
-        $this->assertStringContainsString('Culto de Ensino', $output);
-        $this->assertStringContainsString('Culto de Celebração', $output);
+        $this->assertStringContainsString('Encontros da Semana', $output);
+        $this->assertStringNotContainsString('Cultos da Semana', $output);
+        $this->assertStringContainsString('Encontro de Ensino & Formação de Valores', $output);
+        $this->assertStringContainsString('Encontro Comunitário de Celebração & Acolhimento', $output);
         $this->assertStringNotContainsString('Celebração da Família', $output);
         $this->assertStringNotContainsString('EBD', $output);
+        $this->assertStringNotContainsString('Ministério Infantil', $output);
         $this->assertStringContainsString('19:30 às 21:00', $output);
         $this->assertStringContainsString('Estatuto Social', $output);
         $this->assertStringContainsString('Regimento Interno', $output);
@@ -54,15 +56,17 @@ final class PageRoutesTest extends TestCase
         $this->assertStringNotContainsString('em obras', mb_strtolower($output));
         $this->assertStringNotContainsString('lh3.googleusercontent.com', $output);
 
-        // Validação de Ministérios da Igreja e CTAs em Destaque (Spec 15)
+        // Validação de Iniciativas Comunitárias e Impacto Social (Spec 17 - Issue #15)
         $this->assertStringContainsString('Planeje sua Visita', $output);
-        $this->assertStringContainsString('Ministérios da Igreja', $output);
-        $this->assertStringContainsString('Paz Kids', $output);
-        $this->assertStringContainsString('Louvor', $output);
-        $this->assertStringContainsString('Discipulado', $output);
+        $this->assertStringContainsString('Iniciativas Comunitárias & Desenvolvimento Infantil', $output);
+        $this->assertStringContainsString('Paz Kids (Programa de Desenvolvimento Infantil)', $output);
+        $this->assertStringContainsString('Iniciativa Cultural & Musical', $output);
+        $this->assertStringContainsString('Acolhimento & Fortalecimento de Famílias', $output);
+        $this->assertStringContainsString('Ação Social Comunitária', $output);
         $this->assertStringContainsString('Atendimento Pastoral', $output);
         $this->assertStringContainsString('Pedido de Oração', $output);
-        $this->assertStringContainsString('Dízimos e Ofertas via PIX', $output);
+        $this->assertStringContainsString('Apoio Social / Doações & Parcerias Mantenedoras via PIX', $output);
+        $this->assertStringNotContainsString('Dízimos e Ofertas via PIX', $output);
 
         // Validações de titularidade de domínio e canais institucionais (Spec 14 - Google for Nonprofits)
         $this->assertStringContainsString('ibnpguapo.org.br', $output);

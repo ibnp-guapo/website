@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Programação e Cultos - IBN da Paz de Guapó')
-@section('meta_description', 'Horários dos cultos regulares e encontros semanais da Igreja Batista Nacional da Paz de Guapó-GO. Quartas e Domingos às 19:30.')
+@section('title', 'Programação e Encontros Comunitários - IBN da Paz de Guapó')
+@section('meta_description', 'Horários dos encontros comunitários regulares e atividades formativas da IBN da Paz de Guapó-GO. Quartas e Domingos às 19:30.')
 
 @section('head')
     @if (!empty($schemaJson))
@@ -21,16 +21,16 @@
                     <span class="text-xs font-bold uppercase tracking-wider text-secondary">Grade Semanal Oficial</span>
                 </div>
                 <h1 class="text-3xl sm:text-5xl font-extrabold text-on-surface leading-[1.15] tracking-tight">
-                    Cultos & Encontros de Fé
+                    Encontros Comunitários & Programação Aberta
                 </h1>
                 <p class="text-base sm:text-lg text-text-muted leading-relaxed">
-                    Nossos cultos presenciais acontecem semanalmente às quartas e domingos no Templo Sede em Guapó-GO. Você e sua família são nossos convidados de honra!
+                    Nossos encontros comunitários presenciais acontecem semanalmente às quartas e domingos na Sede Institucional em Guapó-GO. Você e sua família são nossos convidados de honra!
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Lista de Cultos Regulares -->
+    <!-- Lista de Encontros Regulares -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             @foreach ($agenda->cultosRegulares as $culto)
@@ -101,8 +101,8 @@
                     <span class="material-symbols-outlined text-[24px]">info</span>
                 </div>
                 <div>
-                    <h3 class="text-sm font-bold text-on-surface">Reuniões 100% Presenciais</h3>
-                    <p class="text-xs text-text-muted">Todos os cultos são realizados presencialmente no Templo Sede. Não realizamos transmissões simultâneas.</p>
+                    <h3 class="text-sm font-bold text-on-surface">Encontros 100% Presenciais</h3>
+                    <p class="text-xs text-text-muted">Todos os encontros são realizados presencialmente na Sede Institucional. Não realizamos transmissões simultâneas.</p>
                 </div>
             </div>
             <a href="/contato" class="inline-flex items-center gap-1.5 text-xs font-bold text-secondary hover:text-primary transition-colors flex-shrink-0">

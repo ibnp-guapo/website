@@ -41,17 +41,17 @@ final class ICalGeneratorTest extends TestCase
         $veventCount = substr_count($ical, 'BEGIN:VEVENT');
         $this->assertSame(2, $veventCount, 'O arquivo .ics deve conter exatamente 2 VEVENTs regulares');
 
-        // Validar Culto de Quarta (19:30 às 21:00)
+        // Validar Encontro de Quarta (19:30 às 21:00)
         $this->assertStringContainsString('UID:culto-quarta-ensino@ibnpguapo.org.br', $ical);
         $this->assertStringContainsString('RRULE:FREQ=WEEKLY;BYDAY=WE', $ical);
         $this->assertStringContainsString('T193000', $ical);
         $this->assertStringContainsString('T210000', $ical);
-        $this->assertStringContainsString('Culto de Ensino', $ical);
+        $this->assertStringContainsString('Encontro de Ensino & Formação de Valores', $ical);
 
-        // Validar Culto de Domingo (19:30 às 21:00)
+        // Validar Encontro de Domingo (19:30 às 21:00)
         $this->assertStringContainsString('UID:culto-domingo-celebracao@ibnpguapo.org.br', $ical);
         $this->assertStringContainsString('RRULE:FREQ=WEEKLY;BYDAY=SU', $ical);
-        $this->assertStringContainsString('Culto de Celebração', $ical);
+        $this->assertStringContainsString('Encontro Comunitário de Celebração & Acolhimento', $ical);
         $this->assertStringNotContainsString('Culto de Celebração da Família', $ical);
 
         // Confirmar ausência de sábados

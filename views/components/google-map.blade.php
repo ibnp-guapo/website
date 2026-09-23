@@ -114,7 +114,7 @@
                 '<h4 style="margin:0 0 6px 0; font-size:14px; font-weight:800; color:#8C3D15;">IBN da Paz de Guapó</h4>' +
                 '<p style="margin:0 0 8px 0; font-size:12px; line-height:1.4; color:#5D4037;">Rua Pres. Kennedy, Qd. 21, Lt. 13, Centro, Guapó - GO</p>' +
                 '<div style="background:#FFF9F2; border:1px solid #EADBC8; border-radius:8px; padding:6px 8px; margin-bottom:10px; font-size:11px;">' +
-                '<strong style="display:block; color:#8C3D15; margin-bottom:2px;">Cultos Oficiais:</strong>' +
+                '<strong style="display:block; color:#8C3D15; margin-bottom:2px;">Encontros Semanais:</strong>' +
                 'Quartas e Domingos às 19:30' +
                 '</div>' +
                 '<a href="https://maps.google.com/?q=Igreja+Batista+Nacional+da+Paz+Guapo+GO" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; justify-content:center; gap:4px; width:100%; background:#8C3D15; color:#ffffff; padding:8px 12px; border-radius:6px; font-size:11px; font-weight:bold; text-decoration:none; box-sizing:border-box;">' +

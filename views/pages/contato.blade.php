@@ -127,13 +127,13 @@
                     @include('components.google-map', [
                         'mapId' => 'contato-map',
                         'heightClass' => 'aspect-[4/3] w-full',
-                        'title' => 'Templo Sede - IBN da Paz de Guapó'
+                        'title' => 'Sede Institucional - IBN da Paz de Guapó'
                     ])
                 </div>
 
-                <!-- Resumo de Cultos para Visitantes -->
+                <!-- Resumo de Encontros para Visitantes -->
                 <div class="p-8 rounded-3xl bg-surface-cream-warm/30 border border-outline-variant/40 elevation-warm-1">
-                    <span class="text-xs font-bold uppercase tracking-widest text-primary">Horários das Reuniões</span>
+                    <span class="text-xs font-bold uppercase tracking-widest text-primary">Horários dos Encontros</span>
                     <h4 class="text-xl font-extrabold text-on-surface mt-1 mb-4">Esperamos por Você!</h4>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div class="p-4 bg-surface-pure rounded-xl border border-outline-variant/30">
@@ -141,14 +141,14 @@
                                 <span class="material-symbols-outlined text-[16px]">alarm</span>
                                 Quartas-feiras
                             </span>
-                            <span class="text-xs font-semibold text-on-surface">19:30 às 21:00 • Oração e Estudo</span>
+                            <span class="text-xs font-semibold text-on-surface">19:30 às 21:00 • Ensino &amp; Valores</span>
                         </div>
                         <div class="p-4 bg-surface-pure rounded-xl border border-outline-variant/30">
                             <span class="text-primary font-bold uppercase text-xs mb-1 flex items-center gap-1.5">
                                 <span class="material-symbols-outlined text-[16px]">alarm</span>
                                 Domingos
                             </span>
-                            <span class="text-xs font-semibold text-on-surface">19:30 às 21:00 • Culto de Celebração</span>
+                            <span class="text-xs font-semibold text-on-surface">19:30 às 21:00 • Encontro Comunitário &amp; Acolhimento</span>
                         </div>
                     </div>
                 </div>

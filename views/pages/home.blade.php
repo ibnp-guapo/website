@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'IBN da Paz de Guapó - Um Lugar de Paz, Comunhão e Adoração')
-@section('meta_description', 'Portal oficial da Igreja Batista Nacional da Paz de Guapó-GO. Cultos presenciais às quartas e domingos às 19:30. Venha fazer parte da nossa família!')
+@section('title', 'IBN da Paz de Guapó - Acolhimento, Família e Desenvolvimento Social')
+@section('meta_description', 'Portal oficial da IBN da Paz de Guapó-GO. Comunidade, educação infantil e acolhimento familiar. Encontros comunitários semanais e iniciativas socioeducativas.')
 
 @section('content')
 <!-- HERO SECTION (Stitch Mockup Exact Layout) -->
@@ -19,12 +19,12 @@
 
                 <!-- Main Headline -->
                 <h1 class="text-3xl sm:text-5xl lg:text-[3.25rem] font-extrabold text-on-surface leading-[1.15] tracking-tight">
-                    Um lugar de paz, comunhão e adoração a Deus em Guapó
+                    Acolhimento, desenvolvimento humano e impacto social em Guapó
                 </h1>
 
                 <!-- Subtitle -->
                 <p class="text-base sm:text-lg text-text-muted max-w-2xl leading-relaxed">
-                    Seja muito bem-vindo à nossa congregação. Conheça nossos cultos semanais e faça parte da nossa família de fé. Venha viver momentos transformadores na presença do Senhor.
+                    Seja muito bem-vindo à nossa comunidade. Conheça nossos encontros semanais, faça parte da nossa rede de famílias e descubra as iniciativas que transformam vidas e educam a infância em Guapó.
                 </p>
 
                 <!-- Action Buttons (Ad Grants High-Visibility CTAs) -->
@@ -107,7 +107,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-4 text-on-surface">
         <div class="flex items-center gap-3">
             <span class="material-symbols-outlined text-primary text-[22px]">notifications_active</span>
-            <span class="text-xs sm:text-sm font-semibold text-on-surface">Avisos da Semana: Inscrições abertas para novos membros e discipulado bíblico.</span>
+            <span class="text-xs sm:text-sm font-semibold text-on-surface">Avisos da Semana: Inscrições abertas para voluntariado comunitário e oficinas infantis.</span>
         </div>
         <div class="flex items-center gap-6 text-xs font-bold text-secondary">
             <a href="#escola-social" class="flex items-center gap-1.5 hover:underline transition-all">
@@ -118,7 +118,7 @@
     </div>
 </div>
 
-<!-- WEEKLY SERVICES WIDGET ("Cultos da Semana") -->
+<!-- WEEKLY SERVICES WIDGET ("Encontros da Semana") -->
 <section class="py-16 md:py-24 bg-surface-pure" id="programacao">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Section Header -->
@@ -128,10 +128,10 @@
                 <span>Programação Oficial</span>
             </div>
             <h2 class="text-2xl sm:text-4xl font-extrabold text-on-surface">
-                Cultos da Semana
+                Encontros da Semana
             </h2>
             <p class="text-sm sm:text-base text-text-muted mt-2">
-                Momentos regulares de comunhão, oração fervorosa e ensinamento fiel das Sagradas Escrituras. Esperamos por você e sua casa.
+                Momentos regulares de acolhimento, desenvolvimento de valores e integração social. Esperamos por você e sua casa.
             </p>
         </div>
 
@@ -148,27 +148,27 @@
                         </div>
                         <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-cream-warm/40 text-secondary text-xs font-bold border border-outline-variant/40">
                             <span class="material-symbols-outlined text-[14px]">menu_book</span>
-                            Estudo Bíblico • 90 min
+                            Formação de Valores • 90 min
                         </span>
                     </div>
 
                     <!-- Content -->
                     <h3 class="text-xl sm:text-2xl font-bold text-on-surface mb-2">
-                        Culto de Ensino
+                        Encontro de Ensino & Formação de Valores
                     </h3>
                     <p class="text-sm text-text-muted mb-6 leading-relaxed">
-                        Estudo bíblico expositivo e sistemático das Sagradas Escrituras. Um momento dedicado ao aprofundamento doutrinário, maturidade na fé cristã e edificação espiritual para toda a igreja.
+                        Momento dedicado ao aprendizado sistemático, ética, maturidade humana e fortalecimento de princípios sólidos para toda a família.
                     </p>
 
                     <!-- Points highlight -->
                     <div class="space-y-2 border-t border-outline-variant/20 pt-4 mb-6">
                         <div class="flex items-center gap-2 text-xs sm:text-sm text-on-surface">
                             <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
-                            <span>Estudo sistemático e doutrinário para toda a família</span>
+                            <span>Princípios formativos e cidadãos para todas as idades</span>
                         </div>
                         <div class="flex items-center gap-2 text-xs sm:text-sm text-on-surface">
                             <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
-                            <span>Exposição temática e pastoral dos livros bíblicos</span>
+                            <span>Reflexão temática e diálogo aberto com a comunidade</span>
                         </div>
                     </div>
                 </div>
@@ -203,21 +203,21 @@
 
                     <!-- Content -->
                     <h3 class="text-xl sm:text-2xl font-bold text-on-surface mb-2">
-                        Culto de Celebração
+                        Encontro Comunitário de Celebração & Acolhimento
                     </h3>
                     <p class="text-sm text-text-muted mb-6 leading-relaxed">
-                        Culto congregacional com louvor, adoração, comunhão fraterna e ministração da Palavra de Deus. Celebramos a graça salvadora de Cristo Jesus com recepção acolhedora para novos visitantes.
+                        Reunião comunitária com apresentações artísticas e musicais, integração fraterna e acolhimento especial para novos visitantes e famílias de Guapó.
                     </p>
 
                     <!-- Points highlight -->
                     <div class="space-y-2 border-t border-outline-variant/20 pt-4 mb-6">
                         <div class="flex items-center gap-2 text-xs sm:text-sm text-on-surface">
                             <span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
-                            <span>Louvor congregacional vibrante e comunhão fraterna</span>
+                            <span>Expressão artística e integração comunitária acolhedora</span>
                         </div>
                         <div class="flex items-center gap-2 text-xs sm:text-sm text-on-surface">
                             <span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
-                            <span>Ministração da Palavra de Deus para edificação espiritual</span>
+                            <span>Mensagens de encorajamento, solidariedade e esperança</span>
                         </div>
                     </div>
                 </div>
@@ -237,20 +237,21 @@
     </div>
 </section>
 
-<!-- MINISTRIES & CHURCH COMMUNITY SECTION ("Ministérios da Igreja") -->
-<section class="py-16 md:py-24 bg-surface-pure border-t border-outline-variant/30" id="ministerios">
+<!-- COMMUNITY & SOCIAL INITIATIVES SECTION ("Iniciativas Comunitárias & Desenvolvimento Infantil") -->
+<section class="py-16 md:py-24 bg-surface-pure border-t border-outline-variant/30" id="iniciativas">
+    <span id="ministerios" class="block relative -top-24 invisible"></span>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Section Header -->
         <div class="text-center max-w-3xl mx-auto mb-12">
             <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-surface-cream-warm/50 border border-outline-variant/50 text-secondary text-xs font-bold mb-3">
                 <span class="material-symbols-outlined text-[16px]">groups</span>
-                <span>Vida em Comunidade &amp; Edificação</span>
+                <span>Vida em Comunidade & Desenvolvimento Humano</span>
             </div>
             <h2 class="text-2xl sm:text-4xl font-extrabold text-on-surface">
-                Ministérios da Igreja
+                Iniciativas Comunitárias & Desenvolvimento Infantil
             </h2>
             <p class="text-sm sm:text-base text-text-muted mt-2 leading-relaxed">
-                Nossos ministérios atuam para acolher, ensinar, servir e discipular pessoas em todas as fases da vida, fortalecendo a fé e a comunhão em Guapó-GO.
+                Nossos projetos atuam para acolher, capacitar, integrar e desenvolver pessoas em todas as fases da vida, fortalecendo as famílias e a infância em Guapó-GO.
             </p>
         </div>
 
@@ -263,50 +264,50 @@
                         <span class="material-symbols-outlined text-[28px]">child_care</span>
                     </div>
                     <span class="text-xs font-bold uppercase tracking-wider text-secondary block mb-1">Crianças de 0 a 11 anos</span>
-                    <h3 class="text-xl font-bold text-on-surface mb-2">Paz Kids (Ministério Infantil)</h3>
+                    <h3 class="text-xl font-bold text-on-surface mb-2">Paz Kids (Programa de Desenvolvimento Infantil)</h3>
                     <p class="text-xs text-text-muted leading-relaxed mb-4">
-                        Acolhimento amoroso e aprendizado bíblico dedicado durante os cultos de domingo, com lições lúdicas, professores capacitados e ambiente seguro.
+                        Acolhimento socioeducativo e aprendizado dedicado durante os encontros de domingo, com atividades lúdicas, educadores preparados e ambiente seguro.
                     </p>
                 </div>
                 <div class="pt-3 border-t border-outline-variant/20 flex items-center gap-2 text-xs font-semibold text-on-surface">
                     <span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
-                    <span>Espaço dedicado durante os cultos</span>
+                    <span>Espaço dedicado durante os encontros</span>
                 </div>
             </div>
 
-            <!-- Card 2: Louvor & Adoração -->
+            <!-- Card 2: Iniciativa Cultural & Musical -->
             <div class="p-6 rounded-2xl bg-surface-cream-light border border-outline-variant/30 elevation-warm-1 flex flex-col justify-between hover:border-primary transition-all duration-300">
                 <div>
                     <div class="w-12 h-12 rounded-xl bg-surface-cream-warm/60 text-primary flex items-center justify-center mb-4">
                         <span class="material-symbols-outlined text-[28px]">music_note</span>
                     </div>
-                    <span class="text-xs font-bold uppercase tracking-wider text-primary block mb-1">Música &amp; Celebração</span>
-                    <h3 class="text-xl font-bold text-on-surface mb-2">Louvor e Adoração</h3>
+                    <span class="text-xs font-bold uppercase tracking-wider text-primary block mb-1">Música & Expressão Artística</span>
+                    <h3 class="text-xl font-bold text-on-surface mb-2">Iniciativa Cultural & Musical</h3>
                     <p class="text-xs text-text-muted leading-relaxed mb-4">
-                        Ministração musical congregacional com hinos bíblicos e cânticos de adoração a Deus, conduzindo os corações em reverência e gratidão a Jesus.
+                        Oficinas musicais, canto coral e apresentações artísticas comunitárias que promovem a sensibilidade cultural, talentos locais e integração social.
                     </p>
                 </div>
                 <div class="pt-3 border-t border-outline-variant/20 flex items-center gap-2 text-xs font-semibold text-on-surface">
                     <span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
-                    <span>Cultos regulares às quartas e domingos</span>
+                    <span>Encontros regulares às quartas e domingos</span>
                 </div>
             </div>
 
-            <!-- Card 3: Discipulado & Famílias -->
+            <!-- Card 3: Acolhimento & Famílias -->
             <div class="p-6 rounded-2xl bg-surface-cream-light border border-outline-variant/30 elevation-warm-1 flex flex-col justify-between hover:border-secondary transition-all duration-300">
                 <div>
                     <div class="w-12 h-12 rounded-xl bg-surface-cream-warm/60 text-secondary flex items-center justify-center mb-4">
                         <span class="material-symbols-outlined text-[28px]">diversity_1</span>
                     </div>
-                    <span class="text-xs font-bold uppercase tracking-wider text-secondary block mb-1">Maturidade Cristã</span>
-                    <h3 class="text-xl font-bold text-on-surface mb-2">Discipulado e Famílias</h3>
+                    <span class="text-xs font-bold uppercase tracking-wider text-secondary block mb-1">Desenvolvimento Humano</span>
+                    <h3 class="text-xl font-bold text-on-surface mb-2">Acolhimento & Fortalecimento de Famílias</h3>
                     <p class="text-xs text-text-muted leading-relaxed mb-4">
-                        Estudos bíblicos sistemáticos, integração fraterna e apoio pastoral para fortalecer os lares e conduzir cada cristão à maturidade da fé.
+                        Apoio continuado, integração familiar e orientação para fortalecer os lares e promover vínculos saudáveis em nossa cidade.
                     </p>
                 </div>
                 <div class="pt-3 border-t border-outline-variant/20 flex items-center gap-2 text-xs font-semibold text-on-surface">
                     <span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
-                    <span>Estudos e aconselhamento pastoral</span>
+                    <span>Mentoria familiar e acolhimento contínuo</span>
                 </div>
             </div>
 
@@ -316,7 +317,7 @@
                     <div class="w-12 h-12 rounded-xl bg-surface-cream-warm/60 text-primary flex items-center justify-center mb-4">
                         <span class="material-symbols-outlined text-[28px]">volunteer_activism</span>
                     </div>
-                    <span class="text-xs font-bold uppercase tracking-wider text-primary block mb-1">Amor em Ação</span>
+                    <span class="text-xs font-bold uppercase tracking-wider text-primary block mb-1">Solidariedade em Ação</span>
                     <h3 class="text-xl font-bold text-on-surface mb-2">Ação Social Comunitária</h3>
                     <p class="text-xs text-text-muted leading-relaxed mb-4">
                         Solidariedade contínua com arrecadação de alimentos, apoio a lares em vulnerabilidade e iniciativas sociais em parceria com a comunidade.
@@ -631,8 +632,8 @@
                 <div class="p-5 rounded-2xl bg-surface-pure border-l-4 border-live-badge border-t border-r border-b border-outline-variant/30 elevation-warm-1">
                     <div class="flex items-start justify-between gap-4">
                         <div>
-                            <span class="text-xs text-primary uppercase tracking-wider block font-bold">Dízimos e Ofertas via PIX</span>
-                            <p class="text-xs text-text-muted mt-0.5">CNPJ da Igreja Batista Nacional da Paz de Guapó:</p>
+                            <span class="text-xs text-primary uppercase tracking-wider block font-bold">Apoio Social / Doações & Parcerias Mantenedoras via PIX</span>
+                            <p class="text-xs text-text-muted mt-0.5">CNPJ da mantenedora (Igreja Batista Nacional da Paz de Guapó):</p>
                             <code class="text-base font-bold text-on-surface font-mono tracking-tight block mt-1" id="pixKey">02.930.019/0001-62</code>
                         </div>
                         <button type="button" class="p-2.5 rounded-xl bg-surface-cream-light hover:bg-surface-cream-warm text-secondary border border-outline-variant/50 transition-colors flex items-center gap-1 text-xs font-bold shrink-0" onclick="copyPixKey()" title="Copiar Chave PIX">
@@ -650,7 +651,7 @@
                     @include('components.google-map', [
                         'mapId' => 'home-map',
                         'heightClass' => 'flex-grow h-72 sm:h-96 w-full',
-                        'title' => 'Templo Sede - IBN da Paz de Guapó'
+                        'title' => 'Sede Institucional - IBN da Paz de Guapó'
                     ])
 
                     <!-- Map Footer Bar with Direct Action -->
@@ -677,9 +678,9 @@
                 <div class="w-12 h-12 rounded-xl bg-surface-cream-warm/60 text-secondary flex items-center justify-center mb-4 mx-auto md:mx-0">
                     <span class="material-symbols-outlined text-[26px]">favorite</span>
                 </div>
-                <h3 class="text-lg font-bold text-on-surface mb-2">Comunhão Fraterna</h3>
+                <h3 class="text-lg font-bold text-on-surface mb-2">Comunhão e Acolhimento</h3>
                 <p class="text-xs text-text-muted leading-relaxed">
-                    Uma família de fé onde cada membro é acolhido com amor pastoral através de ministérios integrados e edificação recíproca.
+                    Uma comunidade viva onde cada pessoa e família é acolhida com amor e dignidade através de projetos integrados e suporte recíproco.
                 </p>
             </div>
 
@@ -687,9 +688,9 @@
                 <div class="w-12 h-12 rounded-xl bg-surface-container-high text-primary flex items-center justify-center mb-4 mx-auto md:mx-0">
                     <span class="material-symbols-outlined text-[26px]">auto_stories</span>
                 </div>
-                <h3 class="text-lg font-bold text-on-surface mb-2">Fidelidade Bíblica</h3>
+                <h3 class="text-lg font-bold text-on-surface mb-2">Formação Integral e Valores</h3>
                 <p class="text-xs text-text-muted leading-relaxed">
-                    Ensino alicerçado com pureza na Bíblia Sagrada como nossa única regra de fé e prática para conduta ética e salvação em Jesus Cristo.
+                    Ensino de princípios éticos, desenvolvimento moral e cidadania sólida para a formação de crianças, jovens e famílias.
                 </p>
             </div>
 
@@ -697,9 +698,9 @@
                 <div class="w-12 h-12 rounded-xl bg-secondary-fixed/60 text-secondary flex items-center justify-center mb-4 mx-auto md:mx-0">
                     <span class="material-symbols-outlined text-[26px]">diversity_1</span>
                 </div>
-                <h3 class="text-lg font-bold text-on-surface mb-2">Serviço à Cidade</h3>
+                <h3 class="text-lg font-bold text-on-surface mb-2">Impacto Social no Território</h3>
                 <p class="text-xs text-text-muted leading-relaxed">
-                    Compromisso social, oração contínua pela cidade de Guapó e proclamação das Boas Novas de esperança a todos os lares guapoenses.
+                    Compromisso continuado com a transformação de Guapó através da educação infantil, assistência comunitária e voluntariado.
                 </p>
             </div>
         </div>

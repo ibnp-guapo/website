@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Sobre Nós - IBN da Paz de Guapó')
-@section('meta_description', 'Conheça a história, identidade bíblica e filiação da Igreja Batista Nacional da Paz de Guapó-GO, fundada em 14/01/1999.')
+@section('meta_description', 'Conheça a história, identidade institucional e vocação socioeducativa da Igreja Batista Nacional da Paz de Guapó-GO, fundada em 14/01/1999.')
 
 @section('content')
     <!-- Header Hero Sobre Nós (Stitch Warm Fellowship) -->
@@ -16,7 +16,7 @@
                     Sobre a IBN da Paz de Guapó
                 </h1>
                 <p class="text-base sm:text-lg text-text-muted leading-relaxed">
-                    Conheça nossa trajetória de fé, serviço e comunhão cristã no município de Guapó-GO desde 1999.
+                    Conheça nossa trajetória de serviço, acolhimento comunitário e desenvolvimento social no município de Guapó-GO desde 1999.
                 </p>
             </div>
         </div>
@@ -34,13 +34,13 @@
                     <h2 class="text-2xl sm:text-3xl font-extrabold text-on-surface tracking-tight mt-1 mb-6">Fundação e Raízes em Guapó</h2>
                     <div class="prose prose-slate max-w-none text-text-muted leading-relaxed space-y-4">
                         <p>
-                            A <strong class="text-on-surface font-bold">Igreja Batista Nacional da Paz de Guapó</strong> foi fundada em <strong class="text-on-surface font-bold">14 de janeiro de 1999</strong>, nascendo do anseio de servos de Deus em plantar uma congregação calorosa, bíblica e acolhedora no coração do município de Guapó, Estado de Goiás.
+                            A <strong class="text-on-surface font-bold">Igreja Batista Nacional da Paz de Guapó</strong> foi fundada em <strong class="text-on-surface font-bold">14 de janeiro de 1999</strong>, nascendo do compromisso de estabelecer uma instituição acolhedora, cidadã e transformadora no coração do município de Guapó, Estado de Goiás.
                         </p>
                         <p>
-                            Constituída como pessoa jurídica de direito privado sem fins lucrativos (CNPJ <code class="px-2 py-0.5 rounded bg-surface-cream-warm/40 text-on-surface border border-outline-variant/40 text-xs">02.930.019/0001-62</code>), a igreja teve seus atos constitutivos devidamente averbados no 2º Serviço Notarial da Comarca de Guapó em março de 2002.
+                            Constituída como pessoa jurídica de direito privado sem fins lucrativos (CNPJ <code class="px-2 py-0.5 rounded bg-surface-cream-warm/40 text-on-surface border border-outline-variant/40 text-xs">02.930.019/0001-62</code>), a entidade teve seus atos constitutivos devidamente averbados no 2º Serviço Notarial da Comarca de Guapó em março de 2002.
                         </p>
                         <p>
-                            Desde o início, nossa missão tem sido proclamar o Evangelho da Graça, acolher os cansados e sobrecarregados, discipular gerações e servir ativamente à cidade através do testemunho de amor fraternal.
+                            Desde o início, nossa vocação tem sido acolher as pessoas, promover o desenvolvimento humano, educar gerações e servir ativamente à comunidade através de iniciativas de solidariedade e cidadania.
                         </p>
                     </div>
                 </section>

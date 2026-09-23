@@ -36,7 +36,7 @@ final class HttpRoutesTest extends TestCase
         $this->assertNotEmpty($output);
         $this->assertStringContainsString('<!DOCTYPE html>', $output);
         $this->assertStringContainsString('IBN da Paz', $output);
-        $this->assertStringContainsString('Cultos da Semana', $output);
+        $this->assertStringContainsString('Encontros da Semana', $output);
     }
 
     public function testProgramacaoRouteReturnsOkAndRendersServices(): void
@@ -47,7 +47,7 @@ final class HttpRoutesTest extends TestCase
 
         $this->assertNotEmpty($output);
         $this->assertStringContainsString('<!DOCTYPE html>', $output);
-        $this->assertStringContainsString('Cultos & Encontros de Fé', $output);
+        $this->assertStringContainsString('Encontros Comunitários & Programação Aberta', $output);
         $this->assertStringContainsString('/programacao/ical', $output);
     }
 
@@ -72,8 +72,8 @@ final class HttpRoutesTest extends TestCase
 
         $this->assertNotEmpty($output);
         $this->assertStringContainsString('BEGIN:VCALENDAR', $output);
-        $this->assertStringContainsString('SUMMARY:Culto de Ensino', $output);
-        $this->assertStringContainsString('SUMMARY:Culto de Celebração', $output);
+        $this->assertStringContainsString('SUMMARY:Encontro de Ensino & Formação de Valores', $output);
+        $this->assertStringContainsString('SUMMARY:Encontro Comunitário de Celebração & Acolhimento', $output);
     }
 
     public function testHtaccessContainsCompressionAndCachingRules(): void

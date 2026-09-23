@@ -61,19 +61,12 @@ final class AkomaNtosoValidationTest extends TestCase
         );
     }
 
-    public function testRegimentoInternoXmlConformsToOfficialXsdIfPresent(): void
+    public function testRegimentoInternoXmlConformsToOfficialXsd(): void
     {
-        if (!file_exists($this->regimentoXmlPath)) {
-            // Documento em fase de transcrição semântica (Issue #4)
-            $this->assertFileDoesNotExist(
-                $this->regimentoXmlPath,
-                'Regimento Interno ainda em fase de transcrição semântica.'
-            );
-            return;
-        }
+        $this->assertFileExists($this->regimentoXmlPath, 'Arquivo regimento-interno.akn.xml não encontrado.');
 
         $dom = new DOMDocument();
-        $this->assertTrue($dom->load($this->regimentoXmlPath));
+        $this->assertTrue($dom->load($this->regimentoXmlPath), 'Falha ao carregar regimento-interno.akn.xml como DOMDocument.');
 
         libxml_use_internal_errors(true);
         libxml_clear_errors();
@@ -184,6 +177,101 @@ final class AkomaNtosoValidationTest extends TestCase
         $this->assertSame('2002-03-25', $workDate);
         $this->assertSame('bra', $workCountry);
         $this->assertSame('/br/go/guapo/rel/estatuto/ibnp/2002-03-25', $workUri);
+
+        // FRBRExpression
+        $exprLang = $xpath->query('//akn:meta//akn:FRBRExpression/akn:FRBRlanguage/@language')->item(0)?->nodeValue;
+        $this->assertSame('por', $exprLang);
+
+        // FRBRManifestation
+        $format = $xpath->query('//akn:meta//akn:FRBRManifestation/akn:FRBRformat/@value')->item(0)?->nodeValue;
+        $this->assertSame('application/akn+xml', $format);
+    }
+
+    public function testAllElementIdsAreGloballyUniqueInRegimento(): void
+    {
+        $this->assertFileExists($this->regimentoXmlPath);
+
+        $dom = new DOMDocument();
+        $dom->load($this->regimentoXmlPath);
+
+        $xpath = new DOMXPath($dom);
+        $xpath->registerNamespace('akn', self::AKN_NAMESPACE);
+
+        $nodesWithEid = $xpath->query('//*[@eId]');
+        $this->assertNotFalse($nodesWithEid);
+        $this->assertGreaterThan(0, $nodesWithEid->length, 'O Regimento deve conter elementos com atributos eId.');
+
+        $eids = [];
+        $duplicates = [];
+
+        foreach ($nodesWithEid as $node) {
+            $eid = $node->attributes->getNamedItem('eId')?->nodeValue;
+            if ($eid !== null && $eid !== '') {
+                if (isset($eids[$eid])) {
+                    $duplicates[] = $eid;
+                }
+                $eids[$eid] = ($eids[$eid] ?? 0) + 1;
+            }
+        }
+
+        $this->assertEmpty(
+            $duplicates,
+            'Identificadores eId duplicados encontrados em regimento-interno.akn.xml: ' . implode(', ', array_unique($duplicates))
+        );
+        $this->assertGreaterThanOrEqual(50, count($eids), 'Deveriam existir pelo menos 50 eIds estruturados no Regimento.');
+    }
+
+    public function testRegimentoArticleAndChapterIdsFollowSemanticNamingConvention(): void
+    {
+        $this->assertFileExists($this->regimentoXmlPath);
+
+        $dom = new DOMDocument();
+        $dom->load($this->regimentoXmlPath);
+
+        $xpath = new DOMXPath($dom);
+        $xpath->registerNamespace('akn', self::AKN_NAMESPACE);
+
+        // Capítulos: cap_1 a cap_8
+        $chapters = $xpath->query('//akn:chapter');
+        $this->assertCount(8, $chapters, 'Devem existir exatamente 8 capítulos no Regimento.');
+
+        $expectedCapIndex = 1;
+        foreach ($chapters as $chapter) {
+            $eid = $chapter->attributes->getNamedItem('eId')?->nodeValue;
+            $this->assertSame("cap_{$expectedCapIndex}", $eid, "Capítulo {$expectedCapIndex} deve ter eId 'cap_{$expectedCapIndex}'.");
+            $expectedCapIndex++;
+        }
+
+        // Artigos: art_1 a art_29
+        $articles = $xpath->query('//akn:article');
+        $this->assertCount(29, $articles, 'Devem existir exatamente 29 artigos no Regimento.');
+
+        $expectedArtIndex = 1;
+        foreach ($articles as $article) {
+            $eid = $article->attributes->getNamedItem('eId')?->nodeValue;
+            $this->assertSame("art_{$expectedArtIndex}", $eid, "Artigo {$expectedArtIndex} deve ter eId 'art_{$expectedArtIndex}'.");
+            $expectedArtIndex++;
+        }
+    }
+
+    public function testRegimentoInternoContainsAllRequiredFrbrMetadata(): void
+    {
+        $this->assertFileExists($this->regimentoXmlPath);
+
+        $dom = new DOMDocument();
+        $dom->load($this->regimentoXmlPath);
+
+        $xpath = new DOMXPath($dom);
+        $xpath->registerNamespace('akn', self::AKN_NAMESPACE);
+
+        // FRBRWork
+        $workDate = $xpath->query('//akn:meta//akn:FRBRWork/akn:FRBRdate/@date')->item(0)?->nodeValue;
+        $workCountry = $xpath->query('//akn:meta//akn:FRBRWork/akn:FRBRcountry/@value')->item(0)?->nodeValue;
+        $workUri = $xpath->query('//akn:meta//akn:FRBRWork/akn:FRBRuri/@value')->item(0)?->nodeValue;
+
+        $this->assertSame('2026-01-11', $workDate);
+        $this->assertSame('bra', $workCountry);
+        $this->assertSame('/br/go/guapo/rel/regimento/ibnp/2026-01-11', $workUri);
 
         // FRBRExpression
         $exprLang = $xpath->query('//akn:meta//akn:FRBRExpression/akn:FRBRlanguage/@language')->item(0)?->nodeValue;

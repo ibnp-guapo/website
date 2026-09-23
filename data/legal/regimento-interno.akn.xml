@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="regimentoInterno">
+    <meta>
+      <identification source="#ibnp">
+        <FRBRWork>
+          <FRBRthis value="/br/go/guapo/rel/regimento/ibnp/2026-01-11/main"/>
+          <FRBRuri value="/br/go/guapo/rel/regimento/ibnp/2026-01-11"/>
+          <FRBRdate date="2026-01-11" name="aprovacao"/>
+          <FRBRauthor href="#assembleiaGeral"/>
+          <FRBRcountry value="bra"/>
+          <FRBRnumber value="1"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/br/go/guapo/rel/regimento/ibnp/2026-01-11/por@/main"/>
+          <FRBRuri value="/br/go/guapo/rel/regimento/ibnp/2026-01-11/por@"/>
+          <FRBRdate date="2026-01-11" name="expression"/>
+          <FRBRauthor href="#assembleiaGeral"/>
+          <FRBRlanguage language="por"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/br/go/guapo/rel/regimento/ibnp/2026-01-11/por@/main.akn.xml"/>
+          <FRBRuri value="/br/go/guapo/rel/regimento/ibnp/2026-01-11/por@/main.akn.xml"/>
+          <FRBRdate date="2026-09-23" name="xmlGeneration"/>
+          <FRBRauthor href="#ibnp"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <publication date="2026-01-11" name="AssembleiaGeralExtraordinaria" showAs="Sessão Extraordinária da Assembleia Geral da Igreja Batista Nacional da Paz de Guapó"/>
+      <references source="#ibnp">
+        <original eId="orig_1" href="data/legal/Regimento-Interno-IBNP.pdf" showAs="Documento Oficial Original em PDF"/>
+        <TLCOrganization eId="ibnp" href="/ontology/organization/br/ibnp" showAs="Igreja Batista Nacional da Paz de Guapó"/>
+        <TLCOrganization eId="assembleiaGeral" href="/ontology/organization/br/ibnp/assembleiaGeral" showAs="Assembleia Geral da IBNP Guapó"/>
+        <TLCOrganization eId="cbn" href="/ontology/organization/br/cbn" showAs="Convenção Batista Nacional"/>
+        <TLCOrganization eId="ormibanGo" href="/ontology/organization/br/go/ormiban" showAs="Ordem dos Ministros Batistas Nacionais - Seção de Goiás"/>
+        <TLCPerson eId="deusimarPereiraAmaral" href="/ontology/person/br/deusimarPereiraAmaral" showAs="Pr. Deusimar Pereira do Amaral (Presidente)"/>
+        <TLCPerson eId="fabioOliveiraNascimento" href="/ontology/person/br/fabioOliveiraNascimento" showAs="Fabio Oliveira Nascimento (Vice-Presidente)"/>
+        <TLCPerson eId="fabriciaPaulaMoura" href="/ontology/person/br/fabriciaPaulaMoura" showAs="Fabricia Paula e Moura (1ª Secretária)"/>
+        <TLCPerson eId="suelySilvaAmaral" href="/ontology/person/br/suelySilvaAmaral" showAs="Suely Silva Leite Amaral (2ª Secretária)"/>
+        <TLCPerson eId="welingtonCoelhoSouza" href="/ontology/person/br/welingtonCoelhoSouza" showAs="Pr. Welington Coelho de Souza (OAB/GO 9934)"/>
+        <TLCLocation eId="guapo" href="/ontology/location/br/go/guapo" showAs="Guapó, Estado de Goiás"/>
+      </references>
+    </meta>
+    <preface>
+      <p class="title">
+        <docTitle>REGIMENTO INTERNO DA IGREJA BATISTA NACIONAL DA PAZ DE GUAPÓ</docTitle>
+      </p>
+      <p class="registryNote">Aprovado em Sessão Extraordinária da Assembleia Geral em 11 de janeiro de 2026.</p>
+    </preface>
+    <body>
+      <chapter eId="cap_1">
+        <num>Capítulo I</num>
+        <heading>Do Nome, Seus Princípios e Identidade Denominacional</heading>
+        <article eId="art_1">
+          <num>Art. 1º</num>
+          <intro>
+            <p>A Igreja Batista Nacional da Paz de Guapó, organizada em 29 de Dezembro de um mil e novecentos e noventa e oito, adotou e mantém este nome após ter sido organizada em sua sede situada na Rua Presidente Kennedy, QD21, LT13, centro, na cidade de Guapó, Estado de Goiás, CEP: 75.350-000.</p>
+          </intro>
+          <paragraph eId="art_1_par_unico">
+            <num>Parágrafo único.</num>
+            <content>
+              <p>A Igreja Batista Nacional da Paz de Guapó toma este nome por estar identificada com os princípios e doutrinas batistas.</p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_2">
+          <num>Art. 2º</num>
+          <content>
+            <p>A Igreja Batista é filiada à CBN, Convenção Batista Nacional, para fins de cooperação e adota integralmente o Manual Básico dos Batistas Nacionais em sua forma atual, baseando nele seus princípios, regulamentos e pragmática à luz do Novo Testamento.</p>
+          </content>
+        </article>
+      </chapter>
+
+      <chapter eId="cap_2">
+        <num>Capítulo II</num>
+        <heading>Das Atribuições dos Membros da Diretoria</heading>
+        <article eId="art_3">
+          <num>Art. 3º</num>
+          <intro>
+            <p>Deveres e atribuições do pastor presidente:</p>
+          </intro>
+          <clause eId="art_3_cla_1">
+            <num>1.</num>
+            <content>
+              <p>Representar a igreja ativa e passivamente em juízo e fora dele;</p>
+            </content>
+          </clause>
+          <clause eId="art_3_cla_2">
+            <num>2.</num>
+            <content>
+              <p>Superintender a administração de todos os negócios da igreja;</p>
+            </content>
+          </clause>
+          <clause eId="art_3_cla_3">
+            <num>3.</num>
+            <content>
+              <p>Convocar e presidir todas as reuniões de diretoria e assembleias;</p>
+            </content>
+          </clause>
+          <clause eId="art_3_cla_4">
+            <num>4.</num>
+            <content>
+              <p>Assinar com o 1º tesoureiro todos os documentos de compra, venda, contratos, e outros em que seja necessária a chancela do representante;</p>
+            </content>
+          </clause>
+          <clause eId="art_3_cla_5">
+            <num>5.</num>
+            <content>
+              <p>O voto de desempate.</p>
+            </content>
+          </clause>
+        </article>
+        <article eId="art_4">
+          <num>Art. 4º</num>
+          <intro>
+            <p>Deveres e atribuições do vice-presidente:</p>
+          </intro>
+          <clause eId="art_4_cla_1">
+            <num>1.</num>
+            <content>
+              <p>Compete ao vice-presidente substituir o presidente em seus impedimentos ou ausências;</p>
+            </content>
+          </clause>
+          <paragraph eId="art_4_par_unico">
+            <num>Parágrafo único.</num>
+            <content>
+              <p>Na ausência do pastor presidente, compete ao vice-presidente promover o bom andamento da igreja em seus cultos e na administração.</p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_5">
+          <num>Art. 5º</num>
+          <intro>
+            <p>Deveres e atribuições do 1º secretário(a):</p>
+          </intro>
+          <clause eId="art_5_cla_1">
+            <num>1.</num>
+            <content>
+              <p>Lavrar, assinar e fazer a leitura das atas nas assembleias gerais;</p>
+            </content>
+          </clause>
+          <clause eId="art_5_cla_2">
+            <num>2.</num>
+            <content>
+              <p>Redigir e assinar em livro próprio os termos de casamento de efeito civil realizados na igreja;</p>
+            </content>
+          </clause>
+          <clause eId="art_5_cla_3">
+            <num>3.</num>
+            <content>
+              <p>Receber e remeter todas as correspondências administrativas;</p>
+            </content>
+          </clause>
+          <clause eId="art_5_cla_4">
+            <num>4.</num>
+            <content>
+              <p>Manter em ordem e atualizada a documentação administrativa da igreja;</p>
+            </content>
+          </clause>
+          <clause eId="art_5_cla_5">
+            <num>5.</num>
+            <content>
+              <p>Manter sempre atualizado o rol de membros da igreja.</p>
+            </content>
+          </clause>
+          <paragraph eId="art_5_par_unico">
+            <num>Parágrafo único.</num>
+            <content>
+              <p>Cada congregação, “ad-referendum” da assembleia geral, elegerá secretários adjuntos, subordinados à secretaria geral da igreja.</p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_6">
+          <num>Art. 6º</num>
+          <intro>
+            <p>Deveres e atribuições do 2º secretário(a):</p>
+          </intro>
+          <clause eId="art_6_cla_1">
+            <num>1.</num>
+            <content>
+              <p>Substituir o 1º secretário em seus eventuais impedimentos;</p>
+            </content>
+          </clause>
+          <clause eId="art_6_cla_2">
+            <num>2.</num>
+            <content>
+              <p>Auxiliar o 1º secretário em suas atribuições sempre que solicitado.</p>
+            </content>
+          </clause>
+        </article>
+        <article eId="art_7">
+          <num>Art. 7º</num>
+          <intro>
+            <p>Deveres e atribuições do 1º tesoureiro(a):</p>
+          </intro>
+          <clause eId="art_7_cla_1">
+            <num>1.</num>
+            <content>
+              <p>Receber, contabilizar e depositar todo dinheiro na conta bancária da igreja;</p>
+            </content>
+          </clause>
+          <clause eId="art_7_cla_2">
+            <num>2.</num>
+            <content>
+              <p>Efetuar os pagamentos autorizados da igreja, exigir notas fiscais, cupons fiscais e recibos válidos, e mantê-los arquivados para apresentá-los sempre que solicitados;</p>
+            </content>
+          </clause>
+          <clause eId="art_7_cla_3">
+            <num>3.</num>
+            <content>
+              <p>Apresentar balancetes mensais para o conselho fiscal que emitirá um parecer para apreciação da assembleia geral;</p>
+            </content>
+          </clause>
+          <clause eId="art_7_cla_4">
+            <num>4.</num>
+            <content>
+              <p>Receber e encaminhar para o conselho fiscal as contas e os balancetes mensais das congregações que também passarão por apreciação da assembleia geral;</p>
+            </content>
+          </clause>
+          <clause eId="art_7_cla_5">
+            <num>5.</num>
+            <content>
+              <p>Abrir e movimentar contas bancárias em nome da igreja, assinando em conjunto com o pastor presidente, bem como fazer aplicações financeiras possíveis e mais convenientes, podendo, para tanto, depositar, solicitar saldos, extratos, talões de cheque, segunda via de cartões de débito e alterações de senha; enfim, praticar todos os demais atos necessários ao seu fiel desempenho dentro dos limites estatutários e regimentais.</p>
+            </content>
+          </clause>
+          <paragraph eId="art_7_par_unico">
+            <num>Parágrafo único.</num>
+            <content>
+              <p>Cada congregação, “ad-referendum” da assembleia geral, elegerá tesoureiros adjuntos com deveres e atribuições semelhantes, que desincumbirão suas tarefas sob a orientação do 1º tesoureiro a quem apresentarão relatórios mensais.</p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_8">
+          <num>Art. 8º</num>
+          <intro>
+            <p>Deveres e atribuições do 2º tesoureiro(a):</p>
+          </intro>
+          <clause eId="art_8_cla_1">
+            <num>1.</num>
+            <content>
+              <p>Substituir o 1º tesoureiro em seus eventuais impedimentos;</p>
+            </content>
+          </clause>
+          <clause eId="art_8_cla_2">
+            <num>2.</num>
+            <content>
+              <p>Auxiliar o 1º tesoureiro em suas atribuições sempre que solicitado.</p>
+            </content>
+          </clause>
+        </article>
+        <article eId="art_9">
+          <num>Art. 9º</num>
+          <intro>
+            <p>Deveres e atribuições do diretor(a) de patrimônio:</p>
+          </intro>
+          <clause eId="art_9_cla_1">
+            <num>1.</num>
+            <content>
+              <p>Manter guardados em local seguro e apropriado os documentos de todos os bens patrimoniais da igreja;</p>
+            </content>
+          </clause>
+          <clause eId="art_9_cla_2">
+            <num>2.</num>
+            <content>
+              <p>Manter em livros apropriados o registro de todos os bens patrimoniais da igreja, congregações e missões, atualizando todo dia 31 de dezembro de cada ano;</p>
+            </content>
+          </clause>
+          <clause eId="art_9_cla_3">
+            <num>3.</num>
+            <content>
+              <p>Providenciar, sempre que necessário, a manutenção dos bens móveis e imóveis levantando orçamentos, contratando a mão de obra e solicitando à diretoria autorização e recursos para este fim.</p>
+            </content>
+          </clause>
+          <paragraph eId="art_9_par_unico">
+            <num>Parágrafo único.</num>
+            <content>
+              <p>Para cada congregação, “ad-referendum” da assembleia geral, o diretor(a) de patrimônio nomeará um auxiliar com os mesmos deveres e atribuições.</p>
+            </content>
+          </paragraph>
+        </article>
+      </chapter>
+
+      <chapter eId="cap_3">
+        <num>Capítulo III</num>
+        <heading>Dos Membros: Recebimento, Direitos e Deveres, Disciplina e Desligamento</heading>
+        <article eId="art_10">
+          <num>Art. 10</num>
+          <intro>
+            <p>Os processos de recebimento dos membros estão delineados nos incisos deste artigo:</p>
+          </intro>
+          <clause eId="art_10_cla_1">
+            <num>1.</num>
+            <content>
+              <p>Pessoas que fizeram a confissão de fé em Jesus Cristo como único senhor e salvador e batizadas por imersão, segundo o ensino do Novo Testamento;</p>
+            </content>
+          </clause>
+          <clause eId="art_10_cla_2">
+            <num>2.</num>
+            <content>
+              <p>Crentes oriundos de outra igreja da mesma fé e ordem, mediante carta de transferência;</p>
+            </content>
+          </clause>
+          <clause eId="art_10_cla_3">
+            <num>3.</num>
+            <content>
+              <p>Crentes que havendo sido desligados desta ou de outra igreja, que desejarem a reconciliação;</p>
+            </content>
+          </clause>
+          <clause eId="art_10_cla_4">
+            <num>4.</num>
+            <content>
+              <p>Crentes que por qualquer motivo não se enquadram nos casos anteriores, forem recebidos por aclamação;</p>
+            </content>
+          </clause>
+          <clause eId="art_10_cla_5">
+            <num>5.</num>
+            <content>
+              <p>Os casos omissos serão avaliados pela assembleia geral.</p>
+            </content>
+          </clause>
+        </article>
+        <article eId="art_11">
+          <num>Art. 11</num>
+          <intro>
+            <p>Serão aceitos como membros da igreja pessoas que livremente o solicitarem e preencherem os requisitos expressos nos parágrafos deste artigo:</p>
+          </intro>
+          <clause eId="art_11_cla_1">
+            <num>1.</num>
+            <content>
+              <p>Requisito espiritual: o solicitante deve possuir uma genuína experiência de conversão a Cristo e sua aceitação, pela fé, como único senhor e suficiente salvador;</p>
+            </content>
+          </clause>
+          <clause eId="art_11_cla_2">
+            <num>2.</num>
+            <content>
+              <p>Requisito moral: o solicitante deve estar com a sua vida civil regular, dando bom testemunho de uma vida cristã autêntica, nos termos dos ensinos do Novo Testamento e da ética cristã;</p>
+            </content>
+          </clause>
+          <clause eId="art_11_cla_3">
+            <num>3.</num>
+            <content>
+              <p>Requisito de adesão: o solicitante deve estar frequentando regularmente a igreja, no mínimo há seis meses, inclusive sendo fiel contribuinte, e a ela solicitar sua membresia, aderindo ao pacto de membresia e ao pacto das igrejas batistas nacionais;</p>
+            </content>
+          </clause>
+          <clause eId="art_11_cla_4">
+            <num>4.</num>
+            <content>
+              <p>Requisito de limitações: o solicitante precisa ter maturidade suficiente para, conscientemente, se arrepender de seus pecados, crer em Cristo e tomar a decisão de segui-lo. Os menores de idade precisarão da aprovação dos pais ou responsáveis;</p>
+            </content>
+          </clause>
+          <clause eId="art_11_cla_5">
+            <num>5.</num>
+            <content>
+              <p>O solicitante de membresia, além de preencher os requisitos do artigo 11 e seus incisos, precisa obter a maioria simples dos votos válidos presentes na assembleia geral.</p>
+            </content>
+          </clause>
+        </article>
+        <article eId="art_12">
+          <num>Art. 12</num>
+          <intro>
+            <p>Os membros da igreja gozarão de todos os direitos expressos nos parágrafos deste artigo, salvo restrições estatutárias em contrário:</p>
+          </intro>
+          <clause eId="art_12_cla_1">
+            <num>1.</num>
+            <content>
+              <p>O direito de receber assistência religiosa e espiritual provida por seus ministérios;</p>
+            </content>
+          </clause>
+          <clause eId="art_12_cla_2">
+            <num>2.</num>
+            <content>
+              <p>O direito à palavra e ao voto nas deliberações nas assembleias;</p>
+            </content>
+          </clause>
+          <clause eId="art_12_cla_3">
+            <num>3.</num>
+            <content>
+              <p>O direito de concorrer nas eleições para quaisquer cargos na igreja, exceto os de natureza ministerial, para os quais é necessário que o aspirante possua vocação devidamente reconhecida e referendada pela Ordem de Ministros Batistas Nacionais, seção Goiás, ORMIBAN-GO;</p>
+            </content>
+          </clause>
+          <clause eId="art_12_cla_4">
+            <num>4.</num>
+            <content>
+              <p>O direito de participar dos cultos e demais atividades da igreja;</p>
+            </content>
+          </clause>
+          <clause eId="art_12_cla_5">
+            <num>5.</num>
+            <content>
+              <p>O direito ao apoio da igreja, especialmente nos momentos de dificuldade.</p>
+            </content>
+          </clause>
+        </article>
+        <article eId="art_13">
+          <num>Art. 13</num>
+          <intro>
+            <p>São deveres dos membros da igreja para com a comunidade:</p>
+          </intro>
+          <clause eId="art_13_cla_1">
+            <num>1.</num>
+            <content>
+              <p>Frequentar os cultos regularmente, participar das assembleias gerais ordinárias e extraordinárias quando convocadas;</p>
+            </content>
+          </clause>
+          <clause eId="art_13_cla_2">
+            <num>2.</num>
+            <content>
+              <p>Zelar pelo bom testemunho do evangelho, pela reputação dos seus irmãos de fé, bem como pelo bom nome da igreja e de seus ministros;</p>
+            </content>
+          </clause>
+          <clause eId="art_13_cla_3">
+            <num>3.</num>
+            <content>
+              <p>Cooperar ativamente e com fidelidade quanto ao sustento financeiro da igreja, através de seus dízimos e ofertas por amor à obra de Deus e com alegria;</p>
+            </content>
+          </clause>
+          <clause eId="art_13_cla_4">
+            <num>4.</num>
+            <content>
+              <p>Dedicar-se com sabedoria na edificação cristã de seus lares e procurar de forma prudente conduzir seus parentes à fé em Jesus Cristo;</p>
+            </content>
+          </clause>
+          <clause eId="art_13_cla_5">
+            <num>5.</num>
+            <content>
+              <p>Comunicar seus líderes quando for se ausentar da igreja por mais de trinta dias, seja por motivo de saúde, trabalho, estudos, viagens ou por qualquer outro motivo, para não gerar neles preocupações desnecessárias;</p>
+            </content>
+          </clause>
+          <clause eId="art_13_cla_6">
+            <num>6.</num>
+            <content>
+              <p>Quanto aos usos e costumes, observar o ensino no Novo Testamento: “com ordem e decência”;</p>
+            </content>
+          </clause>
+          <clause eId="art_13_cla_7">
+            <num>7.</num>
+            <content>
+              <p>Devem acatar com espírito de humildade as orientações, conselhos, admoestações, exortações ou outras medidas disciplinares administradas pela igreja através de seus ministros com base na Bíblia e jamais tomando atitudes que venham gerar conflitos ou divisões.</p>
+            </content>
+          </clause>
+        </article>
+        <article eId="art_14">
+          <num>Art. 14</num>
+          <intro>
+            <p>Visando a formação do caráter cristão de seus membros, bem como a correção de faltas danosas ao testemunho cristão e à própria igreja, esta exercerá a disciplina eclesiástica através de medidas biblicamente recomendadas:</p>
+          </intro>
+          <clause eId="art_14_cla_1">
+            <num>1.</num>
+            <content>
+              <p>Individualmente, na forma de conselhos, admoestação por parte de outro membro, quando se tratar de seus dependentes ou de pessoas com as quais tenha mais intimidade;</p>
+            </content>
+          </clause>
+          <clause eId="art_14_cla_2">
+            <num>2.</num>
+            <content>
+              <p>Por meio de comissões nomeadas pela assembleia geral;</p>
+            </content>
+          </clause>
+          <clause eId="art_14_cla_3">
+            <num>3.</num>
+            <content>
+              <p>Através do ministério pastoral da igreja;</p>
+            </content>
+          </clause>
+          <clause eId="art_14_cla_4">
+            <intro>
+              <p>As medidas disciplinares consistem em:</p>
+            </intro>
+            <point eId="art_14_point_a">
+              <num>a)</num>
+              <content>
+                <p>Conselhos, admoestações ou exortações;</p>
+              </content>
+            </point>
+            <point eId="art_14_point_b">
+              <num>b)</num>
+              <content>
+                <p>Suspensão dos cargos para os quais o membro sob disciplina tenha sido eleito;</p>
+              </content>
+            </point>
+            <point eId="art_14_point_c">
+              <num>c)</num>
+              <content>
+                <p>A suspensão temporária do direito de concorrer a qualquer cargo nas eleições;</p>
+              </content>
+            </point>
+            <point eId="art_14_point_d">
+              <num>d)</num>
+              <content>
+                <p>E, em último caso, o desligamento da igreja;</p>
+              </content>
+            </point>
+            <point eId="art_14_point_e">
+              <num>e)</num>
+              <content>
+                <p>Todas estas medidas disciplinares deverão sempre ser deliberadas na assembleia geral.</p>
+              </content>
+            </point>
+          </clause>
+        </article>
+        <article eId="art_15">
+          <num>Art. 15</num>
+          <intro>
+            <p>O desligamento de um membro se dará através do disposto nos parágrafos deste artigo:</p>
+          </intro>
+          <clause eId="art_15_cla_1">
+            <num>1.</num>
+            <content>
+              <p>Através de carta de transferência ou demissória para outra igreja evangélica;</p>
+            </content>
+          </clause>
+          <clause eId="art_15_cla_2">
+            <num>2.</num>
+            <content>
+              <p>Automaticamente, por motivo de ausência injustificada de membro por mais de 30 dias;</p>
+            </content>
+          </clause>
+          <clause eId="art_15_cla_3">
+            <num>3.</num>
+            <content>
+              <p>Sempre que se comprovar que o membro filiou-se ou deseja filiar-se a uma igreja evangélica de outra denominação; neste caso podendo solicitar uma carta de recomendação;</p>
+            </content>
+          </clause>
+          <clause eId="art_15_cla_4">
+            <num>4.</num>
+            <content>
+              <p>Mediante exclusão, de acordo com o disposto no artigo seguinte.</p>
+            </content>
+          </clause>
+        </article>
+        <article eId="art_16">
+          <num>Art. 16</num>
+          <intro>
+            <p>Os motivos pelos quais um membro poderá ser excluído são:</p>
+          </intro>
+          <clause eId="art_16_cla_1">
+            <num>1.</num>
+            <content>
+              <p>Uma comprovada demonstração de falta de conversão genuína a Cristo;</p>
+            </content>
+          </clause>
+          <clause eId="art_16_cla_2">
+            <num>2.</num>
+            <content>
+              <p>Atos comprovadamente escandalosos em relação à igreja e, por extensão, à sociedade;</p>
+            </content>
+          </clause>
+          <clause eId="art_16_cla_3">
+            <num>3.</num>
+            <content>
+              <p>Uma comprovada falta de concórdia doutrinária, capaz de prejudicar a paz e a harmonia da igreja;</p>
+            </content>
+          </clause>
+          <clause eId="art_16_cla_4">
+            <num>4.</num>
+            <content>
+              <p>Por atos de insubmissão.</p>
+            </content>
+          </clause>
+        </article>
+        <article eId="art_17">
+          <num>Art. 17</num>
+          <intro>
+            <p>Um membro só poderá ser excluído a pedido do mesmo, ou por ato deliberativo da própria igreja; ou por falta de fidelidade no que diz respeito ao parágrafo 3 do Artigo 13, depois de analisada a sua real situação social.</p>
+          </intro>
+          <paragraph eId="art_17_par_unico">
+            <num>Parágrafo único.</num>
+            <content>
+              <p>A recepção de um membro, especialmente através do batismo, será uma ocasião festiva para a igreja, e sua exclusão, motivo de pesar.</p>
+            </content>
+          </paragraph>
+        </article>
+      </chapter>
+
+      <chapter eId="cap_4">
+        <num>Capítulo IV</num>
+        <heading>Das Relações da Igreja com o Ministério</heading>
+        <article eId="art_18">
+          <num>Art. 18</num>
+          <intro>
+            <p>Conforme preceituação bíblica, a igreja dispensará ao seu pastor presidente e aos demais ministros que a servem um tratamento baseado no amor, na estima e grande consideração conforme os parágrafos:</p>
+          </intro>
+          <clause eId="art_18_cla_1">
+            <num>1.</num>
+            <content>
+              <p>Reconhecimento: A igreja reconhecerá neles os ministros do Senhor, eleitos e ungidos, portanto revestidos de autoridade da parte de Deus, para edificação da igreja visível de Cristo na face da terra;</p>
+            </content>
+          </clause>
+          <clause eId="art_18_cla_2">
+            <num>2.</num>
+            <content>
+              <p>Apoio espiritual: Orando sempre por eles, para que o Senhor os assista com uma graça inefável, tendo em vista o exercício do ministério;</p>
+            </content>
+          </clause>
+          <clause eId="art_18_cla_3">
+            <num>3.</num>
+            <content>
+              <p>Cooperação: A igreja, voluntariamente, coopera com eles de acordo com as necessidades pertinentes para o exercício de suas funções, principalmente através de uma participação efetiva na obra realizada por eles;</p>
+            </content>
+          </clause>
+          <clause eId="art_18_cla_4">
+            <intro>
+              <p>4. Sustento: Aos ministros de tempo integral, a igreja, dentro de sua disponibilidade financeira, lhes proporcionará um sustento digno, incluindo além de seus honorários, férias, 13º salário, previdência e ainda um depósito mensal no valor de 8% (oito por cento) dos seus honorários em caderneta de poupança a título de indenização, que será resgatado pelos titulares ou beneficiários, nos seguintes casos:</p>
+            </intro>
+            <point eId="art_18_cla_4_point_a">
+              <num>a)</num>
+              <content>
+                <p>Anualmente pelo titular;</p>
+              </content>
+            </point>
+            <point eId="art_18_cla_4_point_b">
+              <num>b)</num>
+              <content>
+                <p>Pelos beneficiários em caso de falecimento do titular.</p>
+              </content>
+            </point>
+          </clause>
+        </article>
+        <article eId="art_19">
+          <num>Art. 19</num>
+          <intro>
+            <p>A partir da data de aprovação deste regimento interno, todos os pastores que servirem a igreja, e que por motivo de saúde não mais puderem exercer o ministério, ou que completarem 65 anos de idade, terão direito a uma pensão mensal e vitalícia, correspondente a um salário mínimo vigente.</p>
+          </intro>
+          <paragraph eId="art_19_par_unico">
+            <num>Parágrafo único.</num>
+            <content>
+              <p>No caso do beneficiário não poder receber a referida pensão pessoalmente ou por procuração, a igreja depositará os valores mensalmente numa conta bancária em nome do mesmo.</p>
+            </content>
+          </paragraph>
+        </article>
+      </chapter>
+
+      <chapter eId="cap_5">
+        <num>Capítulo V</num>
+        <heading>Das Atribuições da Assembleia Geral</heading>
+        <article eId="art_20">
+          <num>Art. 20</num>
+          <intro>
+            <p>Como poder máximo da igreja, sob a direção e autoridade divina, compete à assembleia geral:</p>
+          </intro>
+          <clause eId="art_20_cla_1">
+            <num>1.</num>
+            <content>
+              <p>Transigir, adquirir, vender, hipotecar ou alugar; enfim, praticar quaisquer atos necessários relacionados às necessidades da igreja;</p>
+            </content>
+          </clause>
+          <clause eId="art_20_cla_2">
+            <num>2.</num>
+            <content>
+              <p>Aprovar a pauta de assuntos de cada sessão;</p>
+            </content>
+          </clause>
+          <clause eId="art_20_cla_3">
+            <num>3.</num>
+            <content>
+              <p>Aprovar as atas de sessões da assembleia geral;</p>
+            </content>
+          </clause>
+          <clause eId="art_20_cla_4">
+            <num>4.</num>
+            <content>
+              <p>Receber e desligar membros;</p>
+            </content>
+          </clause>
+          <clause eId="art_20_cla_5">
+            <num>5.</num>
+            <content>
+              <p>Eleger e demitir pastores, diáconos e cooperadores;</p>
+            </content>
+          </clause>
+          <clause eId="art_20_cla_6">
+            <num>6.</num>
+            <content>
+              <p>Homologar ou anular decisões tomadas nas congregações;</p>
+            </content>
+          </clause>
+          <clause eId="art_20_cla_7">
+            <num>7.</num>
+            <content>
+              <p>Eleger ou homologar as eleições para todos os demais cargos da igreja.</p>
+            </content>
+          </clause>
+        </article>
+      </chapter>
+
+      <chapter eId="cap_6">
+        <num>Capítulo VI</num>
+        <heading>Do Corpo Diaconal: Seus Membros, Número e Ofício</heading>
+        <article eId="art_21">
+          <num>Art. 21</num>
+          <content>
+            <p>O corpo diaconal será composto de homens e mulheres que, manifestando vocação, preencherem os requisitos estabelecidos no Novo Testamento e forem devidamente eleitos e consagrados para o exercício deste importante ofício.</p>
+          </content>
+        </article>
+        <article eId="art_22">
+          <num>Art. 22</num>
+          <intro>
+            <p>O número de membros será sempre de acordo com a necessidade:</p>
+          </intro>
+          <clause eId="art_22_cla_1">
+            <num>1.</num>
+            <content>
+              <p>Para o preenchimento das vagas, os membros serão eleitos em sessões extraordinárias da assembleia geral para um período de experiência de dois anos, e posteriormente, por tempo indeterminado, quando se dará a consagração dos mesmos por um concílio de pastores e diáconos já consagrados;</p>
+            </content>
+          </clause>
+          <clause eId="art_22_cla_2">
+            <num>2.</num>
+            <content>
+              <p>Um diácono ou diaconisa poderão ser demitidos e substituídos do ofício quando não mais estiverem preenchendo os requisitos bíblicos ou não mais estiverem demonstrando interesse por tão importante ministério;</p>
+            </content>
+          </clause>
+          <clause eId="art_22_cla_3">
+            <num>3.</num>
+            <content>
+              <p>Um diácono ou diaconisa poderão ser substituídos a seu pedido ou por sugestão e deliberação da assembleia geral, ficando em disponibilidade, ensejando a oportunidade para outros que desejarem servir ao Senhor;</p>
+            </content>
+          </clause>
+          <clause eId="art_22_cla_4">
+            <num>4.</num>
+            <content>
+              <p>Os diáconos e diaconisas deverão ser considerados dignos de todo o respeito e estima por parte de toda igreja;</p>
+            </content>
+          </clause>
+          <clause eId="art_22_cla_5">
+            <num>5.</num>
+            <content>
+              <p>Os diáconos e diaconisas deverão ser dizimistas e ofertantes fiéis, bem como exemplares em seus testemunhos pessoais e familiares perante todo o povo.</p>
+            </content>
+          </clause>
+        </article>
+        <article eId="art_23">
+          <num>Art. 23</num>
+          <intro>
+            <p>Por se tratar de um ministério amplo e voltado para as questões materiais da igreja, será considerado como função diaconal o seguinte:</p>
+          </intro>
+          <clause eId="art_23_cla_1">
+            <num>1.</num>
+            <content>
+              <p>Planejar, promover e executar toda obra assistencial da igreja;</p>
+            </content>
+          </clause>
+          <clause eId="art_23_cla_2">
+            <num>2.</num>
+            <content>
+              <p>Manter a ordem e o bom funcionamento de todos os bens e pertences da igreja;</p>
+            </content>
+          </clause>
+          <clause eId="art_23_cla_3">
+            <num>3.</num>
+            <content>
+              <p>Orientar, fiscalizar e prover através dos recursos da tesouraria a conservação e ornamentação da igreja;</p>
+            </content>
+          </clause>
+          <clause eId="art_23_cla_4">
+            <num>4.</num>
+            <content>
+              <p>Manter a ordem e a disciplina nas reuniões, bem como receber e acomodar os visitantes e os membros da igreja;</p>
+            </content>
+          </clause>
+          <clause eId="art_23_cla_5">
+            <num>5.</num>
+            <content>
+              <p>Auxiliar diretamente o ministério em tudo o que for necessário, inclusive nos atos pastorais.</p>
+            </content>
+          </clause>
+        </article>
+      </chapter>
+
+      <chapter eId="cap_7">
+        <num>Capítulo VII</num>
+        <heading>Dos Cooperadores do Ministério</heading>
+        <article eId="art_24">
+          <num>Art. 24</num>
+          <content>
+            <p>Serão denominados cooperadores do ministério os obreiros não ordenados, levantados e capacitados pelo Espírito Santo, eleitos pela assembleia geral para a realização da obra sob orientação e apoio pastoral.</p>
+          </content>
+        </article>
+        <article eId="art_25">
+          <num>Art. 25</num>
+          <content>
+            <p>Os cooperadores do ministério poderão ter entre outras funções, a critério do pastor presidente, dirigir congregações e pontos de pregação, atuação como diretores(as) de órgãos da igreja e pregadores.</p>
+          </content>
+        </article>
+        <article eId="art_26">
+          <num>Art. 26</num>
+          <intro>
+            <p>Os cooperadores do ministério, no exercício de suas funções, serão assistidos pela igreja:</p>
+          </intro>
+          <clause eId="art_26_cla_1">
+            <num>1.</num>
+            <content>
+              <p>Com formação doutrinária, eclesiástica e denominacional especial através de um curso de formação de obreiros, de âmbito interno;</p>
+            </content>
+          </clause>
+          <clause eId="art_26_cla_2">
+            <num>2.</num>
+            <content>
+              <p>Com o material necessário para o trabalho;</p>
+            </content>
+          </clause>
+          <clause eId="art_26_cla_3">
+            <num>3.</num>
+            <content>
+              <p>Com ajuda para o transporte e alguma ajuda financeira eventual;</p>
+            </content>
+          </clause>
+          <clause eId="art_26_cla_4">
+            <num>4.</num>
+            <content>
+              <p>No caso do cooperador se sentir vocacionado por Deus para o santo ministério, e der prova fiel de sua vocação através de frutos no trabalho, a igreja, dentro de suas possibilidades, promoverá a sua formação teológica no âmbito da CBN.</p>
+            </content>
+          </clause>
+        </article>
+      </chapter>
+
+      <chapter eId="cap_8">
+        <num>Capítulo VIII</num>
+        <heading>Das Disposições Gerais</heading>
+        <article eId="art_27">
+          <num>Art. 27</num>
+          <content>
+            <p>Este regimento interno foi aprovado em sessão extraordinária da assembleia geral convocada para este fim e composta pela maioria de seus membros, e só poderá ser reformado também em sessão extraordinária convocada especialmente para este fim, com antecedência mínima e com ciência da maioria simples dos seus membros.</p>
+          </content>
+        </article>
+        <article eId="art_28">
+          <num>Art. 28</num>
+          <content>
+            <p>Toda matéria omissa no estatuto e regimento interno será regulamentada através de resolução complementar, votada nas sessões da assembleia geral.</p>
+          </content>
+        </article>
+        <article eId="art_29">
+          <num>Art. 29</num>
+          <content>
+            <p>O presente regimento interno entra em vigor a partir da sua aprovação pela assembleia geral, ficando revogadas as disposições em contrário.</p>
+          </content>
+        </article>
+      </chapter>
+    </body>
+    <conclusions>
+      <p class="locationAndDate">Guapó-GO, 11 de janeiro de 2026.</p>
+      <p class="signers">
+        <signature>
+          <person refersTo="#fabriciaPaulaMoura">Fabricia Paula e Moura</person> - 1ª Secretária
+        </signature>
+        <signature>
+          <person refersTo="#deusimarPereiraAmaral">Deusimar Pereira do Amaral</person> - Presidente
+        </signature>
+        <signature>
+          <person refersTo="#suelySilvaAmaral">Suely Silva Leite Amaral</person> - 2ª Secretária
+        </signature>
+        <signature>
+          <person refersTo="#fabioOliveiraNascimento">Fabio Oliveira Nascimento</person> - Vice-Presidente
+        </signature>
+        <signature>
+          <person refersTo="#welingtonCoelhoSouza">Pr. Welington Coelho de Souza</person> - Matrícula 9934 OAB/GO
+        </signature>
+      </p>
+    </conclusions>
+  </act>
+</akomaNtoso>

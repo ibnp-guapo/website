@@ -140,7 +140,7 @@
                             </span>
                             <span class="inline-flex items-center gap-1.5 bg-surface-cream-light text-on-surface border border-outline-variant/40 text-xs font-medium px-3 py-1 rounded-full">
                                 <span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
-                                <span>Cartório 2º Ofício de Guapó • {{ $formattedDate }}</span>
+                                <span>Assembleia Geral Extraordinária • {{ $formattedDate }}</span>
                             </span>
                             <span class="inline-flex items-center gap-1.5 bg-surface-cream-light text-on-surface border border-outline-variant/40 text-xs font-medium px-3 py-1 rounded-full">
                                 <span class="material-symbols-outlined text-[14px] text-primary">description</span>

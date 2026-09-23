@@ -55,8 +55,9 @@ final class LegalDocRoutesTest extends TestCase
 
     public function testRegimentoRendersInstitutionalRegulamentationWhenXmlDoesNotExist(): void
     {
+        $controller = new LegalDocController(regimentoXmlPath: __DIR__ . '/non-existent-regimento.xml');
         ob_start();
-        $this->controller->regimento();
+        $controller->regimento();
         $output = (string) ob_get_clean();
 
         $this->assertNotEmpty($output);
@@ -80,5 +81,49 @@ final class LegalDocRoutesTest extends TestCase
         $this->assertStringNotContainsString('>P</span>', $output);
         $this->assertStringNotContainsString('family=Inter', $output);
         $this->assertStringNotContainsString('bg-slate-900', $output);
+    }
+
+    public function testRegimentoRendersSuccessfullyWithHtmlContent(): void
+    {
+        ob_start();
+        $this->controller->regimento();
+        $output = (string) ob_get_clean();
+
+        $this->assertNotEmpty($output);
+        $this->assertStringContainsString('REGIMENTO INTERNO', $output);
+        $this->assertStringContainsString('id="art_1"', $output);
+        $this->assertStringContainsString('id="art_29"', $output);
+        $this->assertStringContainsString('id="cap_1"', $output);
+        $this->assertStringContainsString('id="cap_8"', $output);
+        $this->assertStringContainsString('copyPermalink', $output);
+        $this->assertStringContainsString('search-input', $output);
+        $this->assertStringContainsString('29 Artigos', $output);
+        $this->assertStringContainsString('11/01/2026', $output);
+        $this->assertStringNotContainsString('Akoma Ntoso', $output);
+
+        // Deve estender layouts.app com tokens Stitch e navegação canônica
+        $this->assertStringContainsString('IBNP', $output);
+        $this->assertStringContainsString('/assets/images/logo-ibnp.png', $output);
+        $this->assertStringContainsString('Plus Jakarta Sans', $output);
+        $this->assertStringContainsString('material-symbols-outlined', $output);
+        $this->assertStringContainsString('02.930.019/0001-62', $output);
+        $this->assertStringContainsString('elevation-warm-1', $output);
+
+        // Responsividade mobile do sumário
+        $this->assertStringContainsString('lg:sticky', $output);
+        $this->assertStringContainsString('lg:top-24', $output);
+        $this->assertStringContainsString('id="toc-mobile-toggle"', $output);
+        $this->assertStringContainsString('id="toc-container"', $output);
+    }
+
+    public function testRegimentoDownloadXmlReturnsXmlAttachment(): void
+    {
+        ob_start();
+        $this->controller->downloadRegimentoXml();
+        $output = (string) ob_get_clean();
+
+        $this->assertNotEmpty($output);
+        $this->assertStringContainsString('REGIMENTO INTERNO DA IGREJA BATISTA NACIONAL DA PAZ DE GUAPÓ', $output);
+        $this->assertStringContainsString('xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"', $output);
     }
 }

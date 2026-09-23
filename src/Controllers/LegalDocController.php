@@ -13,11 +13,15 @@ final class LegalDocController
     private AkomaNtosoParser $parser;
     private BladeViewRenderer $renderer;
     private string $baseDir;
+    private string $estatutoXmlPath;
+    private string $regimentoXmlPath;
 
     public function __construct(
         ?AkomaNtosoParser $parser = null,
         ?BladeViewRenderer $renderer = null,
-        ?string $baseDir = null
+        ?string $baseDir = null,
+        ?string $estatutoXmlPath = null,
+        ?string $regimentoXmlPath = null
     ) {
         $this->parser = $parser ?? new AkomaNtosoParser();
         $this->baseDir = $baseDir ?? dirname(__DIR__, 2);
@@ -25,6 +29,8 @@ final class LegalDocController
         $viewsPath = "{$this->baseDir}/views";
         $cachePath = "{$this->baseDir}/storage/cache/views";
         $this->renderer = $renderer ?? new BladeViewRenderer($viewsPath, $cachePath);
+        $this->estatutoXmlPath = $estatutoXmlPath ?? "{$this->baseDir}/data/legal/estatuto-social.akn.xml";
+        $this->regimentoXmlPath = $regimentoXmlPath ?? "{$this->baseDir}/data/legal/regimento-interno.akn.xml";
     }
 
     /**
@@ -32,7 +38,7 @@ final class LegalDocController
      */
     public function estatuto(): void
     {
-        $filePath = "{$this->baseDir}/data/legal/estatuto-social.akn.xml";
+        $filePath = $this->estatutoXmlPath;
         if (!file_exists($filePath)) {
             http_response_code(404);
             header('Content-Type: text/plain; charset=utf-8');
@@ -61,7 +67,7 @@ final class LegalDocController
      */
     public function downloadEstatutoXml(): void
     {
-        $filePath = "{$this->baseDir}/data/legal/estatuto-social.akn.xml";
+        $filePath = $this->estatutoXmlPath;
         if (!file_exists($filePath)) {
             http_response_code(404);
             header('Content-Type: text/plain; charset=utf-8');
@@ -80,7 +86,7 @@ final class LegalDocController
      */
     public function regimento(): void
     {
-        $filePath = "{$this->baseDir}/data/legal/regimento-interno.akn.xml";
+        $filePath = $this->regimentoXmlPath;
         header('Content-Type: text/html; charset=utf-8');
 
         if (!file_exists($filePath)) {
@@ -96,7 +102,7 @@ final class LegalDocController
 
         $doc = $this->parser->parseFile($filePath);
         $totalArticles = $doc->countArticles();
-        $formattedDate = $doc->date ? date('d/m/Y', strtotime($doc->date)) : '25/03/2002';
+        $formattedDate = $doc->date ? date('d/m/Y', strtotime($doc->date)) : '11/01/2026';
 
         echo $this->renderer->render('pages.legal.regimento', [
             'doc' => $doc,
@@ -114,7 +120,7 @@ final class LegalDocController
      */
     public function downloadRegimentoXml(): void
     {
-        $filePath = "{$this->baseDir}/data/legal/regimento-interno.akn.xml";
+        $filePath = $this->regimentoXmlPath;
         if (!file_exists($filePath)) {
             http_response_code(404);
             header('Content-Type: text/plain; charset=utf-8');

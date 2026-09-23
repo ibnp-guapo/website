@@ -10,13 +10,6 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
             <!-- Text Content -->
             <div class="lg:col-span-7 flex flex-col items-start gap-4">
-                <!-- City & Affiliation Pill -->
-                <a href="https://cbn.org.br/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-surface-cream-warm/40 hover:bg-surface-cream-warm border border-outline-variant/60 px-3.5 py-1.5 rounded-full text-on-surface transition-all group" title="Filiada à Convenção Batista Nacional (abre em nova aba)">
-                    <span class="w-2 h-2 rounded-full bg-secondary"></span>
-                    <span class="text-xs font-bold uppercase tracking-wider text-secondary">Guapó – Goiás • Filiada à CBN</span>
-                    <span class="material-symbols-outlined text-[14px] text-secondary group-hover:translate-x-0.5 transition-transform">open_in_new</span>
-                </a>
-
                 <!-- Main Headline -->
                 <h1 class="text-3xl sm:text-5xl lg:text-[3.25rem] font-extrabold text-on-surface leading-[1.15] tracking-tight">
                     Acolhimento, desenvolvimento humano e impacto social em Guapó

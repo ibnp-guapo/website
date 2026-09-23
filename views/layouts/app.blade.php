@@ -36,24 +36,24 @@
                 </div>
             </a>
 
-            <!-- Web Desktop Navigation Links (Compacto e responsivo, mantendo CTA sempre visível) -->
-            <nav class="hidden xl:flex items-center justify-center gap-2 xl:gap-3 2xl:gap-5 text-xs 2xl:text-sm font-semibold flex-1 px-2">
-                <a href="/" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Início</a>
-                <a href="/programacao" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/programacao' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Programação</a>
-                <a href="/#iniciativas" class="whitespace-nowrap pb-1 transition-all duration-200 text-on-surface hover:text-primary">Iniciativas</a>
-                <a href="/estatuto" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/estatuto' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Estatuto</a>
-                <a href="/regimento" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/regimento' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Regimento</a>
-                <a href="/sobre" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/sobre' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Sobre Nós</a>
-                <a href="https://social.ibnpguapo.org.br/" target="_blank" rel="noopener noreferrer" class="whitespace-nowrap pb-1 transition-all duration-200 text-on-surface hover:text-primary inline-flex items-center gap-1" title="Ação Social - Escola Social de Guapó (abre em nova aba)">
+            <!-- Web Desktop Navigation Links (Menu estruturado com espaçamento arejado e formato pill interativo) -->
+            <nav class="hidden xl:flex items-center justify-center gap-1.5 xl:gap-2 2xl:gap-3.5 flex-1 px-2">
+                <a href="/" class="whitespace-nowrap px-3 py-1.5 rounded-xl text-sm font-semibold transition-all duration-200 {{ ($currentRoute ?? '') === '/' ? 'text-primary font-bold bg-surface-cream-warm shadow-xs' : 'text-on-surface hover:text-primary hover:bg-surface-cream-warm/50' }}">Início</a>
+                <a href="/programacao" class="whitespace-nowrap px-3 py-1.5 rounded-xl text-sm font-semibold transition-all duration-200 {{ ($currentRoute ?? '') === '/programacao' ? 'text-primary font-bold bg-surface-cream-warm shadow-xs' : 'text-on-surface hover:text-primary hover:bg-surface-cream-warm/50' }}">Programação</a>
+                <a href="/#iniciativas" class="whitespace-nowrap px-3 py-1.5 rounded-xl text-sm font-semibold transition-all duration-200 text-on-surface hover:text-primary hover:bg-surface-cream-warm/50">Iniciativas</a>
+                <a href="/estatuto" class="whitespace-nowrap px-3 py-1.5 rounded-xl text-sm font-semibold transition-all duration-200 {{ ($currentRoute ?? '') === '/estatuto' ? 'text-primary font-bold bg-surface-cream-warm shadow-xs' : 'text-on-surface hover:text-primary hover:bg-surface-cream-warm/50' }}">Estatuto</a>
+                <a href="/regimento" class="whitespace-nowrap px-3 py-1.5 rounded-xl text-sm font-semibold transition-all duration-200 {{ ($currentRoute ?? '') === '/regimento' ? 'text-primary font-bold bg-surface-cream-warm shadow-xs' : 'text-on-surface hover:text-primary hover:bg-surface-cream-warm/50' }}">Regimento</a>
+                <a href="/sobre" class="whitespace-nowrap px-3 py-1.5 rounded-xl text-sm font-semibold transition-all duration-200 {{ ($currentRoute ?? '') === '/sobre' ? 'text-primary font-bold bg-surface-cream-warm shadow-xs' : 'text-on-surface hover:text-primary hover:bg-surface-cream-warm/50' }}">Sobre Nós</a>
+                <a href="https://social.ibnpguapo.org.br/" target="_blank" rel="noopener noreferrer" class="whitespace-nowrap px-3 py-1.5 rounded-xl text-sm font-semibold transition-all duration-200 text-on-surface hover:text-primary hover:bg-surface-cream-warm/50 inline-flex items-center gap-1.5" title="Ação Social - Escola Social de Guapó (abre em nova aba)">
                     <span>Ação Social</span>
-                    <span class="material-symbols-outlined text-[13px] text-text-muted">open_in_new</span>
+                    <span class="material-symbols-outlined text-[14px] text-text-muted">open_in_new</span>
                 </a>
-                <a href="/contato" class="whitespace-nowrap pb-1 transition-all duration-200 {{ ($currentRoute ?? '') === '/contato' ? 'text-primary font-bold border-b-2 border-primary' : 'text-on-surface hover:text-primary' }}">Contato</a>
+                <a href="/contato" class="whitespace-nowrap px-3 py-1.5 rounded-xl text-sm font-semibold transition-all duration-200 {{ ($currentRoute ?? '') === '/contato' ? 'text-primary font-bold bg-surface-cream-warm shadow-xs' : 'text-on-surface hover:text-primary hover:bg-surface-cream-warm/50' }}">Contato</a>
             </nav>
 
             <!-- Trailing Action: Planeje sua Visita & Como Chegar (Ad Grants High Priority CTA com shrink-0) -->
-            <div class="flex items-center gap-3 shrink-0 ml-auto xl:ml-3 2xl:ml-6 xl:pl-3 2xl:pl-6 xl:border-l xl:border-outline-variant/30">
-                <a href="/programacao" class="hidden sm:inline-flex items-center gap-1.5 bg-primary text-on-primary text-xs font-bold px-3.5 py-2.5 rounded-xl hover:bg-secondary-container transition-all duration-200 shadow-sm active:scale-95 whitespace-nowrap shrink-0">
+            <div class="flex items-center gap-3 shrink-0 ml-auto xl:ml-4 2xl:ml-6 xl:pl-4 2xl:pl-6 xl:border-l xl:border-outline-variant/30">
+                <a href="/programacao" class="hidden sm:inline-flex items-center gap-1.5 bg-primary text-on-primary text-xs font-bold px-4 py-2.5 rounded-xl hover:bg-secondary-container transition-all duration-200 shadow-sm active:scale-95 whitespace-nowrap shrink-0">
                     <span class="material-symbols-outlined text-[18px]">calendar_month</span>
                     <span>Planeje sua Visita</span>
                 </a>

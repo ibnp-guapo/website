@@ -28,6 +28,61 @@
             
             <!-- Coluna de Texto Principal -->
             <div class="lg:col-span-8 space-y-12">
+                <!-- Missão, Visão e A Quem Servimos (Spec 19 - Google for Nonprofits / Ad Grants) -->
+                <section class="p-6 sm:p-8 rounded-3xl bg-surface-cream-light border border-outline-variant/40 elevation-warm-1">
+                    <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-cream-warm/70 text-secondary text-xs font-bold mb-3 border border-outline-variant/40">
+                        <span class="material-symbols-outlined text-[16px]">verified</span>
+                        <span>Identidade Institucional Sem Fins Lucrativos • CNPJ 02.930.019/0001-62</span>
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-on-surface tracking-tight mb-4">
+                        Missão, Visão e A Quem Servimos
+                    </h2>
+                    <p class="text-xs sm:text-sm text-text-muted leading-relaxed mb-6">
+                        Compreenda os fundamentos de nossa atuação comunitária, o público ao qual dedicamos nossos esforços e as diretrizes que norteiam nossos programas sociais e eclesiásticos em Guapó-GO.
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <!-- Card Missão -->
+                        <div class="p-5 rounded-2xl bg-surface-pure border border-outline-variant/30 flex flex-col justify-between">
+                            <div>
+                                <div class="w-10 h-10 rounded-xl bg-surface-cream-warm/60 text-primary flex items-center justify-center mb-3">
+                                    <span class="material-symbols-outlined text-[24px]">flag</span>
+                                </div>
+                                <h3 class="text-base font-bold text-on-surface mb-2">Nossa Missão</h3>
+                                <p class="text-xs text-text-muted leading-relaxed">
+                                    Acolher pessoas, fortalecer famílias e promover o desenvolvimento humano integral em Guapó, através de valores éticos e cristãos, educação infantil continuada e assistência social a lares em vulnerabilidade.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card Visão -->
+                        <div class="p-5 rounded-2xl bg-surface-pure border border-outline-variant/30 flex flex-col justify-between">
+                            <div>
+                                <div class="w-10 h-10 rounded-xl bg-surface-cream-warm/60 text-secondary flex items-center justify-center mb-3">
+                                    <span class="material-symbols-outlined text-[24px]">visibility</span>
+                                </div>
+                                <h3 class="text-base font-bold text-on-surface mb-2">Nossa Visão</h3>
+                                <p class="text-xs text-text-muted leading-relaxed">
+                                    Ser um polo permanente de acolhimento solidário, formação integral e proteção à infância e à juventude, inspirando uma cidade mais fraterna e alicerçada na dignidade humana.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card A Quem Servimos -->
+                        <div class="p-5 rounded-2xl bg-surface-pure border border-outline-variant/30 flex flex-col justify-between">
+                            <div>
+                                <div class="w-10 h-10 rounded-xl bg-surface-cream-warm/60 text-secondary flex items-center justify-center mb-3">
+                                    <span class="material-symbols-outlined text-[24px]">groups</span>
+                                </div>
+                                <h3 class="text-base font-bold text-on-surface mb-2">A Quem Servimos</h3>
+                                <p class="text-xs text-text-muted leading-relaxed">
+                                    Crianças de 0 a 11 anos, jovens e famílias de Guapó-GO e região, além de lares em vulnerabilidade que necessitam de acolhimento humano, apoio emocional e assistência solidária.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 <!-- Nossa História -->
                 <section>
                     <span class="text-xs font-bold uppercase tracking-widest text-primary">Trajetória Institucional</span>
@@ -157,6 +212,62 @@
                                     <span class="material-symbols-outlined text-[16px]">mail</span>
                                     <span>Canal Oficial de E-mail: <a href="mailto:contato@ibnpguapo.org.br" class="text-primary hover:underline font-bold">contato@ibnpguapo.org.br</a></span>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Demonstrativo Anual de Atividades & Transparência (Spec 19 - Google for Nonprofits / Ad Grants) -->
+                <section class="mt-8 pt-8 border-t border-outline-variant/30">
+                    <span class="text-xs font-bold uppercase tracking-widest text-primary">Prestação de Contas & Governança Aberta</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-on-surface tracking-tight mt-1 mb-6">Demonstrativo Anual de Atividades & Transparência</h2>
+                    
+                    <div class="bg-surface-pure rounded-3xl border border-outline-variant/30 p-6 sm:p-8 elevation-warm-1 space-y-6">
+                        <p class="text-xs sm:text-sm text-text-muted leading-relaxed">
+                            Em cumprimento às diretrizes de governança aberta e aos padrões para organizações do terceiro setor (Google for Nonprofits / Ad Grants), a <strong class="text-on-surface font-semibold">Igreja Batista Nacional da Paz de Guapó</strong> publica periodicamente o resumo de suas atividades beneficentes, socioeducativas e pastorais.
+                        </p>
+
+                        <!-- Indicadores de Impacto Comunitário -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+                            <div class="p-4 rounded-xl bg-surface-cream-light border border-outline-variant/30">
+                                <span class="text-2xl font-extrabold text-primary block">100+</span>
+                                <span class="text-xs font-bold text-on-surface block mt-1">Encontros Semanais</span>
+                                <span class="text-[11px] text-text-muted block mt-0.5">Quartas e domingos regulares ao longo do ano</span>
+                            </div>
+                            <div class="p-4 rounded-xl bg-surface-cream-light border border-outline-variant/30">
+                                <span class="text-2xl font-extrabold text-secondary block">100%</span>
+                                <span class="text-xs font-bold text-on-surface block mt-1">Gratuito e Comunitário</span>
+                                <span class="text-[11px] text-text-muted block mt-0.5">Acesso livre a toda a população de Guapó</span>
+                            </div>
+                            <div class="p-4 rounded-xl bg-surface-cream-light border border-outline-variant/30">
+                                <span class="text-2xl font-extrabold text-primary block">Paz Kids</span>
+                                <span class="text-xs font-bold text-on-surface block mt-1">Desenvolvimento Infantil</span>
+                                <span class="text-[11px] text-text-muted block mt-0.5">Acompanhamento contínuo a dezenas de crianças</span>
+                            </div>
+                            <div class="p-4 rounded-xl bg-surface-cream-light border border-outline-variant/30">
+                                <span class="text-2xl font-extrabold text-secondary block">Solidário</span>
+                                <span class="text-xs font-bold text-on-surface block mt-1">Apoio a Famílias</span>
+                                <span class="text-[11px] text-text-muted block mt-0.5">Arrecadação e distribuição de mantimentos</span>
+                            </div>
+                        </div>
+
+                        <!-- Resumo dos Documentos de Governança -->
+                        <div class="p-4 sm:p-5 rounded-2xl bg-surface-cream-warm/30 border border-outline-variant/40 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                            <div class="space-y-1">
+                                <strong class="text-xs sm:text-sm font-bold text-on-surface block">Estatuto Social e Regimento Interno Disponíveis Publicamente</strong>
+                                <p class="text-xs text-text-muted leading-relaxed">
+                                    Nossa governança é exercida por diretoria estatutária e conselho fiscal voluntários, devidamente averbados e com deliberações em assembleias soberanas registradas.
+                                </p>
+                            </div>
+                            <div class="flex items-center gap-2 shrink-0">
+                                <a href="/estatuto" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-primary text-on-primary text-xs font-bold shadow-sm hover:bg-secondary-container transition-all active:scale-95" title="Acessar o Estatuto Social averbado">
+                                    <span>Estatuto</span>
+                                    <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+                                </a>
+                                <a href="/regimento" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-surface-pure border border-secondary text-secondary text-xs font-bold hover:bg-secondary-container/10 transition-all active:scale-95" title="Acessar o Regimento Interno da igreja">
+                                    <span>Regimento</span>
+                                    <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+                                </a>
                             </div>
                         </div>
                     </div>

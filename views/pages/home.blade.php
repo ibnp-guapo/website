@@ -111,6 +111,96 @@
     </div>
 </div>
 
+<!-- MISSION & PURPOSE SECTION (Google for Nonprofits / Ad Grants Evident Mission) -->
+<section class="py-12 md:py-16 bg-surface-cream-light/60 border-b border-outline-variant/30" id="missao">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-surface-pure rounded-3xl border border-outline-variant/30 p-6 sm:p-10 lg:p-12 elevation-warm-1">
+            <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+                <!-- Registration & Status Badge -->
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-cream-warm/60 border border-outline-variant/50 text-secondary text-xs font-bold">
+                    <span class="material-symbols-outlined text-[16px]">verified</span>
+                    <span>Organização Sem Fins Lucrativos • CNPJ 02.930.019/0001-62 • Fundada em 1999 • Guapó-GO</span>
+                </div>
+                <a href="/sobre" class="text-xs font-bold text-primary hover:underline inline-flex items-center gap-1" title="Conhecer nossa história e diretoria">
+                    <span>Conhecer nossa história completa</span>
+                    <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+                </a>
+            </div>
+
+            <div class="max-w-4xl mb-8">
+                <span class="text-xs font-bold uppercase tracking-widest text-primary block mb-1">Propósito & Vocação Institucional</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-on-surface tracking-tight mb-4">
+                    Nossa Missão & Propósito Social
+                </h2>
+                <p class="text-base sm:text-lg text-on-surface font-medium leading-relaxed">
+                    Nossa missão é <strong class="text-primary font-bold">acolher pessoas, fortalecer famílias e promover o desenvolvimento humano integral</strong> no município de Guapó-GO, por meio do ensino de valores éticos e cristãos, da educação e desenvolvimento infantil continuado e de ações solidárias de assistência comunitária a lares em situação de vulnerabilidade.
+                </p>
+            </div>
+
+            <!-- Two-Column Beneficiary & Activities Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 pt-6 border-t border-outline-variant/30">
+                <!-- Coluna 1: A Quem Servimos -->
+                <div class="p-6 rounded-2xl bg-surface-cream-light border border-outline-variant/30 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-10 h-10 rounded-xl bg-surface-cream-warm/70 text-secondary flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-[24px]">diversity_1</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-on-surface">A Quem Servimos</h3>
+                        </div>
+                        <p class="text-xs sm:text-sm text-text-muted leading-relaxed">
+                            Atendemos diretamente as <strong class="text-on-surface font-semibold">famílias de Guapó</strong> e região metropolitana, <strong class="text-on-surface font-semibold">crianças de 0 a 11 anos</strong> e adolescentes, além de acolher moradores em situação de vulnerabilidade social que buscam orientação, assistência alimentar e reintegração comunitária.
+                        </p>
+                    </div>
+                    <ul class="mt-4 space-y-2 text-xs text-on-surface">
+                        <li class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+                            <span>Crianças e infância com foco em formação socioeducativa</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+                            <span>Famílias locais que necessitam de acolhimento e suporte</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+                            <span>Pessoas em busca de acolhimento espiritual e solidário</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 2: Atividades e Serviços em Destaque -->
+                <div class="p-6 rounded-2xl bg-surface-cream-light border border-outline-variant/30 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-10 h-10 rounded-xl bg-surface-cream-warm/70 text-primary flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-[24px]">task_alt</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-on-surface">Atividades e Serviços em Destaque</h3>
+                        </div>
+                        <p class="text-xs sm:text-sm text-text-muted leading-relaxed">
+                            Desenvolvemos serviços contínuos e sem fins lucrativos de desenvolvimento infantil, formação de valores morais, acolhimento pastoral e solidariedade social:
+                        </p>
+                    </div>
+                    <ul class="mt-4 space-y-2 text-xs text-on-surface">
+                        <li class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary text-[16px]">child_care</span>
+                            <span><strong>Paz Kids &amp; Educação Infantil:</strong> Acompanhamento lúdico aos domingos</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary text-[16px]">volunteer_activism</span>
+                            <span><strong>Ação Social &amp; Solidariedade:</strong> Apoio alimentar a famílias em vulnerabilidade</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary text-[16px]">chat</span>
+                            <span><strong>Acolhimento &amp; Atendimento Pastoral:</strong> Escuta gratuita e mentoria familiar</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- WEEKLY SERVICES WIDGET ("Encontros da Semana") -->
 <section class="py-16 md:py-24 bg-surface-pure" id="programacao">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

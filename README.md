@@ -69,3 +69,7 @@ O desenvolvimento deste portal segue a metodologia **Spec-Driven Development (SD
 - [x] [SPEC-WDLC-F6/F7: CI/CD GitHub Actions e Deploy](docs/specs/11-pipeline-cicd-deploy-hostinger-governanca.md) (Issue #11)
 - [x] [SPEC 14: Conformidade Google for Nonprofits e Titularidade de Domínio](docs/specs/14-conformidade-google-nonprofits-dominio-titularidade.md)
 - [x] [SPEC 15: Conformidade Google Ad Grants — Performance, Navegação Clara, Conteúdo e CTAs](docs/specs/15-conformidade-google-ad-grants-performance-navegacao-ctas.md)
+- [x] [SPEC 16: Integração Google Maps Platform, Credenciais e Estilização](docs/specs/16-integracao-google-maps-platform-credenciais-e-estilizacao.md)
+- [x] [SPEC 17: Transição da Linguagem Institucional para Foco em Impacto Social e Educação Infantil](docs/specs/17-transicao-linguagem-impacto-social-educacao-infantil.md) (Issue #15)
+- [x] [SPEC 18: Transcrição Akoma Ntoso do Regimento Interno e Ativação do Visualizador](docs/specs/18-transcricao-akoma-ntoso-regimento-interno-e-ativacao-visualizador.md)
+- [x] [SPEC 19: Conformidade Google for Nonprofits / Ad Grants — Missão Institucional, Atividades e Serviços Evidentes](docs/specs/19-missao-institucional-e-atividades-evidentes-google-nonprofits.md)

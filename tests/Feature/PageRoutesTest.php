@@ -72,6 +72,15 @@ final class PageRoutesTest extends TestCase
         $this->assertStringContainsString('ibnpguapo.org.br', $output);
         $this->assertStringContainsString('contato@ibnpguapo.org.br', $output);
         $this->assertStringContainsString('operados oficialmente pela Igreja Batista Nacional da Paz de Guapó', $output);
+
+        // Validações de Missão e Atividades Evidentes (Spec 19 - Google for Nonprofits / Ad Grants)
+        $this->assertStringContainsString('Nossa Missão & Propósito Social', $output);
+        $this->assertStringContainsString('Organização Sem Fins Lucrativos', $output);
+        $this->assertStringContainsString('02.930.019/0001-62', $output);
+        $this->assertStringContainsString('A Quem Servimos', $output);
+        $this->assertStringContainsString('Atividades e Serviços em Destaque', $output);
+        $this->assertStringContainsString('crianças de 0 a 11 anos', $output);
+        $this->assertStringContainsString('famílias de Guapó', $output);
     }
 
     public function testSobreRendersHistoryAndCbnAffiliation(): void
@@ -102,6 +111,14 @@ final class PageRoutesTest extends TestCase
         $this->assertStringNotContainsString('construction', $output);
         $this->assertStringNotContainsString('construção e estruturação', $output);
         $this->assertStringNotContainsString('em obras', mb_strtolower($output));
+
+        // Missão, Visão e A Quem Servimos (Spec 19 - Google for Nonprofits / Ad Grants)
+        $this->assertStringContainsString('Missão, Visão e A Quem Servimos', $output);
+        $this->assertStringContainsString('Nossa Missão', $output);
+        $this->assertStringContainsString('Nossa Visão', $output);
+        $this->assertStringContainsString('A Quem Servimos', $output);
+        $this->assertStringContainsString('Demonstrativo Anual de Atividades & Transparência', $output);
+        $this->assertStringContainsString('Prestação de Contas & Governança Aberta', $output);
 
         // Ficha Cadastral e Jurídica (Spec 14 - Google for Nonprofits)
         $this->assertStringContainsString('Ficha Cadastral e Transparência Jurídica', $output);

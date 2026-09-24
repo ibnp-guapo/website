@@ -207,12 +207,14 @@ final class PageRoutesTest extends TestCase
         $this->controller->home();
         $output = (string) ob_get_clean();
 
-        $this->assertStringContainsString('https://www.googletagmanager.com/gtag/js?id=AW-18472451188', $output);
+        $this->assertStringContainsString('https://www.googletagmanager.com/gtag/js?id=G-4BJ1SVS90P', $output);
+        $this->assertStringContainsString("gtag('config', 'G-4BJ1SVS90P');", $output);
         $this->assertStringContainsString("gtag('config', 'AW-18472451188');", $output);
         $this->assertStringContainsString("gtag('event', 'conversion'", $output);
         $this->assertStringContainsString('AW-18472451188/J9UECKfm5IMdEPT4rOhE', $output);
         $this->assertSame(1, substr_count($output, 'googletagmanager.com/gtag/js'), 'O script da tag do Google deve ser incluído exatamente uma vez.');
-        $this->assertSame(3, substr_count($output, 'AW-18472451188'), 'O ID da tag deve aparecer no src, no config e no snippet de conversão.');
+        $this->assertSame(2, substr_count($output, 'G-4BJ1SVS90P'), 'O ID do GA4 deve aparecer no src e no config.');
+        $this->assertSame(2, substr_count($output, 'AW-18472451188'), 'O ID do Ads deve aparecer no config e no snippet de conversão.');
     }
 }
 

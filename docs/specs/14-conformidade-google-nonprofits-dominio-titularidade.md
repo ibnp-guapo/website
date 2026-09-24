@@ -47,8 +47,8 @@ Adicionar propriedade opcional/recomendada `email` no objeto `canais`:
 ### 2.2 Dados Oficiais da Organização (`data/programacao/agenda.json`)
 ```json
 "canais": {
-  "telefone": "(62) 9870-0089",
-  "whatsapp": "https://wa.me/556298700089",
+  "telefone": "(62) 99870-0089",
+  "whatsapp": "https://wa.me/5562998700089",
   "email": "contato@ibnpguapo.org.br",
   "instagram": "https://instagram.com/ibnp_guapo",
   "youtube": "https://youtube.com/@ibnpguapo"

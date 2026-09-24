@@ -46,7 +46,7 @@ Portal oficial da **Igreja Batista Nacional da Paz de Guapó** (IBNP Guapó), fu
   - **Quarta-feira às 19:30:** Culto de Ensino
   - **Domingo às 19:30:** Culto de Celebração da Família
 - **Canais:**
-  - **Telefone / WhatsApp:** (62) 9870-0089 (`+55 62 9870-0089`)
+  - **Telefone / WhatsApp:** (62) 99870-0089 (`+55 62 99870-0089`)
   - **Instagram:** [@ibnp_guapo](https://instagram.com/ibnp_guapo)
   - **YouTube:** [@ibnpguapo](https://youtube.com/@ibnpguapo)
 

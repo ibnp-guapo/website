@@ -55,9 +55,9 @@
                     </p>
                     <div class="flex items-center gap-2 text-base font-bold text-on-surface mb-6">
                         <span class="material-symbols-outlined text-secondary text-[20px]">call</span>
-                        <span>(62) 9870-0089</span>
+                        <span>(62) 99870-0089</span>
                     </div>
-                    <a href="https://wa.me/556298700089?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20IBNP." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-primary text-on-primary text-xs sm:text-sm font-bold shadow-md hover:bg-secondary-container transition-all active:scale-95 w-full sm:w-auto">
+                    <a href="https://wa.me/5562998700089?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20IBNP." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-primary text-on-primary text-xs sm:text-sm font-bold shadow-md hover:bg-secondary-container transition-all active:scale-95 w-full sm:w-auto">
                         <span class="material-symbols-outlined text-[18px]">chat</span>
                         <span>Enviar Mensagem no WhatsApp</span>
                     </a>

@@ -101,7 +101,7 @@
                     <span class="material-symbols-outlined text-[18px]">calendar_month</span>
                     <span>Planeje sua Visita (Encontros)</span>
                 </a>
-                <a href="https://wa.me/556298700089?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20e%20atendimento%20pastoral%20na%20IBNP." target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 w-full bg-[#25D366] text-white py-3 rounded-xl text-xs font-bold shadow-sm">
+                <a href="https://wa.me/5562998700089?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20e%20atendimento%20pastoral%20na%20IBNP." target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 w-full bg-[#25D366] text-white py-3 rounded-xl text-xs font-bold shadow-sm">
                     <span class="material-symbols-outlined text-[18px]">chat</span>
                     <span>Atendimento Pastoral via WhatsApp</span>
                 </a>

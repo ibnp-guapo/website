@@ -28,7 +28,7 @@
                         <span>Planeje sua Visita</span>
                     </a>
                     <!-- WhatsApp Pastoral CTA -->
-                    <a class="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white text-sm font-bold px-5 py-3.5 rounded-xl shadow-sm hover:bg-[#1ebd59] transition-all duration-200 active:scale-95" href="https://wa.me/556298700089?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20e%20atendimento%20pastoral%20na%20IBN%20da%20Paz%20de%20Guap%C3%B3." target="_blank" rel="noopener noreferrer">
+                    <a class="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white text-sm font-bold px-5 py-3.5 rounded-xl shadow-sm hover:bg-[#1ebd59] transition-all duration-200 active:scale-95" href="https://wa.me/5562998700089?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20e%20atendimento%20pastoral%20na%20IBN%20da%20Paz%20de%20Guap%C3%B3." target="_blank" rel="noopener noreferrer">
                         <span class="material-symbols-outlined text-[20px]">chat</span>
                         <span>Atendimento Pastoral</span>
                     </a>
@@ -429,7 +429,7 @@
                 </div>
             </div>
             <div class="flex flex-wrap items-center gap-3 shrink-0">
-                <a href="https://wa.me/556298700089?text=Ol%C3%A1!%20Gostaria%20de%20enviar%20um%20pedido%20de%20ora%C3%A7%C3%A3o%20para%20a%20IBN%20da%20Paz." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-primary text-on-primary text-xs sm:text-sm font-bold shadow-sm hover:bg-secondary-container transition-all active:scale-95">
+                <a href="https://wa.me/5562998700089?text=Ol%C3%A1!%20Gostaria%20de%20enviar%20um%20pedido%20de%20ora%C3%A7%C3%A3o%20para%20a%20IBN%20da%20Paz." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-primary text-on-primary text-xs sm:text-sm font-bold shadow-sm hover:bg-secondary-container transition-all active:scale-95">
                     <span class="material-symbols-outlined text-[18px]">favorite</span>
                     <span>Enviar Pedido de Oração</span>
                 </a>
@@ -687,12 +687,12 @@
                 <!-- Direct Channel Actions -->
                 <div class="space-y-3" id="contato">
                     <!-- WhatsApp CTA -->
-                    <a class="w-full flex items-center justify-between p-4 rounded-xl bg-[#25D366] text-surface-pure hover:bg-[#1ebd59] transition-all duration-200 shadow-sm group" href="https://wa.me/556298700089?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20IBNP." rel="noopener noreferrer" target="_blank">
+                    <a class="w-full flex items-center justify-between p-4 rounded-xl bg-[#25D366] text-surface-pure hover:bg-[#1ebd59] transition-all duration-200 shadow-sm group" href="https://wa.me/5562998700089?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20IBNP." rel="noopener noreferrer" target="_blank">
                         <div class="flex items-center gap-3">
                             <span class="material-symbols-outlined text-[28px]">chat</span>
                             <div class="text-left">
                                 <span class="text-xs opacity-90 block">Atendimento &amp; Pedidos de Oração</span>
-                                <strong class="text-sm font-bold block">+55 62 9870-0089</strong>
+                                <strong class="text-sm font-bold block">+55 62 99870-0089</strong>
                             </div>
                         </div>
                         <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">send</span>

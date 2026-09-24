@@ -97,7 +97,7 @@ Governance & Civic Transparency Section:
 
 Guapó Location & Contact Banner:
 - Physical address: Rua Presidente Kennedy, Qd. 21, Lt. 13 – Centro, Guapó – GO, CEP 75350-000.
-- Quick WhatsApp button (+55 62 9870-0089) and Instagram link (@ibnp_guapo).
+- Quick WhatsApp button (+55 62 99870-0089) and Instagram link (@ibnp_guapo).
 - Responsive Google Maps embed container.
 
 Footer:

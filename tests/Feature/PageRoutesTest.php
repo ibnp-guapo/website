@@ -36,7 +36,7 @@ final class PageRoutesTest extends TestCase
         $this->assertStringContainsString('Estatuto Social', $output);
         $this->assertStringContainsString('Regimento Interno', $output);
         $this->assertStringNotContainsString('Akoma Ntoso', $output);
-        $this->assertStringContainsString('wa.me/556298700089', $output);
+        $this->assertStringContainsString('wa.me/5562998700089', $output);
         $this->assertStringContainsString('/assets/images/logo-ibnp.png', $output);
 
         // Validações da seção e links da Ação Social e Ministérios (Spec 15 e Spec 20)
@@ -149,7 +149,7 @@ final class PageRoutesTest extends TestCase
         $this->assertNotEmpty($output);
         $this->assertStringContainsString('Entre em Contato Conosco', $output);
         $this->assertStringContainsString('Rua Presidente Kennedy, Qd. 21, Lt. 13', $output);
-        $this->assertStringContainsString('(62) 9870-0089', $output);
+        $this->assertStringContainsString('(62) 99870-0089', $output);
         $this->assertStringContainsString('contato@ibnpguapo.org.br', $output);
         $this->assertStringContainsString('mailto:contato@ibnpguapo.org.br', $output);
         $this->assertStringContainsString('ibnpguapo.org.br', $output);

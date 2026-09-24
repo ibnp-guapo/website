@@ -82,8 +82,8 @@ Estruturação de blocos substantivos:
 
 ### 2.4 Contratos de Calls-to-Action (CTAs)
 - **CTA Visita:** Link para `#programacao` ou `/programacao` com âncora e destaque visual.
-- **CTA WhatsApp Pastoral:** `https://wa.me/556298700089?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20e%20atendimento%20pastoral%20na%20IBN%20da%20Paz%20de%20Guap%C3%B3.`
-- **CTA Pedido de Oração:** Link direto para o canal de oração no WhatsApp com mensagem específica: `https://wa.me/556298700089?text=Ol%C3%A1!%20Gostaria%20de%20enviar%20um%20pedido%20de%20ora%C3%A7%C3%A3o%20para%20a%20IBN%20da%20Paz.`
+- **CTA WhatsApp Pastoral:** `https://wa.me/5562998700089?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20e%20atendimento%20pastoral%20na%20IBN%20da%20Paz%20de%20Guap%C3%B3.`
+- **CTA Pedido de Oração:** Link direto para o canal de oração no WhatsApp com mensagem específica: `https://wa.me/5562998700089?text=Ol%C3%A1!%20Gostaria%20de%20enviar%20um%20pedido%20de%20ora%C3%A7%C3%A3o%20para%20a%20IBN%20da%20Paz.`
 - **CTA Contribuição PIX:** Chave CNPJ `02.930.019/0001-62` com botão de cópia rápida.
 
 ---

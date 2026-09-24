@@ -126,7 +126,7 @@
                     @php
                         $msgWhatsapp = rawurlencode("Olá! Realizei a inscrição da criança {$inscricao['nome_crianca']} no Coral de Natal da IBNP (Vaga {$inscricao['numero_vaga']} de 30 - ID: {$inscricao['id']}). Gostaria de confirmar!");
                     @endphp
-                    <a href="https://wa.me/556298700089?text={{ $msgWhatsapp }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3.5 rounded-xl bg-[#25D366] text-white text-xs font-bold shadow-sm hover:opacity-95 transition-all active:scale-95">
+                    <a href="https://wa.me/5562998700089?text={{ $msgWhatsapp }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3.5 rounded-xl bg-[#25D366] text-white text-xs font-bold shadow-sm hover:opacity-95 transition-all active:scale-95">
                         <span class="material-symbols-outlined text-[18px]">chat</span>
                         <span>Enviar Confirmação pelo WhatsApp</span>
                     </a>
@@ -146,7 +146,7 @@
                     Agradecemos o carinho e o interesse de todas as famílias de Guapó. Se você gostaria de incluir seu filho ou filha na <strong>lista de espera</strong> para casos de desistência, envie uma mensagem diretamente para nossa equipe de coordenação infantil no WhatsApp.
                 </p>
                 <div class="pt-2">
-                    <a href="https://wa.me/556298700089?text=Ol%C3%A1!%20Gostaria%20de%20entrar%20na%20lista%20de%20espera%20para%20o%20Coral%20de%20Natal%20da%20IBNP." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#25D366] text-white text-xs font-bold shadow-sm hover:opacity-95 transition-all">
+                    <a href="https://wa.me/5562998700089?text=Ol%C3%A1!%20Gostaria%20de%20entrar%20na%20lista%20de%20espera%20para%20o%20Coral%20de%20Natal%20da%20IBNP." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#25D366] text-white text-xs font-bold shadow-sm hover:opacity-95 transition-all">
                         <span class="material-symbols-outlined text-[18px]">chat</span>
                         <span>Falar com a Coordenação no WhatsApp</span>
                     </a>

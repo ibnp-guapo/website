@@ -113,7 +113,7 @@ graph TD
 - **Título SEO:** `Localização e Contato - IBN da Paz de Guapó, GO`
 - **Meta Description:** `Endereço do templo sede da IBN da Paz de Guapó, telefone, WhatsApp, Instagram e rotas no Google Maps.`
 - **Blocos de Conteúdo:**
-  1. *Cartão de Informações Oficiais:* Endereço, telefone/WhatsApp `(62) 9870-0089`, Instagram `@ibnp_guapo` e CNPJ `02.930.019/0001-62`.
+  1. *Cartão de Informações Oficiais:* Endereço, telefone/WhatsApp `(62) 99870-0089`, Instagram `@ibnp_guapo` e CNPJ `02.930.019/0001-62`.
   2. *Mapa Interativo Responsivo:* Google Maps embutido com marcação do templo sede.
   3. *Atalhos de Atendimento:* Botão direto para WhatsApp e canais de acolhimento.
 
@@ -141,9 +141,9 @@ localizacao:
     latitude: -16.8315
     longitude: -49.5317
 canais:
-  telefone: "62 9870-0089"
-  telefone_formatado: "(62) 9870-0089"
-  whatsapp: "https://wa.me/556298700089"
+  telefone: "62 99870-0089"
+  telefone_formatado: "(62) 99870-0089"
+  whatsapp: "https://wa.me/5562998700089"
   instagram: "https://instagram.com/ibnp_guapo"
   instagram_handle: "@ibnp_guapo"
   youtube: "https://youtube.com/@ibnpguapo"

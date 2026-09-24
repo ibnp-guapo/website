@@ -82,7 +82,7 @@ final class AgendaSchemaValidationTest extends TestCase
 
         $this->assertArrayHasKey('canais', $org);
         $canais = $org['canais'];
-        $this->assertSame('(62) 9870-0089', $canais['telefone'] ?? null);
+        $this->assertSame('(62) 99870-0089', $canais['telefone'] ?? null);
         $this->assertStringStartsWith('https://wa.me/', $canais['whatsapp'] ?? '');
         $this->assertStringStartsWith('https://instagram.com/', $canais['instagram'] ?? '');
         $this->assertStringStartsWith('https://youtube.com/', $canais['youtube'] ?? '');

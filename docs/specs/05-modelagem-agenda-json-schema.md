@@ -97,7 +97,7 @@ Para otimização em motores de busca (Google Search / Google Maps), o cabeçalh
     "latitude": -16.8315,
     "longitude": -49.5317
   },
-  "telephone": "+55-62-9870-0089",
+  "telephone": "+55-62-99870-0089",
   "url": "https://ibnpguapo.com.br"
 }
 </script>

@@ -20,7 +20,7 @@ Implementar as páginas institucionais **Home (`/`)**, **Sobre Nós (`/sobre`)**
   - **Quarta-feira das 19:30 às 21:00 (90 min):** Culto de Oração e Estudo Bíblico.
   - **Domingo das 19:30 às 21:00 (90 min):** Culto de Celebração da Família.
   - *Cultos 100% presenciais (sem transmissão ao vivo e sem reuniões aos sábados).*
-- **Canais:** Telefone/WhatsApp `(62) 9870-0089` (`+55 62 9870-0089`), Instagram `@ibnp_guapo`, YouTube `@ibnpguapo`.
+- **Canais:** Telefone/WhatsApp `(62) 99870-0089` (`+55 62 99870-0089`), Instagram `@ibnp_guapo`, YouTube `@ibnpguapo`.
 
 ---
 
@@ -48,4 +48,4 @@ Implementar as páginas institucionais **Home (`/`)**, **Sobre Nós (`/sobre`)**
 A classe `Tests\Feature\PageRoutesTest` valida:
 - `testHomeRendersBladeViewWithEssentialSections`: Valida seções de Hero, Cultos, Governança Akoma Ntoso e link wa.me.
 - `testSobreRendersHistoryAndCbnAffiliation`: Valida fundação em 1999, filiação à CBN e CNPJ da congregação.
-- `testContatoRendersLocationAndChannels`: Valida endereço no Centro de Guapó, WhatsApp `(62) 9870-0089`, redes sociais e iframe do mapa.
+- `testContatoRendersLocationAndChannels`: Valida endereço no Centro de Guapó, WhatsApp `(62) 99870-0089`, redes sociais e iframe do mapa.

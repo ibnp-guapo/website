@@ -218,7 +218,7 @@
                         Nossas iniciativas sociais sobrevivem e avançam graças às orações, ao trabalho voluntário dedicado e às contribuições espontâneas dos membros e amigos da igreja. Se você deseja contribuir com mantimentos para a Escola em Guapó ou com ofertas missionárias destinadas a Angola, participe conosco!
                     </p>
                     <div class="flex flex-wrap items-center gap-4 pt-2">
-                        <a href="https://wa.me/556298700089?text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20posso%20apoiar%20os%20projetos%20sociais%20da%20IBNP." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#25D366] text-white text-xs font-bold shadow-sm hover:opacity-95 transition-all active:scale-95">
+                        <a href="https://wa.me/5562998700089?text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20posso%20apoiar%20os%20projetos%20sociais%20da%20IBNP." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#25D366] text-white text-xs font-bold shadow-sm hover:opacity-95 transition-all active:scale-95">
                             <span class="material-symbols-outlined text-[18px]">chat</span>
                             <span>Conversar sobre Ação Social no WhatsApp</span>
                         </a>

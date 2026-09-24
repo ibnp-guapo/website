@@ -72,6 +72,24 @@ $router->get('/acao-social', function () use ($pageController): void {
     $pageController->acaoSocial();
 });
 
+// Controller do Coral de Natal (Programa de Desenvolvimento Infantil)
+$coralController = new \App\Controllers\CoralNatalController();
+
+// Rota 9: Coral de Natal (Inscrições)
+$router->get('/coral-natal', function () use ($coralController): void {
+    $coralController->index();
+});
+
+// Rota 9.1: Alias institucional
+$router->get('/desenvolvimento-infantil/coral-natal', function () use ($coralController): void {
+    $coralController->index();
+});
+
+// Rota 9.2: Submissão de Inscrição (POST)
+$router->post('/coral-natal/inscrever', function () use ($coralController): void {
+    $coralController->inscrever();
+});
+
 // Tratamento 404 (Not Found)
 $router->set404(function () use ($pageController): void {
     $pageController->notFound();

@@ -17,3 +17,7 @@
 data/legal/estatuto_extraido.txt
 .playwright-mcp/
 
+# Armazenamento de dados dinâmicos locais (LGPD)
+/storage/data/*.json
+
+

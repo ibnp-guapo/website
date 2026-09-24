@@ -209,8 +209,10 @@ final class PageRoutesTest extends TestCase
 
         $this->assertStringContainsString('https://www.googletagmanager.com/gtag/js?id=AW-18472451188', $output);
         $this->assertStringContainsString("gtag('config', 'AW-18472451188');", $output);
+        $this->assertStringContainsString("gtag('event', 'conversion'", $output);
+        $this->assertStringContainsString('AW-18472451188/J9UECKfm5IMdEPT4rOhE', $output);
         $this->assertSame(1, substr_count($output, 'googletagmanager.com/gtag/js'), 'O script da tag do Google deve ser incluído exatamente uma vez.');
-        $this->assertSame(2, substr_count($output, 'AW-18472451188'), 'O ID da tag deve aparecer exatamente no src e na inicialização.');
+        $this->assertSame(3, substr_count($output, 'AW-18472451188'), 'O ID da tag deve aparecer no src, no config e no snippet de conversão.');
     }
 }
 

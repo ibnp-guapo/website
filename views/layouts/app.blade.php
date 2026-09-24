@@ -10,6 +10,15 @@
 
       gtag('config', 'AW-18472451188');
     </script>
+
+    <!-- Event snippet for Visualização de página conversion page -->
+    <script>
+      gtag('event', 'conversion', {
+          'send_to': 'AW-18472451188/J9UECKfm5IMdEPT4rOhE',
+          'value': 1.0,
+          'currency': 'USD'
+      });
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'IBNP - Um Lugar de Paz, Comunhão e Adoração')</title>

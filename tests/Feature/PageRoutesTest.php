@@ -200,4 +200,17 @@ final class PageRoutesTest extends TestCase
         $this->assertStringNotContainsString('bg-ibnp-primary', $output);
         $this->assertStringNotContainsString('border-slate-200', $output);
     }
+
+    public function testGoogleTagIsPresentInLayout(): void
+    {
+        ob_start();
+        $this->controller->home();
+        $output = (string) ob_get_clean();
+
+        $this->assertStringContainsString('https://www.googletagmanager.com/gtag/js?id=AW-18472451188', $output);
+        $this->assertStringContainsString("gtag('config', 'AW-18472451188');", $output);
+        $this->assertSame(1, substr_count($output, 'googletagmanager.com/gtag/js'), 'O script da tag do Google deve ser incluído exatamente uma vez.');
+        $this->assertSame(2, substr_count($output, 'AW-18472451188'), 'O ID da tag deve aparecer exatamente no src e na inicialização.');
+    }
 }
+

@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="h-full scroll-smooth overflow-x-hidden">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18472451188"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-18472451188');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'IBNP - Um Lugar de Paz, Comunhão e Adoração')</title>

@@ -63,10 +63,7 @@
                 <a href="/estatuto" class="whitespace-nowrap px-3 py-1.5 rounded-xl text-sm font-semibold transition-all duration-200 {{ ($currentRoute ?? '') === '/estatuto' ? 'text-primary font-bold bg-surface-cream-warm shadow-xs' : 'text-on-surface hover:text-primary hover:bg-surface-cream-warm/50' }}">Estatuto</a>
                 <a href="/regimento" class="whitespace-nowrap px-3 py-1.5 rounded-xl text-sm font-semibold transition-all duration-200 {{ ($currentRoute ?? '') === '/regimento' ? 'text-primary font-bold bg-surface-cream-warm shadow-xs' : 'text-on-surface hover:text-primary hover:bg-surface-cream-warm/50' }}">Regimento</a>
                 <a href="/sobre" class="whitespace-nowrap px-3 py-1.5 rounded-xl text-sm font-semibold transition-all duration-200 {{ ($currentRoute ?? '') === '/sobre' ? 'text-primary font-bold bg-surface-cream-warm shadow-xs' : 'text-on-surface hover:text-primary hover:bg-surface-cream-warm/50' }}">Sobre Nós</a>
-                <a href="https://social.ibnpguapo.org.br/" target="_blank" rel="noopener noreferrer" class="whitespace-nowrap px-3 py-1.5 rounded-xl text-sm font-semibold transition-all duration-200 text-on-surface hover:text-primary hover:bg-surface-cream-warm/50 inline-flex items-center gap-1.5" title="Ação Social - Escola Social de Guapó (abre em nova aba)">
-                    <span>Ação Social</span>
-                    <span class="material-symbols-outlined text-[14px] text-text-muted">open_in_new</span>
-                </a>
+                <a href="/acao-social" class="whitespace-nowrap px-3 py-1.5 rounded-xl text-sm font-semibold transition-all duration-200 {{ ($currentRoute ?? '') === '/acao-social' ? 'text-primary font-bold bg-surface-cream-warm shadow-xs' : 'text-on-surface hover:text-primary hover:bg-surface-cream-warm/50' }}">Ação Social</a>
                 <a href="/contato" class="whitespace-nowrap px-3 py-1.5 rounded-xl text-sm font-semibold transition-all duration-200 {{ ($currentRoute ?? '') === '/contato' ? 'text-primary font-bold bg-surface-cream-warm shadow-xs' : 'text-on-surface hover:text-primary hover:bg-surface-cream-warm/50' }}">Contato</a>
             </nav>
 
@@ -92,12 +89,11 @@
             <a href="/estatuto" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/estatuto' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Estatuto Social</a>
             <a href="/regimento" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/regimento' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Regimento Interno</a>
             <a href="/sobre" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/sobre' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Sobre Nós</a>
-            <a href="https://social.ibnpguapo.org.br/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between py-2 text-sm font-semibold text-on-surface hover:text-primary" title="Ação Social - Escola Social de Guapó (abre em nova aba)">
+            <a href="/acao-social" class="flex items-center justify-between py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/acao-social' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">
                 <span class="flex items-center gap-1.5">
                     <span class="material-symbols-outlined text-[18px] text-secondary">volunteer_activism</span>
-                    <span>Ação Social (Escola Social)</span>
+                    <span>Ação Social</span>
                 </span>
-                <span class="material-symbols-outlined text-[16px] text-text-muted">open_in_new</span>
             </a>
             <a href="/contato" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/contato' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Contato</a>
             <div class="pt-3 border-t border-outline-variant/30 flex flex-col gap-2">
@@ -150,10 +146,7 @@
                         <a class="text-text-muted hover:text-primary transition-colors duration-200" href="/estatuto">Estatuto Social</a>
                         <a class="text-text-muted hover:text-primary transition-colors duration-200" href="/regimento">Regimento Interno</a>
                         <a class="text-text-muted hover:text-primary transition-colors duration-200" href="/sobre">Sobre Nós</a>
-                        <a class="text-text-muted hover:text-primary transition-colors duration-200 inline-flex items-center gap-1" href="https://social.ibnpguapo.org.br/" target="_blank" rel="noopener noreferrer" title="Ação Social - Escola Social de Guapó (abre em nova aba)">
-                            <span>Escola Social</span>
-                            <span class="material-symbols-outlined text-[12px]">open_in_new</span>
-                        </a>
+                        <a class="text-text-muted hover:text-primary transition-colors duration-200" href="/acao-social">Ação Social</a>
                         <a class="text-text-muted hover:text-primary transition-colors duration-200" href="/contato">Contato</a>
                         <a class="text-text-muted hover:text-primary transition-colors duration-200" href="/programacao.ics">Baixar Calendário (.ics)</a>
                         <a class="text-text-muted hover:text-primary transition-colors duration-200" href="/estatuto/xml">Estatuto XML</a>
@@ -189,10 +182,7 @@
                     <span>•</span>
                     <a class="hover:text-primary transition-colors" href="/regimento">Regimento Interno</a>
                     <span>•</span>
-                    <a class="hover:text-primary transition-colors inline-flex items-center gap-0.5" href="https://social.ibnpguapo.org.br/" target="_blank" rel="noopener noreferrer">
-                        <span>Escola Social</span>
-                        <span class="material-symbols-outlined text-[12px]">open_in_new</span>
-                    </a>
+                    <a class="hover:text-primary transition-colors" href="/acao-social">Ação Social</a>
                     <span>•</span>
                     <a class="hover:text-primary transition-colors" href="/contato">Localização</a>
                 </div>

@@ -39,15 +39,14 @@ final class PageRoutesTest extends TestCase
         $this->assertStringContainsString('wa.me/556298700089', $output);
         $this->assertStringContainsString('/assets/images/logo-ibnp.png', $output);
 
-        // Validações da seção e links da Ação Social e Ministérios (Spec 15 - Ad Grants)
+        // Validações da seção e links da Ação Social e Ministérios (Spec 15 e Spec 20)
         $this->assertStringContainsString('Escola Social de Guapó', $output);
-        $this->assertStringContainsString('https://social.ibnpguapo.org.br/', $output);
+        $this->assertStringContainsString('/acao-social', $output);
+        $this->assertStringNotContainsString('https://social.ibnpguapo.org.br/', $output);
         $this->assertStringContainsString('Educação Infantil', $output);
         $this->assertStringContainsString('Contraturno Escolar', $output);
         $this->assertStringContainsString('Centro Comunitário', $output);
         $this->assertStringContainsString('child_care', $output);
-        $this->assertStringContainsString('target="_blank"', $output);
-        $this->assertStringContainsString('rel="noopener noreferrer"', $output);
 
         // Conformidade Ad Grants: ausência estrita de termos de "em construção/obras"
         $this->assertStringNotContainsString('construction', $output);
@@ -105,9 +104,10 @@ final class PageRoutesTest extends TestCase
         $this->assertStringContainsString('assignment', $output);
         $this->assertStringContainsString('elevation-warm-1', $output);
 
-        // Validações institucionais da mantenedora da Escola Social (Spec 15 - Ad Grants)
+        // Validações institucionais da mantenedora da Escola Social (Spec 15 e Spec 20)
         $this->assertStringContainsString('Mantenedora da Escola Social de Guapó', $output);
-        $this->assertStringContainsString('https://social.ibnpguapo.org.br/', $output);
+        $this->assertStringContainsString('/acao-social', $output);
+        $this->assertStringNotContainsString('https://social.ibnpguapo.org.br/', $output);
         $this->assertStringNotContainsString('construction', $output);
         $this->assertStringNotContainsString('construção e estruturação', $output);
         $this->assertStringNotContainsString('em obras', mb_strtolower($output));
@@ -215,6 +215,24 @@ final class PageRoutesTest extends TestCase
         $this->assertSame(1, substr_count($output, 'googletagmanager.com/gtag/js'), 'O script da tag do Google deve ser incluído exatamente uma vez.');
         $this->assertSame(2, substr_count($output, 'G-4BJ1SVS90P'), 'O ID do GA4 deve aparecer no src e no config.');
         $this->assertSame(2, substr_count($output, 'AW-18472451188'), 'O ID do Ads deve aparecer no config e no snippet de conversão.');
+    }
+
+    public function testAcaoSocialRendersBladeViewWithProjects(): void
+    {
+        ob_start();
+        $this->controller->acaoSocial();
+        $output = (string) ob_get_clean();
+
+        $this->assertNotEmpty($output);
+        $this->assertStringContainsString('Ação Social', $output);
+        $this->assertStringContainsString('Escola Infantil em Guapó', $output);
+        $this->assertStringContainsString('Escola Nova Esperança', $output);
+        $this->assertStringContainsString('Angola', $output);
+        $this->assertStringContainsString('Guapó', $output);
+        $this->assertStringContainsString('Mantenedores', $output);
+        $this->assertStringContainsString('Apoiadores', $output);
+        $this->assertStringContainsString('ofertas mensais', $output);
+        $this->assertStringNotContainsString('https://social.ibnpguapo.org.br/', $output);
     }
 }
 

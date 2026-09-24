@@ -148,6 +148,20 @@ final class HttpRoutesTest extends TestCase
         $this->assertStringContainsString('Rua Presidente Kennedy, Qd. 21, Lt. 13', $output);
     }
 
+    public function testAcaoSocialRouteReturnsOkAndRendersProjects(): void
+    {
+        ob_start();
+        $this->pageController->acaoSocial();
+        $output = (string) ob_get_clean();
+
+        $this->assertNotEmpty($output);
+        $this->assertStringContainsString('<!DOCTYPE html>', $output);
+        $this->assertStringContainsString('Ação Social', $output);
+        $this->assertStringContainsString('Escola Infantil em Guapó', $output);
+        $this->assertStringContainsString('Escola Nova Esperança', $output);
+        $this->assertStringContainsString('Angola', $output);
+    }
+
     public function testNotFoundRouteRenders404View(): void
     {
         ob_start();

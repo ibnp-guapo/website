@@ -67,6 +67,11 @@ $router->get('/contato', function () use ($pageController): void {
     $pageController->contato();
 });
 
+// Rota 8: Ação Social & Projetos Mantidos/Apoiados
+$router->get('/acao-social', function () use ($pageController): void {
+    $pageController->acaoSocial();
+});
+
 // Tratamento 404 (Not Found)
 $router->set404(function () use ($pageController): void {
     $pageController->notFound();

@@ -125,9 +125,9 @@
                                 <p class="text-xs text-text-muted">Iniciativa comunitária • Educação infantil, contraturno e centro comunitário</p>
                             </div>
                         </div>
-                        <a href="https://social.ibnpguapo.org.br/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-secondary text-on-secondary text-xs font-bold shadow-sm hover:bg-secondary/90 transition-all active:scale-95 whitespace-nowrap" title="Conhecer o projeto da Escola Social de Guapó (abre em nova aba)">
-                            <span>Conhecer o Projeto Social</span>
-                            <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                        <a href="/acao-social" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-secondary text-on-secondary text-xs font-bold shadow-sm hover:bg-secondary/90 transition-all active:scale-95 whitespace-nowrap" title="Conhecer as ações e projetos sociais da IBNP">
+                            <span>Conhecer Projetos Sociais</span>
+                            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
                         </a>
                     </div>
                 </section>
@@ -308,10 +308,10 @@
                     <p class="text-xs text-text-muted leading-relaxed mb-6 font-normal">
                         Conheça os projetos e iniciativas de acolhimento social mantidos pela igreja para a infância e as famílias de Guapó.
                     </p>
-                    <a href="https://social.ibnpguapo.org.br/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-primary text-on-primary text-xs font-bold shadow-sm hover:bg-secondary-container transition-all active:scale-95">
+                    <a href="/acao-social" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-primary text-on-primary text-xs font-bold shadow-sm hover:bg-secondary-container transition-all active:scale-95" title="Conhecer as ações e projetos sociais da IBNP">
                         <span class="material-symbols-outlined text-[18px]">volunteer_activism</span>
-                        <span>Conhecer o Projeto Social</span>
-                        <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                        <span>Conhecer Projetos Sociais</span>
+                        <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
                     </a>
                 </div>
 

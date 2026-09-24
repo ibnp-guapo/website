@@ -59,6 +59,17 @@ final class PageController
     }
 
     /**
+     * Página de Ação Social: projetos mantidos (Guapó) e apoiados (Angola)
+     */
+    public function acaoSocial(): void
+    {
+        header('Content-Type: text/html; charset=utf-8');
+        echo $this->renderer->render('pages.acao-social', [
+            'currentRoute' => '/acao-social',
+        ]);
+    }
+
+    /**
      * Página de erro 404 (Not Found)
      */
     public function notFound(): void

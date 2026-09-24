@@ -531,13 +531,13 @@
                         Conheça o projeto e participe das ações sociais da nossa comunidade
                     </h3>
                     <p class="text-xs sm:text-sm text-text-muted mt-1 leading-relaxed">
-                        Acesse a plataforma oficial da Escola Social de Guapó para conferir o programa socioeducativo, parcerias e formas de apoiar esta causa.
+                        Conheça as iniciativas socioeducativas mantidas e apoiadas pela IBNP em Guapó e em Angola, conferindo nossas frentes de atuação e formas de apoiar.
                     </p>
                 </div>
             </div>
-            <a href="https://social.ibnpguapo.org.br/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-primary text-on-primary text-sm font-bold px-7 py-3.5 rounded-xl shadow-md hover:bg-secondary-container transition-all duration-200 active:scale-95 whitespace-nowrap shrink-0" title="Conhecer o projeto da Escola Social de Guapó (abre em nova aba)">
-                <span>Conhecer a Escola Social</span>
-                <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+            <a href="/acao-social" class="inline-flex items-center justify-center gap-2 bg-primary text-on-primary text-sm font-bold px-7 py-3.5 rounded-xl shadow-md hover:bg-secondary-container transition-all duration-200 active:scale-95 whitespace-nowrap shrink-0" title="Conhecer as ações e projetos sociais da IBNP">
+                <span>Conhecer Projetos Sociais</span>
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
             </a>
         </div>
     </div>

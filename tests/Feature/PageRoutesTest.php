@@ -233,6 +233,17 @@ final class PageRoutesTest extends TestCase
         $this->assertStringContainsString('Apoiadores', $output);
         $this->assertStringContainsString('ofertas mensais', $output);
         $this->assertStringNotContainsString('https://social.ibnpguapo.org.br/', $output);
+
+        // Validações da parceria e portal oficial da Escola Nova Esperança (Angola) - Spec 22
+        $this->assertStringContainsString('https://social.imne.ao/', $output);
+        $this->assertStringContainsString('target="_blank"', $output);
+        $this->assertStringContainsString('rel="noopener noreferrer"', $output);
+        $this->assertStringContainsString('Conhecer o Projeto', $output);
+        $this->assertStringContainsString('IMNE', $output);
+
+        // Registro fotográfico oficial do projeto em Angola - Spec 23
+        $this->assertStringContainsString('/assets/images/escola-nova-esperanca-angola.jpg', $output);
+        $this->assertStringContainsString('Escola Nova Esperança em Angola', $output);
     }
 }
 

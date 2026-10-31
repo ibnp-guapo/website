@@ -194,14 +194,44 @@
                             <span><strong>Cooperação Missionária:</strong> Sustento do projeto no campo e oração contínua de toda a igreja em Guapó.</span>
                         </div>
                     </div>
+
+                    <!-- Destaque Fotográfico: Missão em Campo -->
+                    <figure class="rounded-2xl bg-surface-cream-warm/50 border border-outline-variant/40 mb-6 overflow-hidden">
+                        <a href="/assets/images/escola-nova-esperanca-angola.jpg" target="_blank" rel="noopener noreferrer" class="group relative block overflow-hidden aspect-[16/9]" title="Clique para ampliar a fotografia oficial">
+                            <img
+                                src="/assets/images/escola-nova-esperanca-angola.jpg"
+                                alt="Alunos uniformizados e liderança da Escola Nova Esperança em Angola"
+                                width="960"
+                                height="720"
+                                loading="lazy"
+                                decoding="async"
+                                class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                            />
+                            <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                                <span class="material-symbols-outlined text-[28px]">zoom_in</span>
+                            </div>
+                        </a>
+                        <figcaption class="p-4 space-y-1">
+                            <span class="inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-wider text-primary">
+                                <span class="material-symbols-outlined text-[14px]">photo_camera</span>
+                                <span>Missão em Campo • Angola</span>
+                            </span>
+                            <p class="text-xs sm:text-sm font-bold text-on-surface leading-snug">Alunos atendidos e liderança missionária</p>
+                            <p class="text-xs text-text-muted leading-relaxed">Crianças uniformizadas e liderança da Escola Nova Esperança. Clique na foto para ver em alta resolução.</p>
+                        </figcaption>
+                    </figure>
                 </div>
 
-                <!-- Box Informativo de Status da Página Dedicada -->
-                <div class="pt-6 border-t border-outline-variant/30 flex items-center justify-between gap-4">
+                <!-- Acesso ao Portal Oficial do Projeto Social Apoiado -->
+                <div class="pt-6 border-t border-outline-variant/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                     <div class="flex items-center gap-2 text-xs text-text-muted">
-                        <span class="material-symbols-outlined text-primary text-[18px]">info</span>
-                        <span>A página institucional detalhada do projeto está em fase de elaboração pela equipe missionária.</span>
+                        <span class="material-symbols-outlined text-primary text-[18px]">public</span>
+                        <span>Iniciativa da <strong>IMNE</strong> (Missão Nova Esperança)</span>
                     </div>
+                    <a href="https://social.imne.ao/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-primary text-on-primary text-xs font-bold shadow-sm hover:bg-secondary-container transition-all active:scale-95 whitespace-nowrap shrink-0" title="Visitar portal oficial da Escola Nova Esperança em Angola (abre em nova aba)">
+                        <span>Conhecer o Projeto</span>
+                        <span class="material-symbols-outlined text-[14px]">open_in_new</span>
+                    </a>
                 </div>
             </article>
         </div>

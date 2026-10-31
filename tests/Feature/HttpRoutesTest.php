@@ -160,6 +160,7 @@ final class HttpRoutesTest extends TestCase
         $this->assertStringContainsString('Escola Infantil em Guapó', $output);
         $this->assertStringContainsString('Escola Nova Esperança', $output);
         $this->assertStringContainsString('Angola', $output);
+        $this->assertStringContainsString('https://social.imne.ao/', $output);
     }
 
     public function testNotFoundRouteRenders404View(): void

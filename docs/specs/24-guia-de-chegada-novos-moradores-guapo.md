@@ -50,6 +50,7 @@ Somente regras nacionais ou estaduais estáveis, com link para o serviço oficia
 - Cartão SUS / Meu SUS Digital: Ministério da Saúde.
 - Cadastro Único e Bolsa Família: MDS, Disque Social **121**.
 - Matrícula na rede estadual (6º ano ao ensino médio e EJA): portal https://matricula.go.gov.br/ (Governo de Goiás). Sem datas na página, para não exigir atualização anual.
+- Matrícula na rede municipal: só on-line, em https://gemul-guapo.com.br/matricula/ (Matrícula Informatizada de Guapó: CMEIs e ensino fundamental), com confirmação presencial na escola. Lista de documentos (cópias) conforme o aviso entregue pela Escola Municipal Vicentina Fortunata de Oliveira, recebido em 08/11/2026; a escola não efetiva a matrícula sem todas as cópias. Telefone da SME no site de matrícula: (62) 99998-2720.
 - Escolas públicas de Guapó: rede municipal (3 CMEIs e 6 escolas) e contatos da Secretaria Municipal de Educação e Cultura e da Prefeitura conforme o site oficial https://guapo.go.gov.br/estrutura/secretaria-de-educacao-e-cultura/ (consultado em 08/11/2026); rede estadual (5 escolas) pelos dados do Inep. Não publicar nomes de diretores, que mudam com frequência.
 - Carteira de Trabalho Digital: gov.br.
 - Assistência Social de Guapó: unidades (Cadastro Único e Bolsa Família, CRAS, Programa Criança Feliz, CREAS, Conselho Tutelar, Departamento de Habitação) com endereço, telefone e horário da API oficial do site da Prefeitura (`/wp-json/wp/v2/estrutura?parent=6597`, consultada em 08/11/2026).

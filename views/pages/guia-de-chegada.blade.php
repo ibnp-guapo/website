@@ -12,7 +12,7 @@
         'Separe seus documentos e os de toda a família (RG ou Carteira de Identidade, CPF, certidões de nascimento ou casamento).',
         'Consiga um comprovante de endereço em Guapó: conta de luz ou água, contrato de aluguel ou declaração do dono do imóvel.',
         'Atualize seu endereço no Cartão SUS na unidade de saúde do seu bairro.',
-        'Matricule as crianças na escola, levando a declaração de transferência da escola antiga.',
+        'Matricule as crianças na escola: a solicitação é feita pela internet, e depois você leva as cópias dos documentos à escola para confirmar.',
         'Se você recebe Bolsa Família ou outro benefício, atualize o Cadastro Único no setor do Cadastro Único da Prefeitura de Guapó.',
         'Depois de 3 meses morando aqui, transfira seu título de eleitor.',
     ];
@@ -48,11 +48,25 @@
             'id' => 'escola', 'icone' => 'school', 'titulo' => 'Escola das crianças',
             'texto' => 'Toda criança e adolescente tem direito à vaga na escola pública, inclusive no meio do ano.',
             'itens' => [
-                '<strong>Educação infantil (creche e pré-escola) e anos iniciais</strong> (1º ao 5º ano): procure a escola municipal do seu bairro ou a <strong>Secretaria Municipal de Educação e Cultura</strong>, na Avenida Mato Grosso, Qd. 01, Lt. 07, nº 314, Centro (segunda a sexta, das 7h às 11h e das 13h às 17h; e-mail <a class="text-primary font-semibold hover:underline" href="mailto:educacaoecultura@guapo.go.gov.br">educacaoecultura@guapo.go.gov.br</a>).',
-                '<strong>Anos finais e ensino médio</strong> (6º ano em diante): rede estadual de Goiás. A matrícula de novos alunos é feita <strong>pela internet</strong>, no portal de matrícula do Governo de Goiás, e dá para escolher mais de uma escola e turno. Fique de olho no período de matrícula, que costuma abrir no fim do ano.',
-                'Leve <strong>certidão de nascimento, CPF, caderneta de vacinação, comprovante de endereço</strong> e a <strong>declaração de transferência</strong> ou o histórico da escola anterior.',
-                'Se ainda não tiver a transferência, matricule assim mesmo e peça o documento à escola antiga depois.',
+                '<strong>Rede municipal (creche, pré-escola e ensino fundamental):</strong> a matrícula é <strong>só pela internet</strong>, no site de Matrícula Informatizada de Guapó (gemul-guapo.com.br/matricula). Depois, a família vai à escola, no prazo informado, para <strong>confirmar a matrícula</strong> com as cópias dos documentos.',
+                'O período de matrícula da rede municipal costuma ser no começo de dezembro e dura poucos dias. Chegou fora do período? Procure a escola mais próxima ou a Secretaria Municipal de Educação: <a class="text-primary font-semibold hover:underline" href="tel:+5562999982720">(62) 99998-2720</a>.',
+                '<strong>Rede estadual (6º ano ao ensino médio):</strong> a matrícula de novos alunos também é <strong>pela internet</strong>, no portal de matrícula do Governo de Goiás, e dá para escolher mais de uma escola e turno.',
+                'Secretaria Municipal de Educação e Cultura: Avenida Mato Grosso, Qd. 01, Lt. 07, nº 314, Centro (segunda a sexta, das 7h às 11h e das 13h às 17h; e-mail <a class="text-primary font-semibold hover:underline" href="mailto:educacaoecultura@guapo.go.gov.br">educacaoecultura@guapo.go.gov.br</a>).',
                 '<strong>Adultos também podem voltar a estudar:</strong> a EJA da rede estadual aceita a partir de 15 anos (ensino fundamental) e de 18 anos (ensino médio), inclusive com cursos de qualificação profissional.',
+            ],
+            'checklist' => [
+                'titulo' => 'Para confirmar a matrícula, leve cópia (xerox) de:',
+                'itens' => [
+                    'Certidão de nascimento ou RG da criança',
+                    'CPF da criança',
+                    'Cartão do SUS da criança',
+                    'Cartão de vacina e certificado de vacinação da criança',
+                    'Cartão do benefício do governo, se a família recebe',
+                    'RG, CPF e título de eleitor do responsável',
+                    'Comprovante de endereço atualizado (conta de energia)',
+                    'Histórico escolar ou declaração de transferência da escola anterior',
+                ],
+                'nota' => 'A escola não confirma a matrícula se faltar a cópia de algum documento. Tire as cópias antes de ir.',
             ],
             'escolas' => [
                 'Educação infantil (CMEIs, rede municipal)' => [
@@ -60,7 +74,7 @@
                     'CMEI Florípedes Maria de Jesus',
                     'CMEI Marinete de Paula Ribeiro “Tia Dodô”',
                 ],
-                'Escolas municipais (1º ao 5º ano)' => [
+                'Escolas municipais (ensino fundamental)' => [
                     'Escola Municipal Dona Sanita',
                     'Escola Municipal Manoel Ribeiro Rosa',
                     'Escola Municipal de Tempo Integral Verônica Moreira de Sousa',
@@ -77,6 +91,7 @@
                 ],
             ],
             'links' => [
+                ['Matrícula na rede municipal (Guapó)', 'https://gemul-guapo.com.br/matricula/'],
                 ['Matrícula na rede estadual (Goiás)', 'https://matricula.go.gov.br/'],
                 ['Secretaria de Educação (Prefeitura)', 'https://guapo.go.gov.br/estrutura/secretaria-de-educacao-e-cultura/'],
             ],
@@ -299,6 +314,26 @@
                                 </li>
                             @endforeach
                         </ul>
+                        @if (!empty($tema['checklist']))
+                            <div class="p-4 rounded-2xl bg-primary/5 border border-primary/30 space-y-2.5">
+                                <p class="flex items-center gap-2 text-sm font-extrabold text-on-surface">
+                                    <span class="material-symbols-outlined text-primary text-[20px]" aria-hidden="true">content_copy</span>
+                                    <span>{{ $tema['checklist']['titulo'] }}</span>
+                                </p>
+                                <ul class="space-y-1.5">
+                                    @foreach ($tema['checklist']['itens'] as $doc)
+                                        <li class="flex items-start gap-2 text-sm text-on-surface leading-snug">
+                                            <span class="material-symbols-outlined text-primary text-[16px] shrink-0 mt-0.5" aria-hidden="true">check_box_outline_blank</span>
+                                            <span>{{ $doc }}</span>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                                <p class="flex items-start gap-1.5 text-xs font-semibold text-primary">
+                                    <span class="material-symbols-outlined text-[16px] shrink-0" aria-hidden="true">warning</span>
+                                    <span>{{ $tema['checklist']['nota'] }}</span>
+                                </p>
+                            </div>
+                        @endif
                         @if (!empty($tema['unidades']))
                             <div class="space-y-2">
                                 <span class="block text-xs font-bold uppercase tracking-wider text-secondary">Onde ir em Guapó</span>

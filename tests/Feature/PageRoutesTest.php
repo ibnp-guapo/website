@@ -282,6 +282,11 @@ final class PageRoutesTest extends TestCase
         $this->assertStringContainsString('href="tel:+556235522090"', $output);
         $this->assertStringContainsString('Departamento de Habitação', $output);
         $this->assertStringContainsString('Programa Criança Feliz', $output);
+        $this->assertStringContainsString('https://gemul-guapo.com.br/matricula/', $output);
+        $this->assertStringContainsString('Para confirmar a matrícula, leve cópia (xerox) de:', $output);
+        $this->assertStringContainsString('RG, CPF e título de eleitor do responsável', $output);
+        $this->assertStringContainsString('tel:+5562999982720', $output);
+        $this->assertStringNotContainsString('matricule assim mesmo', $output);
 
         // SEO: canonical, Open Graph e dados estruturados
         $this->assertStringContainsString('<link rel="canonical" href="https://ibnpguapo.org.br/guia-de-chegada">', $output);

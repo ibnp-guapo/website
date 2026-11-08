@@ -35,7 +35,8 @@
 
     <!-- Design System CSS -->
     <link rel="stylesheet" href="/assets/css/app.css?v=1.0.5">
-    <link rel="icon" type="image/png" href="/assets/images/logo-ibnp.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/assets/images/favicon-ibnp.png?v=2">
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png?v=2">
 
     @yield('head')
 </head>
@@ -47,7 +48,7 @@
             <!-- Brand Logo & Identity -->
             <a href="/" class="flex items-center gap-2.5 sm:gap-3 group shrink-0 mr-2 xl:mr-4">
                 <div class="w-10 h-10 sm:w-11 sm:h-11 shrink-0 rounded-xl bg-white p-1 flex items-center justify-center shadow-xs border border-outline-variant/40 group-hover:scale-105 transition-transform duration-200 overflow-hidden" style="width: 44px; height: 44px; min-width: 44px; min-height: 44px; max-width: 44px; max-height: 44px;">
-                    <img src="/assets/images/logo-ibnp.png" alt="Logo IBNP" width="44" height="44" class="w-full h-full object-contain" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                    <img src="/assets/images/logo-ibnp.png?v=2" alt="Logo IBNP: pombas e livro em aço com coração vermelho" width="44" height="44" class="w-full h-full object-contain" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                 </div>
                 <div class="flex flex-col">
                     <span class="text-lg sm:text-xl font-black text-on-surface tracking-tight leading-none whitespace-nowrap">IBNP</span>
@@ -123,7 +124,7 @@
                 <div class="md:col-span-5 space-y-3">
                     <div class="flex items-center gap-2.5">
                         <div class="w-9 h-9 shrink-0 rounded-xl bg-white p-1 flex items-center justify-center shadow-xs border border-outline-variant/30 overflow-hidden" style="width: 36px; height: 36px; min-width: 36px; min-height: 36px; max-width: 36px; max-height: 36px;">
-                            <img src="/assets/images/logo-ibnp.png" alt="Logo IBNP" width="36" height="36" class="w-full h-full object-contain" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                            <img src="/assets/images/logo-ibnp.png?v=2" alt="Logo IBNP: pombas e livro em aço com coração vermelho" width="36" height="36" class="w-full h-full object-contain" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                         </div>
                         <span class="text-base font-bold text-on-surface">IBNP</span>
                     </div>

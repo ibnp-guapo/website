@@ -96,6 +96,10 @@
                     <span>Ação Social</span>
                 </span>
             </a>
+            <a href="/guia-de-chegada" class="flex items-center gap-1.5 py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/guia-de-chegada' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">
+                <span class="material-symbols-outlined text-[18px] text-secondary">waving_hand</span>
+                <span>Novo em Guapó? Guia de Chegada</span>
+            </a>
             <a href="/contato" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/contato' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Contato</a>
             <div class="pt-3 border-t border-outline-variant/30 flex flex-col gap-2">
                 <a href="/programacao" class="flex items-center justify-center gap-1.5 w-full bg-primary text-on-primary py-3 rounded-xl text-xs font-bold shadow-sm">
@@ -148,6 +152,7 @@
                         <a class="text-text-muted hover:text-primary transition-colors duration-200" href="/regimento">Regimento Interno</a>
                         <a class="text-text-muted hover:text-primary transition-colors duration-200" href="/sobre">Sobre Nós</a>
                         <a class="text-text-muted hover:text-primary transition-colors duration-200" href="/acao-social">Ação Social</a>
+                        <a class="text-text-muted hover:text-primary transition-colors duration-200" href="/guia-de-chegada">Novo em Guapó</a>
                         <a class="text-text-muted hover:text-primary transition-colors duration-200" href="/contato">Contato</a>
                         <a class="text-text-muted hover:text-primary transition-colors duration-200" href="/programacao.ics">Baixar Calendário (.ics)</a>
                         <a class="text-text-muted hover:text-primary transition-colors duration-200" href="/estatuto/xml">Estatuto XML</a>

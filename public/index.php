@@ -90,6 +90,11 @@ $router->post('/coral-natal/inscrever', function () use ($coralController): void
     $coralController->inscrever();
 });
 
+// Rota 10: Guia de Chegada para novos moradores (Spec 24)
+$router->get('/guia-de-chegada', function () use ($pageController): void {
+    $pageController->guiaDeChegada();
+});
+
 // Tratamento 404 (Not Found)
 $router->set404(function () use ($pageController): void {
     $pageController->notFound();

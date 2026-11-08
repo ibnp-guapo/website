@@ -245,5 +245,43 @@ final class PageRoutesTest extends TestCase
         $this->assertStringContainsString('/assets/images/escola-nova-esperanca-angola.jpg', $output);
         $this->assertStringContainsString('Escola Nova Esperança em Angola', $output);
     }
-}
 
+    public function testGuiaDeChegadaRendersGuideForNewResidents(): void
+    {
+        ob_start();
+        $this->controller->guiaDeChegada();
+        $output = (string) ob_get_clean();
+
+        $this->assertStringContainsString('Guia de Chegada', $output);
+        $this->assertStringContainsString('Primeiros passos', $output);
+        foreach (['id="documentos"', 'id="saude"', 'id="escola"', 'id="assistencia"', 'id="trabalho"', 'id="titulo"', 'id="moradia"'] as $secao) {
+            $this->assertStringContainsString($secao, $output);
+        }
+        $this->assertStringContainsString('Cadastro Único', $output);
+        $this->assertStringContainsString('tel:192', $output);
+        $this->assertStringContainsString('tel:121', $output);
+        $this->assertStringContainsString('wa.me/5562998700089', $output);
+        $this->assertStringContainsString('Como a IBNP pode ajudar', $output);
+        $this->assertStringContainsString('/assets/images/logo-ibnp.png', $output);
+
+        // Links externos sempre em nova aba e seguros
+        preg_match_all('/<a href="https?:[^"]+"([^>]*)>/', $output, $externos);
+        foreach ($externos[1] as $attrs) {
+            $this->assertStringContainsString('noopener noreferrer', $attrs);
+        }
+
+        // Ad Grants: sem termos de "em construção"
+        $this->assertStringNotContainsString('construction', $output);
+        $this->assertStringNotContainsString('em obras', mb_strtolower($output));
+    }
+
+    public function testHomeLinksToGuiaDeChegada(): void
+    {
+        ob_start();
+        $this->controller->home();
+        $output = (string) ob_get_clean();
+
+        $this->assertStringContainsString('href="/guia-de-chegada"', $output);
+        $this->assertStringContainsString('Chegou agora em Guapó?', $output);
+    }
+}

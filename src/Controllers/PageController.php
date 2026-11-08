@@ -70,6 +70,17 @@ final class PageController
     }
 
     /**
+     * Guia de Chegada para novos moradores de Guapó (Spec 24)
+     */
+    public function guiaDeChegada(): void
+    {
+        header('Content-Type: text/html; charset=utf-8');
+        echo $this->renderer->render('pages.guia-de-chegada', [
+            'currentRoute' => '/guia-de-chegada',
+        ]);
+    }
+
+    /**
      * Página de erro 404 (Not Found)
      */
     public function notFound(): void

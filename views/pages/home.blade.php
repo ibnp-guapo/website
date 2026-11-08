@@ -646,6 +646,27 @@
     </div>
 </section>
 
+<!-- GUIA DE CHEGADA: chamada para novos moradores (Spec 24) -->
+<section class="py-10 bg-surface-cream-light border-b border-outline-variant/30" id="novo-em-guapo">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 p-6 sm:p-8 rounded-3xl bg-surface-pure border border-outline-variant/30 elevation-warm-1">
+            <div class="flex items-start gap-4">
+                <div class="w-12 h-12 shrink-0 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
+                    <span class="material-symbols-outlined text-[26px]">waving_hand</span>
+                </div>
+                <div class="space-y-1">
+                    <h2 class="text-xl sm:text-2xl font-extrabold text-on-surface tracking-tight">Chegou agora em Guapó?</h2>
+                    <p class="text-sm text-text-muted leading-relaxed max-w-2xl">Preparamos um guia para quem veio de outras regiões: documentos, saúde, escola das crianças, Cadastro Único, trabalho e título de eleitor.</p>
+                </div>
+            </div>
+            <a href="/guia-de-chegada" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-primary text-on-primary text-sm font-bold shadow-sm hover:bg-secondary-container transition-all active:scale-95 whitespace-nowrap shrink-0">
+                <span>Ver o Guia de Chegada</span>
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+            </a>
+        </div>
+    </div>
+</section>
+
 <!-- GUAPÓ LOCATION & CONTACT BANNER ("Onde Estamos & Contato") -->
 <section class="py-16 md:py-24 bg-surface-pure" id="localizacao">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

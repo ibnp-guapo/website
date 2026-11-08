@@ -49,6 +49,7 @@ Somente regras nacionais ou estaduais estáveis, com link para o serviço oficia
 - Carteira de Identidade Nacional e CPF: gov.br.
 - Cartão SUS / Meu SUS Digital: Ministério da Saúde.
 - Cadastro Único e Bolsa Família: MDS, Disque Social **121**.
+- Matrícula na rede estadual (6º ano ao ensino médio e EJA): portal https://matricula.go.gov.br/ (Governo de Goiás). Matrícula 2027: novos alunos de 09/11 a 30/11/2026, confirmação de 14/12 a 18/12/2026. O aviso com essas datas tem campo `aviso.ate` e some sozinho depois de 18/12/2026; a cada ano, atualize as datas.
 - Carteira de Trabalho Digital: gov.br.
 - Transferência de título: TSE (Autoatendimento Eleitoral). Exige ao menos 3 meses de residência no novo município e 1 ano desde o alistamento ou a última transferência.
 - Emergência: 190, 192, 193; Disque Saúde 136; Direitos Humanos 100; Central da Mulher 180.

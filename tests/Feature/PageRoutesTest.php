@@ -263,6 +263,16 @@ final class PageRoutesTest extends TestCase
         $this->assertStringContainsString('wa.me/5562998700089', $output);
         $this->assertStringContainsString('Como a IBNP pode ajudar', $output);
 
+        // Matrícula da rede estadual (portal oficial) e aviso com prazo que expira sozinho
+        $this->assertStringContainsString('https://matricula.go.gov.br/', $output);
+        $this->assertStringContainsString('EJA', $output);
+        $hoje = (new \DateTimeImmutable('now', new \DateTimeZone('America/Sao_Paulo')))->format('Y-m-d');
+        if ($hoje <= '2026-12-18') {
+            $this->assertStringContainsString('Matrícula 2027 na rede estadual', $output);
+        } else {
+            $this->assertStringNotContainsString('Matrícula 2027 na rede estadual', $output);
+        }
+
         // SEO: canonical, Open Graph e dados estruturados
         $this->assertStringContainsString('<link rel="canonical" href="https://ibnpguapo.org.br/guia-de-chegada">', $output);
         $this->assertStringContainsString('og:image" content="https://ibnpguapo.org.br/assets/images/og-guia-de-chegada.jpg"', $output);

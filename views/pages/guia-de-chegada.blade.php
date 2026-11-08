@@ -6,6 +6,9 @@
 @section('og_image_alt', 'Guia de Chegada da IBNP: Chegou agora em Guapó?')
 
 @php
+    // Avisos com prazo (ex.: matrícula) somem sozinhos depois da data 'ate'
+    $hoje = (new DateTimeImmutable('now', new DateTimeZone('America/Sao_Paulo')))->format('Y-m-d');
+
     $wa = 'https://wa.me/5562998700089?text=' . rawurlencode('Olá! Cheguei agora em Guapó e gostaria de uma orientação da IBNP.');
 
     $passos = [
@@ -49,11 +52,19 @@
             'texto' => 'Toda criança e adolescente tem direito à vaga na escola pública, inclusive no meio do ano.',
             'itens' => [
                 '<strong>Educação infantil e anos iniciais</strong> (1º ao 5º ano): procure a Secretaria Municipal de Educação de Guapó ou a escola municipal do seu bairro.',
-                '<strong>Anos finais e ensino médio</strong> (6º ano em diante): escolas da rede estadual de Goiás.',
+                '<strong>Anos finais e ensino médio</strong> (6º ano em diante): rede estadual de Goiás. A matrícula de novos alunos é feita <strong>pela internet</strong>, no portal de matrícula do Governo de Goiás, e dá para escolher mais de uma escola e turno.',
                 'Leve <strong>certidão de nascimento, CPF, caderneta de vacinação, comprovante de endereço</strong> e a <strong>declaração de transferência</strong> ou o histórico da escola anterior.',
                 'Se ainda não tiver a transferência, matricule assim mesmo e peça o documento à escola antiga depois.',
+                '<strong>Adultos também podem voltar a estudar:</strong> a EJA da rede estadual aceita a partir de 15 anos (ensino fundamental) e de 18 anos (ensino médio), inclusive com cursos de qualificação profissional.',
             ],
-            'links' => [],
+            'aviso' => [
+                'ate' => '2026-12-18',
+                'titulo' => 'Matrícula 2027 na rede estadual',
+                'texto' => 'Novos alunos: <strong>09/11 a 30/11/2026</strong>, pelo portal de matrícula. Confirmação e efetivação: <strong>14/12 a 18/12/2026</strong>. Não perca o prazo!',
+            ],
+            'links' => [
+                ['Matrícula na rede estadual (Goiás)', 'https://matricula.go.gov.br/'],
+            ],
         ],
         [
             'id' => 'assistencia', 'icone' => 'family_restroom', 'titulo' => 'Cadastro Único e benefícios',
@@ -249,6 +260,15 @@
                             <h3 class="text-xl sm:text-2xl font-extrabold text-on-surface tracking-tight">{{ $tema['titulo'] }}</h3>
                         </div>
                         <p class="text-sm text-text-muted leading-relaxed">{{ $tema['texto'] }}</p>
+                        @if (!empty($tema['aviso']) && $hoje <= $tema['aviso']['ate'])
+                            <div class="flex items-start gap-3 p-4 rounded-2xl bg-primary/10 border border-primary/30" role="note">
+                                <span class="material-symbols-outlined text-primary text-[22px] shrink-0" aria-hidden="true">event_available</span>
+                                <div class="space-y-0.5">
+                                    <span class="block text-xs font-extrabold uppercase tracking-wider text-primary">{{ $tema['aviso']['titulo'] }}</span>
+                                    <p class="text-sm text-on-surface leading-relaxed">{!! $tema['aviso']['texto'] !!}</p>
+                                </div>
+                            </div>
+                        @endif
                         <ul class="space-y-2.5">
                             @foreach ($tema['itens'] as $item)
                                 <li class="flex items-start gap-2.5 text-sm text-on-surface leading-relaxed">

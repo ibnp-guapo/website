@@ -263,15 +263,18 @@ final class PageRoutesTest extends TestCase
         $this->assertStringContainsString('wa.me/5562998700089', $output);
         $this->assertStringContainsString('Como a IBNP pode ajudar', $output);
 
-        // Matrícula da rede estadual (portal oficial) e aviso com prazo que expira sozinho
+        // Matrícula da rede estadual e lista de escolas públicas de Guapó (sem datas que vencem)
         $this->assertStringContainsString('https://matricula.go.gov.br/', $output);
         $this->assertStringContainsString('EJA', $output);
-        $hoje = (new \DateTimeImmutable('now', new \DateTimeZone('America/Sao_Paulo')))->format('Y-m-d');
-        if ($hoje <= '2026-12-18') {
-            $this->assertStringContainsString('Matrícula 2027 na rede estadual', $output);
-        } else {
-            $this->assertStringNotContainsString('Matrícula 2027 na rede estadual', $output);
-        }
+        $this->assertStringNotContainsString('Matrícula 2027', $output);
+        $this->assertStringContainsString('Escola Municipal Dona Sanita', $output);
+        $this->assertStringContainsString('Colégio Estadual de Posselândia', $output);
+        $this->assertStringContainsString('Ver as escolas públicas de Guapó (14)', $output);
+        $this->assertStringContainsString('CMEI Geralda Rodrigues Novantino', $output);
+        $this->assertStringContainsString('educacaoecultura@guapo.go.gov.br', $output);
+        $this->assertStringContainsString('(62) 3552-8031', $output);
+        $this->assertStringContainsString('guapo.go.gov.br/estrutura/secretaria-de-educacao-e-cultura', $output);
+        $this->assertStringNotContainsString('qedu.org.br', $output);
 
         // SEO: canonical, Open Graph e dados estruturados
         $this->assertStringContainsString('<link rel="canonical" href="https://ibnpguapo.org.br/guia-de-chegada">', $output);

@@ -6,9 +6,6 @@
 @section('og_image_alt', 'Guia de Chegada da IBNP: Chegou agora em Guapó?')
 
 @php
-    // Avisos com prazo (ex.: matrícula) somem sozinhos depois da data 'ate'
-    $hoje = (new DateTimeImmutable('now', new DateTimeZone('America/Sao_Paulo')))->format('Y-m-d');
-
     $wa = 'https://wa.me/5562998700089?text=' . rawurlencode('Olá! Cheguei agora em Guapó e gostaria de uma orientação da IBNP.');
 
     $passos = [
@@ -51,19 +48,37 @@
             'id' => 'escola', 'icone' => 'school', 'titulo' => 'Escola das crianças',
             'texto' => 'Toda criança e adolescente tem direito à vaga na escola pública, inclusive no meio do ano.',
             'itens' => [
-                '<strong>Educação infantil e anos iniciais</strong> (1º ao 5º ano): procure a Secretaria Municipal de Educação de Guapó ou a escola municipal do seu bairro.',
-                '<strong>Anos finais e ensino médio</strong> (6º ano em diante): rede estadual de Goiás. A matrícula de novos alunos é feita <strong>pela internet</strong>, no portal de matrícula do Governo de Goiás, e dá para escolher mais de uma escola e turno.',
+                '<strong>Educação infantil (creche e pré-escola) e anos iniciais</strong> (1º ao 5º ano): procure a escola municipal do seu bairro ou a <strong>Secretaria Municipal de Educação e Cultura</strong>, na Avenida Mato Grosso, Qd. 01, Lt. 07, nº 314, Centro (segunda a sexta, das 7h às 11h e das 13h às 17h; e-mail <a class="text-primary font-semibold hover:underline" href="mailto:educacaoecultura@guapo.go.gov.br">educacaoecultura@guapo.go.gov.br</a>).',
+                '<strong>Anos finais e ensino médio</strong> (6º ano em diante): rede estadual de Goiás. A matrícula de novos alunos é feita <strong>pela internet</strong>, no portal de matrícula do Governo de Goiás, e dá para escolher mais de uma escola e turno. Fique de olho no período de matrícula, que costuma abrir no fim do ano.',
                 'Leve <strong>certidão de nascimento, CPF, caderneta de vacinação, comprovante de endereço</strong> e a <strong>declaração de transferência</strong> ou o histórico da escola anterior.',
                 'Se ainda não tiver a transferência, matricule assim mesmo e peça o documento à escola antiga depois.',
                 '<strong>Adultos também podem voltar a estudar:</strong> a EJA da rede estadual aceita a partir de 15 anos (ensino fundamental) e de 18 anos (ensino médio), inclusive com cursos de qualificação profissional.',
             ],
-            'aviso' => [
-                'ate' => '2026-12-18',
-                'titulo' => 'Matrícula 2027 na rede estadual',
-                'texto' => 'Novos alunos: <strong>09/11 a 30/11/2026</strong>, pelo portal de matrícula. Confirmação e efetivação: <strong>14/12 a 18/12/2026</strong>. Não perca o prazo!',
+            'escolas' => [
+                'Educação infantil (CMEIs, rede municipal)' => [
+                    'CMEI Geralda Rodrigues Novantino',
+                    'CMEI Florípedes Maria de Jesus',
+                    'CMEI Marinete de Paula Ribeiro “Tia Dodô”',
+                ],
+                'Escolas municipais (1º ao 5º ano)' => [
+                    'Escola Municipal Dona Sanita',
+                    'Escola Municipal Manoel Ribeiro Rosa',
+                    'Escola Municipal de Tempo Integral Verônica Moreira de Sousa',
+                    'Escola Municipal de Tempo Integral Padre Conrado',
+                    'Escola Municipal Professora Juliana Maria da Sousa',
+                    'Escola Municipal Vicentina Fortunata de Oliveira',
+                ],
+                'Escolas estaduais (6º ano ao ensino médio)' => [
+                    'Centro de Ensino em Período Integral Professora Liodosia Serra Ramos (6º ao 9º ano e ensino médio)',
+                    'Centro de Ensino em Período Integral Valdivino Serafim (6º ao 9º ano)',
+                    'Colégio Estadual da Polícia Militar de Goiás Doutor José Feliciano Ferreira (6º ao 9º ano e ensino médio)',
+                    'Colégio Estadual de Posselândia (6º ao 9º ano e ensino médio)',
+                    'Colégio Estadual Deputado José de Assis (6º ao 9º ano)',
+                ],
             ],
             'links' => [
                 ['Matrícula na rede estadual (Goiás)', 'https://matricula.go.gov.br/'],
+                ['Secretaria de Educação (Prefeitura)', 'https://guapo.go.gov.br/estrutura/secretaria-de-educacao-e-cultura/'],
             ],
         ],
         [
@@ -260,15 +275,6 @@
                             <h3 class="text-xl sm:text-2xl font-extrabold text-on-surface tracking-tight">{{ $tema['titulo'] }}</h3>
                         </div>
                         <p class="text-sm text-text-muted leading-relaxed">{{ $tema['texto'] }}</p>
-                        @if (!empty($tema['aviso']) && $hoje <= $tema['aviso']['ate'])
-                            <div class="flex items-start gap-3 p-4 rounded-2xl bg-primary/10 border border-primary/30" role="note">
-                                <span class="material-symbols-outlined text-primary text-[22px] shrink-0" aria-hidden="true">event_available</span>
-                                <div class="space-y-0.5">
-                                    <span class="block text-xs font-extrabold uppercase tracking-wider text-primary">{{ $tema['aviso']['titulo'] }}</span>
-                                    <p class="text-sm text-on-surface leading-relaxed">{!! $tema['aviso']['texto'] !!}</p>
-                                </div>
-                            </div>
-                        @endif
                         <ul class="space-y-2.5">
                             @foreach ($tema['itens'] as $item)
                                 <li class="flex items-start gap-2.5 text-sm text-on-surface leading-relaxed">
@@ -277,6 +283,33 @@
                                 </li>
                             @endforeach
                         </ul>
+                        @if (!empty($tema['escolas']))
+                            <details class="group rounded-2xl bg-surface-cream-light border border-outline-variant/40 open:pb-2">
+                                <summary class="flex items-center justify-between gap-2 cursor-pointer list-none px-4 py-3 text-sm font-bold text-on-surface">
+                                    <span class="flex items-center gap-2">
+                                        <span class="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">location_city</span>
+                                        <span>Ver as escolas públicas de Guapó ({{ count($tema['escolas'], COUNT_RECURSIVE) - count($tema['escolas']) }})</span>
+                                    </span>
+                                    <span class="material-symbols-outlined text-[20px] text-text-muted transition-transform group-open:rotate-180" aria-hidden="true">expand_more</span>
+                                </summary>
+                                <div class="px-4 space-y-4">
+                                    @foreach ($tema['escolas'] as $rede => $lista)
+                                        <div>
+                                            <span class="block text-xs font-bold uppercase tracking-wider text-secondary mb-1.5">{{ $rede }}</span>
+                                            <ul class="space-y-1.5">
+                                                @foreach ($lista as $escola)
+                                                    <li class="flex items-start gap-2 text-sm text-on-surface leading-snug">
+                                                        <span class="material-symbols-outlined text-secondary text-[16px] shrink-0 mt-0.5" aria-hidden="true">school</span>
+                                                        <span>{{ $escola }}</span>
+                                                    </li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                    @endforeach
+                                    <p class="text-[11px] text-text-muted leading-relaxed">Fontes: rede municipal, site da Prefeitura de Guapó; rede estadual, dados do Inep.</p>
+                                </div>
+                            </details>
+                        @endif
                         @if (count($tema['links']) > 0)
                             <div class="flex flex-wrap gap-2 pt-2 mt-auto border-t border-outline-variant/30">
                                 @foreach ($tema['links'] as [$rotulo, $url])
@@ -291,7 +324,7 @@
                 @endforeach
             </div>
             <p class="text-xs text-text-muted text-center max-w-2xl mx-auto leading-relaxed">
-                Endereços e horários dos órgãos públicos de Guapó mudam com frequência. Confirme na Prefeitura de Guapó antes de ir, ou pergunte para a gente no WhatsApp.
+                Endereços e horários dos órgãos públicos de Guapó podem mudar. Confirme na <strong class="text-on-surface">Prefeitura de Guapó</strong> (Rua Padre Vicente, nº 356, Centro · <a href="tel:+556235528031" class="text-primary font-semibold hover:underline">(62) 3552-8031</a> · segunda a sexta, das 8h às 12h e das 13h às 16h) ou pergunte para a gente no WhatsApp.
             </p>
         </section>
 

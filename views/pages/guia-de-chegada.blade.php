@@ -99,10 +99,12 @@
             'itens' => [
                 'Baixe a <strong>Carteira de Trabalho Digital</strong>: ela já vem pronta com o seu CPF.',
                 'Vagas de emprego e seguro-desemprego são atendidos pelo <strong>Sine</strong>, presente nas unidades do Vapt Vupt.',
+                '<strong>Cadastro de vagas da Prefeitura de Goiânia:</strong> pelo sistema do Sine, de acordo com seu perfil (experiência, formação e pretensões). Dá para se cadastrar pela internet, no Portal Emprega Brasil ou no aplicativo <strong>Sine Fácil</strong>. No atendimento presencial, leve <strong>Carteira de Trabalho, documentos pessoais e comprovante de endereço</strong>. Informações: <a class="text-primary font-semibold hover:underline" href="tel:+556235241476">(62) 3524-1476</a>.',
                 'Mantenha um currículo simples no celular, com telefone e WhatsApp atualizados.',
             ],
             'links' => [
                 ['Carteira de Trabalho Digital', 'https://www.gov.br/trabalho-e-emprego/pt-br/servicos/trabalhador/carteira-de-trabalho'],
+                ['Vagas de emprego (Prefeitura de Goiânia)', 'https://www.goiania.go.gov.br/sing_servicos/cadastro-para-vagas-de-emprego/'],
             ],
         ],
         [

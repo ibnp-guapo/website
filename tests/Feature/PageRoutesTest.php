@@ -275,6 +275,8 @@ final class PageRoutesTest extends TestCase
         $this->assertStringContainsString('(62) 3552-8031', $output);
         $this->assertStringContainsString('guapo.go.gov.br/estrutura/secretaria-de-educacao-e-cultura', $output);
         $this->assertStringNotContainsString('qedu.org.br', $output);
+        $this->assertStringContainsString('goiania.go.gov.br/sing_servicos/cadastro-para-vagas-de-emprego', $output);
+        $this->assertStringContainsString('Sine Fácil', $output);
 
         // SEO: canonical, Open Graph e dados estruturados
         $this->assertStringContainsString('<link rel="canonical" href="https://ibnpguapo.org.br/guia-de-chegada">', $output);

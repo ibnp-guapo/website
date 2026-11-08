@@ -52,6 +52,7 @@ Somente regras nacionais ou estaduais estáveis, com link para o serviço oficia
 - Matrícula na rede estadual (6º ano ao ensino médio e EJA): portal https://matricula.go.gov.br/ (Governo de Goiás). Sem datas na página, para não exigir atualização anual.
 - Escolas públicas de Guapó: rede municipal (3 CMEIs e 6 escolas) e contatos da Secretaria Municipal de Educação e Cultura e da Prefeitura conforme o site oficial https://guapo.go.gov.br/estrutura/secretaria-de-educacao-e-cultura/ (consultado em 08/11/2026); rede estadual (5 escolas) pelos dados do Inep. Não publicar nomes de diretores, que mudam com frequência.
 - Carteira de Trabalho Digital: gov.br.
+- Vagas de emprego: cadastro no Sine pela Prefeitura de Goiânia (https://www.goiania.go.gov.br/sing_servicos/cadastro-para-vagas-de-emprego/), on-line pelo Portal Emprega Brasil ou app Sine Fácil; telefone (62) 3524-1476. O endereço presencial não entrou porque a página oficial mostra dois endereços diferentes.
 - Transferência de título: TSE (Autoatendimento Eleitoral). Exige ao menos 3 meses de residência no novo município e 1 ano desde o alistamento ou a última transferência.
 - Emergência: 190, 192, 193; Disque Saúde 136; Direitos Humanos 100; Central da Mulher 180.
 

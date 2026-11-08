@@ -13,7 +13,7 @@
         'Consiga um comprovante de endereço em Guapó: conta de luz ou água, contrato de aluguel ou declaração do dono do imóvel.',
         'Atualize seu endereço no Cartão SUS na unidade de saúde do seu bairro.',
         'Matricule as crianças na escola, levando a declaração de transferência da escola antiga.',
-        'Se você recebe Bolsa Família ou outro benefício, atualize o Cadastro Único no CRAS de Guapó.',
+        'Se você recebe Bolsa Família ou outro benefício, atualize o Cadastro Único no setor do Cadastro Único da Prefeitura de Guapó.',
         'Depois de 3 meses morando aqui, transfira seu título de eleitor.',
     ];
 
@@ -85,12 +85,22 @@
             'id' => 'assistencia', 'icone' => 'family_restroom', 'titulo' => 'Cadastro Único e benefícios',
             'texto' => 'Quem muda de cidade precisa atualizar o Cadastro Único. Sem isso, o Bolsa Família e outros benefícios podem ser bloqueados.',
             'itens' => [
-                'Vá ao <strong>CRAS</strong> (Centro de Referência de Assistência Social) de Guapó com os documentos de todos da casa e o comprovante de endereço.',
+                'Vá ao <strong>Serviço do Cadastro Único e Bolsa Família</strong> de Guapó com os documentos de todos da casa e o comprovante de endereço.',
                 'O Cadastro Único também dá acesso à tarifa social de energia, a programas de moradia e a outros apoios.',
+                'O <strong>CRAS</strong> acompanha as famílias e orienta sobre benefícios; tem também o Serviço de Convivência para crianças, jovens e idosos.',
+                'Gestantes e famílias com crianças pequenas inscritas no Cadastro Único podem receber visitas do <strong>Programa Criança Feliz</strong>.',
                 'Dúvidas sobre o Bolsa Família podem ser tiradas de graça no <strong>Disque Social 121</strong>.',
+            ],
+            'unidades' => [
+                ['Cadastro Único e Bolsa Família', 'Rua São Salvador, Qd. 25, Lt. 10, Centro', '(62) 3552-2090', 'Seg. a sex., 8h às 12h e 13h às 16h'],
+                ['CRAS: Centro de Referência de Assistência Social', 'Rua Edéia, Qd. 07, Lt. 19, Centro', '(62) 3552-2090', 'Seg. a sex., 8h às 12h e 13h às 16h'],
+                ['Programa Criança Feliz', 'Rua Edéia, Qd. 07, Lt. 19, Centro', '(62) 3552-2918', 'Seg. a sex., 8h às 12h e 14h às 17h'],
+                ['CREAS: atendimento em caso de violência ou violação de direitos', 'Rua Pará, s/n, Centro', '(62) 3552-2090', 'Seg. a sex., 8h às 12h e 13h às 16h'],
+                ['Conselho Tutelar', 'Avenida Cristalina, s/n, Centro', '(62) 3552-2090', 'Seg. a sex., 8h às 12h e 13h às 16h'],
             ],
             'links' => [
                 ['Cadastro Único (MDS)', 'https://www.gov.br/mds/pt-br/acoes-e-programas/cadastro-unico'],
+                ['Assistência Social (Prefeitura)', 'https://guapo.go.gov.br/estrutura/secretaria-de-assistencia-social/'],
             ],
         ],
         [
@@ -125,7 +135,11 @@
             'itens' => [
                 '<strong>Visite o imóvel antes de pagar qualquer valor.</strong> Desconfie de quem pede depósito só por foto.',
                 'Faça um <strong>contrato por escrito</strong>, com valor, prazo e quem paga água e luz, e peça recibo de cada pagamento.',
-                'O contrato de aluguel também serve como comprovante de endereço para escola, saúde e CRAS.',
+                'O contrato de aluguel também serve como comprovante de endereço para escola, saúde e Cadastro Único.',
+                'Programas de moradia popular da Prefeitura são atendidos pelo <strong>Departamento de Habitação</strong>. Ter o Cadastro Único em dia ajuda.',
+            ],
+            'unidades' => [
+                ['Departamento de Habitação', 'Rua São Salvador, Qd. 25, Lt. 10, Centro', '(62) 3552-2070', 'Seg. a sex., 8h às 12h e 14h às 17h'],
             ],
             'links' => [],
         ],
@@ -285,6 +299,22 @@
                                 </li>
                             @endforeach
                         </ul>
+                        @if (!empty($tema['unidades']))
+                            <div class="space-y-2">
+                                <span class="block text-xs font-bold uppercase tracking-wider text-secondary">Onde ir em Guapó</span>
+                                @foreach ($tema['unidades'] as [$nome, $endereco, $telefone, $horario])
+                                    <div class="p-3.5 rounded-2xl bg-surface-cream-light border border-outline-variant/40 space-y-1">
+                                        <p class="text-sm font-bold text-on-surface leading-snug">{{ $nome }}</p>
+                                        <p class="flex items-start gap-1.5 text-xs text-text-muted"><span class="material-symbols-outlined text-[15px] text-secondary shrink-0" aria-hidden="true">location_on</span><span>{{ $endereco }}</span></p>
+                                        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-text-muted">
+                                            <a href="tel:+55{{ preg_replace('/\D/', '', $telefone) }}" class="inline-flex items-center gap-1 font-semibold text-primary hover:underline"><span class="material-symbols-outlined text-[15px]" aria-hidden="true">call</span>{{ $telefone }}</a>
+                                            <span class="inline-flex items-center gap-1"><span class="material-symbols-outlined text-[15px] text-secondary" aria-hidden="true">schedule</span>{{ $horario }}</span>
+                                        </p>
+                                    </div>
+                                @endforeach
+                                <p class="text-[11px] text-text-muted">Fonte: site da Prefeitura de Guapó.</p>
+                            </div>
+                        @endif
                         @if (!empty($tema['escolas']))
                             <details class="group rounded-2xl bg-surface-cream-light border border-outline-variant/40 open:pb-2">
                                 <summary class="flex items-center justify-between gap-2 cursor-pointer list-none px-4 py-3 text-sm font-bold text-on-surface">

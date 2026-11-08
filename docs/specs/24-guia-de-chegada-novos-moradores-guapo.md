@@ -22,7 +22,7 @@ A IBNP recebe muitas famílias que migram de outras regiões do país, especialm
 4. **Testes:** `PageRoutesTest` cobre renderização, seções e ausência de termos vetados (Ad Grants).
 
 ### Non-Goals (Fora do Escopo)
-- **Não publicar endereços ou telefones de órgãos locais** (CRAS, UBS, Vapt Vupt de Guapó) sem confirmação oficial. A Secretaria de Educação e a Prefeitura já foram confirmadas no site oficial. Em 08/11/2026 não foi possível confirmá-los em fonte oficial; a página orienta a pessoa a procurar a prefeitura ou falar com a IBNP. Quando a igreja confirmar os dados, eles entram numa seção "Endereços em Guapó".
+- **Não publicar endereços ou telefones de órgãos locais** (CRAS, UBS, Vapt Vupt de Guapó) sem confirmação oficial. A Secretaria de Educação, a Prefeitura e as unidades da Assistência Social já foram confirmadas no site oficial. Em 08/11/2026 não foi possível confirmá-los em fonte oficial; a página orienta a pessoa a procurar a prefeitura ou falar com a IBNP. Quando a igreja confirmar os dados, eles entram numa seção "Endereços em Guapó".
 - Não prometer ajuda material (cestas, moradia, dinheiro) que a igreja não tenha confirmado.
 - Não criar formulário de cadastro de recém-chegados.
 
@@ -52,6 +52,7 @@ Somente regras nacionais ou estaduais estáveis, com link para o serviço oficia
 - Matrícula na rede estadual (6º ano ao ensino médio e EJA): portal https://matricula.go.gov.br/ (Governo de Goiás). Sem datas na página, para não exigir atualização anual.
 - Escolas públicas de Guapó: rede municipal (3 CMEIs e 6 escolas) e contatos da Secretaria Municipal de Educação e Cultura e da Prefeitura conforme o site oficial https://guapo.go.gov.br/estrutura/secretaria-de-educacao-e-cultura/ (consultado em 08/11/2026); rede estadual (5 escolas) pelos dados do Inep. Não publicar nomes de diretores, que mudam com frequência.
 - Carteira de Trabalho Digital: gov.br.
+- Assistência Social de Guapó: unidades (Cadastro Único e Bolsa Família, CRAS, Programa Criança Feliz, CREAS, Conselho Tutelar, Departamento de Habitação) com endereço, telefone e horário da API oficial do site da Prefeitura (`/wp-json/wp/v2/estrutura?parent=6597`, consultada em 08/11/2026).
 - Vagas de emprego: cadastro no Sine pela Prefeitura de Goiânia (https://www.goiania.go.gov.br/sing_servicos/cadastro-para-vagas-de-emprego/), on-line pelo Portal Emprega Brasil ou app Sine Fácil; telefone (62) 3524-1476. O endereço presencial não entrou porque a página oficial mostra dois endereços diferentes.
 - Transferência de título: TSE (Autoatendimento Eleitoral). Exige ao menos 3 meses de residência no novo município e 1 ano desde o alistamento ou a última transferência.
 - Emergência: 190, 192, 193; Disque Saúde 136; Direitos Humanos 100; Central da Mulher 180.

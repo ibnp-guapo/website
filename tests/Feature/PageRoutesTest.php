@@ -277,6 +277,11 @@ final class PageRoutesTest extends TestCase
         $this->assertStringNotContainsString('qedu.org.br', $output);
         $this->assertStringContainsString('goiania.go.gov.br/sing_servicos/cadastro-para-vagas-de-emprego', $output);
         $this->assertStringContainsString('Sine Fácil', $output);
+        $this->assertStringContainsString('Rua São Salvador, Qd. 25, Lt. 10, Centro', $output);
+        $this->assertStringContainsString('Rua Edéia, Qd. 07, Lt. 19, Centro', $output);
+        $this->assertStringContainsString('href="tel:+556235522090"', $output);
+        $this->assertStringContainsString('Departamento de Habitação', $output);
+        $this->assertStringContainsString('Programa Criança Feliz', $output);
 
         // SEO: canonical, Open Graph e dados estruturados
         $this->assertStringContainsString('<link rel="canonical" href="https://ibnpguapo.org.br/guia-de-chegada">', $output);

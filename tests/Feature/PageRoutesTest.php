@@ -254,7 +254,7 @@ final class PageRoutesTest extends TestCase
 
         $this->assertStringContainsString('Guia de Chegada', $output);
         $this->assertStringContainsString('Primeiros passos', $output);
-        foreach (['id="documentos"', 'id="saude"', 'id="escola"', 'id="assistencia"', 'id="trabalho"', 'id="titulo"', 'id="moradia"'] as $secao) {
+        foreach (['id="documentos"', 'id="saude"', 'id="escola"', 'id="assistencia"', 'id="trabalho"', 'id="titulo"', 'id="moradia"', 'id="transporte"'] as $secao) {
             $this->assertStringContainsString($secao, $output);
         }
         $this->assertStringContainsString('Cadastro Único', $output);
@@ -289,6 +289,9 @@ final class PageRoutesTest extends TestCase
         $this->assertStringNotContainsString('matricule assim mesmo', $output);
         $this->assertStringContainsString('A IBNP ajuda você a fazer a solicitação on-line', $output);
         $this->assertStringContainsString('Serviços pela internet:', $output);
+        $this->assertStringContainsString('https://www.sitpass.com.br/paravoce/cartaodebitocredito', $output);
+        $this->assertStringContainsString('https://www.rmtcgoiania.com.br/', $output);
+        $this->assertStringContainsString('tel:08006482222', $output);
         $this->assertStringContainsString(rawurlencode('preciso de ajuda para fazer a matrícula'), $output);
 
         // SEO: canonical, Open Graph e dados estruturados

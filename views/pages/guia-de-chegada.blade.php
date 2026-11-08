@@ -135,6 +135,20 @@
             ],
         ],
         [
+            'id' => 'transporte', 'icone' => 'directions_bus', 'titulo' => 'Ônibus para Goiânia',
+            'texto' => 'Guapó faz parte da Rede Metropolitana de Transportes Coletivos (RMTC), e há ônibus metropolitano ligando a cidade a Goiânia.',
+            'itens' => [
+                'Linhas, itinerários e horários estão no site da <strong>RMTC</strong>. Confira antes de sair, porque os horários de Guapó são mais espaçados que os de Goiânia.',
+                'Dá para pagar a passagem com o <strong>cartão SitPass</strong> ou com o seu próprio <strong>cartão de débito ou crédito</strong> (Visa, Mastercard ou Elo), por aproximação no validador, sem cadastro.',
+                'Use o <strong>cartão físico</strong> e encoste só ele no validador: deixe-o fora da carteira, para não cobrar duas vezes.',
+                'Problemas com cobrança no cartão: Central de Atendimento da RMTC, <a class="text-primary font-semibold hover:underline" href="tel:08006482222">0800 648 2222</a> (ligação gratuita).',
+            ],
+            'links' => [
+                ['Pagar com débito ou crédito (SitPass)', 'https://www.sitpass.com.br/paravoce/cartaodebitocredito'],
+                ['Linhas e horários (RMTC)', 'https://www.rmtcgoiania.com.br/'],
+            ],
+        ],
+        [
             'id' => 'titulo', 'icone' => 'how_to_vote', 'titulo' => 'Título de eleitor',
             'texto' => 'Para votar em Guapó, transfira o título depois de pelo menos 3 meses morando na cidade.',
             'itens' => [

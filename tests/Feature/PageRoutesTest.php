@@ -287,6 +287,9 @@ final class PageRoutesTest extends TestCase
         $this->assertStringContainsString('RG, CPF e título de eleitor do responsável', $output);
         $this->assertStringContainsString('tel:+5562999982720', $output);
         $this->assertStringNotContainsString('matricule assim mesmo', $output);
+        $this->assertStringContainsString('A IBNP ajuda você a fazer a solicitação on-line', $output);
+        $this->assertStringContainsString('Serviços pela internet:', $output);
+        $this->assertStringContainsString(rawurlencode('preciso de ajuda para fazer a matrícula'), $output);
 
         // SEO: canonical, Open Graph e dados estruturados
         $this->assertStringContainsString('<link rel="canonical" href="https://ibnpguapo.org.br/guia-de-chegada">', $output);

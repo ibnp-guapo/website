@@ -7,6 +7,7 @@
 
 @php
     $wa = 'https://wa.me/5562998700089?text=' . rawurlencode('Olá! Cheguei agora em Guapó e gostaria de uma orientação da IBNP.');
+    $waMatricula = 'https://wa.me/5562998700089?text=' . rawurlencode('Olá! Cheguei agora em Guapó e preciso de ajuda para fazer a matrícula das crianças pela internet.');
 
     $passos = [
         'Separe seus documentos e os de toda a família (RG ou Carteira de Identidade, CPF, certidões de nascimento ou casamento).',
@@ -68,6 +69,7 @@
                 ],
                 'nota' => 'A escola não confirma a matrícula se faltar a cópia de algum documento. Tire as cópias antes de ir.',
             ],
+            'ajuda' => 'Não tem internet ou celular para fazer a matrícula? A IBNP ajuda você a fazer a solicitação on-line. Chame a gente no WhatsApp.',
             'escolas' => [
                 'Educação infantil (CMEIs, rede municipal)' => [
                     'CMEI Geralda Rodrigues Novantino',
@@ -334,6 +336,18 @@
                                 </p>
                             </div>
                         @endif
+                        @if (!empty($tema['ajuda']))
+                            <div class="flex flex-col sm:flex-row sm:items-center gap-3 p-4 rounded-2xl bg-[#25D366]/10 border border-[#25D366]/40">
+                                <div class="flex items-start gap-2.5 flex-1">
+                                    <span class="material-symbols-outlined text-[#128C4A] text-[22px] shrink-0" aria-hidden="true">volunteer_activism</span>
+                                    <p class="text-sm font-semibold text-on-surface leading-relaxed">{{ $tema['ajuda'] }}</p>
+                                </div>
+                                <a href="{{ $waMatricula }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl bg-[#25D366] text-white text-xs font-bold shadow-sm hover:opacity-95 transition-all active:scale-95 whitespace-nowrap shrink-0">
+                                    <span class="material-symbols-outlined text-[16px]" aria-hidden="true">chat</span>
+                                    <span>Pedir ajuda</span>
+                                </a>
+                            </div>
+                        @endif
                         @if (!empty($tema['unidades']))
                             <div class="space-y-2">
                                 <span class="block text-xs font-bold uppercase tracking-wider text-secondary">Onde ir em Guapó</span>
@@ -424,6 +438,7 @@
                 <ul class="space-y-2.5">
                     <li class="flex items-start gap-2.5 text-sm text-on-surface"><span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5" aria-hidden="true">favorite</span><span><strong>Acolhimento:</strong> uma conversa sem pressa com a liderança, e a gente apresenta você à comunidade.</span></li>
                     <li class="flex items-start gap-2.5 text-sm text-on-surface"><span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5" aria-hidden="true">explore</span><span><strong>Orientação:</strong> ajudamos a encontrar o CRAS, a unidade de saúde e a escola mais perto de você.</span></li>
+                    <li class="flex items-start gap-2.5 text-sm text-on-surface"><span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5" aria-hidden="true">computer</span><span><strong>Serviços pela internet:</strong> se você não tem internet ou celular, ajudamos a fazer a matrícula das crianças e outras solicitações on-line.</span></li>
                     <li class="flex items-start gap-2.5 text-sm text-on-surface"><span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5" aria-hidden="true">diversity_3</span><span><strong>Comunidade:</strong> encontros às quartas e domingos, às 19:30, e atividades para as crianças.</span></li>
                 </ul>
             </div>

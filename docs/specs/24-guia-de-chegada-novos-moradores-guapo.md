@@ -23,6 +23,7 @@ A IBNP recebe muitas famílias que migram de outras regiões do país, especialm
 
 ### Non-Goals (Fora do Escopo)
 - **Não publicar endereços ou telefones de órgãos locais** (CRAS, UBS, Vapt Vupt de Guapó) sem confirmação oficial. A Secretaria de Educação, a Prefeitura e as unidades da Assistência Social já foram confirmadas no site oficial. Em 08/11/2026 não foi possível confirmá-los em fonte oficial; a página orienta a pessoa a procurar a prefeitura ou falar com a IBNP. Quando a igreja confirmar os dados, eles entram numa seção "Endereços em Guapó".
+- Ajuda confirmada pela liderança em 08/11/2026: a IBNP ajuda quem não tem internet ou celular a fazer a matrícula das crianças e outras solicitações on-line (aviso no bloco Escola e item em "Como a IBNP pode ajudar", com WhatsApp).
 - Não prometer ajuda material (cestas, moradia, dinheiro) que a igreja não tenha confirmado.
 - Não criar formulário de cadastro de recém-chegados.
 

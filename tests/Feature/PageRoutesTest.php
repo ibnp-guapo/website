@@ -262,6 +262,22 @@ final class PageRoutesTest extends TestCase
         $this->assertStringContainsString('tel:121', $output);
         $this->assertStringContainsString('wa.me/5562998700089', $output);
         $this->assertStringContainsString('Como a IBNP pode ajudar', $output);
+
+        // SEO: canonical, Open Graph e dados estruturados
+        $this->assertStringContainsString('<link rel="canonical" href="https://ibnpguapo.org.br/guia-de-chegada">', $output);
+        $this->assertStringContainsString('og:image" content="https://ibnpguapo.org.br/assets/images/og-guia-de-chegada.jpg"', $output);
+        $this->assertStringContainsString('twitter:card', $output);
+        $this->assertStringContainsString('index, follow', $output);
+        $this->assertMatchesRegularExpression('/<script type="application\/ld\+json">(.+?)<\/script>/s', $output);
+        preg_match('/<script type="application\/ld\+json">(.+?)<\/script>/s', $output, $ld);
+        $schema = json_decode($ld[1], true);
+        $this->assertIsArray($schema);
+        $tipos = array_column($schema['@graph'], '@type');
+        $this->assertSame(['WebPage', 'BreadcrumbList', 'HowTo', 'Church'], $tipos);
+        $this->assertCount(6, $schema['@graph'][2]['step']);
+        $this->assertFileExists(__DIR__ . '/../../public/assets/images/og-guia-de-chegada.jpg');
+        $this->assertStringContainsString('<loc>https://ibnpguapo.org.br/guia-de-chegada</loc>', (string) file_get_contents(__DIR__ . '/../../public/sitemap.xml'));
+        $this->assertStringContainsString('Sitemap: https://ibnpguapo.org.br/sitemap.xml', (string) file_get_contents(__DIR__ . '/../../public/robots.txt'));
         $this->assertStringContainsString('/assets/images/logo-ibnp.png', $output);
 
         // Links externos sempre em nova aba e seguros
@@ -283,5 +299,6 @@ final class PageRoutesTest extends TestCase
 
         $this->assertStringContainsString('href="/guia-de-chegada"', $output);
         $this->assertStringContainsString('Chegou agora em Guapó?', $output);
+        $this->assertStringContainsString('<link rel="canonical" href="https://ibnpguapo.org.br/">', $output);
     }
 }

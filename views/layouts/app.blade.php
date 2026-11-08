@@ -25,6 +25,33 @@
     <title>@yield('title', 'IBNP - Um Lugar de Paz, Comunhão e Adoração')</title>
     <meta name="description" content="@yield('meta_description', 'Portal oficial da IBNP em Guapó-GO. Comunidade, educação infantil e impacto social. Encontros abertos às quartas e domingos às 19:30.')">
 
+    @php
+        // SEO base (Spec 24): canonical, Open Graph e Twitter Card em todas as páginas
+        $seoBase = 'https://ibnpguapo.org.br';
+        $seoTitle = $__env->yieldContent('title', 'IBNP - Um Lugar de Paz, Comunhão e Adoração');
+        $seoDescription = $__env->yieldContent('meta_description', 'Portal oficial da IBNP em Guapó-GO. Comunidade, educação infantil e impacto social. Encontros abertos às quartas e domingos às 19:30.');
+        $seoUrl = isset($currentRoute) && $currentRoute !== null ? $seoBase . $currentRoute : null;
+        $seoImage = $seoBase . $__env->yieldContent('og_image', '/assets/images/hero-transformacao-infantil.jpg');
+    @endphp
+    @if ($seoUrl)
+        <meta name="robots" content="index, follow, max-image-preview:large">
+        <link rel="canonical" href="{{ $seoUrl }}">
+        <meta property="og:url" content="{{ $seoUrl }}">
+    @else
+        <meta name="robots" content="noindex, follow">
+    @endif
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="IBNP - Igreja Batista Nacional da Paz de Guapó">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="{!! $seoTitle !!}">
+    <meta property="og:description" content="{!! $seoDescription !!}">
+    <meta property="og:image" content="{{ $seoImage }}">
+    <meta property="og:image:alt" content="@yield('og_image_alt', 'IBNP em Guapó-GO')">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{!! $seoTitle !!}">
+    <meta name="twitter:description" content="{!! $seoDescription !!}">
+    <meta name="twitter:image" content="{{ $seoImage }}">
+
     <!-- Google Fonts Preconnect & Display Swap (Ad Grants Performance) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

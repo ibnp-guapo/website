@@ -1,7 +1,9 @@
 @extends('layouts.app')
 
-@section('title', 'Guia de Chegada: Novo em Guapó? | IBNP')
-@section('meta_description', 'Chegou agora em Guapó-GO? Guia prático da IBNP para novos moradores: documentos, saúde, escola das crianças, Cadastro Único, trabalho e título de eleitor.')
+@section('title', 'Mudou para Guapó-GO? Guia para novos moradores | IBNP')
+@section('meta_description', 'Chegou em Guapó-GO? Veja como regularizar documentos, Cartão SUS, escola das crianças, Cadastro Único, trabalho e título de eleitor. Guia gratuito da IBNP.')
+@section('og_image', '/assets/images/og-guia-de-chegada.jpg')
+@section('og_image_alt', 'Guia de Chegada da IBNP: Chegou agora em Guapó?')
 
 @php
     $wa = 'https://wa.me/5562998700089?text=' . rawurlencode('Olá! Cheguei agora em Guapó e gostaria de uma orientação da IBNP.');
@@ -111,6 +113,69 @@
         ['100', 'Disque Direitos Humanos'],
     ];
 @endphp
+
+@section('head')
+    @php
+        $base = 'https://ibnpguapo.org.br';
+        $schema = [
+            '@context' => 'https://schema.org',
+            '@graph' => [
+                [
+                    '@type' => 'WebPage',
+                    '@id' => $base . '/guia-de-chegada#pagina',
+                    'url' => $base . '/guia-de-chegada',
+                    'name' => 'Guia de Chegada para novos moradores de Guapó-GO',
+                    'description' => 'Orientações para quem acabou de se mudar para Guapó-GO: documentos, saúde, escola, Cadastro Único, trabalho, título de eleitor e moradia.',
+                    'inLanguage' => 'pt-BR',
+                    'primaryImageOfPage' => $base . '/assets/images/og-guia-de-chegada.jpg',
+                    'about' => ['@type' => 'City', 'name' => 'Guapó', 'containedInPlace' => ['@type' => 'State', 'name' => 'Goiás']],
+                    'audience' => ['@type' => 'Audience', 'audienceType' => 'Novos moradores e famílias migrantes em Guapó-GO'],
+                    'breadcrumb' => ['@id' => $base . '/guia-de-chegada#breadcrumb'],
+                    'mainEntity' => ['@id' => $base . '/guia-de-chegada#passos'],
+                    'publisher' => ['@id' => $base . '/#igreja'],
+                ],
+                [
+                    '@type' => 'BreadcrumbList',
+                    '@id' => $base . '/guia-de-chegada#breadcrumb',
+                    'itemListElement' => [
+                        ['@type' => 'ListItem', 'position' => 1, 'name' => 'Início', 'item' => $base . '/'],
+                        ['@type' => 'ListItem', 'position' => 2, 'name' => 'Guia de Chegada', 'item' => $base . '/guia-de-chegada'],
+                    ],
+                ],
+                [
+                    '@type' => 'HowTo',
+                    '@id' => $base . '/guia-de-chegada#passos',
+                    'name' => 'Primeiros passos para quem chegou em Guapó-GO',
+                    'step' => array_map(
+                        fn ($texto, $i) => ['@type' => 'HowToStep', 'position' => $i + 1, 'text' => $texto],
+                        $passos,
+                        array_keys($passos)
+                    ),
+                ],
+                [
+                    '@type' => 'Church',
+                    '@id' => $base . '/#igreja',
+                    'name' => 'Igreja Batista Nacional da Paz de Guapó (IBNP)',
+                    'url' => $base . '/',
+                    'logo' => $base . '/assets/images/logo-ibnp.png',
+                    'telephone' => '+55-62-99870-0089',
+                    'email' => 'contato@ibnpguapo.org.br',
+                    'address' => [
+                        '@type' => 'PostalAddress',
+                        'streetAddress' => 'Rua Presidente Kennedy, Qd. 21, Lt. 13, Centro',
+                        'addressLocality' => 'Guapó',
+                        'addressRegion' => 'GO',
+                        'postalCode' => '75350-000',
+                        'addressCountry' => 'BR',
+                    ],
+                ],
+            ],
+        ];
+    @endphp
+    <script type="application/ld+json">
+{!! json_encode($schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT | JSON_HEX_TAG) !!}
+    </script>
+@endsection
 
 @section('content')
     <!-- Hero: boas-vindas a quem chega -->

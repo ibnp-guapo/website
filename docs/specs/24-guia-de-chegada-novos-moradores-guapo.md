@@ -59,3 +59,9 @@ Somente regras nacionais ou estaduais estáveis, com link para o serviço oficia
 - [ ] Links externos abrem em nova aba com `rel="noopener noreferrer"`.
 - [ ] Nenhum endereço ou telefone local não confirmado.
 - [ ] Testes PHPUnit passando.
+
+## 5. SEO
+- **Layout (todas as páginas):** `<link rel="canonical">` e `og:url` a partir de `$currentRoute` com base `https://ibnpguapo.org.br`; Open Graph (`og:title`, `og:description`, `og:image`, `og:locale=pt_BR`) e Twitter Card `summary_large_image`. Páginas sem rota (404) recebem `noindex, follow`. Seções opcionais: `og_image` (caminho) e `og_image_alt`; padrão `hero-transformacao-infantil.jpg`.
+- **Guia de Chegada:** título "Mudou para Guapó-GO? Guia para novos moradores | IBNP", descrição de até 160 caracteres com os termos buscados (documentos, Cartão SUS, escola, Cadastro Único, título de eleitor) e imagem de compartilhamento 1200×630 `public/assets/images/og-guia-de-chegada.jpg` (para o link aparecer bem no WhatsApp).
+- **Dados estruturados (JSON-LD):** `WebPage` + `BreadcrumbList` + `HowTo` (os 6 primeiros passos) + `Church` (IBNP).
+- **`public/robots.txt`** e **`public/sitemap.xml`** com todas as rotas públicas. Ao criar uma página nova, inclua-a no sitemap.

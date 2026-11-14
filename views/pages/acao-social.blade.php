@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Ação Social & Projetos Comunitários | IBNP')
-@section('meta_description', 'Conheça os projetos sociais mantidos e apoiados pela IBNP: Escola Infantil em Guapó-GO e Escola Nova Esperança em Angola.')
+@section('meta_description', 'Conheça as ações sociais da IBNP em Guapó-GO (Natal Sem Fome, Coral de Natal Infantil e Guia de Chegada) e a Escola Nova Esperança, que apoiamos em Angola.')
 
 @section('content')
     <!-- Header Hero Ação Social (Warm Fellowship Design) -->
@@ -13,10 +13,10 @@
                     <span class="text-xs font-bold uppercase tracking-wider text-secondary">Responsabilidade &amp; Impacto Social</span>
                 </div>
                 <h1 class="text-3xl sm:text-5xl font-extrabold text-on-surface leading-[1.15] tracking-tight">
-                    Ação Social &amp; Educação Infantil
+                    Ação Social &amp; Cuidado com a Infância
                 </h1>
                 <p class="text-base sm:text-lg text-text-muted leading-relaxed">
-                    Acreditamos que a fé cristã se manifesta concretamente no cuidado ao próximo, na valorização da família e na proteção da infância. Conheça as iniciativas que mantemos localmente em Guapó e que apoiamos internacionalmente.
+                    Acreditamos que a fé cristã se manifesta concretamente no cuidado ao próximo, na valorização da família e na proteção da infância. Conheça as ações que realizamos em Guapó e a obra que apoiamos internacionalmente.
                 </p>
                 <div class="flex flex-wrap items-center gap-3 pt-2">
                     <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-surface-cream-warm text-secondary text-xs font-bold">
@@ -40,16 +40,16 @@
                     <div class="w-10 h-10 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center mb-3">
                         <span class="material-symbols-outlined text-[22px]">child_care</span>
                     </div>
-                    <span class="text-xs font-bold text-secondary uppercase tracking-wider block">Educação Infantil</span>
-                    <p class="text-xs text-text-muted mt-1 leading-relaxed">Cuidado integral, reforço e formação de valores morais para o desenvolvimento de cada criança.</p>
+                    <span class="text-xs font-bold text-secondary uppercase tracking-wider block">Cuidado com a Infância</span>
+                    <p class="text-xs text-text-muted mt-1 leading-relaxed">Atividades gratuitas de música e convivência, como o Coral de Natal Infantil.</p>
                 </div>
 
                 <div class="p-6 rounded-2xl bg-surface-cream-light/60 border border-outline-variant/30">
                     <div class="w-10 h-10 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center mb-3">
-                        <span class="material-symbols-outlined text-[22px]">home_work</span>
+                        <span class="material-symbols-outlined text-[22px]">volunteer_activism</span>
                     </div>
-                    <span class="text-xs font-bold text-secondary uppercase tracking-wider block">Mantenedores Locais</span>
-                    <p class="text-xs text-text-muted mt-1 leading-relaxed">Governança, infraestrutura e mantenedora oficial da Escola Social em Guapó-GO.</p>
+                    <span class="text-xs font-bold text-secondary uppercase tracking-wider block">Ação Local</span>
+                    <p class="text-xs text-text-muted mt-1 leading-relaxed">Campanhas solidárias e orientação gratuita às famílias de Guapó.</p>
                 </div>
 
                 <div class="p-6 rounded-2xl bg-surface-cream-light/60 border border-outline-variant/30">
@@ -77,12 +77,12 @@
             <span class="text-xs font-bold uppercase tracking-widest text-secondary block mb-2">Frentes de Impacto</span>
             <h2 class="text-2xl sm:text-4xl font-extrabold text-on-surface">Projetos Mantidos e Apoiados</h2>
             <p class="text-sm text-text-muted mt-2 leading-relaxed">
-                Cada iniciativa expressa nosso chamado e compromisso comunitário: atuamos diretamente como mantenedores de uma escola infantil em nossa cidade e cooperamos com ofertas regulares com uma obra educacional no continente africano.
+                Cada iniciativa expressa nosso chamado e compromisso comunitário: servimos diretamente as famílias da nossa cidade e cooperamos com ofertas regulares com uma obra educacional no continente africano.
             </p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-stretch">
-            <!-- Projeto 1: Escola Infantil em Guapó (Mantenedores) -->
+            <!-- Projeto 1: Ações Sociais em Guapó (realizadas pela IBNP) -->
             <article class="bg-surface-pure rounded-3xl border border-outline-variant/30 p-8 sm:p-10 elevation-warm-1 flex flex-col justify-between relative overflow-hidden">
                 <div class="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-bl-full pointer-events-none"></div>
                 <div>
@@ -90,7 +90,7 @@
                     <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
                         <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-secondary/15 text-secondary text-xs font-extrabold uppercase tracking-wide">
                             <span class="material-symbols-outlined text-[16px]">verified</span>
-                            <span>Mantenedores Oficiais</span>
+                            <span>Realizadas pela IBNP</span>
                         </span>
                         <span class="text-xs font-semibold text-text-muted flex items-center gap-1">
                             <span class="material-symbols-outlined text-[15px] text-primary">location_on</span>
@@ -99,31 +99,41 @@
                     </div>
 
                     <h3 class="text-2xl sm:text-3xl font-extrabold text-on-surface mb-3 tracking-tight">
-                        Escola Infantil em Guapó
+                        Ações Sociais em Guapó
                     </h3>
 
                     <p class="text-xs sm:text-sm text-secondary font-bold mb-4 uppercase tracking-wider">
-                        Iniciativa Educacional &amp; Comunitária Local
+                        Cuidado com as Famílias &amp; a Infância
                     </p>
 
                     <p class="text-sm text-text-muted leading-relaxed mb-6 font-normal">
-                        A <strong class="text-on-surface">Igreja Batista Nacional da Paz de Guapó (IBNP)</strong> é a entidade fundadora e <strong class="text-on-surface">mantenedora oficial</strong> da Escola Social e Infantil de Guapó. A iniciativa tem por finalidade oferecer suporte socioeducativo para crianças do município, atuando em colaboração direta com as famílias.
+                        A <strong class="text-on-surface">Igreja Batista Nacional da Paz de Guapó (IBNP)</strong> serve a cidade com campanhas solidárias, atividades gratuitas para as crianças e orientação para as famílias, em parceria com a rede de assistência social do município.
                     </p>
 
                     <!-- Lista de Ações e Escopo -->
                     <div class="space-y-3 mb-8">
                         <div class="flex items-start gap-3 text-xs sm:text-sm text-on-surface">
                             <span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check_circle</span>
-                            <span><strong>Educação Infantil &amp; Contraturno:</strong> Atividades de reforço do aprendizado, recreação saudável e formação cidadã.</span>
+                            <span><strong>Natal Sem Fome:</strong> campanha de cestas básicas para famílias em vulnerabilidade cadastradas no CRAS de Guapó.</span>
                         </div>
                         <div class="flex items-start gap-3 text-xs sm:text-sm text-on-surface">
                             <span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check_circle</span>
-                            <span><strong>Valores Éticos &amp; Socioemocionais:</strong> Ambiente de acolhimento centrado no amor ao próximo e no respeito mútuo.</span>
+                            <span><strong>Coral de Natal Infantil:</strong> iniciação vocal e canto coral gratuitos para crianças de 5 a 12 anos.</span>
                         </div>
                         <div class="flex items-start gap-3 text-xs sm:text-sm text-on-surface">
                             <span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check_circle</span>
-                            <span><strong>Suporte Comunitário às Famílias:</strong> Acompanhamento pastoral e apoio direto às mães e aos responsáveis.</span>
+                            <span><strong>Orientação às famílias:</strong> Guia de Chegada e blog com informações sobre documentos, escola, Cadastro Único e benefícios.</span>
                         </div>
+                    </div>
+
+                    <!-- Destaque: Natal Sem Fome -->
+                    <div id="natal-sem-fome" class="p-4 rounded-2xl bg-surface-cream-warm/50 border border-outline-variant/40 mb-4 space-y-1 scroll-mt-28">
+                        <span class="inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-wider text-primary">
+                            <span class="material-symbols-outlined text-[14px]">volunteer_activism</span>
+                            <span>Campanha Natal Sem Fome • Dezembro 2026</span>
+                        </span>
+                        <p class="text-xs font-bold text-on-surface">Meta: 50 cestas básicas para famílias atendidas pelo CRAS</p>
+                        <p class="text-[11px] text-text-muted">Doe R$ 5,20 pelo Pix, chave CNPJ <strong class="text-on-surface">02.930.019/0001-62</strong> (Igreja Batista Nacional da Paz de Guapó). Vai doar outro valor? Avise a igreja pelo WhatsApp, para a doação ir para a campanha.</p>
                     </div>
                     <!-- Destaque: Coral de Natal Aberto -->
                     <div class="p-4 rounded-2xl bg-surface-cream-warm/50 border border-outline-variant/40 mb-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
@@ -142,13 +152,6 @@
                     </div>
                 </div>
 
-                <!-- Box Informativo de Status da Página Dedicada -->
-                <div class="pt-6 border-t border-outline-variant/30 flex items-center justify-between gap-4">
-                    <div class="flex items-center gap-2 text-xs text-text-muted">
-                        <span class="material-symbols-outlined text-secondary text-[18px]">info</span>
-                        <span>A página institucional detalhada do projeto está em elaboração pela mantenedora.</span>
-                    </div>
-                </div>
             </article>
 
             <!-- Projeto 2: Escola Nova Esperança (Angola) (Apoiadores) -->

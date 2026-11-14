@@ -103,9 +103,9 @@
             <span class="text-xs sm:text-sm font-semibold text-on-surface">Avisos da Semana: Inscrições abertas para voluntariado comunitário e oficinas infantis.</span>
         </div>
         <div class="flex items-center gap-6 text-xs font-bold text-secondary">
-            <a href="#escola-social" class="flex items-center gap-1.5 hover:underline transition-all">
+            <a href="#acao-social-guapo" class="flex items-center gap-1.5 hover:underline transition-all">
                 <span class="material-symbols-outlined text-[16px]">volunteer_activism</span>
-                <span>Escola Social de Guapó</span>
+                <span>Ação Social em Guapó</span>
             </a>
         </div>
     </div>
@@ -442,8 +442,8 @@
     </div>
 </section>
 
-<!-- COMMUNITY & SOCIAL INITIATIVE SECTION ("Escola Social de Guapó") -->
-<section class="py-16 md:py-24 bg-surface-cream-warm/25 border-y border-outline-variant/30" id="escola-social">
+<!-- COMMUNITY & SOCIAL INITIATIVE SECTION (ações sociais em andamento em Guapó) -->
+<section class="py-16 md:py-24 bg-surface-cream-warm/25 border-y border-outline-variant/30" id="acao-social-guapo">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Section Header -->
         <div class="text-center max-w-3xl mx-auto mb-12">
@@ -452,67 +452,62 @@
                 <span>Iniciativa de Impacto Social Comunitário</span>
             </div>
             <h2 class="text-2xl sm:text-4xl font-extrabold text-on-surface">
-                Escola Social de Guapó
+                Ação Social em Guapó
             </h2>
             <p class="text-sm sm:text-base text-text-muted mt-2 leading-relaxed">
-                A IBNP é a entidade mantenedora legal da Escola Social de Guapó, iniciativa de acolhimento e suporte continuado para atender as famílias e a infância em Guapó com atividades socioeducativas, contraturno escolar e centro de convivência comunitária.
+                A IBNP serve a cidade com ações concretas de cuidado com as famílias e a infância: campanhas solidárias, atividades culturais para as crianças e orientação gratuita para quem precisa.
             </p>
         </div>
 
         <!-- 3 Pillars Cards Grid -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-            <!-- Pillar 1: Educação Infantil -->
-            <div class="p-6 rounded-2xl bg-surface-pure border border-outline-variant/30 elevation-warm-1 flex flex-col justify-between hover:border-secondary transition-all duration-300">
-                <div>
-                    <div class="w-12 h-12 rounded-xl bg-surface-cream-warm/50 text-secondary flex items-center justify-center mb-4">
-                        <span class="material-symbols-outlined text-[28px]">child_care</span>
-                    </div>
-                    <span class="text-xs font-bold uppercase tracking-wider text-secondary block mb-1">Primeira Infância</span>
-                    <h3 class="text-xl font-bold text-on-surface mb-2">Educação Infantil</h3>
-                    <p class="text-sm text-text-muted leading-relaxed mb-4">
-                        Ambiente acolhedor, seguro e lúdico para o desenvolvimento cognitivo e emocional das crianças, fundamentado em valores de amor ao próximo e cidadania.
-                    </p>
-                </div>
-                <div class="pt-3 border-t border-outline-variant/20 flex items-center gap-2 text-xs font-semibold text-on-surface">
-                    <span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
-                    <span>Atendimento e formação integral para a infância</span>
-                </div>
-            </div>
-
-            <!-- Pillar 2: Contraturno Escolar -->
             <div class="p-6 rounded-2xl bg-surface-pure border border-outline-variant/30 elevation-warm-1 flex flex-col justify-between hover:border-primary transition-all duration-300">
                 <div>
                     <div class="w-12 h-12 rounded-xl bg-surface-cream-warm/50 text-primary flex items-center justify-center mb-4">
-                        <span class="material-symbols-outlined text-[28px]">school</span>
+                        <span class="material-symbols-outlined text-[28px]">volunteer_activism</span>
                     </div>
-                    <span class="text-xs font-bold uppercase tracking-wider text-primary block mb-1">Apoio Pedagógico e Oficinas</span>
-                    <h3 class="text-xl font-bold text-on-surface mb-2">Contraturno Escolar</h3>
+                    <span class="text-xs font-bold uppercase tracking-wider text-primary block mb-1">Campanha Solidária</span>
+                    <h3 class="text-xl font-bold text-on-surface mb-2">Natal Sem Fome</h3>
                     <p class="text-sm text-text-muted leading-relaxed mb-4">
-                        Oficinas formativas, reforço de aprendizagem, alfabetização, arte e incentivo à leitura, oferecendo alternativas enriquecedoras no período complementar.
+                        Arrecadação de cestas básicas para famílias em vulnerabilidade cadastradas no CRAS de Guapó. Doe pelo Pix, chave CNPJ 02.930.019/0001-62.
                     </p>
                 </div>
-                <div class="pt-3 border-t border-outline-variant/20 flex items-center gap-2 text-xs font-semibold text-on-surface">
-                    <span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
-                    <span>Oficinas e suporte pedagógico no contraturno</span>
-                </div>
+                <a href="/acao-social#natal-sem-fome" class="pt-3 border-t border-outline-variant/20 flex items-center gap-2 text-xs font-semibold text-on-surface hover:text-primary">
+                    <span class="material-symbols-outlined text-primary text-[16px]">arrow_forward</span>
+                    <span>Como ajudar</span>
+                </a>
             </div>
-
-            <!-- Pillar 3: Centro Comunitário & Auditório -->
             <div class="p-6 rounded-2xl bg-surface-pure border border-outline-variant/30 elevation-warm-1 flex flex-col justify-between hover:border-secondary transition-all duration-300">
                 <div>
                     <div class="w-12 h-12 rounded-xl bg-surface-cream-warm/50 text-secondary flex items-center justify-center mb-4">
-                        <span class="material-symbols-outlined text-[28px]">diversity_3</span>
+                        <span class="material-symbols-outlined text-[28px]">music_note</span>
                     </div>
-                    <span class="text-xs font-bold uppercase tracking-wider text-secondary block mb-1">Integração Comunitária</span>
-                    <h3 class="text-xl font-bold text-on-surface mb-2">Centro Comunitário &amp; Auditório</h3>
+                    <span class="text-xs font-bold uppercase tracking-wider text-secondary block mb-1">Infância &amp; Cultura</span>
+                    <h3 class="text-xl font-bold text-on-surface mb-2">Coral de Natal Infantil</h3>
                     <p class="text-sm text-text-muted leading-relaxed mb-4">
-                        Espaço estruturado para encontros familiares, palestras socioeducativas, capacitação de pais e integração comunitária para o bem-estar de Guapó.
+                        Iniciação vocal e canto coral gratuitos para crianças de 5 a 12 anos, com apresentação no Natal.
                     </p>
                 </div>
-                <div class="pt-3 border-t border-outline-variant/20 flex items-center gap-2 text-xs font-semibold text-on-surface">
-                    <span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
-                    <span>Espaço de convivência familiar e cidadania</span>
+                <a href="/coral-natal" class="pt-3 border-t border-outline-variant/20 flex items-center gap-2 text-xs font-semibold text-on-surface hover:text-primary">
+                    <span class="material-symbols-outlined text-secondary text-[16px]">arrow_forward</span>
+                    <span>Inscrições e informações</span>
+                </a>
+            </div>
+            <div class="p-6 rounded-2xl bg-surface-pure border border-outline-variant/30 elevation-warm-1 flex flex-col justify-between hover:border-secondary transition-all duration-300">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-surface-cream-warm/50 text-secondary flex items-center justify-center mb-4">
+                        <span class="material-symbols-outlined text-[28px]">waving_hand</span>
+                    </div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-secondary block mb-1">Orientação às Famílias</span>
+                    <h3 class="text-xl font-bold text-on-surface mb-2">Guia de Chegada &amp; Blog</h3>
+                    <p class="text-sm text-text-muted leading-relaxed mb-4">
+                        Orientação gratuita para quem chega a Guapó e para quem precisa de documentos, escola, Cadastro Único e benefícios sociais.
+                    </p>
                 </div>
+                <a href="/guia-de-chegada" class="pt-3 border-t border-outline-variant/20 flex items-center gap-2 text-xs font-semibold text-on-surface hover:text-primary">
+                    <span class="material-symbols-outlined text-secondary text-[16px]">arrow_forward</span>
+                    <span>Ver o Guia de Chegada</span>
+                </a>
             </div>
         </div>
 
@@ -525,13 +520,13 @@
                 <div>
                     <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-cream-light text-secondary text-[11px] font-bold mb-1">
                         <span class="material-symbols-outlined text-[14px]">verified</span>
-                        <span>Iniciativa Comunitária • Mantenedora: IBNP (CNPJ 02.930.019/0001-62)</span>
+                        <span>Iniciativas da IBNP (CNPJ 02.930.019/0001-62)</span>
                     </div>
                     <h3 class="text-lg sm:text-xl font-bold text-on-surface">
-                        Conheça o projeto e participe das ações sociais da nossa comunidade
+                        Conheça nossas ações e participe da ação social da nossa comunidade
                     </h3>
                     <p class="text-xs sm:text-sm text-text-muted mt-1 leading-relaxed">
-                        Conheça as iniciativas socioeducativas mantidas e apoiadas pela IBNP em Guapó e em Angola, conferindo nossas frentes de atuação e formas de apoiar.
+                        Conheça as ações sociais da IBNP em Guapó e a escola que apoiamos em Angola, e veja como você pode ajudar.
                     </p>
                 </div>
             </div>
@@ -737,7 +732,7 @@
                     <div class="flex items-start justify-between gap-4">
                         <div>
                             <span class="text-xs text-primary uppercase tracking-wider block font-bold">Apoio Social / Doações & Parcerias Mantenedoras via PIX</span>
-                            <p class="text-xs text-text-muted mt-0.5">CNPJ da mantenedora (Igreja Batista Nacional da Paz de Guapó):</p>
+                            <p class="text-xs text-text-muted mt-0.5">CNPJ da Igreja Batista Nacional da Paz de Guapó:</p>
                             <code class="text-base font-bold text-on-surface font-mono tracking-tight block mt-1" id="pixKey">02.930.019/0001-62</code>
                         </div>
                         <button type="button" class="p-2.5 rounded-xl bg-surface-cream-light hover:bg-surface-cream-warm text-secondary border border-outline-variant/50 transition-colors flex items-center gap-1 text-xs font-bold shrink-0" onclick="copyPixKey()" title="Copiar Chave PIX">

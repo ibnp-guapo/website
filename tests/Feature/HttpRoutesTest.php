@@ -157,7 +157,8 @@ final class HttpRoutesTest extends TestCase
         $this->assertNotEmpty($output);
         $this->assertStringContainsString('<!DOCTYPE html>', $output);
         $this->assertStringContainsString('Ação Social', $output);
-        $this->assertStringContainsString('Escola Infantil em Guapó', $output);
+        $this->assertStringContainsString('Ações Sociais em Guapó', $output);
+        $this->assertStringNotContainsString('Escola Infantil em Guapó', $output);
         $this->assertStringContainsString('Escola Nova Esperança', $output);
         $this->assertStringContainsString('Angola', $output);
         $this->assertStringContainsString('https://social.imne.ao/', $output);

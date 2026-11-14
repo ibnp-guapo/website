@@ -76,3 +76,4 @@ O desenvolvimento deste portal segue a metodologia **Spec-Driven Development (SD
 - [x] [SPEC 18: Transcrição Akoma Ntoso do Regimento Interno e Ativação do Visualizador](docs/specs/18-transcricao-akoma-ntoso-regimento-interno-e-ativacao-visualizador.md)
 - [x] [SPEC 19: Conformidade Google for Nonprofits / Ad Grants — Missão Institucional, Atividades e Serviços Evidentes](docs/specs/19-missao-institucional-e-atividades-evidentes-google-nonprofits.md)
 - [x] [SPEC 25: Blog da IBNP (guias de direitos e serviços em Guapó)](docs/specs/25-blog-guias-direitos-servicos-guapo.md)
+- [x] [SPEC 26: Remoção da Escola Social de Guapó (projeto inexistente)](docs/specs/26-remocao-escola-social.md)

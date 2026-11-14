@@ -39,13 +39,18 @@ final class PageRoutesTest extends TestCase
         $this->assertStringContainsString('wa.me/5562998700089', $output);
         $this->assertStringContainsString('/assets/images/logo-ibnp.png', $output);
 
-        // Validações da seção e links da Ação Social e Ministérios (Spec 15 e Spec 20)
-        $this->assertStringContainsString('Escola Social de Guapó', $output);
+        // Validações da seção e links da Ação Social e Ministérios (Spec 15, Spec 20 e Spec 26)
+        // Spec 26: a Escola Social de Guapó não existe e não pode aparecer no site.
+        $this->assertStringContainsString('Ação Social em Guapó', $output);
+        $this->assertStringContainsString('Natal Sem Fome', $output);
+        $this->assertStringContainsString('Coral de Natal Infantil', $output);
         $this->assertStringContainsString('/acao-social', $output);
         $this->assertStringNotContainsString('https://social.ibnpguapo.org.br/', $output);
+        $this->assertStringNotContainsString('Escola Social', $output);
+        $this->assertStringNotContainsString('escola-social', $output);
+        $this->assertStringNotContainsString('Contraturno Escolar', $output);
+        $this->assertStringNotContainsString('Centro Comunitário', $output);
         $this->assertStringContainsString('Educação Infantil', $output);
-        $this->assertStringContainsString('Contraturno Escolar', $output);
-        $this->assertStringContainsString('Centro Comunitário', $output);
         $this->assertStringContainsString('child_care', $output);
 
         // Conformidade Ad Grants: ausência estrita de termos de "em construção/obras"
@@ -104,8 +109,9 @@ final class PageRoutesTest extends TestCase
         $this->assertStringContainsString('assignment', $output);
         $this->assertStringContainsString('elevation-warm-1', $output);
 
-        // Validações institucionais da mantenedora da Escola Social (Spec 15 e Spec 20)
-        $this->assertStringContainsString('Mantenedora da Escola Social de Guapó', $output);
+        // Responsabilidade social (Spec 26: sem Escola Social, que não existe)
+        $this->assertStringContainsString('Responsabilidade Social', $output);
+        $this->assertStringNotContainsString('Escola Social', $output);
         $this->assertStringContainsString('/acao-social', $output);
         $this->assertStringNotContainsString('https://social.ibnpguapo.org.br/', $output);
         $this->assertStringNotContainsString('construction', $output);
@@ -225,11 +231,14 @@ final class PageRoutesTest extends TestCase
 
         $this->assertNotEmpty($output);
         $this->assertStringContainsString('Ação Social', $output);
-        $this->assertStringContainsString('Escola Infantil em Guapó', $output);
+        $this->assertStringContainsString('Ações Sociais em Guapó', $output);
+        $this->assertStringContainsString('id="natal-sem-fome"', $output);
+        $this->assertStringNotContainsString('Escola Infantil em Guapó', $output);
+        $this->assertStringNotContainsString('Escola Social', $output);
+        $this->assertStringNotContainsString('Mantenedores', $output);
         $this->assertStringContainsString('Escola Nova Esperança', $output);
         $this->assertStringContainsString('Angola', $output);
         $this->assertStringContainsString('Guapó', $output);
-        $this->assertStringContainsString('Mantenedores', $output);
         $this->assertStringContainsString('Apoiadores', $output);
         $this->assertStringContainsString('ofertas mensais', $output);
         $this->assertStringNotContainsString('https://social.ibnpguapo.org.br/', $output);

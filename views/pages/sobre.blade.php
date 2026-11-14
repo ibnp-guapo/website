@@ -100,19 +100,19 @@
                     </div>
                 </section>
 
-                <!-- Responsabilidade Social & Mantenedora -->
+                <!-- Responsabilidade Social -->
                 <section>
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-cream-warm/40 text-secondary text-xs font-bold mb-3 border border-outline-variant/30">
                         <span class="material-symbols-outlined text-[16px]">volunteer_activism</span>
                         <span>Iniciativa Comunitária &amp; Ação Social</span>
                     </div>
-                    <h2 class="text-2xl sm:text-3xl font-extrabold text-on-surface tracking-tight mt-1 mb-6">Mantenedora da Escola Social de Guapó</h2>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-on-surface tracking-tight mt-1 mb-6">Responsabilidade Social</h2>
                     <div class="prose prose-slate max-w-none text-text-muted leading-relaxed space-y-4">
                         <p>
-                            Entendemos que a fé cristã genuína se expressa no amor prático e no serviço à comunidade. Como parte integral de sua vocação institucional e cidadã no município de Guapó, a IBNP é a entidade mantenedora legal da <strong class="text-on-surface font-bold">Escola Social de Guapó</strong>.
+                            Entendemos que a fé cristã genuína se expressa no amor prático e no serviço à comunidade. Por isso a IBNP serve Guapó com ações concretas de cuidado com as famílias e a infância.
                         </p>
                         <p>
-                            A instituição atua no acolhimento e suporte continuado a crianças e famílias de Guapó, promovendo educação infantil de qualidade, reforço pedagógico no contraturno escolar, oficinas culturais e artísticas, além de um centro comunitário com auditório multiuso aberto a projetos de integração humana, cidadania e convivência social.
+                            Entre elas estão a campanha <strong class="text-on-surface font-bold">Natal Sem Fome</strong>, de cestas básicas para famílias atendidas pelo CRAS, o <strong class="text-on-surface font-bold">Coral de Natal Infantil</strong>, gratuito para crianças de 5 a 12 anos, e a orientação gratuita a novos moradores pelo <strong class="text-on-surface font-bold">Guia de Chegada</strong> e pelo blog. Fora do Brasil, apoiamos com ofertas regulares a Escola Nova Esperança, em Angola.
                         </p>
                     </div>
                     <div class="mt-6 p-6 rounded-2xl bg-surface-pure border border-outline-variant/30 elevation-warm-1 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
@@ -121,8 +121,8 @@
                                 <span class="material-symbols-outlined text-[24px]">volunteer_activism</span>
                             </div>
                             <div>
-                                <h3 class="text-base font-bold text-on-surface">Escola Social de Guapó</h3>
-                                <p class="text-xs text-text-muted">Iniciativa comunitária • Educação infantil, contraturno e centro comunitário</p>
+                                <h3 class="text-base font-bold text-on-surface">Ação Social da IBNP</h3>
+                                <p class="text-xs text-text-muted">Natal Sem Fome • Coral de Natal Infantil • Guia de Chegada • Angola</p>
                             </div>
                         </div>
                         <a href="/acao-social" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-secondary text-on-secondary text-xs font-bold shadow-sm hover:bg-secondary/90 transition-all active:scale-95 whitespace-nowrap" title="Conhecer as ações e projetos sociais da IBNP">
@@ -301,12 +301,12 @@
                     </div>
                 </div>
 
-                <!-- Card Escola Social Mantida -->
+                <!-- Card Ação Social -->
                 <div class="bg-surface-pure rounded-3xl border border-outline-variant/30 p-8 elevation-warm-1">
                     <span class="text-xs font-bold uppercase tracking-widest text-secondary block mb-3">Ação Comunitária</span>
-                    <h3 class="text-xl font-extrabold text-on-surface mb-3">Escola Social de Guapó</h3>
+                    <h3 class="text-xl font-extrabold text-on-surface mb-3">Ação Social da IBNP</h3>
                     <p class="text-xs text-text-muted leading-relaxed mb-6 font-normal">
-                        Conheça os projetos e iniciativas de acolhimento social mantidos pela igreja para a infância e as famílias de Guapó.
+                        Conheça as ações da igreja para as famílias e a infância de Guapó e a escola que apoiamos em Angola.
                     </p>
                     <a href="/acao-social" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-primary text-on-primary text-xs font-bold shadow-sm hover:bg-secondary-container transition-all active:scale-95" title="Conhecer as ações e projetos sociais da IBNP">
                         <span class="material-symbols-outlined text-[18px]">volunteer_activism</span>

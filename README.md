@@ -23,6 +23,8 @@ Portal oficial da **Igreja Batista Nacional da Paz de Guapó** (IBNP Guapó), fu
 | `/regimento` | **Regimento Interno:** Normas eclesiásticas, ministérios e ritos | Akoma Ntoso 3.0 |
 | `/sobre` | **Sobre Nós:** História da IBN da Paz em Guapó-GO, declaração de fé e liderança | HTML / Blade |
 | `/contato` | **Contato & Localização:** Mapa interativo, WhatsApp e canais oficiais | HTML / Blade |
+| `/blog` | **Blog:** guias práticos de direitos e serviços em Guapó (posts em `data/blog/*.md`) | Markdown → HTML / Blade |
+| `/blog/{slug}` | **Post do blog:** conteúdo, SEO e JSON-LD `BlogPosting` | Markdown → HTML / Blade |
 
 ---
 
@@ -73,3 +75,4 @@ O desenvolvimento deste portal segue a metodologia **Spec-Driven Development (SD
 - [x] [SPEC 17: Transição da Linguagem Institucional para Foco em Impacto Social e Educação Infantil](docs/specs/17-transicao-linguagem-impacto-social-educacao-infantil.md) (Issue #15)
 - [x] [SPEC 18: Transcrição Akoma Ntoso do Regimento Interno e Ativação do Visualizador](docs/specs/18-transcricao-akoma-ntoso-regimento-interno-e-ativacao-visualizador.md)
 - [x] [SPEC 19: Conformidade Google for Nonprofits / Ad Grants — Missão Institucional, Atividades e Serviços Evidentes](docs/specs/19-missao-institucional-e-atividades-evidentes-google-nonprofits.md)
+- [x] [SPEC 25: Blog da IBNP (guias de direitos e serviços em Guapó)](docs/specs/25-blog-guias-direitos-servicos-guapo.md)

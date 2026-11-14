@@ -95,6 +95,19 @@ $router->get('/guia-de-chegada', function () use ($pageController): void {
     $pageController->guiaDeChegada();
 });
 
+// Controller do Blog (Spec 25)
+$blogController = new \App\Controllers\BlogController();
+
+// Rota 11: Blog (lista de posts)
+$router->get('/blog', function () use ($blogController): void {
+    $blogController->index();
+});
+
+// Rota 11.1: Post do blog
+$router->get('/blog/([a-z0-9-]+)', function (string $slug) use ($blogController): void {
+    $blogController->show($slug);
+});
+
 // Tratamento 404 (Not Found)
 $router->set404(function () use ($pageController): void {
     $pageController->notFound();

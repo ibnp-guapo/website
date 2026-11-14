@@ -40,7 +40,7 @@
     @else
         <meta name="robots" content="noindex, follow">
     @endif
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="@yield('og_type', 'website')">
     <meta property="og:site_name" content="IBNP - Igreja Batista Nacional da Paz de Guapó">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:title" content="{!! $seoTitle !!}">
@@ -127,6 +127,10 @@
                 <span class="material-symbols-outlined text-[18px] text-secondary">waving_hand</span>
                 <span>Novo em Guapó? Guia de Chegada</span>
             </a>
+            <a href="/blog" class="flex items-center gap-1.5 py-2 text-sm font-semibold {{ str_starts_with($currentRoute ?? '', '/blog') ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">
+                <span class="material-symbols-outlined text-[18px] text-secondary">menu_book</span>
+                <span>Blog: direitos e serviços em Guapó</span>
+            </a>
             <a href="/contato" class="block py-2 text-sm font-semibold {{ ($currentRoute ?? '') === '/contato' ? 'text-primary font-bold' : 'text-on-surface hover:text-primary' }}">Contato</a>
             <div class="pt-3 border-t border-outline-variant/30 flex flex-col gap-2">
                 <a href="/programacao" class="flex items-center justify-center gap-1.5 w-full bg-primary text-on-primary py-3 rounded-xl text-xs font-bold shadow-sm">
@@ -180,6 +184,7 @@
                         <a class="text-text-muted hover:text-primary transition-colors duration-200" href="/sobre">Sobre Nós</a>
                         <a class="text-text-muted hover:text-primary transition-colors duration-200" href="/acao-social">Ação Social</a>
                         <a class="text-text-muted hover:text-primary transition-colors duration-200" href="/guia-de-chegada">Novo em Guapó</a>
+                        <a class="text-text-muted hover:text-primary transition-colors duration-200" href="/blog">Blog</a>
                         <a class="text-text-muted hover:text-primary transition-colors duration-200" href="/contato">Contato</a>
                         <a class="text-text-muted hover:text-primary transition-colors duration-200" href="/programacao.ics">Baixar Calendário (.ics)</a>
                         <a class="text-text-muted hover:text-primary transition-colors duration-200" href="/estatuto/xml">Estatuto XML</a>

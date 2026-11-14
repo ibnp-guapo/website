@@ -39,3 +39,25 @@ body {
 .elevation-warm-2 {
   box-shadow: 0 12px 32px -4px rgba(244, 53, 23, 0.12), 0 4px 12px -2px rgba(30, 41, 59, 0.06);
 }
+
+/* Blog (Spec 25): tipografia do conteúdo gerado a partir do Markdown */
+.artigo { color: #111c2d; font-size: 1.0625rem; line-height: 1.75; }
+.artigo > * + * { margin-top: 1.1rem; }
+.artigo h2 { margin-top: 2.5rem; font-size: 1.5rem; line-height: 1.3; font-weight: 800; letter-spacing: -0.01em; color: #111c2d; }
+.artigo h3 { margin-top: 2rem; font-size: 1.2rem; line-height: 1.35; font-weight: 700; color: #111c2d; }
+.artigo strong { font-weight: 700; color: #111c2d; }
+.artigo a { color: #b61800; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.artigo a:hover { color: #a83900; }
+.artigo ul, .artigo ol { padding-left: 1.4rem; }
+.artigo ul { list-style: disc; }
+.artigo ol { list-style: decimal; }
+.artigo li + li { margin-top: 0.4rem; }
+.artigo li::marker { color: #a83900; font-weight: 700; }
+.artigo blockquote { border-left: 4px solid #b61800; background: #ffffff; border-radius: 0 1rem 1rem 0; padding: 1rem 1.25rem; box-shadow: 0 4px 20px -2px rgba(243, 101, 41, 0.08); }
+.artigo blockquote p + p { margin-top: 0.25rem; }
+.artigo em { color: #64748b; }
+.artigo hr { border: 0; border-top: 1px solid #e7bdb5; margin: 2.5rem 0; }
+.artigo-tabela { overflow-x: auto; border: 1px solid rgba(231, 189, 181, 0.6); border-radius: 1rem; background: #ffffff; }
+.artigo table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; line-height: 1.5; }
+.artigo th { background: #fbf8f3; text-align: left; font-weight: 700; padding: 0.75rem 1rem; border-bottom: 1px solid rgba(231, 189, 181, 0.6); }
+.artigo td { padding: 0.75rem 1rem; border-top: 1px solid rgba(231, 189, 181, 0.35); vertical-align: top; }

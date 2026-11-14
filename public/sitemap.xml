@@ -19,6 +19,30 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://ibnpguapo.org.br/blog</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ibnpguapo.org.br/blog/cadastro-unico-em-guapo</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ibnpguapo.org.br/blog/bolsa-familia-quem-tem-direito</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ibnpguapo.org.br/blog/cadastro-unico-desatualizado</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://ibnpguapo.org.br/acao-social</loc>
     <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>

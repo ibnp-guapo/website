@@ -281,6 +281,39 @@
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20 space-y-14">
 
+        <!-- Vídeo do Guia de Chegada (YouTube, carregado só no clique para não pesar a página) -->
+        <section id="video" aria-labelledby="titulo-video" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-4 space-y-3">
+                <span class="text-xs font-bold uppercase tracking-widest text-secondary block">Prefere assistir?</span>
+                <h2 id="titulo-video" class="text-2xl sm:text-4xl font-extrabold text-on-surface tracking-tight">O guia em vídeo</h2>
+                <p class="text-sm text-text-muted leading-relaxed">Em poucos minutos, explicamos o que resolver nas primeiras semanas em Guapó: documentos, saúde, escola, Cadastro Único, trabalho, ônibus, título de eleitor e aluguel. Compartilhe com quem acabou de chegar.</p>
+            </div>
+            <div class="lg:col-span-8">
+                <div class="relative w-full aspect-video rounded-3xl overflow-hidden bg-on-surface elevation-warm-2" data-youtube="m8mQ9-vStqA">
+                    <a href="https://www.youtube.com/watch?v=m8mQ9-vStqA" target="_blank" rel="noopener noreferrer" class="group absolute inset-0 flex items-end justify-end p-4 sm:p-6" aria-label="Assistir ao vídeo do Guia de Chegada no YouTube">
+                        <img src="https://i.ytimg.com/vi/m8mQ9-vStqA/maxresdefault.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
+                        <span class="relative flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-primary text-on-primary shadow-lg group-hover:scale-105 transition-transform">
+                            <span class="material-symbols-outlined text-[44px]" aria-hidden="true">play_arrow</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <script>
+            document.querySelectorAll('[data-youtube]').forEach(function (box) {
+                box.querySelector('a').addEventListener('click', function (e) {
+                    e.preventDefault();
+                    var f = document.createElement('iframe');
+                    f.src = 'https://www.youtube-nocookie.com/embed/' + box.dataset.youtube + '?autoplay=1&rel=0';
+                    f.title = 'Vídeo: Guia de Chegada a Guapó';
+                    f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+                    f.allowFullscreen = true;
+                    f.className = 'absolute inset-0 w-full h-full border-0';
+                    box.replaceChildren(f);
+                });
+            });
+        </script>
+
         <!-- Primeiros passos -->
         <section id="primeiros-passos" aria-labelledby="titulo-passos" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             <div class="lg:col-span-4 space-y-3">

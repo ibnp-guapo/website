@@ -55,13 +55,18 @@
     <!-- Google Fonts Preconnect & Display Swap (Ad Grants Performance) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="/assets/css/app.css?v=1.0.5" as="style">
+    @php
+        // Versão do CSS = data de modificação do arquivo (definida em public/index.php): muda a cada build
+        // publicado, e o navegador baixa o CSS novo em vez de usar a cópia em cache (que dura 1 mês).
+        $cssVersion = defined('IBNP_CSS_VERSION') ? IBNP_CSS_VERSION : '1.0.6';
+    @endphp
+    <link rel="preload" href="/assets/css/app.css?v={{ $cssVersion }}" as="style">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" />
     <!-- Plus Jakarta Sans font family -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Design System CSS -->
-    <link rel="stylesheet" href="/assets/css/app.css?v=1.0.5">
+    <link rel="stylesheet" href="/assets/css/app.css?v={{ $cssVersion }}">
     <link rel="icon" type="image/png" sizes="64x64" href="/assets/images/favicon-ibnp.png?v=2">
     <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png?v=2">
 

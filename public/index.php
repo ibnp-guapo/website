@@ -6,6 +6,9 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 use Bramus\Router\Router;
 
+// Cache busting do CSS (ver views/layouts/app.blade.php)
+define('IBNP_CSS_VERSION', (string) (@filemtime(__DIR__ . '/assets/css/app.css') ?: '1.0.6'));
+
 $router = new Router();
 
 // Controller de Páginas Institucionais (Blade)

@@ -12,16 +12,11 @@
       gtag('config', 'AW-18472451188');
     </script>
 
-    <!-- Conversões de clique (Google Ads): Contato e Ver rota -->
+    <!-- Conversão de clique (Google Ads): Contato. "Ver rota" foi excluída (não serve como meta no Ad Grants). -->
     <script>
       window.gtagReportConversionContato = function () {
         gtag('event', 'conversion', {
           'send_to': 'AW-18472451188/c2YECKeizsAdEPT4rOhE'
-        });
-      };
-      window.gtagReportConversionVerRota = function () {
-        gtag('event', 'conversion', {
-          'send_to': 'AW-18472451188/xARLCOaizsAdEPT4rOhE'
         });
       };
     </script>
@@ -247,7 +242,7 @@
             }
         }
 
-        // Dispara conversões Ads no clique: Contato (WhatsApp/e-mail) e Ver rota (Maps)
+        // Dispara a conversão Ads "Contato" no clique em WhatsApp ou e-mail
         document.addEventListener('click', function (event) {
             var anchor = event.target.closest('a');
             if (!anchor) {
@@ -257,12 +252,6 @@
             if (href.indexOf('wa.me/') !== -1 || href.indexOf('mailto:contato@ibnpguapo.org.br') === 0) {
                 if (typeof window.gtagReportConversionContato === 'function') {
                     window.gtagReportConversionContato();
-                }
-                return;
-            }
-            if (href.indexOf('maps.google.com') !== -1 || href.indexOf('google.com/maps') !== -1) {
-                if (typeof window.gtagReportConversionVerRota === 'function') {
-                    window.gtagReportConversionVerRota();
                 }
             }
         });

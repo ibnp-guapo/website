@@ -219,12 +219,12 @@ final class PageRoutesTest extends TestCase
         $this->assertStringContainsString("gtag('event', 'conversion'", $output);
         $this->assertStringNotContainsString('AW-18472451188/J9UECKfm5IMdEPT4rOhE', $output);
         $this->assertStringContainsString('AW-18472451188/c2YECKeizsAdEPT4rOhE', $output);
-        $this->assertStringContainsString('AW-18472451188/xARLCOaizsAdEPT4rOhE', $output);
+        $this->assertStringNotContainsString('AW-18472451188/xARLCOaizsAdEPT4rOhE', $output, 'A conversão "Ver rota" foi excluída no Google Ads.');
         $this->assertStringContainsString('gtagReportConversionContato', $output);
-        $this->assertStringContainsString('gtagReportConversionVerRota', $output);
+        $this->assertStringNotContainsString('gtagReportConversionVerRota', $output);
         $this->assertSame(1, substr_count($output, 'googletagmanager.com/gtag/js'), 'O script da tag do Google deve ser incluído exatamente uma vez.');
         $this->assertSame(2, substr_count($output, 'G-4BJ1SVS90P'), 'O ID do GA4 deve aparecer no src e no config.');
-        $this->assertGreaterThanOrEqual(3, substr_count($output, 'AW-18472451188'), 'O ID do Ads deve aparecer no config e nos snippets de conversão.');
+        $this->assertGreaterThanOrEqual(2, substr_count($output, 'AW-18472451188'), 'O ID do Ads deve aparecer no config e no snippet de conversão Contato.');
     }
 
     public function testAcaoSocialRendersBladeViewWithProjects(): void

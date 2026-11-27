@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Inscrição para o Coral de Natal | Programa de Desenvolvimento Infantil - IBNP')
-@section('meta_description', 'Oficina de canto coral infantil da IBNP em Guapó para apresentação especial de Natal no mês de dezembro. 30 vagas gratuitas para crianças de 5 a 12 anos.')
+@section('title', 'Coral de Natal Infantil | Programa de Desenvolvimento Infantil - IBNP')
+@section('meta_description', 'Oficina gratuita de canto coral para crianças de 5 a 12 anos em Guapó, com apresentação de Natal. Próxima edição em dezembro de 2027: peça para ser avisado.')
 
 @section('content')
     <!-- Hero Section Coral de Natal -->
@@ -46,7 +46,7 @@
                         </span>
                         <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-cream-warm text-on-surface text-xs font-bold">
                             <span class="material-symbols-outlined text-[16px]">event</span>
-                            <span>Mês de dezembro</span>
+                            <span>{{ empty($inscricoesAbertas) ? 'Próxima edição: ' . ($proximaEdicao ?? 'dezembro de 2027') : 'Mês de dezembro' }}</span>
                         </span>
                     </div>
                 </div>
@@ -81,13 +81,15 @@
         <!-- Indicador de Status das Vagas -->
         <div class="p-6 rounded-3xl bg-surface-pure border border-outline-variant/30 elevation-warm-1 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div class="flex items-center gap-3">
-                <div class="w-12 h-12 rounded-2xl {{ ($statusVagas['esgotado'] ?? false) ? 'bg-error/10 text-error' : 'bg-secondary/10 text-secondary' }} flex items-center justify-center shrink-0">
-                    <span class="material-symbols-outlined text-[26px]">{{ ($statusVagas['esgotado'] ?? false) ? 'event_busy' : 'how_to_reg' }}</span>
+                <div class="w-12 h-12 rounded-2xl {{ (empty($inscricoesAbertas) || ($statusVagas['esgotado'] ?? false)) ? 'bg-error/10 text-error' : 'bg-secondary/10 text-secondary' }} flex items-center justify-center shrink-0">
+                    <span class="material-symbols-outlined text-[26px]">{{ (empty($inscricoesAbertas) || ($statusVagas['esgotado'] ?? false)) ? 'event_busy' : 'how_to_reg' }}</span>
                 </div>
                 <div>
                     <span class="text-xs font-bold uppercase tracking-wider text-text-muted block">Status das Inscrições</span>
                     <h2 class="text-lg font-extrabold text-on-surface">
-                        @if($statusVagas['esgotado'] ?? false)
+                        @if(empty($inscricoesAbertas))
+                            Inscrições encerradas • Próxima edição em {{ $proximaEdicao ?? 'dezembro de 2027' }}
+                        @elseif($statusVagas['esgotado'] ?? false)
                             30 vagas preenchidas • Inscrições Esgotadas
                         @else
                             {{ $statusVagas['restantes'] ?? 30 }} de 30 vagas gratuitas disponíveis
@@ -102,7 +104,24 @@
             </div>
         </div>
 
-        @if(!empty($sucesso) && !empty($inscricao))
+        @if(empty($inscricoesAbertas))
+            <!-- Inscrições fechadas: próxima edição -->
+            <div class="p-8 sm:p-10 rounded-3xl bg-surface-pure border border-outline-variant/40 elevation-warm-1 text-center space-y-4">
+                <div class="w-16 h-16 rounded-full bg-surface-cream-warm text-secondary flex items-center justify-center mx-auto">
+                    <span class="material-symbols-outlined text-[32px]">music_note</span>
+                </div>
+                <h3 class="text-2xl font-extrabold text-on-surface">O Coral de Natal volta em {{ $proximaEdicao ?? 'dezembro de 2027' }}</h3>
+                <p class="text-sm text-text-muted max-w-xl mx-auto leading-relaxed">
+                    Neste ano não teremos o Coral de Natal Infantil. A próxima edição será no fim de 2027, com vagas gratuitas para crianças de 5 a 12 anos. Quer ser avisado quando as inscrições abrirem? Mande uma mensagem para a gente.
+                </p>
+                <div class="pt-2">
+                    <a href="https://wa.me/5562998700089?text=Ol%C3%A1!%20Quero%20ser%20avisado(a)%20quando%20abrirem%20as%20inscri%C3%A7%C3%B5es%20do%20Coral%20de%20Natal%20Infantil%20da%20IBNP." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#25D366] text-white text-xs font-bold shadow-sm hover:opacity-95 transition-all">
+                        <span class="material-symbols-outlined text-[18px]">chat</span>
+                        <span>Quero ser avisado no WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        @elseif(!empty($sucesso) && !empty($inscricao))
             <!-- Mensagem de Sucesso -->
             <div class="p-8 sm:p-10 rounded-3xl bg-surface-pure border-2 border-secondary/40 elevation-warm-1 space-y-6 animate-fade-in">
                 <div class="flex items-center gap-3 text-secondary">
@@ -294,7 +313,7 @@
                         <span>Quando serão os ensaios?</span>
                     </span>
                     <p class="text-text-muted leading-relaxed">
-                        Os ensaios preparatórios acontecerão ao longo do mês de dezembro na sede da igreja em Guapó, com cronograma informado diretamente no WhatsApp dos responsáveis.
+                        Os ensaios preparatórios acontecem ao longo do mês de dezembro na sede da igreja em Guapó, com cronograma informado diretamente no WhatsApp dos responsáveis. A próxima edição será em {{ $proximaEdicao ?? 'dezembro de 2027' }}.
                     </p>
                 </div>
 

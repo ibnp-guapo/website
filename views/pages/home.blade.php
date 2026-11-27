@@ -485,12 +485,12 @@
                     <span class="text-xs font-bold uppercase tracking-wider text-secondary block mb-1">Infância &amp; Cultura</span>
                     <h3 class="text-xl font-bold text-on-surface mb-2">Coral de Natal Infantil</h3>
                     <p class="text-sm text-text-muted leading-relaxed mb-4">
-                        Iniciação vocal e canto coral gratuitos para crianças de 5 a 12 anos, com apresentação no Natal.
+                        Iniciação vocal e canto coral gratuitos para crianças de 5 a 12 anos, com apresentação no Natal. Próxima edição em dezembro de 2027.
                     </p>
                 </div>
                 <a href="/coral-natal" class="pt-3 border-t border-outline-variant/20 flex items-center gap-2 text-xs font-semibold text-on-surface hover:text-primary">
                     <span class="material-symbols-outlined text-secondary text-[16px]">arrow_forward</span>
-                    <span>Inscrições e informações</span>
+                    <span>Saiba mais</span>
                 </a>
             </div>
             <div class="p-6 rounded-2xl bg-surface-pure border border-outline-variant/30 elevation-warm-1 flex flex-col justify-between hover:border-secondary transition-all duration-300">

@@ -26,6 +26,16 @@
                 <p class="text-base sm:text-lg text-text-muted leading-relaxed">
                     Nossos encontros comunitários presenciais acontecem todos os domingos, às 9h e às 19h30, na Sede em Guapó-GO. Você e sua família são nossos convidados de honra!
                 </p>
+                <div class="flex flex-wrap items-center gap-3 pt-2">
+                    <a href="https://wa.me/5562998700089?text=Ol%C3%A1!%20Quero%20visitar%20a%20IBNP%20no%20domingo.%20Pode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#25D366] text-white text-sm font-bold shadow-sm hover:opacity-95 transition-all active:scale-95">
+                        <span class="material-symbols-outlined text-[20px]">chat</span>
+                        <span>Quero visitar: fale com a gente</span>
+                    </a>
+                    <a href="/contato" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-outline-variant/60 text-on-surface text-sm font-bold hover:bg-surface-cream-warm/50 transition-all">
+                        <span class="material-symbols-outlined text-[20px]">location_on</span>
+                        <span>Como chegar</span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -92,6 +102,19 @@
                     </div>
                 </div>
             @endforeach
+        </div>
+
+        <!-- Chamada para visita (conversão Contato via WhatsApp) -->
+        <div class="mt-12 p-6 sm:p-10 rounded-3xl bg-surface-pure border border-outline-variant/30 elevation-warm-1 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            <div class="space-y-1">
+                <span class="text-xs font-bold uppercase tracking-widest text-secondary block">Primeira visita?</span>
+                <h2 class="text-xl sm:text-2xl font-extrabold text-on-surface tracking-tight">Venha no domingo. A gente recebe você.</h2>
+                <p class="text-sm text-text-muted leading-relaxed max-w-2xl">Se quiser, mande uma mensagem antes: tiramos suas dúvidas e combinamos sua chegada. Vale para você sozinho ou com toda a família.</p>
+            </div>
+            <a href="https://wa.me/5562998700089?text=Ol%C3%A1!%20Quero%20visitar%20a%20IBNP%20no%20domingo.%20Pode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-[#25D366] text-white text-sm font-bold shadow-sm hover:opacity-95 transition-all active:scale-95 whitespace-nowrap shrink-0">
+                <span class="material-symbols-outlined text-[20px]">chat</span>
+                <span>Quero visitar: fale com a gente</span>
+            </a>
         </div>
 
         <!-- Faixa Informativa Inferior -->

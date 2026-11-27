@@ -28,6 +28,8 @@ final class ProgramacaoRoutesTest extends TestCase
         $this->assertStringContainsString('Encontro Comunitário de Celebração & Acolhimento (manhã)', $output);
         $this->assertStringContainsString('Encontro Comunitário de Celebração & Acolhimento (noite)', $output);
         $this->assertStringContainsString('9:00 às 10:30', $output);
+        $this->assertStringContainsString('Quero visitar: fale com a gente', $output);
+        $this->assertStringContainsString('wa.me/5562998700089?text=Ol%C3%A1!%20Quero%20visitar%20a%20IBNP', $output);
         $this->assertStringContainsString('Encontro Comunitário de Celebração & Acolhimento', $output);
         $this->assertStringNotContainsString('Culto de Ensino', $output);
         $this->assertStringNotContainsString('Culto de Celebração', $output);

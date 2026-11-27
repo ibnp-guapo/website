@@ -135,18 +135,18 @@
                         <p class="text-xs font-bold text-on-surface">Meta: 50 cestas básicas para famílias atendidas pelo CRAS</p>
                         <p class="text-[11px] text-text-muted">Doe R$ 5,20 pelo Pix, chave CNPJ <strong class="text-on-surface">02.930.019/0001-62</strong> (Igreja Batista Nacional da Paz de Guapó). Vai doar outro valor? Avise a igreja pelo WhatsApp, para a doação ir para a campanha.</p>
                     </div>
-                    <!-- Destaque: Coral de Natal Aberto -->
+                    <!-- Destaque: Coral de Natal (próxima edição) -->
                     <div class="p-4 rounded-2xl bg-surface-cream-warm/50 border border-outline-variant/40 mb-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
                         <div class="space-y-0.5">
                             <span class="inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-wider text-secondary">
                                 <span class="material-symbols-outlined text-[14px]">music_note</span>
-                                <span>Inscrições Abertas • Dezembro 2026</span>
+                                <span>Próxima edição • Dezembro de 2027</span>
                             </span>
                             <p class="text-xs font-bold text-on-surface">Coral de Natal Infantil (30 vagas gratuitas)</p>
                             <p class="text-[11px] text-text-muted">Iniciação vocal e canto coral para crianças de 5 a 12 anos em Guapó.</p>
                         </div>
                         <a href="/coral-natal" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-secondary text-on-secondary text-xs font-bold shadow-sm hover:bg-secondary/90 transition-all active:scale-95 whitespace-nowrap shrink-0">
-                            <span>Inscrever</span>
+                            <span>Saiba mais</span>
                             <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
                         </a>
                     </div>

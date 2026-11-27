@@ -18,7 +18,8 @@ final class CoralNatalTest extends TestCase
     {
         $this->tempStorageFile = sys_get_temp_dir() . '/inscricoes_coral_feature_' . uniqid('', true) . '.json';
         $this->service = new InscricaoCoralService($this->tempStorageFile);
-        $this->controller = new CoralNatalController($this->service);
+        // Formulário testado com as inscrições abertas (como ficará na edição de 2027)
+        $this->controller = new CoralNatalController($this->service, null, true);
     }
 
     protected function tearDown(): void
@@ -82,5 +83,40 @@ final class CoralNatalTest extends TestCase
 
         $this->assertNotEmpty($output);
         $this->assertStringContainsString('Preencha corretamente', $output);
+    }
+
+    public function testInscricoesFechadasPorPadraoComProximaEdicao(): void
+    {
+        $this->assertFalse(CoralNatalController::INSCRICOES_ABERTAS);
+
+        $fechado = new CoralNatalController($this->service);
+        ob_start();
+        $fechado->index();
+        $output = (string) ob_get_clean();
+
+        $this->assertStringContainsString('Inscrições encerradas', $output);
+        $this->assertStringContainsString('O Coral de Natal volta em dezembro de 2027', $output);
+        $this->assertStringContainsString('Quero ser avisado no WhatsApp', $output);
+        $this->assertStringNotContainsString('action="/coral-natal/inscrever"', $output);
+        $this->assertStringNotContainsString('vagas gratuitas disponíveis', $output);
+    }
+
+    public function testInscreverComInscricoesFechadasNaoGravaNada(): void
+    {
+        $_POST = [
+            'nome_crianca' => 'Ana Beatriz Lima',
+            'idade_crianca' => '7',
+            'nome_responsavel' => 'Carlos Lima',
+            'telefone_responsavel' => '62991234567',
+        ];
+
+        $fechado = new CoralNatalController($this->service);
+        ob_start();
+        $fechado->inscrever();
+        $output = (string) ob_get_clean();
+
+        $this->assertStringNotContainsString('Inscrição Realizada com Sucesso', $output);
+        $this->assertStringContainsString('O Coral de Natal volta em dezembro de 2027', $output);
+        $this->assertSame(30, $this->service->getStatusVagas()['restantes'] ?? null);
     }
 }

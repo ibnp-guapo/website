@@ -24,7 +24,10 @@ final class ProgramacaoRoutesTest extends TestCase
 
         $this->assertStringContainsString('Encontros Comunitários & Programação Aberta', $output);
         $this->assertStringNotContainsString('Cultos & Encontros de Fé', $output);
-        $this->assertStringContainsString('Encontro de Ensino & Formação de Valores', $output);
+        $this->assertStringNotContainsString('Encontro de Ensino & Formação de Valores', $output);
+        $this->assertStringContainsString('Encontro Comunitário de Celebração & Acolhimento (manhã)', $output);
+        $this->assertStringContainsString('Encontro Comunitário de Celebração & Acolhimento (noite)', $output);
+        $this->assertStringContainsString('9:00 às 10:30', $output);
         $this->assertStringContainsString('Encontro Comunitário de Celebração & Acolhimento', $output);
         $this->assertStringNotContainsString('Culto de Ensino', $output);
         $this->assertStringNotContainsString('Culto de Celebração', $output);
@@ -57,10 +60,13 @@ final class ProgramacaoRoutesTest extends TestCase
         $this->assertSame('Igreja Batista Nacional da Paz de Guapó', $agenda->nomeOrganizacao);
         $this->assertCount(2, $agenda->cultosRegulares);
 
+        $fimEsperado = ['09:00' => '10:30', '19:30' => '21:00'];
         foreach ($agenda->cultosRegulares as $culto) {
             $this->assertSame(90, $culto->duracaoMinutos);
             $this->assertFalse($culto->transmissaoAoVivo);
-            $this->assertSame('21:00', $culto->getHorarioFim());
+            $this->assertSame('domingo', $culto->diaSemana);
+            $this->assertArrayHasKey($culto->horario, $fimEsperado);
+            $this->assertSame($fimEsperado[$culto->horario], $culto->getHorarioFim());
         }
     }
 }

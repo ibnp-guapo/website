@@ -24,23 +24,23 @@
   },
   "cultosRegulares": [
     {
-      "id": "culto-quarta-ensino",
-      "diaSemana": "quarta-feira",
-      "horario": "19:30",
+      "id": "culto-domingo-manha",
+      "diaSemana": "domingo",
+      "horario": "09:00",
       "duracaoMinutos": 90,
-      "nome": "Encontro de Ensino & Formação de Valores",
-      "categoria": "Formação & Desenvolvimento Comunitário",
+      "nome": "Encontro Comunitário de Celebração & Acolhimento (manhã)",
+      "categoria": "Cultura, Música & Integração Social",
       "local": "Sede - Rua Presidente Kennedy, Qd. 21, Lt. 13, Centro, Guapó - GO",
-      "descricao": "Momento aberto de aprendizado, desenvolvimento moral, reflexão ética e edificação humana para jovens, adultos e famílias.",
+      "descricao": "Reunião comunitária com apresentações artísticas e musicais, acolhimento fraterno e fortalecimento de laços familiares e comunitários.",
       "transmissaoAoVivo": false,
-      "rrule": "FREQ=WEEKLY;BYDAY=WE"
+      "rrule": "FREQ=WEEKLY;BYDAY=SU"
     },
     {
       "id": "culto-domingo-celebracao",
       "diaSemana": "domingo",
       "horario": "19:30",
       "duracaoMinutos": 90,
-      "nome": "Encontro Comunitário de Celebração & Acolhimento",
+      "nome": "Encontro Comunitário de Celebração & Acolhimento (noite)",
       "categoria": "Cultura, Música & Integração Social",
       "local": "Sede - Rua Presidente Kennedy, Qd. 21, Lt. 13, Centro, Guapó - GO",
       "descricao": "Reunião comunitária com apresentações artísticas e musicais, acolhimento fraterno e fortalecimento de laços familiares e comunitários.",

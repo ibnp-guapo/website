@@ -41,14 +41,19 @@ final class ICalGeneratorTest extends TestCase
         $veventCount = substr_count($ical, 'BEGIN:VEVENT');
         $this->assertSame(2, $veventCount, 'O arquivo .ics deve conter exatamente 2 VEVENTs regulares');
 
-        // Validar Encontro de Quarta (19:30 às 21:00)
-        $this->assertStringContainsString('UID:culto-quarta-ensino@ibnpguapo.org.br', $ical);
-        $this->assertStringContainsString('RRULE:FREQ=WEEKLY;BYDAY=WE', $ical);
+        // Encontro de domingo de manhã (09:00 às 10:30)
+        $this->assertStringContainsString('UID:culto-domingo-manha@ibnpguapo.org.br', $ical);
+        $this->assertStringContainsString('T090000', $ical);
+        $this->assertStringContainsString('T103000', $ical);
+        $this->assertStringContainsString('Encontro Comunitário de Celebração & Acolhimento (manhã)', $ical);
+
+        // Quarta-feira foi encerrada
+        $this->assertStringNotContainsString('UID:culto-quarta-ensino@ibnpguapo.org.br', $ical);
+        $this->assertStringNotContainsString('BYDAY=WE', $ical);
+
+        // Encontro de domingo à noite (19:30 às 21:00)
         $this->assertStringContainsString('T193000', $ical);
         $this->assertStringContainsString('T210000', $ical);
-        $this->assertStringContainsString('Encontro de Ensino & Formação de Valores', $ical);
-
-        // Validar Encontro de Domingo (19:30 às 21:00)
         $this->assertStringContainsString('UID:culto-domingo-celebracao@ibnpguapo.org.br', $ical);
         $this->assertStringContainsString('RRULE:FREQ=WEEKLY;BYDAY=SU', $ical);
         $this->assertStringContainsString('Encontro Comunitário de Celebração & Acolhimento', $ical);

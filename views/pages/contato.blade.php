@@ -139,14 +139,14 @@
                         <div class="p-4 bg-surface-pure rounded-xl border border-outline-variant/30">
                             <span class="text-primary font-bold uppercase text-xs mb-1 flex items-center gap-1.5">
                                 <span class="material-symbols-outlined text-[16px]">alarm</span>
-                                Quartas-feiras
+                                Domingos, manhã
                             </span>
-                            <span class="text-xs font-semibold text-on-surface">19:30 às 21:00 • Ensino &amp; Valores</span>
+                            <span class="text-xs font-semibold text-on-surface">9:00 às 10:30 • Encontro Comunitário &amp; Acolhimento</span>
                         </div>
                         <div class="p-4 bg-surface-pure rounded-xl border border-outline-variant/30">
                             <span class="text-primary font-bold uppercase text-xs mb-1 flex items-center gap-1.5">
                                 <span class="material-symbols-outlined text-[16px]">alarm</span>
-                                Domingos
+                                Domingos, noite
                             </span>
                             <span class="text-xs font-semibold text-on-surface">19:30 às 21:00 • Encontro Comunitário &amp; Acolhimento</span>
                         </div>

@@ -232,7 +232,7 @@
                             <div class="p-4 rounded-xl bg-surface-cream-light border border-outline-variant/30">
                                 <span class="text-2xl font-extrabold text-primary block">100+</span>
                                 <span class="text-xs font-bold text-on-surface block mt-1">Encontros Semanais</span>
-                                <span class="text-[11px] text-text-muted block mt-0.5">Quartas e domingos regulares ao longo do ano</span>
+                                <span class="text-[11px] text-text-muted block mt-0.5">Domingos de manhã e à noite, o ano todo</span>
                             </div>
                             <div class="p-4 rounded-xl bg-surface-cream-light border border-outline-variant/30">
                                 <span class="text-2xl font-extrabold text-secondary block">100%</span>

@@ -91,6 +91,6 @@ Dá para fazer um **pré-cadastro** pelo aplicativo ou site do **Cadastro Único
 
 ## A IBNP está aqui
 
-Se você chegou agora a Guapó, veja também o nosso [Guia de Chegada](/guia-de-chegada), com documentos, saúde, escola, trabalho e transporte. E se precisar de orientação ou de uma palavra amiga, venha nos visitar: **quartas e domingos, às 19h30**.
+Se você chegou agora a Guapó, veja também o nosso [Guia de Chegada](/guia-de-chegada), com documentos, saúde, escola, trabalho e transporte. E se precisar de orientação ou de uma palavra amiga, venha nos visitar: **domingos, às 9h e às 19h30**.
 
 *Informações conferidas em novembro de 2026. As regras dos programas mudam com frequência: confirme sempre no CRAS ou nos canais oficiais do governo.*

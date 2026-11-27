@@ -27,7 +27,11 @@ final class PageRoutesTest extends TestCase
         $this->assertStringContainsString('Guapó', $output);
         $this->assertStringContainsString('Encontros da Semana', $output);
         $this->assertStringNotContainsString('Cultos da Semana', $output);
-        $this->assertStringContainsString('Encontro de Ensino & Formação de Valores', $output);
+        $this->assertStringNotContainsString('Encontro de Ensino & Formação de Valores', $output);
+        $this->assertStringContainsString('Encontro Comunitário de Celebração & Acolhimento (manhã)', $output);
+        $this->assertStringContainsString('Encontro Comunitário de Celebração & Acolhimento (noite)', $output);
+        $this->assertStringContainsString('Domingo às 9:00', $output);
+        $this->assertStringNotContainsString('Quarta-feira', $output);
         $this->assertStringContainsString('Encontro Comunitário de Celebração & Acolhimento', $output);
         $this->assertStringNotContainsString('Celebração da Família', $output);
         $this->assertStringNotContainsString('EBD', $output);

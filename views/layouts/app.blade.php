@@ -23,13 +23,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'IBNP - Um Lugar de Paz, Comunhão e Adoração')</title>
-    <meta name="description" content="@yield('meta_description', 'Portal oficial da IBNP em Guapó-GO. Comunidade, educação infantil e impacto social. Encontros abertos às quartas e domingos às 19:30.')">
+    <meta name="description" content="@yield('meta_description', 'Portal oficial da IBNP em Guapó-GO. Comunidade, educação infantil e impacto social. Encontros abertos aos domingos, às 9h e às 19h30.')">
 
     @php
         // SEO base (Spec 24): canonical, Open Graph e Twitter Card em todas as páginas
         $seoBase = 'https://ibnpguapo.org.br';
         $seoTitle = $__env->yieldContent('title', 'IBNP - Um Lugar de Paz, Comunhão e Adoração');
-        $seoDescription = $__env->yieldContent('meta_description', 'Portal oficial da IBNP em Guapó-GO. Comunidade, educação infantil e impacto social. Encontros abertos às quartas e domingos às 19:30.');
+        $seoDescription = $__env->yieldContent('meta_description', 'Portal oficial da IBNP em Guapó-GO. Comunidade, educação infantil e impacto social. Encontros abertos aos domingos, às 9h e às 19h30.');
         $seoUrl = isset($currentRoute) && $currentRoute !== null ? $seoBase . $currentRoute : null;
         $seoImage = $seoBase . $__env->yieldContent('og_image', '/assets/images/hero-transformacao-infantil.jpg');
     @endphp
@@ -200,12 +200,12 @@
                 <div class="md:col-span-3 space-y-2">
                     <span class="text-xs font-bold text-on-surface uppercase tracking-wider block">Encontros Regulares</span>
                     <p class="text-xs text-text-muted">
-                        <strong class="text-on-surface block">Quarta-feira: 19:30 às 21:00</strong>
-                        Encontro de Ensino &amp; Valores (90 min)
+                        <strong class="text-on-surface block">Domingo: 9:00 às 10:30</strong>
+                        Encontro Comunitário &amp; Acolhimento, manhã (90 min)
                     </p>
                     <p class="text-xs text-text-muted pt-1">
                         <strong class="text-on-surface block">Domingo: 19:30 às 21:00</strong>
-                        Encontro Comunitário &amp; Acolhimento (90 min)
+                        Encontro Comunitário &amp; Acolhimento, noite (90 min)
                     </p>
                 </div>
             </div>

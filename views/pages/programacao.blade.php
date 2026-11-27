@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Programação e Encontros Comunitários - IBNP')
-@section('meta_description', 'Horários dos encontros comunitários regulares e atividades formativas da IBNP em Guapó-GO. Quartas e Domingos às 19:30.')
+@section('meta_description', 'Horários dos encontros comunitários regulares e atividades formativas da IBNP em Guapó-GO. Domingos às 9h e às 19h30.')
 
 @section('head')
     @if (!empty($schemaJson))
@@ -24,7 +24,7 @@
                     Encontros Comunitários & Programação Aberta
                 </h1>
                 <p class="text-base sm:text-lg text-text-muted leading-relaxed">
-                    Nossos encontros comunitários presenciais acontecem semanalmente às quartas e domingos na Sede em Guapó-GO. Você e sua família são nossos convidados de honra!
+                    Nossos encontros comunitários presenciais acontecem todos os domingos, às 9h e às 19h30, na Sede em Guapó-GO. Você e sua família são nossos convidados de honra!
                 </p>
             </div>
         </div>

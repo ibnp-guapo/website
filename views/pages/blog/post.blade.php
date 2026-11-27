@@ -64,7 +64,7 @@
 
             <aside aria-labelledby="titulo-ajuda-post" class="mt-12 bg-surface-pure border border-outline-variant/30 rounded-3xl p-6 sm:p-8 elevation-warm-1 space-y-4">
                 <h2 id="titulo-ajuda-post" class="text-xl font-extrabold text-on-surface tracking-tight">Ficou com dúvida?</h2>
-                <p class="text-sm text-text-muted leading-relaxed">A IBNP não é órgão do governo, mas pode ajudar você a se orientar. Fale com a gente ou venha nos visitar: encontros às quartas e domingos, às 19:30.</p>
+                <p class="text-sm text-text-muted leading-relaxed">A IBNP não é órgão do governo, mas pode ajudar você a se orientar. Fale com a gente ou venha nos visitar: encontros aos domingos, às 9h e às 19h30.</p>
                 <div class="flex flex-col sm:flex-row gap-3">
                     <a href="{{ $wa }}" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#25D366] text-white text-sm font-bold shadow-sm hover:opacity-95 transition-all active:scale-95">
                         <span class="material-symbols-outlined text-[20px]" aria-hidden="true">chat</span>

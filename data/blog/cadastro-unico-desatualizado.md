@@ -84,6 +84,6 @@ No fim, **peça a Folha Resumo atualizada** e guarde junto com os documentos da 
 - [Bolsa Família: quem tem direito, quanto paga e o que fazer para não perder](/blog/bolsa-familia-quem-tem-direito)
 - [Guia de Chegada a Guapó](/guia-de-chegada)
 
-A IBNP acredita que cuidar das pessoas também é ajudar a manter seus direitos em dia. Se você conhece alguém que precisa dessa informação, **compartilhe este texto**. E se precisar de nós, estamos aqui: **quartas e domingos, às 19h30**.
+A IBNP acredita que cuidar das pessoas também é ajudar a manter seus direitos em dia. Se você conhece alguém que precisa dessa informação, **compartilhe este texto**. E se precisar de nós, estamos aqui: **domingos, às 9h e às 19h30**.
 
 *Informações conferidas em novembro de 2026. As regras dos programas mudam com frequência: confirme sempre no CRAS ou nos canais oficiais do governo.*

@@ -72,7 +72,8 @@ final class HttpRoutesTest extends TestCase
 
         $this->assertNotEmpty($output);
         $this->assertStringContainsString('BEGIN:VCALENDAR', $output);
-        $this->assertStringContainsString('SUMMARY:Encontro de Ensino & Formação de Valores', $output);
+        $this->assertStringContainsString('SUMMARY:Encontro Comunitário de Celebração & Acolhimento (manhã)', $output);
+        $this->assertStringNotContainsString('Encontro de Ensino & Formação de Valores', $output);
         $this->assertStringContainsString('SUMMARY:Encontro Comunitário de Celebração & Acolhimento', $output);
     }
 

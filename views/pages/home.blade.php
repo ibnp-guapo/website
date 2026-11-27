@@ -77,8 +77,8 @@
                         <div class="flex items-center gap-3 p-3 bg-surface-cream-light rounded-xl border border-outline-variant/20">
                             <span class="material-symbols-outlined text-primary text-[28px]">schedule</span>
                             <div>
-                                <span class="text-[11px] font-bold text-text-muted block">Domingo &amp; Quarta</span>
-                                <strong class="text-base font-bold text-on-surface">19h30</strong>
+                                <span class="text-[11px] font-bold text-text-muted block">Domingos</span>
+                                <strong class="text-base font-bold text-on-surface">9h e 19h30</strong>
                             </div>
                         </div>
                         <div class="flex items-center gap-3 p-3 bg-surface-cream-light rounded-xl border border-outline-variant/20">
@@ -220,38 +220,38 @@
 
         <!-- 2 Side-by-Side Focused Service Cards -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Card 1: Quarta-feira -->
+            <!-- Card 1: Domingo de manhã -->
             <div class="relative bg-surface-pure rounded-2xl p-6 md:p-8 border border-outline-variant/30 elevation-warm-1 flex flex-col justify-between hover:border-secondary transition-all duration-300">
                 <div>
                     <!-- Header Row -->
                     <div class="flex items-center justify-between gap-2 mb-4">
                         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-cream-light border border-outline-variant text-on-surface text-xs font-bold">
                             <span class="material-symbols-outlined text-secondary text-[18px]">alarm</span>
-                            <span>Quarta-feira às 19:30</span>
+                            <span>Domingo às 9:00</span>
                         </div>
                         <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-cream-warm/40 text-secondary text-xs font-bold border border-outline-variant/40">
-                            <span class="material-symbols-outlined text-[14px]">menu_book</span>
-                            Formação de Valores • 90 min
+                            <span class="material-symbols-outlined text-[14px]">wb_sunny</span>
+                            Manhã • 90 min
                         </span>
                     </div>
 
                     <!-- Content -->
                     <h3 class="text-xl sm:text-2xl font-bold text-on-surface mb-2">
-                        Encontro de Ensino & Formação de Valores
+                        Encontro Comunitário de Celebração & Acolhimento (manhã)
                     </h3>
                     <p class="text-sm text-text-muted mb-6 leading-relaxed">
-                        Momento dedicado ao aprendizado sistemático, ética, maturidade humana e fortalecimento de princípios sólidos para toda a família.
+                        Comece o domingo em família: música, uma mensagem de esperança e acolhimento para quem chega pela primeira vez.
                     </p>
 
                     <!-- Points highlight -->
                     <div class="space-y-2 border-t border-outline-variant/20 pt-4 mb-6">
                         <div class="flex items-center gap-2 text-xs sm:text-sm text-on-surface">
                             <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
-                            <span>Princípios formativos e cidadãos para todas as idades</span>
+                            <span>Ideal para famílias com crianças</span>
                         </div>
                         <div class="flex items-center gap-2 text-xs sm:text-sm text-on-surface">
                             <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
-                            <span>Reflexão temática e diálogo aberto com a comunidade</span>
+                            <span>Acolhimento especial para novos visitantes</span>
                         </div>
                     </div>
                 </div>
@@ -268,7 +268,7 @@
                 </div>
             </div>
 
-            <!-- Card 2: Domingo -->
+            <!-- Card 2: Domingo à noite -->
             <div class="relative bg-surface-pure rounded-2xl p-6 md:p-8 border border-outline-variant/30 elevation-warm-1 flex flex-col justify-between hover:border-primary transition-all duration-300">
                 <div>
                     <!-- Header Row -->
@@ -286,7 +286,7 @@
 
                     <!-- Content -->
                     <h3 class="text-xl sm:text-2xl font-bold text-on-surface mb-2">
-                        Encontro Comunitário de Celebração & Acolhimento
+                        Encontro Comunitário de Celebração & Acolhimento (noite)
                     </h3>
                     <p class="text-sm text-text-muted mb-6 leading-relaxed">
                         Reunião comunitária com apresentações artísticas e musicais, integração fraterna e acolhimento especial para novos visitantes e famílias de Guapó.
@@ -372,7 +372,7 @@
                 </div>
                 <div class="pt-3 border-t border-outline-variant/20 flex items-center gap-2 text-xs font-semibold text-on-surface">
                     <span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
-                    <span>Encontros regulares às quartas e domingos</span>
+                    <span>Encontros regulares aos domingos, às 9h e às 19h30</span>
                 </div>
             </div>
 

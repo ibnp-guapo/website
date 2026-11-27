@@ -82,6 +82,6 @@ E o mais importante: **informe sempre a renda nova** no Cadastro Único. Esconde
 > Rua Edéia, Qd. 07, Lt. 19, Centro · (62) 3552-2090\
 > Segunda a sexta, das 8h às 12h e das 13h às 16h
 
-Na IBNP sabemos que nenhuma família escolhe passar necessidade. Se você precisa de orientação, de oração ou de alguém para conversar, nossas portas estão abertas: **quartas e domingos, às 19h30**.
+Na IBNP sabemos que nenhuma família escolhe passar necessidade. Se você precisa de orientação, de oração ou de alguém para conversar, nossas portas estão abertas: **domingos, às 9h e às 19h30**.
 
 *Informações conferidas em novembro de 2026, com o reajuste de outubro. Valores e regras podem mudar: confirme sempre no aplicativo Bolsa Família ou no CRAS.*

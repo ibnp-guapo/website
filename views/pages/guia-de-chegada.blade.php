@@ -486,7 +486,7 @@
                     <li class="flex items-start gap-2.5 text-sm text-on-surface"><span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5" aria-hidden="true">favorite</span><span><strong>Acolhimento:</strong> uma conversa sem pressa com a liderança, e a gente apresenta você à comunidade.</span></li>
                     <li class="flex items-start gap-2.5 text-sm text-on-surface"><span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5" aria-hidden="true">explore</span><span><strong>Orientação:</strong> ajudamos a encontrar o CRAS, a unidade de saúde e a escola mais perto de você.</span></li>
                     <li class="flex items-start gap-2.5 text-sm text-on-surface"><span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5" aria-hidden="true">computer</span><span><strong>Serviços pela internet:</strong> se você não tem internet ou celular, ajudamos a fazer a matrícula das crianças e outras solicitações on-line.</span></li>
-                    <li class="flex items-start gap-2.5 text-sm text-on-surface"><span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5" aria-hidden="true">diversity_3</span><span><strong>Comunidade:</strong> encontros às quartas e domingos, às 19:30, e atividades para as crianças.</span></li>
+                    <li class="flex items-start gap-2.5 text-sm text-on-surface"><span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5" aria-hidden="true">diversity_3</span><span><strong>Comunidade:</strong> encontros aos domingos, às 9h e às 19h30, e atividades para as crianças.</span></li>
                 </ul>
             </div>
             <div class="lg:col-span-5 flex flex-col gap-3">

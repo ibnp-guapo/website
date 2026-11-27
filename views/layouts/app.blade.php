@@ -12,13 +12,18 @@
       gtag('config', 'AW-18472451188');
     </script>
 
-    <!-- Event snippet for Visualização de página conversion page -->
+    <!-- Conversões de clique (Google Ads): Contato e Ver rota -->
     <script>
-      gtag('event', 'conversion', {
-          'send_to': 'AW-18472451188/J9UECKfm5IMdEPT4rOhE',
-          'value': 1.0,
-          'currency': 'USD'
-      });
+      window.gtagReportConversionContato = function () {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18472451188/c2YECKeizsAdEPT4rOhE'
+        });
+      };
+      window.gtagReportConversionVerRota = function () {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18472451188/xARLCOaizsAdEPT4rOhE'
+        });
+      };
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -241,6 +246,26 @@
                 drawer.classList.toggle('hidden');
             }
         }
+
+        // Dispara conversões Ads no clique: Contato (WhatsApp/e-mail) e Ver rota (Maps)
+        document.addEventListener('click', function (event) {
+            var anchor = event.target.closest('a');
+            if (!anchor) {
+                return;
+            }
+            var href = (anchor.getAttribute('href') || '').toLowerCase();
+            if (href.indexOf('wa.me/') !== -1 || href.indexOf('mailto:contato@ibnpguapo.org.br') === 0) {
+                if (typeof window.gtagReportConversionContato === 'function') {
+                    window.gtagReportConversionContato();
+                }
+                return;
+            }
+            if (href.indexOf('maps.google.com') !== -1 || href.indexOf('google.com/maps') !== -1) {
+                if (typeof window.gtagReportConversionVerRota === 'function') {
+                    window.gtagReportConversionVerRota();
+                }
+            }
+        });
     </script>
 </body>
 </html>
